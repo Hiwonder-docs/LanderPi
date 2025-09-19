@@ -1706,8 +1706,6 @@ Since the robot platform is configured to start the mobile app service by defaul
 ~/.stop_ros.sh
 ```
 
-<img src="../_static/media/chapter_1/section_1/media/image193.png" style="width:600px"  class="common_img"/>
-
 (2) After finishing your learning session, remember to re-enable the auto-start service. Otherwise, you will not be able to control the robot via the app or wireless controller.
 
 (3) Click the desktop icon <img src="../_static/media/chapter_1/section_1/media/image194.png" style="width:30px"/> to open the terminal on Raspberry Pi, and enter the following command and press **Enter** to enable the auto-start service.
@@ -1715,8 +1713,6 @@ Since the robot platform is configured to start the mobile app service by defaul
 ```
 sudo systemctl restart start_app_node.service
 ```
-
-<img src="../_static/media/chapter_1/section_1/media/image195.png" style="width:600px"  class="common_img"/>
 
 ## 10. Image Flashing
 
