@@ -1,0 +1,6 @@
+build/
+.idea/
+te.txt
+**/Thumbs.db
+**/*.pdf
+**/*.docx
