@@ -241,11 +241,11 @@ To control the robot with the **WonderPi** app, you can download the app from th
 
 (1) Visit the Hiwonder tutorials website: <https://www.hiwonder.net/app-software>
 
-<img src="../_static/media/chapter_1/section_1/media/image22.png" style="width:400px" class="common_img"/>
+<img src="../_static/media/chapter_1/section_1/media/image22.png" class="common_img"/>
 
 (2) Navigate to the software download page.
 
-<img src="../_static/media/chapter_1/section_1/media/image23.png" style="width:400px" class="common_img"/>
+<img src="../_static/media/chapter_1/section_1/media/image23.png" class="common_img"/>
 
 (3) Locate **WonderPi** and choose the installation package suitable for your device.
 
@@ -793,15 +793,11 @@ Configuration steps:
 cd wifi_manager
 ```
 
-<img src="../_static/media/chapter_1/section_1/media/image111.png" class="common_img"/>
-
 (4) Then enter the following command and press Enter to open the configuration file:
 
 ```
 gedit wifi_conf.py
 ```
-
-<img src="../_static/media/chapter_1/section_1/media/image112.png" class="common_img"/>
 
 (5) In the editor, set the value of `WIFI_MODE` to `2`. `1` means AP mode, where the robot creates its own Wi-Fi hotspot. `2` means LAN Mode, where the robot connects to your local network.
 
@@ -822,8 +818,6 @@ gedit wifi_conf.py
 ```
 sudo systemctl restart wifi.service
 ```
-
-<img src="../_static/media/chapter_1/section_1/media/image115.png" class="common_img"/>
 
 > [!NOTE]
 >
