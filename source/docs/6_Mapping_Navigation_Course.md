@@ -62,7 +62,7 @@ Comments have no impact on the definition of other properties and elements. Plea
 
 The Link element describes the visual and physical properties of the robot's rigid component. The following tags are commonly used to define the motion of a link:
 
-<img src="../_static/media/chapter_6/section_1/media/image1.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/image1.png" style="width:500px" class="common_img"/>
 
 <visua>: Describe the appearance of the link, such as size, color and shape.
 
@@ -97,7 +97,7 @@ In a URDF model, joints are defined using the `<joint>` tag. They describe the k
 
 When defining joint behavior, the following tags are commonly used:
 
-<img src="../_static/media/chapter_6/section_1/media/image2.png" class="common_img"/>
+<img src="../_static/media/chapter_6/image2.png" class="common_img"/>
 
 `<parent_link>`: Specifies the parent link.
 
@@ -123,13 +123,13 @@ Each tag contains the corresponding child tag. The functions of the tags are lis
 
 The complete top tags of a robot, including the `<link>` and `<joint>` tags, must be enclosed within the `<robot>` tag. The format is as follows:
 
-<img src="../_static/media/chapter_6/section_1/media/image3.png"  class="common_img"/>
+<img src="../_static/media/chapter_6/image3.png"  class="common_img"/>
 
 5. gazebo Tag
 
 This tag is used in conjunction with the Gazebo simulator. Within this tag, you can define simulation parameters and import Gazebo plugins, as well as specify Gazebo's physical properties, and more.
 
-<img src="../_static/media/chapter_6/section_1/media/image4.png"  class="common_img"/>
+<img src="../_static/media/chapter_6/image4.png"  class="common_img"/>
 
 6. Write Simple URDF Model
 
@@ -137,35 +137,35 @@ This tag is used in conjunction with the Gazebo simulator. Within this tag, you 
 
 To start writing the URDF model, we need to set the name of the robot following this format: `<robot name=“robot model name”>`. Lastly, input `</robot>` at the end to represent that the model is written successfully.
 
-<img src="../_static/media/chapter_6/section_1/media/image5.png"  class="common_img"/>
+<img src="../_static/media/chapter_6/image5.png"  class="common_img"/>
 
-<img src="../_static/media/chapter_6/section_1/media/image6.png"  class="common_img"/>
+<img src="../_static/media/chapter_6/image6.png"  class="common_img"/>
 
 **(2) Set links**
 
 ① To write the first link and use indentation to indicate that it is part of the currently set model. Set the name of the link using the following format: `<link name="link name">`. Finally, conclude with `</link>` to indicate the successful completion of the link definition.
 
-<img src="../_static/media/chapter_6/section_1/media/image7.png"  class="common_img"/>
+<img src="../_static/media/chapter_6/image7.png"  class="common_img"/>
 
-<img src="../_static/media/chapter_6/section_1/media/image8.png"  class="common_img"/>
+<img src="../_static/media/chapter_6/image8.png"  class="common_img"/>
 
 ② When writing the link description, use indentation to indicate that the description belongs to the current link. Start the description with `<visual>` and end it with `</visual>`.
 
-<img src="../_static/media/chapter_6/section_1/media/image9.png"  class="common_img"/>
+<img src="../_static/media/chapter_6/image9.png"  class="common_img"/>
 
-<img src="../_static/media/chapter_6/section_1/media/image10.png"  class="common_img"/>
+<img src="../_static/media/chapter_6/image10.png"  class="common_img"/>
 
 ③ The `<geometry>` tag is employed to define the shape of a link. Once the description is complete, include `</geometry>`. Within the `<geometry>` tag, indentation is used to specify the detailed description of the link's shape. The following example demonstrates a link with a cylindrical shape: `<cylinder length="0.01" radius="0.2"/>`. In this instance, `length="0.01` signifies a length of 0.01 meters for the link, while `radius="0.2` denotes a radius of 0.2 meters, resulting in a cylindrical shape.
 
-<img src="../_static/media/chapter_6/section_1/media/image11.png"  class="common_img"/>
+<img src="../_static/media/chapter_6/image11.png"  class="common_img"/>
 
 ④ The `<origin>` tag is utilized to specify the position of a link, with indentation used to indicate the detailed description of the link's position. The following example demonstrates the position of a link: `<origin rpy="0 0 0" xyz="0 0 0" />`. In this example, `rpy` represents the angles of the link, while `xyz` represents the coordinates of the link's position. This particular example indicates that the link is positioned at the origin of the coordinate system.
 
-<img src="../_static/media/chapter_6/section_1/media/image12.png"  class="common_img"/>
+<img src="../_static/media/chapter_6/image12.png"  class="common_img"/>
 
 ⑤ The `<material>` tag is used to define the visual appearance of a link, with indentation used to specify the detailed description of the link's color. To start describing the color, include `<material>`, and end with `</material>` when the description is complete. The following example demonstrates setting a link color to yellow: `<color rgba="1 1 0 1" />`. In this example, `rgba="1 1 0 1"` represents the color threshold for achieving a yellow color.
 
-<img src="../_static/media/chapter_6/section_1/media/image13.png"  class="common_img"/>
+<img src="../_static/media/chapter_6/image13.png"  class="common_img"/>
 
 (3) Set Joint
 
@@ -175,33 +175,33 @@ To start writing the URDF model, we need to set the name of the robot following 
 >
 > **To learn about the type of the joint, please refer to the section [Joint](#anchor_joint) in this document.**
 
-<img src="../_static/media/chapter_6/section_1/media/image14.png"  class="common_img"/>
+<img src="../_static/media/chapter_6/image14.png"  class="common_img"/>
 
-<img src="../_static/media/chapter_6/section_1/media/image15.png"  class="common_img"/>
+<img src="../_static/media/chapter_6/image15.png"  class="common_img"/>
 
 ② Write the description section for the connection between the link and the joint. Use indentation to indicate that it is part of the currently defined joint. The parent parameter and child parameter should be set using the following format: `<parent link="parent link"/>`, and `<child link="child link" />`. With the parent link serving as the pivot, the joint rotates the child link.
 
-<img src="../_static/media/chapter_6/section_1/media/image16.png"  class="common_img"/>
+<img src="../_static/media/chapter_6/image16.png"  class="common_img"/>
 
 ③ `<origin>` describes the position of the joint, with indentation used to specify the detailed coordinates of the joint. The image below describes the position of the joint: `<origin xyz=“0 0 0.1” />`. xyz is the coordinate of the joint, indicating that the joint is located at x=0, y=0, z=0.1 in the coordinate system.
 
-<img src="../_static/media/chapter_6/section_1/media/image17.png"  class="common_img"/>
+<img src="../_static/media/chapter_6/image17.png"  class="common_img"/>
 
 ④ `<axis>` describes the orientation of the joint, with indentation used to specify its precise posture. The figure below shows the posture of a joint `<axis xyz="0 0 1" />`, where `xyz` defines the orientation of the joint.
 
-<img src="../_static/media/chapter_6/section_1/media/image18.png"  class="common_img"/>
+<img src="../_static/media/chapter_6/image18.png"  class="common_img"/>
 
 ⑤ `<limit>` is used to restrict joint motion, with indentation applied to specify detailed angle constraints. The figure below shows a joint whose maximum torque does not exceed 300 N, with an upper rotation limit of 3.14 radians and a lower limit of -3.14 radians. These limits are defined according to the following formula: effort = joint torque (N), velocity = joint speed, lower = lower bound of the rotation angle (radians), upper = upper bound of the rotation angle (radians).
 
-<img src="../_static/media/chapter_6/section_1/media/image19.png"  class="common_img"/>
+<img src="../_static/media/chapter_6/image19.png"  class="common_img"/>
 
 ⑥ `<dynamics>` describes the dynamic properties of the joint, with indentation used to specify detailed motion parameters. The figure below shows an example of a joint's dynamics parameters: `<dynamics damping="50" friction="1" />`, where `damping` specifies the damping value, and `friction` specifies the friction coefficient.
 
-<img src="../_static/media/chapter_6/section_1/media/image20.png"  class="common_img"/>
+<img src="../_static/media/chapter_6/image20.png"  class="common_img"/>
 
 **The complete code is shown as follows:**
 
-<img src="../_static/media/chapter_6/section_1/media/image21.png" class="common_img"/>
+<img src="../_static/media/chapter_6/image21.png" class="common_img"/>
 
 ### 6.1.2 Robot URDF Model Instructions
 
@@ -213,7 +213,7 @@ To understand the URDF model, you can refer to the section [URDF Model Basic Syn
 
 1)  Power on the robot and connect it to the remote control software VNC. For detail informations, please refer to [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration).
 
-2)  Click the terminal icon <img src="../_static/media/chapter_6/section_1/media/image22.png" style="width:30px"/> in the system desktop to open a command-line window.
+2)  Click the terminal icon <img src="../_static/media/chapter_6/image22.png" style="width:30px"/> in the system desktop to open a command-line window.
 
 3)  Enter the following command and press **Enter** to stop the app auto-start service.
 
@@ -235,7 +235,7 @@ vim landerpi.xacro
 
 6)  Find the code section shown in the image below:
 
-<img src="../_static/media/chapter_6/section_1/media/image26.png" class="common_img"/>
+<img src="../_static/media/chapter_6/image26.png" class="common_img"/>
 
 Multiple URDF models are called to form the complete robot.
 
@@ -1257,7 +1257,7 @@ SLAM-based mapping generally involves three main processes:
 
 Lidar works by emitting laser pulses, which scatter when they hit surrounding obstacles.
 
-<img src="../_static/media/chapter_6/section_1/media/image30.png" style="width:300px" class="common_img"/>
+<img src="../_static/media/chapter_6/image30.png" style="width:300px" class="common_img"/>
 
 A portion of the reflected light is received by the Lidar sensor, and based on the time-of-flight measurement principle, the distance between the Lidar and the target point can be calculated.
 
@@ -1329,7 +1329,7 @@ The ROS version of Karto_SLAM uses Sparse Pose Adjustment (SPA), which is closel
 
 Karto SLAM algorithm framework:
 
-<img src="../_static/media/chapter_6/section_1/media/image31.png" style="width:400px" class="common_img"/>
+<img src="../_static/media/chapter_6/image31.png" style="width:400px" class="common_img"/>
 
 As shown in the figure above, the workflow of Karto SLAM is relatively straightforward. It follows the traditional soft real-time mechanism of SLAM: each incoming data frame is processed immediately, and then the result is returned.
 
@@ -1351,23 +1351,23 @@ ROS2 mapping and navigation use a virtual machine connected to the robot within 
 
 (1) Locate the installation package under: [06 Virtual Machine Installation Package](3_Chassis_Motion_Control.md) and double-click the installer to begin installation.
 
-<img src="../_static/media/chapter_6/section_1/media/image32.png" style="width:500px"  class="common_img"/>
+<img src="../_static/media/chapter_6/image32.png" style="width:500px"  class="common_img"/>
 
-(2) Click the icon <img src="../_static/media/chapter_6/section_1/media/image33.png" style="width:50px" /> to launch VMware and open the virtual machine.
+(2) Click the icon <img src="../_static/media/chapter_6/image33.png" style="width:50px" /> to launch VMware and open the virtual machine.
 
 (3) In the VMware interface, click **Open a Virtual Machine**.
 
-<img src="../_static/media/chapter_6/section_1/media/image34.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/image34.png" style="width:500px" class="common_img"/>
 
 (4) Navigate to the extracted folder `ubuntu_ros2_humble`, select the file **Ubuntu 22.04 ROS2.ovf**, and click **Open**.
 
 (5) Enter a name for your virtual machine and choose the desired installation path. Then click **Import**.
 
-<img src="../_static/media/chapter_6/section_1/media/image36.png" style="width:400px" class="common_img"/>
+<img src="../_static/media/chapter_6/image36.png" style="width:400px" class="common_img"/>
 
 (6) The import process will start, and the progress will be displayed on screen.
 
-<img src="../_static/media/chapter_6/section_1/media/image37.png"  class="common_img"/>
+<img src="../_static/media/chapter_6/image37.png"  class="common_img"/>
 
 (7) Once the import is complete, follow the prompts to finish the installation.
 
@@ -1377,7 +1377,7 @@ Export Files from the Robot
 
 (1) Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration).
 
-(2) Click the terminal icon <img src="../_static/media/chapter_6/section_1/media/image22.png" style="width:30px"/> in the system desktop to open a ROS2 command-line window.
+(2) Click the terminal icon <img src="../_static/media/chapter_6/image22.png" style="width:30px"/> in the system desktop to open a ROS2 command-line window.
 
 (3) Enter the command to disable the app auto-start service.
 
@@ -1399,27 +1399,27 @@ cp ~/ros2_ws/.typerc ~/shared
 
 (6) Use the SSH client MobaXterm to transfer the files **src.tar** and **.typerc** from the Raspberry Pi system directory `/home/pi/docker/tmp` to your local PC.
 
-<img src="../_static/media/chapter_6/section_1/media/image41.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/image41.png" style="width:500px" class="common_img"/>
 
 If you cannot find the **.typerc** file, enable **Show Hidden Files** in the file manager.
 
-<img src="../_static/media/chapter_6/section_1/media/image42.png" style="width:300px" class="common_img"/>
+<img src="../_static/media/chapter_6/image42.png" style="width:300px" class="common_img"/>
 
 For details on connecting with MobaXterm,, please refer to [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration).
 
 Import Files into the Virtual Machine
 
-(1) In the virtual machine, click the desktop icon <img src="../_static/media/chapter_6/section_1/media/image43.png" style="width:30px"/> to open a terminal. By default, it starts in the **/home** directory.
+(1) In the virtual machine, click the desktop icon <img src="../_static/media/chapter_6/image43.png" style="width:30px"/> to open a terminal. By default, it starts in the **/home** directory.
 
-<img src="../_static/media/chapter_6/section_1/media/image44.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/image44.png" style="width:500px" class="common_img"/>
 
 (2) Drag and drop the exported files **.typerc** and **src.tar** in section Export Files from the Robot from your PC into the virtual machine.
 
-<img src="../_static/media/chapter_6/section_1/media/image45.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/image45.png" style="width:500px" class="common_img"/>
 
 3. Create and Build the Workspace
 
-(1) On the virtual machine, click the desktop icon <img src="../_static/media/chapter_6/section_1/media/image46.png" style="width:30px"/> to open a terminal.
+(1) On the virtual machine, click the desktop icon <img src="../_static/media/chapter_6/image46.png" style="width:30px"/> to open a terminal.
 
 (2) Enter the command to create the workspace directory:
 
@@ -1451,7 +1451,7 @@ cd ~/ros2_ws
 ls -a
 ```
 
-<img src="../_static/media/chapter_6/section_1/media/image51.png" class="common_img"/>
+<img src="../_static/media/chapter_6/image51.png" class="common_img"/>
 
 (7) Build the workspace:
 
@@ -1473,11 +1473,11 @@ source /home/ubuntu/ros2_ws/.typerc
 source /home/ubuntu/ros2_ws/install/setup.bash
 ```
 
-<img src="../_static/media/chapter_6/section_1/media/image54.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/image54.png" style="width:500px" class="common_img"/>
 
 (9) After editing, save and close the file by pressing **Ctrl + S** or clicking **Save** at the top right.
 
-<img src="../_static/media/chapter_6/section_1/media/image55.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/image55.png" style="width:500px" class="common_img"/>
 
 (10) Refresh the environment settings:
 
@@ -1485,11 +1485,11 @@ source /home/ubuntu/ros2_ws/install/setup.bash
 source ~/.bashrc
 ```
 
-<img src="../_static/media/chapter_6/section_1/media/image56.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/image56.png" style="width:500px" class="common_img"/>
 
 4. Configure the Robot for LAN Mode
 
-(1) On the VNC desktop, open the terminal <img src="../_static/media/chapter_6/section_1/media/image57.png" style="width:30px"/> and navigate to the `wifi_manager` directory:
+(1) On the VNC desktop, open the terminal <img src="../_static/media/chapter_6/image57.png" style="width:30px"/> and navigate to the `wifi_manager` directory:
 
 ```
 cd ~/wifi_manager
@@ -1501,11 +1501,11 @@ cd ~/wifi_manager
 gedit wifi_manager/wifi_conf.py
 ```
 
-<img src="../_static/media/chapter_6/section_1/media/image60.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/image60.png" style="width:500px" class="common_img"/>
 
 (3) After editing, save and close the file by pressing **Ctrl + S** or clicking **Save** at the top right.
 
-<img src="../_static/media/chapter_6/section_1/media/image61.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/image61.png" style="width:500px" class="common_img"/>
 
 (4) Enter the command to restart the network or reboot the robot. It is recommand to perform a full reboot. After the robot restarts, check the IP address using the mobile app or the Wi-Fi router interface to ensure connectivity.
 
@@ -1517,29 +1517,29 @@ sudo systemctl restart wifi.service
 
  Virtual Machine:
 
-<img src="../_static/media/chapter_6/section_1/media/image63.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/image63.png" style="width:500px" class="common_img"/>
 
  Robot:
 
-<img src="../_static/media/chapter_6/section_1/media/image64.png" style="width:700px" class="common_img"/>
+<img src="../_static/media/chapter_6/image64.png" style="width:700px" class="common_img"/>
 
-<img src="../_static/media/chapter_6/section_1/media/image65.png" style="width:700px" class="common_img"/>
+<img src="../_static/media/chapter_6/image65.png" style="width:700px" class="common_img"/>
 
-(6) After rebooting, open the robot's ROS 2 terminal from the desktop <img src="../_static/media/chapter_6/section_1/media/image22.png" style="width:30px"/>. Verify that the `ROS_DOMAIN_ID` matches the virtual machine, for example 0.
+(6) After rebooting, open the robot's ROS 2 terminal from the desktop <img src="../_static/media/chapter_6/image22.png" style="width:30px"/>. Verify that the `ROS_DOMAIN_ID` matches the virtual machine, for example 0.
 
 Robot:
 
-<img src="../_static/media/chapter_6/section_1/media/image66.png" style="width:700px" class="common_img"/>
+<img src="../_static/media/chapter_6/image66.png" style="width:700px" class="common_img"/>
 
 Virtual Machine:
 
-<img src="../_static/media/chapter_6/section_1/media/image67.png" style="width:700px" class="common_img"/>
+<img src="../_static/media/chapter_6/image67.png" style="width:700px" class="common_img"/>
 
 * **SLAM Mapping Steps**
 
 1. On the Robot
 
-(1) Click the terminal icon <img src="../_static/media/chapter_6/section_1/media/image22.png" style="width:30px"/> in the system desktop to open a command-line window.
+(1) Click the terminal icon <img src="../_static/media/chapter_6/image22.png" style="width:30px"/> in the system desktop to open a command-line window.
 
 (2) Enter the command to disable the app auto-start service.
 
@@ -1555,7 +1555,7 @@ ros2 launch slam slam.launch.py
 
 2. On the Virtual Machine
 
-(1) On the virtual machine, click the desktop icon <img src="../_static/media/chapter_6/section_1/media/image46.png" style="width:30px"/> to open a terminal.
+(1) On the virtual machine, click the desktop icon <img src="../_static/media/chapter_6/image46.png" style="width:30px"/> to open a terminal.
 
 (2) Launch RViz to visualize the mapping results:
 
@@ -1563,11 +1563,11 @@ ros2 launch slam slam.launch.py
 ros2 launch slam rviz_slam.launch.py
 ```
 
-<img src="../_static/media/chapter_6/section_1/media/image70.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/image70.png" style="width:500px" class="common_img"/>
 
 3. Enable Keyboard Control on the Robot
 
-(1) Click the terminal icon <img src="../_static/media/chapter_6/section_1/media/image22.png" style="width:30px"/> in the system desktop to open a command-line window.
+(1) Click the terminal icon <img src="../_static/media/chapter_6/image22.png" style="width:30px"/> in the system desktop to open a command-line window.
 
 (2) Start the keyboard control node by entering the following command and pressing Enter:
 
@@ -1577,7 +1577,7 @@ ros2 launch peripherals teleop_key_control.launch.py
 
 If the prompt shown below appears, the keyboard control service has started successfully.
 
-<img src="../_static/media/chapter_6/section_1/media/image72.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/image72.png" style="width:500px" class="common_img"/>
 
 (3) Use the keyboard to drive the robot around the environment to build a more complete map. The table below lists the keyboard keys that can be used to control the robot's movement and their corresponding functions.
 
@@ -1592,7 +1592,7 @@ If the prompt shown below appears, the keyboard control service has started succ
 
 * **Saving the Map**
 
-1)  Click the terminal icon <img src="../_static/media/chapter_6/section_1/media/image22.png" style="width:30px"/> in the system desktop to open a command-line window.
+1)  Click the terminal icon <img src="../_static/media/chapter_6/image22.png" style="width:30px"/> in the system desktop to open a command-line window.
 
 2)  Save the map by entering the following command and pressing **Enter**:
 
@@ -1614,7 +1614,7 @@ For detailed explanations about the parameters, please refer to the official doc
 
 * **launch File Analysis**
 
-<img src="../_static/media/chapter_6/section_1/media/image74.png"  style="width:400px" class="common_img"/>
+<img src="../_static/media/chapter_6/image74.png"  style="width:400px" class="common_img"/>
 
 The launch file is located at: `/home/ubuntu/ros2_ws/src/slam/launch/slam.launch.py`
 
@@ -1624,19 +1624,19 @@ Detailed explanations for launch library can be found in the official ROS docume
 
 <https://docs.ros.org/en/humble/How-To-Guides/Launching-composable-nodes.html>
 
-<img src="../_static/media/chapter_6/section_1/media/image75.png" style="width:700px" class="common_img"/>
+<img src="../_static/media/chapter_6/image75.png" style="width:700px" class="common_img"/>
 
 2. Setting Paths
 
 Use `get_package_share_directory` to obtain the path of the **slam** package.
 
-<img src="../_static/media/chapter_6/section_1/media/image76.png" style="width:700px" class="common_img"/>
+<img src="../_static/media/chapter_6/image76.png" style="width:700px" class="common_img"/>
 
 3. Starting Other Launch Files
 
-<img src="../_static/media/chapter_6/section_1/media/image77.png" style="width:700px" class="common_img"/>
+<img src="../_static/media/chapter_6/image77.png" style="width:700px" class="common_img"/>
 
-<img src="../_static/media/chapter_6/section_1/media/image78.png" style="width:700px" class="common_img"/>
+<img src="../_static/media/chapter_6/image78.png" style="width:700px" class="common_img"/>
 
 `base_launch` – Launches the hardware required by the program.
 
@@ -1660,7 +1660,7 @@ Once features are extracted from images, they must be matched across different t
 
 During operation, the RTAB-VSLAM algorithm first updates the robot's pose and map using STM, and when future data matches LTM, the corresponding LTM data is incorporated into STM to further update the pose and the map.
 
-<img src="../_static/media/chapter_6/section_1/media/image21 (1).png" style="width:600px" class="common_img"/>
+<img src="../_static/media/chapter_6/image21 (1).png" style="width:600px" class="common_img"/>
 
 **RTAB-VSLAM** software resources: <https://github.com/introlab/rtabmap>
 
@@ -1668,7 +1668,7 @@ During operation, the RTAB-VSLAM algorithm first updates the robot's pose and ma
 
 1. On the Robot
 
-(1) Click the terminal icon <img src="../_static/media/chapter_6/section_1/media/image22.png" style="width:30px"/> in the system desktop to open a command-line window.
+(1) Click the terminal icon <img src="../_static/media/chapter_6/image22.png" style="width:30px"/> in the system desktop to open a command-line window.
 
 (2) Enter the command to disable the app auto-start service.
 
@@ -1684,7 +1684,7 @@ ros2 launch slam rtabmap_slam.launch.py
 
 2. On the Virtual Machine
 
-(1) Click the terminal icon <img src="../_static/media/chapter_6/section_1/media/image46.png" style="width:30px"/> in the system desktop to open a command-line window.
+(1) Click the terminal icon <img src="../_static/media/chapter_6/image46.png" style="width:30px"/> in the system desktop to open a command-line window.
 
 (2) Launch RViz to visualize the mapping results:
 
@@ -1692,11 +1692,11 @@ ros2 launch slam rtabmap_slam.launch.py
 ros2 launch slam rviz_rtabmap.launch.py
 ```
 
-<img src="../_static/media/chapter_6/section_1/media/image81.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/image81.png" style="width:500px" class="common_img"/>
 
 3. Enable Keyboard Control on the Robot
 
-(1) Click the terminal icon <img src="../_static/media/chapter_6/section_1/media/image22.png" style="width:30px"/> in the system desktop to open a command-line window.
+(1) Click the terminal icon <img src="../_static/media/chapter_6/image22.png" style="width:30px"/> in the system desktop to open a command-line window.
 
 (2) Start the keyboard control node by entering the following command and pressing Enter:
 
@@ -1706,7 +1706,7 @@ ros2 launch peripherals teleop_key_control.launch.py
 
 If the prompt shown below appears, the keyboard control service has started successfully.
 
-<img src="../_static/media/chapter_6/section_1/media/image72.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/image72.png" style="width:500px" class="common_img"/>
 
 (3) Use the keyboard to drive the robot around the environment to build a more complete map. The table below lists the keyboard keys that can be used to control the robot's movement and their corresponding functions.
 
@@ -1733,7 +1733,7 @@ After completing the mapping, press **Ctrl + C** in each terminal window to stop
 
 * **Launch File Analysis**
 
-<img src="../_static/media/chapter_6/section_1/media/image82.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/image82.png" style="width:500px" class="common_img"/>
 
 The launch file is located at: `/home/ubuntu/ros2_ws/src/slam/launch/rtabmap_slam.launch.py`
 
@@ -1743,17 +1743,17 @@ Detailed explanations for launch library can be found in the official ROS docume
 
 <https://docs.ros.org/en/humble/How-To-Guides/Launching-composable-nodes.html>
 
-<img src="../_static/media/chapter_6/section_1/media/image83.png" style="width:700px" class="common_img"/>
+<img src="../_static/media/chapter_6/image83.png" style="width:700px" class="common_img"/>
 
 **2. Setting Paths**
 
 Use `get_package_share_directory` to obtain the path of the **slam** package.
 
-<img src="../_static/media/chapter_6/section_1/media/image84.png" style="width:700px" class="common_img"/>
+<img src="../_static/media/chapter_6/image84.png" style="width:700px" class="common_img"/>
 
 **3. Starting Other Launch Files**
 
-<img src="../_static/media/chapter_6/section_1/media/image85.png" style="width:700px" class="common_img"/>
+<img src="../_static/media/chapter_6/image85.png" style="width:700px" class="common_img"/>
 
 `base_launch` – Launches the hardware required by the program.
 
@@ -1775,7 +1775,7 @@ Marine applications include ocean shipping, inland waterway transport, ship dock
 
 Aerial applications include route navigation, airport traffic monitoring, and precision approaches.
 
-<img src="../_static/media/chapter_6/section_1/media/image86.png" style="width:400px" class="common_img"/>
+<img src="../_static/media/chapter_6/image86.png" style="width:400px" class="common_img"/>
 
 Following the ROS principle of “don't reinvent the wheel,” its navigation-related packages provide a general-purpose implementation for robot navigation, allowing developers to focus on higher-level functionalities instead of dealing with complex, low-level details such as navigation algorithms or hardware interactions. These implementations are managed, iterated, and maintained by professional teams, and to use the navigation features, developers only need to configure the module settings according to their robot's parameters. Additionally, existing packages can be extended or customized to meet specific requirements, significantly improving R&D efficiency and shortening the time to product deployment.
 
@@ -1791,7 +1791,7 @@ The Nav2 project inherits and extends the philosophy of the ROS Navigation Stack
 
 Nav2 uses behavior trees (BT) to invoke modular servers to perform specific actions. These actions can include path computation, force control, recovery operations, or any other navigation-related tasks. Each action is executed as an independent node that communicates with the behavior tree through ROS Action servers. The figure below provides an overview of the Nav2 architecture.
 
-<img src="../_static/media/chapter_6/section_1/media/image87.png" style="width:500px"  class="common_img"/>
+<img src="../_static/media/chapter_6/image87.png" style="width:500px"  class="common_img"/>
 
 This architecture can be conceptually divided into one main component and three subordinate components for easier understanding.
 
@@ -1873,9 +1873,9 @@ Global and local localization establish a dynamic tf transform chain between map
 
 The Monte Carlo localization process can be illustrated using a one-dimensional robot's particle update. First, a set of particles is randomly generated. Each particle may represent variables such as position, orientation, or other states to be estimated, and each is assigned a weight that indicates how closely it matches the robot's actual state. Then, the next state of each particle is predicted, and the particles are moved according to the expected behavior of the real system. After that, the particle weights are updated based on measurements, with particles that better match the observed data being assigned higher weights. The particles are then resampled, discarding those that are highly unlikely and replacing them with more probable ones. Finally, the weighted mean and covariance of the particle set are computed to obtain the estimated state.
 
-<img src="../_static/media/chapter_6/section_1/media/image91.png"  class="common_img"/>
+<img src="../_static/media/chapter_6/image91.png"  class="common_img"/>
 
-<img src="../_static/media/chapter_6/section_1/media/image92.png"  class="common_img"/>
+<img src="../_static/media/chapter_6/image92.png"  class="common_img"/>
 
 Although different Monte Carlo methods vary, they generally follow a specific pattern:
 
@@ -1909,13 +1909,13 @@ Whether the SLAM map is generated by a Lidar or a depth camera in 2D or 3D, it c
 
 Before diving into costmap_2d, it is important to introduce the Bresenham algorithm. The Bresenham line algorithm is used to draw a straight line defined by two points, calculating the closest rasterized points along the line in an n-dimensional grid. The algorithm relies only on fast integer operations such as addition, subtraction, and bit shifting, and is widely used in computer graphics for line rendering. It was one of the earliest algorithms developed in this field.
 
-<img src="../_static/media/chapter_6/section_1/media/image93.png" style="width:400px" class="common_img"/>
+<img src="../_static/media/chapter_6/image93.png" style="width:400px" class="common_img"/>
 
 When constructing the costmap, a set of virtual grid lines is drawn through the center of each row and column of pixels as shown in the figure. The algorithm then calculates the intersections of the line segment with the vertical grid lines in sequence from the start point to the end point, and based on the sign of the error term, determines which pixel in that column is closest to the intersection.
 
 The core idea of the algorithm assumes that k = dy/dx. Since the line starts at a pixel center, the initial error term is d0 = 0. Each time the x-index increases by 1, the error value d increments by the slope value k, i.e., d = d + k. Whenever d ≥ 1, subtract 1 to keep d within 0 and 1. If d ≥ 0.5, the closest pixel is the one at the upper-right (x+1, y+1). If d < 0.5, the closest pixel is the one directly to the right (x+1, y). For convenience, let e = d – 0.5, with an initial value of -0.5 and an increment of k. When e ≥ 0, the algorithm selects the upper-right pixel (x+1, y+1). When e < 0, it selects the right pixel (x+1, y). To simplify calculations, integer arithmetic can be used to avoid division. Since the algorithm only depends on the sign of the error term, it can be reformulated as e1 = 2 \* e \* dx.
 
-<img src="../_static/media/chapter_6/section_1/media/image94.png" style="width:400px" class="common_img"/>
+<img src="../_static/media/chapter_6/image94.png" style="width:400px" class="common_img"/>
 
 The Costmap2D class maintains the cost values for each grid cell. The Layer class serves as a virtual base class that unifies the interface for all costmap plugin layers. The most important interface functions include:
 
@@ -1933,7 +1933,7 @@ For the `ObstacleLayer` class, sensor data in `clearing_observations` is travers
 
 The `CostmapLayer` class inherits from both the `Layer` class and the `Costmap2D` class, and provides several methods for updating `cost` values. Both the `StaticLayer` class and the `ObstacleLayer` class need to maintain the `cost` values of the instantiated costmap layer, so they both inherit from the `CostmapLayer` class. The `StaticLayer` class updates its `costmap` using static grid map data. The `ObstacleLayer` class updates its `costmap` using sensor data. Compared with the `ObstacleLayer` class, the `VoxelLayer` class additionally considers data along the z-axis. The difference in effect mainly lies in obstacle clearing. One works on a 2D plane, while the other performs clearing in 3D space.
 
-<img src="../_static/media/chapter_6/section_1/media/image95.png" style="width:450px" class="common_img"/>
+<img src="../_static/media/chapter_6/image95.png" style="width:450px" class="common_img"/>
 
 The costmap is highly flexible in representing obstacles, allowing specific layers to be created as needed to maintain obstacle information of interest. If the robot is equipped only with a Lidar, an **Obstacles** layer should be created to maintain the obstacle information detected by Lidar scans. If the robot is additionally equipped with ultrasonic sensor, a **Sonar** layer should be created to maintain the obstacle information detected by sonar scans. Each layer can define its own obstacle update rules, such as adding obstacles, removing obstacles, or updating the confidence level of obstacle points, which greatly enhances the scalability of the navigation system.
 
@@ -1941,13 +1941,13 @@ The costmap is highly flexible in representing obstacles, allowing specific laye
 
 Depending on the robot's understanding of the environment, the nature of the environment, and the algorithm being used, path planning can generally be classified into environment-based algorithms, map-knowledge-based algorithms, and completeness-based algorithms.
 
-<img src="../_static/media/chapter_6/section_1/media/image96.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/image96.png" style="width:500px" class="common_img"/>
 
 In autonomous navigation, commonly used path planning algorithms include Dijkstra, A\*, D\*, PRM, RRT, genetic algorithms, ant colony algorithms, and fuzzy algorithms.
 
 Among these, Dijkstra and A\* are graph-based search algorithms. ROS navigation packages integrate several global path planning plugins such as navfn, global planner, and carrot planner. You can select one of these plugins to load into move_base, or they can use third-party global planning plugins, such as SBPL_Lattice_Planner and srl_global_planner, or even develop your own plugins in compliance with the nav_core interface.
 
-<img src="../_static/media/chapter_6/section_1/media/image97.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/image97.png" style="width:500px" class="common_img"/>
 
 Path planning enables a mobile robot to autonomously reach the target point. The navigation planning framework can be divided into three layers.
 
@@ -1967,19 +1967,19 @@ Illustration of the algorithm process:
 
 (1) At the beginning, set `dis\[start\] = 0` and initialize all other nodes to `inf`.
 
-<img src="../_static/media/chapter_6/section_1/media/image98.png" style="width:400px" class="common_img"/>
+<img src="../_static/media/chapter_6/image98.png" style="width:400px" class="common_img"/>
 
 (2) In the first iteration, the node with the smallest `distance` value, node 1, is selected and marked as visited. Then, the `distance` values of all blue nodes connected to node 1 are updated, resulting in `dis[2] = 2`, `dis[3] = 4`, and `dis[4] = 7`.
 
-<img src="../_static/media/chapter_6/section_1/media/image99.png" style="width:400px" class="common_img"/>
+<img src="../_static/media/chapter_6/image99.png" style="width:400px" class="common_img"/>
 
 (3) In the second iteration, the node with the smallest `distance` value, node 2, is selected and marked as visited. The distance values of all unvisited nodes connected to node 2 are then updated, resulting in `dis[3] = 3` and `dis[5] = 4`.
 
-<img src="../_static/media/chapter_6/section_1/media/image100.png" style="width:400px" class="common_img"/>
+<img src="../_static/media/chapter_6/image100.png" style="width:400px" class="common_img"/>
 
 (4) In the third iteration, the node with the smallest `distance` value, node 3, is selected and marked as visited. The distance values of all unvisited nodes connected to node 3 are then updated, resulting in `dis[4] = 4`.
 
-<img src="../_static/media/chapter_6/section_1/media/image101.png" style="width:400px" class="common_img"/>
+<img src="../_static/media/chapter_6/image101.png" style="width:400px" class="common_img"/>
 
 (5) In the following two iterations, nodes 4 and 5 are marked as visited, and the algorithm terminates, yielding the shortest paths to all nodes.
 
@@ -1993,11 +1993,11 @@ The A\* algorithm uses the formula F = G + H, where G represents the cost to mov
 
 \(1\) Calculate the horizontal and vertical movement distances only, using the Manhattan distance method, without considering diagonal movement.
 
-<img src="../_static/media/chapter_6/section_1/media/image102.png"  class="common_img"/>
+<img src="../_static/media/chapter_6/image102.png"  class="common_img"/>
 
 \(2\) Calculate the horizontal and vertical movement distances while allowing diagonal movement, using the diagonal distance method.
 
-<img src="../_static/media/chapter_6/section_1/media/image103.png" style="width:300px" class="common_img"/>
+<img src="../_static/media/chapter_6/image103.png" style="width:300px" class="common_img"/>
 
 For more details on the A\* algorithm and its usage, please visit the Wiki: [http://wiki.ros.org/global-planner](http://wiki.ros.org/global-planner) and the Red Blob Games website: [https://www.redblobgames.com/pathfinding/a-star/introduction.html#graphs](https://www.redblobgames.com/pathfinding/a-star/introduction.html#graphs).
 
@@ -2011,7 +2011,7 @@ Global path planning takes the start point and the goal point as input and uses 
 
 The DWA algorithm, also known as the Dynamic Window Approach, is a classical method for mobile robot path planning and motion control. The algorithm searches for the optimal combination of linear and angular velocities within the velocity space to ensure safe navigation on a known map. The following is a basic description of the DWA algorithm along with some formulas:
 
-<img src="../_static/media/chapter_6/section_1/media/image104.png" style="width:500px"  class="common_img"/>
+<img src="../_static/media/chapter_6/image104.png" style="width:500px"  class="common_img"/>
 
 The core idea of DWA is that at each moment, the robot considers its current state and sensor information, then generates a set of possible motion trajectories in the velocity and angular velocity space, called the dynamic window, and evaluates these trajectories to select the best one. Evaluation criteria usually include obstacle avoidance, maximizing forward speed, and minimizing angular velocity. By continuously repeating this process, the robot can plan its motion trajectory in real time to handle dynamic environments and obstacles.
 
@@ -2055,7 +2055,7 @@ The variables x(t) and y(t) represent the robot's position, θ(t) represents the
 
 **\(4\) Minimum angular velocity evaluation:** Checks whether the minimum angular velocity along the trajectory is within the allowed range.
 
-<img src="../_static/media/chapter_6/section_1/media/image105.png"   class="common_img"/>
+<img src="../_static/media/chapter_6/image105.png"   class="common_img"/>
 
 **3. Extensions**
 
@@ -2087,15 +2087,15 @@ The TEB (Timed Elastic Band) algorithm is a method used for path planning and mo
 
 **\(4\) Optimization solving:** TEB uses optimization techniques, such as quadratic programming (QP) or nonlinear programming (NLP), to compute the optimal trajectory parameters while satisfying all constraints.
 
-<img src="../_static/media/chapter_6/section_1/media/image106.png" style="width:400px" class="common_img"/>
+<img src="../_static/media/chapter_6/image106.png" style="width:400px" class="common_img"/>
 
-<img src="../_static/media/chapter_6/section_1/media/image107.png" style="width:400px" class="common_img"/>
+<img src="../_static/media/chapter_6/image107.png" style="width:400px" class="common_img"/>
 
 **2. Formulas**
 
 The figure below illustrates the objective function used in the TEB algorithm:
 
-<img src="../_static/media/chapter_6/section_1/media/image108.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/image108.png" style="width:500px" class="common_img"/>
 
 For more details:
 
@@ -2125,7 +2125,7 @@ Robot trajectory: x(t)=\[p(t),v(t)\], representing the robot's state at time t.
 
 The core of the TEB algorithm is an optimization problem, with the goal of minimizing an objective function composed of multiple components:
 
-<img src="../_static/media/chapter_6/section_1/media/image109.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/image109.png" style="width:500px" class="common_img"/>
 
 J<sub>smooth</sub>(x): The smoothness objective, used to ensure that the generated trajectory is smooth.
 
@@ -2137,7 +2137,7 @@ J<sub>dynamic</sub>(x): The dynamics objective, used to ensure that the trajecto
 
 The smoothness objective typically involves the curvature of the trajectory to ensure it is smooth. It can be expressed as:
 
-<img src="../_static/media/chapter_6/section_1/media/image110.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/image110.png" style="width:500px" class="common_img"/>
 
 where k(t) represents the curvature.
 
@@ -2145,7 +2145,7 @@ where k(t) represents the curvature.
 
 The obstacle avoidance objective calculates the distance between trajectory points and obstacles, penalizing points that are too close to obstacles. The specific obstacle cost function f(x,o) can be customized according to the application requirements.
 
-<img src="../_static/media/chapter_6/section_1/media/image111.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/image111.png" style="width:500px" class="common_img"/>
 
 **(5) Dynamics Objective J<sub>dynamic</sub>(x):**
 
@@ -2157,7 +2157,7 @@ Finally, the TEB algorithm formulates the above objective functions as a constra
 
 **3. Extensions**
 
-<img src="../_static/media/chapter_6/section_1/media/image112.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/image112.png" style="width:500px" class="common_img"/>
 
 Resources and learning links for the TEB algorithm:
 
@@ -2181,7 +2181,7 @@ Virtual Machine and Robot Connection Configuration: Refer to [4.2 Mapping and Na
 
 * **On the Robot**
 
-1)  Click the terminal icon <img src="../_static/media/chapter_6/section_1/media/image113.png" style="width:30px" /> in the system desktop to open a command-line window.
+1)  Click the terminal icon <img src="../_static/media/chapter_6/image113.png" style="width:30px" /> in the system desktop to open a command-line window.
 
 2)  Enter the command to disable the app auto-start service.
 
@@ -2199,7 +2199,7 @@ The `map_01` at the end of the command is the map name and can be modified accor
 
 * **On the Virtual Machine**
 
-1)  On the virtual machine, click the desktop icon <img src="../_static/media/chapter_6/section_1/media/image46.png" style="width:30px"/> to open a terminal.
+1)  On the virtual machine, click the desktop icon <img src="../_static/media/chapter_6/image46.png" style="width:30px"/> to open a terminal.
 
 2)  Enter the following command to launch RViz and visualize navigation:
 
@@ -2207,47 +2207,47 @@ The `map_01` at the end of the command is the map name and can be modified accor
 ros2 launch navigation rviz_navigation.launch.py
 ```
 
-<img src="../_static/media/chapter_6/section_1/media/image116.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/image116.png" style="width:500px" class="common_img"/>
 
 **1. Single-Point Navigation**
 
 In the software menu bar, **2D Pose Estimate** is used to set LanderPi's initial position, **2D Nav Goal** is used to set a single target point, and **Publish Point** is used to set multiple target points.
 
-<img src="../_static/media/chapter_6/section_1/media/image117.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/image117.png" style="width:500px" class="common_img"/>
 
-(1) To set the robot's initial position, click <img src="../_static/media/chapter_6/section_1/media/image118.png" style="width:100px"/> to choose a location on the map, and drag the mouse to select the robot's pose.
+(1) To set the robot's initial position, click <img src="../_static/media/chapter_6/image118.png" style="width:100px"/> to choose a location on the map, and drag the mouse to select the robot's pose.
 
-<img src="../_static/media/chapter_6/section_1/media/image119.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/image119.png" style="width:500px" class="common_img"/>
 
 (2) After setting the initial position, the effect is shown as in the figure below.
 
-<img src="../_static/media/chapter_6/section_1/media/image120.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/image120.png" style="width:500px" class="common_img"/>
 
-(3) Click the icon<img src="../_static/media/chapter_6/section_1/media/image121.png" />, then select a location on the map as the target point and simply click once at that point with the mouse. Once the target is selected, the robot will automatically generate a route and move toward the target point.
+(3) Click the icon<img src="../_static/media/chapter_6/image121.png" />, then select a location on the map as the target point and simply click once at that point with the mouse. Once the target is selected, the robot will automatically generate a route and move toward the target point.
 
-<img src="../_static/media/chapter_6/section_1/media/image122.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/image122.png" style="width:500px" class="common_img"/>
 
 (4) After the target is set, the map will display two paths: the green line represents the straight-line path from the robot to the target, while the dark blue line shows the robot's planned trajectory.
 
-<img src="../_static/media/chapter_6/section_1/media/image123.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/image123.png" style="width:500px" class="common_img"/>
 
 (5) When encountering obstacles, the robot will navigate around them, continuously adjusting its orientation and following the updated path.
 
-<img src="../_static/media/chapter_6/section_1/media/image124.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/image124.png" style="width:500px" class="common_img"/>
 
 **2. Multi-Point Navigation**
 
 (1) Click the **Waypoint** button to start multi-point navigation.
 
-<img src="../_static/media/chapter_6/section_1/media/image125.png" style="width:400px" class="common_img"/>
+<img src="../_static/media/chapter_6/image125.png" style="width:400px" class="common_img"/>
 
-(2) Set each navigation point <img src="../_static/media/chapter_6/section_1/media/image126.png" /> as shown in the figure.
+(2) Set each navigation point <img src="../_static/media/chapter_6/image126.png" /> as shown in the figure.
 
-<img src="../_static/media/chapter_6/section_1/media/image127.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/image127.png" style="width:500px" class="common_img"/>
 
 (3) Finally, click **Start Waypoint Following** to have the robot move sequentially through the set target points.
 
-<img src="../_static/media/chapter_6/section_1/media/image128.png" style="width:400px"  class="common_img"/>
+<img src="../_static/media/chapter_6/image128.png" style="width:400px"  class="common_img"/>
 
 > [!NOTE]
 >
@@ -2255,25 +2255,25 @@ In the software menu bar, **2D Pose Estimate** is used to set LanderPi's initial
 
 (4) The multi-point navigation process is illustrated in the figure below, showing the robot visiting each target point in order.
 
-<img src="../_static/media/chapter_6/section_1/media/image129.png" class="common_img"/>
+<img src="../_static/media/chapter_6/image129.png" class="common_img"/>
 
 (5) The final result after completing multi-point navigation is shown in the following figure.
 
-<img src="../_static/media/chapter_6/section_1/media/image130.png" class="common_img"/>
+<img src="../_static/media/chapter_6/image130.png" class="common_img"/>
 
 * **launch File Analysis**
 
-<img src="../_static/media/chapter_6/section_1/media/image131.png" style="width:800px" class="common_img"/>
+<img src="../_static/media/chapter_6/image131.png" style="width:800px" class="common_img"/>
 
 The launch file is located at: `/home/ubuntu/ros2_ws/src/navigation/launch/navigation.launch.py`
 
-<img src="../_static/media/chapter_6/section_1/media/image132.png" style="width:800px" class="common_img"/>
+<img src="../_static/media/chapter_6/image132.png" style="width:800px" class="common_img"/>
 
 **1. Setting Paths**
 
 Obtain the paths for the **slam** and **navigation** packages.
 
-<img src="../_static/media/chapter_6/section_1/media/image133.png" style="width:800px" class="common_img"/>
+<img src="../_static/media/chapter_6/image133.png" style="width:800px" class="common_img"/>
 
 **2. Starting Other Launch Files**
 
@@ -2283,25 +2283,25 @@ Obtain the paths for the **slam** and **navigation** packages.
 
 `bringup_launch`: Initializes the robot's actions.
 
-<img src="../_static/media/chapter_6/section_1/media/image134.png" style="width:800px" class="common_img"/>
+<img src="../_static/media/chapter_6/image134.png" style="width:800px" class="common_img"/>
 
 * **Package** 
 
 The navigation package path is `ros2_ws/src/navigation/`.
 
-<img src="../_static/media/chapter_6/section_1/media/image135.png" style="width:800px" class="common_img"/>
+<img src="../_static/media/chapter_6/image135.png" style="width:800px" class="common_img"/>
 
 **config**: Contains configuration parameters related to navigation, as shown below.
 
-<img src="../_static/media/chapter_6/section_1/media/image136.png" class="common_img"/>
+<img src="../_static/media/chapter_6/image136.png" class="common_img"/>
 
 **launch**: Contains launch files related to navigation, including localization, map loading, and different navigation modes, as shown below.
 
-<img src="../_static/media/chapter_6/section_1/media/image137.png" style="width:800px" class="common_img"/>
+<img src="../_static/media/chapter_6/image137.png" style="width:800px" class="common_img"/>
 
 **rviz**: Contains RViz visualization configuration files, including robot RViz setups for different navigation algorithms and navigation-specific configuration files.
 
-<img src="../_static/media/chapter_6/section_1/media/image138.png" style="width:800px" class="common_img"/>
+<img src="../_static/media/chapter_6/image138.png" style="width:800px" class="common_img"/>
 
 **package.xml:** The configuration file for the current package.
 
@@ -2315,7 +2315,7 @@ For an introduction and explanation of the RTAB-VSLAM algorithm, please refer to
 
 1)  Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration).
 
-2)  Click the terminal icon <img src="../_static/media/chapter_6/section_1/media/image113.png" style="width:30px"/> in the system desktop to open a ROS2 command-line window.
+2)  Click the terminal icon <img src="../_static/media/chapter_6/image113.png" style="width:30px"/> in the system desktop to open a ROS2 command-line window.
 
 3)  Enter the command to disable the app auto-start service.
 
@@ -2335,7 +2335,7 @@ ros2 launch navigation rtabmap_navigation.launch.py
 >
 > **Before proceeding, you need to complete the relevant steps described in [4.2 Mapping and Navigation Setup](#anchor_6_1_4_3).**
 
-1)  On the virtual machine, click the desktop icon <img src="../_static/media/chapter_6/section_1/media/image46.png" style="width:30px"/> to open a terminal.
+1)  On the virtual machine, click the desktop icon <img src="../_static/media/chapter_6/image46.png" style="width:30px"/> to open a terminal.
 
 2)  Enter the following command to launch RViz and visualize navigation:
 
@@ -2345,37 +2345,37 @@ ros2 launch navigation rviz_rtabmap_navigation.launch.py
 
 3)  Enter the command to launch RViz and display navigation. Click **Download graph** to load the 3D map, then click **OK** to confirm.
 
-<img src="../_static/media/chapter_6/section_1/media/image141.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/image141.png" style="width:500px" class="common_img"/>
 
 In the software menu bar, **2D Nav Goal** is used to set a single navigation goal for the robot, while **Publish Point** is used to set multiple navigation goals.
 
-<img src="../_static/media/chapter_6/section_1/media/image142.png"  class="common_img"/>
+<img src="../_static/media/chapter_6/image142.png"  class="common_img"/>
 
-4. Click the icon <img src="../_static/media/chapter_6/section_1/media/image121.png" />, then select a location on the map as the target point and simply click once at that point with the mouse. Once the target is selected, the robot will automatically generate a route and move toward the target point
+4. Click the icon <img src="../_static/media/chapter_6/image121.png" />, then select a location on the map as the target point and simply click once at that point with the mouse. Once the target is selected, the robot will automatically generate a route and move toward the target point
 
-   <img src="../_static/media/chapter_6/section_1/media/image143.png" style="width:500px" class="common_img"/>
+   <img src="../_static/media/chapter_6/image143.png" style="width:500px" class="common_img"/>
 
 5. Once the target point is set, the map will display two paths: the line formed by blue squares represents the straight-line path from the robot to the target, while the dark blue line represents the robot's planned path.
 
-<img src="../_static/media/chapter_6/section_1/media/image144.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/image144.png" style="width:500px" class="common_img"/>
 
 6)  When encountering obstacles, the robot will navigate around them, continuously adjusting its orientation and following the updated path.
 
 * **launch File Analysis**
 
-<img src="../_static/media/chapter_6/section_1/media/image131.png" style="width:800px" class="common_img"/>
+<img src="../_static/media/chapter_6/image131.png" style="width:800px" class="common_img"/>
 
 The launch file is located at:
 
 `/home/ubuntu/ros2_ws/src/navigation/launch/rtabmap_navigation.launch.py`
 
-<img src="../_static/media/chapter_6/section_1/media/image145.png" style="width:800px" class="common_img"/>
+<img src="../_static/media/chapter_6/image145.png" style="width:800px" class="common_img"/>
 
 **1. Setting Paths**
 
 Obtain the paths for the **slam** and **navigation** packages.
 
-<img src="../_static/media/chapter_6/section_1/media/image146.png" style="width:800px" class="common_img"/>
+<img src="../_static/media/chapter_6/image146.png" style="width:800px" class="common_img"/>
 
 **2. Starting Other Launch Files**
 
@@ -2385,4 +2385,4 @@ Obtain the paths for the **slam** and **navigation** packages.
 
 `bringup_launch`: Initializes the robot's actions.
 
-<img src="../_static/media/chapter_6/section_1/media/image147.png" style="width:800px" class="common_img"/>
+<img src="../_static/media/chapter_6/image147.png" style="width:800px" class="common_img"/>
