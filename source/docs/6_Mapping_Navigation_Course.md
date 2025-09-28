@@ -97,7 +97,7 @@ In a URDF model, joints are defined using the `<joint>` tag. They describe the k
 
 When defining joint behavior, the following tags are commonly used:
 
-<img src="../_static/media/chapter_6/section_1/media/image2.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/section_1/media/image2.png" class="common_img"/>
 
 `<parent_link>`: Specifies the parent link.
 
@@ -201,7 +201,7 @@ To start writing the URDF model, we need to set the name of the robot following 
 
 **The complete code is shown as follows:**
 
-<img src="../_static/media/chapter_6/section_1/media/image21.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/section_1/media/image21.png" class="common_img"/>
 
 ### 6.1.2 Robot URDF Model Instructions
 
@@ -235,7 +235,7 @@ vim landerpi.xacro
 
 6)  Find the code section shown in the image below:
 
-<img src="../_static/media/chapter_6/section_1/media/image26.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/section_1/media/image26.png" class="common_img"/>
 
 Multiple URDF models are called to form the complete robot.
 
@@ -1451,7 +1451,7 @@ cd ~/ros2_ws
 ls -a
 ```
 
-<img src="../_static/media/chapter_6/section_1/media/image51.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/section_1/media/image51.png" class="common_img"/>
 
 (7) Build the workspace:
 
@@ -1513,8 +1513,6 @@ gedit wifi_manager/wifi_conf.py
 sudo systemctl restart wifi.service
 ```
 
-<img src="../_static/media/chapter_6/section_1/media/image62.png" style="width:500px" class="common_img"/>
-
 (5) Make sure the virtual machine and the robot are connected to the same local network, and that their IP addresses are on the same subnet:
 
  Virtual Machine:
@@ -1523,19 +1521,19 @@ sudo systemctl restart wifi.service
 
  Robot:
 
-<img src="../_static/media/chapter_6/section_1/media/image64.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/section_1/media/image64.png" style="width:700px" class="common_img"/>
 
-<img src="../_static/media/chapter_6/section_1/media/image65.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/section_1/media/image65.png" style="width:700px" class="common_img"/>
 
 (6) After rebooting, open the robot's ROS 2 terminal from the desktop <img src="../_static/media/chapter_6/section_1/media/image22.png" style="width:30px"/>. Verify that the `ROS_DOMAIN_ID` matches the virtual machine, for example 0.
 
 Robot:
 
-<img src="../_static/media/chapter_6/section_1/media/image66.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/section_1/media/image66.png" style="width:700px" class="common_img"/>
 
 Virtual Machine:
 
-<img src="../_static/media/chapter_6/section_1/media/image67.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/section_1/media/image67.png" style="width:700px" class="common_img"/>
 
 * **SLAM Mapping Steps**
 
@@ -1549,15 +1547,11 @@ Virtual Machine:
 ~/.stop_ros.sh
 ```
 
-<img src="../_static/media/chapter_6/section_1/media/image23.png" style="width:500px" class="common_img"/>
-
 (3) Entering the following command to start mapping.
 
 ```
 ros2 launch slam slam.launch.py
 ```
-
-<img src="../_static/media/chapter_6/section_1/media/image68.png" style="width:500px" class="common_img"/>
 
 2. On the Virtual Machine
 
@@ -1580,8 +1574,6 @@ ros2 launch slam rviz_slam.launch.py
 ```
 ros2 launch peripherals teleop_key_control.launch.py
 ```
-
-<img src="../_static/media/chapter_6/section_1/media/image71.png" style="width:500px" class="common_img"/>
 
 If the prompt shown below appears, the keyboard control service has started successfully.
 
@@ -1632,19 +1624,19 @@ Detailed explanations for launch library can be found in the official ROS docume
 
 <https://docs.ros.org/en/humble/How-To-Guides/Launching-composable-nodes.html>
 
-<img src="../_static/media/chapter_6/section_1/media/image75.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/section_1/media/image75.png" style="width:700px" class="common_img"/>
 
 2. Setting Paths
 
 Use `get_package_share_directory` to obtain the path of the **slam** package.
 
-<img src="../_static/media/chapter_6/section_1/media/image76.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/section_1/media/image76.png" style="width:700px" class="common_img"/>
 
 3. Starting Other Launch Files
 
-<img src="../_static/media/chapter_6/section_1/media/image77.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/section_1/media/image77.png" style="width:700px" class="common_img"/>
 
-<img src="../_static/media/chapter_6/section_1/media/image78.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/section_1/media/image78.png" style="width:700px" class="common_img"/>
 
 `base_launch` – Launches the hardware required by the program.
 
@@ -1700,8 +1692,6 @@ ros2 launch slam rtabmap_slam.launch.py
 ros2 launch slam rviz_rtabmap.launch.py
 ```
 
-<img src="../_static/media/chapter_6/section_1/media/image80.png" style="width:500px" class="common_img"/>
-
 <img src="../_static/media/chapter_6/section_1/media/image81.png" style="width:500px" class="common_img"/>
 
 3. Enable Keyboard Control on the Robot
@@ -1753,17 +1743,17 @@ Detailed explanations for launch library can be found in the official ROS docume
 
 <https://docs.ros.org/en/humble/How-To-Guides/Launching-composable-nodes.html>
 
-<img src="../_static/media/chapter_6/section_1/media/image83.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/section_1/media/image83.png" style="width:700px" class="common_img"/>
 
 **2. Setting Paths**
 
 Use `get_package_share_directory` to obtain the path of the **slam** package.
 
-<img src="../_static/media/chapter_6/section_1/media/image84.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/section_1/media/image84.png" style="width:700px" class="common_img"/>
 
 **3. Starting Other Launch Files**
 
-<img src="../_static/media/chapter_6/section_1/media/image85.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/section_1/media/image85.png" style="width:700px" class="common_img"/>
 
 `base_launch` – Launches the hardware required by the program.
 
@@ -2191,7 +2181,7 @@ Virtual Machine and Robot Connection Configuration: Refer to [4.2 Mapping and Na
 
 * **On the Robot**
 
-1)  Click the terminal icon <img src="../_static/media/chapter_6/section_1/media/image113.png" style="width:30px" class="common_img"/> in the system desktop to open a command-line window.
+1)  Click the terminal icon <img src="../_static/media/chapter_6/section_1/media/image113.png" style="width:30px" /> in the system desktop to open a command-line window.
 
 2)  Enter the command to disable the app auto-start service.
 
@@ -2199,15 +2189,11 @@ Virtual Machine and Robot Connection Configuration: Refer to [4.2 Mapping and Na
 ~/.stop_ros.sh
 ```
 
-<img src="../_static/media/chapter_6/section_1/media/image23.png" style="width:500px" class="common_img"/>
-
 3)  Enter the command to start the navigation service and press **Enter**:
 
 ```
 ros2 launch navigation navigation.launch.py map:=map_01
 ```
-
-<img src="../_static/media/chapter_6/section_1/media/image114.png" style="width:500px" class="common_img"/>
 
 The `map_01` at the end of the command is the map name and can be modified according to your needs. The map is stored at the directory of `/home/ubuntu/ros2_ws/src/slam/maps`.
 
@@ -2220,8 +2206,6 @@ The `map_01` at the end of the command is the map name and can be modified accor
 ```
 ros2 launch navigation rviz_navigation.launch.py
 ```
-
-<img src="../_static/media/chapter_6/section_1/media/image115.png" style="width:500px" class="common_img"/>
 
 <img src="../_static/media/chapter_6/section_1/media/image116.png" style="width:500px" class="common_img"/>
 
@@ -2271,25 +2255,25 @@ In the software menu bar, **2D Pose Estimate** is used to set LanderPi's initial
 
 (4) The multi-point navigation process is illustrated in the figure below, showing the robot visiting each target point in order.
 
-<img src="../_static/media/chapter_6/section_1/media/image129.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/section_1/media/image129.png" class="common_img"/>
 
 (5) The final result after completing multi-point navigation is shown in the following figure.
 
-<img src="../_static/media/chapter_6/section_1/media/image130.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/section_1/media/image130.png" class="common_img"/>
 
 * **launch File Analysis**
 
-<img src="../_static/media/chapter_6/section_1/media/image131.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/section_1/media/image131.png" style="width:800px" class="common_img"/>
 
 The launch file is located at: `/home/ubuntu/ros2_ws/src/navigation/launch/navigation.launch.py`
 
-<img src="../_static/media/chapter_6/section_1/media/image132.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/section_1/media/image132.png" style="width:800px" class="common_img"/>
 
 **1. Setting Paths**
 
 Obtain the paths for the **slam** and **navigation** packages.
 
-<img src="../_static/media/chapter_6/section_1/media/image133.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/section_1/media/image133.png" style="width:800px" class="common_img"/>
 
 **2. Starting Other Launch Files**
 
@@ -2299,25 +2283,25 @@ Obtain the paths for the **slam** and **navigation** packages.
 
 `bringup_launch`: Initializes the robot's actions.
 
-<img src="../_static/media/chapter_6/section_1/media/image134.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/section_1/media/image134.png" style="width:800px" class="common_img"/>
 
 * **Package** 
 
 The navigation package path is `ros2_ws/src/navigation/`.
 
-<img src="../_static/media/chapter_6/section_1/media/image135.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/section_1/media/image135.png" style="width:800px" class="common_img"/>
 
 **config**: Contains configuration parameters related to navigation, as shown below.
 
-<img src="../_static/media/chapter_6/section_1/media/image136.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/section_1/media/image136.png" class="common_img"/>
 
 **launch**: Contains launch files related to navigation, including localization, map loading, and different navigation modes, as shown below.
 
-<img src="../_static/media/chapter_6/section_1/media/image137.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/section_1/media/image137.png" style="width:800px" class="common_img"/>
 
 **rviz**: Contains RViz visualization configuration files, including robot RViz setups for different navigation algorithms and navigation-specific configuration files.
 
-<img src="../_static/media/chapter_6/section_1/media/image138.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/section_1/media/image138.png" style="width:800px" class="common_img"/>
 
 **package.xml:** The configuration file for the current package.
 
@@ -2339,15 +2323,11 @@ For an introduction and explanation of the RTAB-VSLAM algorithm, please refer to
 ~/.stop_ros.sh
 ```
 
-<img src="../_static/media/chapter_6/section_1/media/image23.png" style="width:500px" class="common_img"/>
-
 4)  Enter the command to start the navigation service and press **Enter**:
 
 ```
 ros2 launch navigation rtabmap_navigation.launch.py
 ```
-
-<img src="../_static/media/chapter_6/section_1/media/image139.png" style="width:500px" class="common_img"/>
 
 * **On the Virtual Machine**
 
@@ -2362,8 +2342,6 @@ ros2 launch navigation rtabmap_navigation.launch.py
 ```
 ros2 launch navigation rviz_rtabmap_navigation.launch.py
 ```
-
-<img src="../_static/media/chapter_6/section_1/media/image140.png" style="width:500px" class="common_img"/>
 
 3)  Enter the command to launch RViz and display navigation. Click **Download graph** to load the 3D map, then click **OK** to confirm.
 
@@ -2385,19 +2363,19 @@ In the software menu bar, **2D Nav Goal** is used to set a single navigation goa
 
 * **launch File Analysis**
 
-<img src="../_static/media/chapter_6/section_1/media/image131.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/section_1/media/image131.png" style="width:800px" class="common_img"/>
 
 The launch file is located at:
 
 `/home/ubuntu/ros2_ws/src/navigation/launch/rtabmap_navigation.launch.py`
 
-<img src="../_static/media/chapter_6/section_1/media/image145.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/section_1/media/image145.png" style="width:800px" class="common_img"/>
 
 **1. Setting Paths**
 
 Obtain the paths for the **slam** and **navigation** packages.
 
-<img src="../_static/media/chapter_6/section_1/media/image146.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/section_1/media/image146.png" style="width:800px" class="common_img"/>
 
 **2. Starting Other Launch Files**
 
@@ -2407,4 +2385,4 @@ Obtain the paths for the **slam** and **navigation** packages.
 
 `bringup_launch`: Initializes the robot's actions.
 
-<img src="../_static/media/chapter_6/section_1/media/image147.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_6/section_1/media/image147.png" style="width:800px" class="common_img"/>
