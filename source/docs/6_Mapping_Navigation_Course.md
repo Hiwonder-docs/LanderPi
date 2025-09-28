@@ -20,6 +20,8 @@ To address this limitation, the xacro model extends the capabilities of URDF whi
 
 For instance, when describing the two legs of a humanoid robot, the URDF model would require separate descriptions for each leg. On the other hand, the Xacro model allows for describing a single leg and reusing that description for the other leg, resulting in a more concise and efficient representation.
 
+<p id="anchor_6_1_1_3"></p>
+
 * **URDF Model Basic Syntax**
 
 1. XML Basic Syntax
@@ -77,6 +79,8 @@ Each tag contains the corresponding child tag. The functions of the tags are lis
 | inertia | Describe the inertia of the link. As the inertia matrix is symmetrical, these six parameters need to be input, `ixx`, `ixy`, `ixz`, `iyy`, `iyz` and `izz`, as properties. These parameters can be calculated. |
 | geometry | Describe the shape of the link. It uses `mesh` parameter to load texture file, and employs `filename` parameters to load the path for texture file. It has three child tags, namely `box`, `cylinder` and `sphere`, representing rectangles, cylinders and spheres. |
 | material | Describe the material of the link. The parameter `name` is the required filed. The tag `color` can be used to change the color and transparency of the link. |
+
+<p id="anchor_joint"></p>
 
 3. Joint
 
@@ -169,7 +173,7 @@ To start writing the URDF model, we need to set the name of the robot following 
 
 > [!NOTE]
 >
-> **To learn about the type of the joint, please refer to the section [Joint]() in this document.**
+> **To learn about the type of the joint, please refer to the section [Joint](#anchor_joint) in this document.**
 
 <img src="../_static/media/chapter_6/section_1/media/image14.png"  class="common_img"/>
 
@@ -203,11 +207,11 @@ To start writing the URDF model, we need to set the name of the robot following 
 
 * **Preparation**
 
-To understand the URDF model, you can refer to the section [URDF Model Basic Syntax](). This section provides a brief analysis of the robot model code and component models.
+To understand the URDF model, you can refer to the section [URDF Model Basic Syntax](#anchor_6_1_1_3). This section provides a brief analysis of the robot model code and component models.
 
 * **Viewing the Robot Model Code**
 
-1)  Power on the robot and connect it to the remote control software VNC. For detail informations, please refer to [4. Development Environment Setup and Configuration]().
+1)  Power on the robot and connect it to the remote control software VNC. For detail informations, please refer to [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration).
 
 2)  Click the terminal icon <img src="../_static/media/chapter_6/section_1/media/image22.png" style="width:30px"/> in the system desktop to open a command-line window.
 
@@ -1371,7 +1375,7 @@ ROS2 mapping and navigation use a virtual machine connected to the robot within 
 
 Export Files from the Robot
 
-(1) Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to [4. Development Environment Setup and Configuration]().
+(1) Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration).
 
 (2) Click the terminal icon <img src="../_static/media/chapter_6/section_1/media/image22.png" style="width:30px"/> in the system desktop to open a ROS2 command-line window.
 
@@ -1401,7 +1405,7 @@ If you cannot find the **.typerc** file, enable **Show Hidden Files** in the fil
 
 <img src="../_static/media/chapter_6/section_1/media/image42.png" style="width:300px" class="common_img"/>
 
-For details on connecting with MobaXterm,, please refer to [4. Development Environment Setup and Configuration]().
+For details on connecting with MobaXterm,, please refer to [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration).
 
 Import Files into the Virtual Machine
 
@@ -1485,7 +1489,7 @@ source ~/.bashrc
 
 4. Configure the Robot for LAN Mode
 
-(1) On the VNC desktop, open the terminal <img src="../_static/media/chapter_6/section_1/media/image57.png" style="width:30px"/> and navigate to the [wifi_manager]() directory:
+(1) On the VNC desktop, open the terminal <img src="../_static/media/chapter_6/section_1/media/image57.png" style="width:30px"/> and navigate to the `wifi_manager` directory:
 
 ```
 cd ~/wifi_manager
@@ -1608,7 +1612,7 @@ cd ~/ros2_ws/src/slam/maps && ros2 run nav2_map_server map_saver_cli -f "map_01"
 
 To achieve more precise mapping results, you can optimize the odometry. The robot relies on odometry for mapping, which in turn depends on the IMU.
 
-The robot comes with preloaded calibrated IMU data, which allows it to perform mapping and navigation normally. However, you can recalibrate the IMU to achieve higher precision. For IMU calibration methods and steps, refer to [1. IMU, Linear Velocity, Angular Velocity Calibration]().
+The robot comes with preloaded calibrated IMU data, which allows it to perform mapping and navigation normally. However, you can recalibrate the IMU to achieve higher precision. For IMU calibration methods and steps, refer to [1. IMU, Linear Velocity, Angular Velocity Calibration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/3_Chassis_Motion_Control.html#imu-linear-velocity-angular-velocity-calibration).
 
 * **Parameter Description**
 
@@ -2325,7 +2329,7 @@ For an introduction and explanation of the RTAB-VSLAM algorithm, please refer to
 
 * **On the Robot**
 
-1)  Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to [4. Development Environment Setup and Configuration]().
+1)  Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration).
 
 2)  Click the terminal icon <img src="../_static/media/chapter_6/section_1/media/image113.png" style="width:30px"/> in the system desktop to open a ROS2 command-line window.
 
@@ -2369,7 +2373,7 @@ In the software menu bar, **2D Nav Goal** is used to set a single navigation goa
 
 <img src="../_static/media/chapter_6/section_1/media/image142.png"  class="common_img"/>
 
-4. Click the icon<img src="../_static/media/chapter_6/section_1/media/image121.png" />, then select a location on the map as the target point and simply click once at that point with the mouse. Once the target is selected, the robot will automatically generate a route and move toward the target point
+4. Click the icon <img src="../_static/media/chapter_6/section_1/media/image121.png" />, then select a location on the map as the target point and simply click once at that point with the mouse. Once the target is selected, the robot will automatically generate a route and move toward the target point
 
    <img src="../_static/media/chapter_6/section_1/media/image143.png" style="width:500px" class="common_img"/>
 

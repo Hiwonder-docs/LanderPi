@@ -192,21 +192,21 @@ Given the robot's track width, wheelbase, linear velocity, and steering angle, t
 
 File path: `ros2_ws\src\driver\controller\controller\ackermann.py`
 
-<img src="../_static/media/chapter_3/section_1/media/image48.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_3/section_1/media/image48.png" style="width:800px" class="common_img"/>
 
-<img src="../_static/media/chapter_3/section_1/media/image49.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_3/section_1/media/image49.png" style="width:800px" class="common_img"/>
 
 Ackerman Kinematics class, used to compute wheel velocities and implement Ackerman steering kinematics.
 
 `Init`:
 
-<img src="../_static/media/chapter_3/section_1/media/image50.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_3/section_1/media/image50.png" style="width:800px" class="common_img"/>
 
 Initializes the wheel dimensions for subsequent calculations.
 
 `speed_covert`:
 
-<img src="../_static/media/chapter_3/section_1/media/image51.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_3/section_1/media/image51.png" style="width:800px" class="common_img"/>
 
 Converts linear velocity (m/s) to angular velocity (rps) based on wheel parameters.
 
@@ -312,13 +312,13 @@ The Tank chassis also uses differential motion, so the mecanum wheel kinematics 
 
 **Velocity Setting and Calibration:**
 
-<img src="../_static/media/chapter_3/section_1/media/image74.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_3/section_1/media/image74.png" style="width:800px" class="common_img"/>
 
 Read the linear X-axis velocity from `msg.linear.x` and assign it to `self.linear_x`. If `self.linear_x` is greater than 0.3, set it to 0.3. If `self.linear_x` is less than -0.3, set it to -0.3. Read the linear Y-axis velocity from `msg.linear.y` and assign it to `self.linear_y`. Read the angular velocity from `msg.angular.z` and assign it to `self.angular_z`. If `self.linear_x \>= 0.0` and `self.angular_z == 0.0`, apply calibration.
 
 **Velocity Publishing:**
 
-<img src="../_static/media/chapter_3/section_1/media/image75.png" style="width:700px" class="common_img"/>
+<img src="../_static/media/chapter_3/section_1/media/image75.png" style="width:800px" class="common_img"/>
 
 Use `self.mecanum.set_velocity` to set the chassis velocity: scale the linear X velocity by 0.75/0.45, set the linear Y velocity to 0.0, and set the angular velocity to `self.angular_z`. Publish the calculated velocity using `self.motor_pub.publish(speeds)`.
 
@@ -338,7 +338,7 @@ If deviations occur during use, the IMU, linear velocity, and angular velocity s
 
 The IMU, Inertial Measurement Unit, measures an object's three-axis orientation (angular velocity) and acceleration. The gyroscope and accelerometer are the main components of the IMU, providing a total of six degrees of freedom to measure angular velocity and acceleration in 3D space.
 
-<img src="../_static/media/chapter_3/section_2/media/image1.png"  style="width:500px" class="common_img" />
+<img src="../_static/media/chapter_3/section_2/media/image1.png"  style="width:800px" class="common_img" />
 
 The figure above shows the positive directions of the IMU's x, y, and z axes. During the calibration process, you can refer to this coordinate system. **After the node receives the first IMU message, it will prompt you to hold the IMU in a specific orientation** and press Enter to record the measurement. Once all six orientations are completed, the node calculates the calibration parameters and writes them to the specified YAML file. The detailed steps are as follows:
 
@@ -346,7 +346,7 @@ The figure above shows the positive directions of the IMU's x, y, and z axes. Du
 >
 > **When entering commands, be sure to use correct case and spacing. You can use the Tab key to auto-complete keywords.**
 
-1)  Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to: [4. Development Environment Setup and Configuration]().
+1)  Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to: [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration).
 
 2)  Click the terminal icon <img src="../_static/media/chapter_3/section_2/media/image2.png" style="width:30px" /> in the system desktop to open a command-line window.
 
@@ -434,17 +434,15 @@ Typically, angular velocity calibration involves rotating the robot a full circl
 
 1)  Place the robot on a flat surface, and mark a point directly in front of it using tape or another indicator.
 
-2)  Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to: [4. Development Environment Setup and Configuration]().
+2)  Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to: [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration).
 
-3)  Click the terminal icon <img src="../_static/media/chapter_3/section_2/media/image2.png" style="width:30px"  class="common_img" /> in the system desktop to open a command-line window.
+3)  Click the terminal icon <img src="../_static/media/chapter_3/section_2/media/image2.png" style="width:30px"  /> in the system desktop to open a command-line window.
 
 4)  Enter the following command and press **Enter** to stop the app auto-start service.
 
 ```
 ~/.stop_ros.sh
 ```
-
-<img src="../_static/media/chapter_3/section_2/media/image3.png" style="width:500px" class="common_img" />
 
 5)  Before starting the calibration, navigate to the calibration configuration file directory and open the configuration file.
 
@@ -463,8 +461,6 @@ cd ~/ros2_ws/src/driver/controller/config && vim calibrate_params.yaml
 ```
 ros2 launch ros_robot_controller ros_robot_controller.launch.py
 ```
-
-<img src="../_static/media/chapter_3/section_2/media/image4.png" style="width:500px" class="common_img" />
 
 9)  Then, open a new terminal, enter the command, and press **Enter** to start the angular velocity calibration:
 
@@ -520,7 +516,7 @@ Press the key **i** to enter edit mode and modify `angular_correction_factor` to
 
 Place the robot on a flat and open surface. Once the program is started, the robot will use a forward movement of 1 m as the reference for linear velocity calibration. You can mark a spot 1 m in front of the robot using tape.
 
-1)  Start the robot and connect it to the remote control software VNC. For detail informations, please refer to: [4. Development Environment Setup and Configuration]().
+1)  Start the robot and connect it to the remote control software VNC. For detail informations, please refer to: [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration).
 
 2)  Click the terminal icon <img src="../_static/media/chapter_3/section_2/media/image2.png" style="width:30px"  /> in the system desktop to open a command-line window.
 
@@ -530,15 +526,11 @@ Place the robot on a flat and open surface. Once the program is started, the rob
 ~/.stop_ros.sh
 ```
 
-<img src="../_static/media/chapter_3/section_2/media/image3.png" style="width:500px" class="common_img" />
-
 4)  Before starting the calibration, navigate to the calibration configuration file directory and open the configuration file.
 
 ```
 cd ~/ros2_ws/src/driver/controller/config && vim calibrate_params.yaml
 ```
-
-<img src="../_static/media/chapter_3/section_2/media/image22.png" style="width:500px" class="common_img" />
 
 5)  Change the linear velocity parameter `linear_correction_factor` to 1.0 before proceeding with the calibration.
 
@@ -551,8 +543,6 @@ cd ~/ros2_ws/src/driver/controller/config && vim calibrate_params.yaml
 ```
 ros2 launch ros_robot_controller ros_robot_controller.launch.py
 ```
-
-<img src="../_static/media/chapter_3/section_2/media/image4.png" style="width:500px" class="common_img" />
 
 8)  Then, open a new terminal, enter the command, and start the linear velocity calibration:
 
@@ -587,8 +577,6 @@ The meanings of the parameters on the left side of the interface are as follows:
 ```
 cd ~/ros2_ws/src/driver/controller/config && vim calibrate_params.yaml
 ```
-
-<img src="../_static/media/chapter_3/section_2/media/image22.png" style="width:500px" class="common_img" />
 
 12) Press the key i to enter edit mode and modify `linear_correction_factor` to the calibrated value of `odom_linear_scale_correction`.
 
@@ -634,7 +622,7 @@ The IMU data is published on the topic `/imu`, and the odometry data is publishe
 >
 > **When entering commands, be sure to use correct case and spacing. You can use the Tab key to auto-complete keywords.**
 
-(1) Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to: [4. Development Environment Setup and Configuration]().
+(1) Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to: [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration).
 
 (2) Click the terminal icon <img src="../_static/media/chapter_3/section_2/media/image2.png" style="width:30px"/> in the system desktop to open a command-line window.
 
@@ -644,15 +632,11 @@ The IMU data is published on the topic `/imu`, and the odometry data is publishe
 ~/.stop_ros.sh
 ```
 
-<img src="../_static/media/chapter_3/section_2/media/image3.png" style="width:500px" class="common_img" />
-
 (4) Next, enter the command and press **Enter** to start the chassis control node:
 
 ```
 ros2 launch ros_robot_controller ros_robot_controller.launch.py
 ```
-
-<img src="../_static/media/chapter_3/section_2/media/image4.png"  style="width:500px" class="common_img" />
 
 (5) Open a new terminal, enter the command, and press **Enter** to start publishing IMU data:
 
@@ -696,7 +680,7 @@ The message content shows the data collected from the three axes of the IMU.
 >
 > **When entering commands, be sure to use correct case and spacing. You can use the Tab key to auto-complete keywords.**
 
-(1) Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to: [4. Development Environment Setup and Configuration]().
+(1) Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to: [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration).
 
 (2) Click the terminal icon <img src="../_static/media/chapter_3/section_2/media/image2.png"  style="width:30px" /> in the system desktop to open a command-line window.
 
@@ -705,8 +689,6 @@ The message content shows the data collected from the three axes of the IMU.
 ```
 ~/.stop_ros.sh
 ```
-
-<img src="../_static/media/chapter_3/section_2/media/image3.png"  style="width:500px" class="common_img" />
 
 (4) Enter the command and press **Enter** to start publishing odometry data:
 
@@ -764,17 +746,15 @@ The source code for this program is located at: `/home/ubuntu/ros2_ws/src/driver
 >
 > **When entering commands, be sure to use correct case and spacing. You can use the Tab key to auto-complete keywords.**
 
-1)  Power on the robot and connect it to the remote control software VNC. For detail informations, please refer to: [4. Development Environment Setup and Configuration]().
+1)  Power on the robot and connect it to the remote control software VNC. For detail informations, please refer to: [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration).
 
-2)  Click the terminal icon <img src="../_static/media/chapter_3/section_2/media/image2.png"  style="width:30px" class="common_img" /> in the system desktop to open a command-line window.
+2)  Click the terminal icon <img src="../_static/media/chapter_3/section_2/media/image2.png"  style="width:30px" /> in the system desktop to open a command-line window.
 
 3)  Enter the command to stop the app service and press **Enter**:
 
 ```
 ~/.stop_ros.sh
 ```
-
-<img src="../_static/media/chapter_3/section_2/media/image3.png"  style="width:500px" class="common_img" />
 
 4)  Enter the command to start the motion control service:
 
@@ -802,7 +782,7 @@ y: 0.0
 z: 0.0"
 ```
 
-<img src="../_static/media/chapter_3/section_2/media/image45.png"  style="width:500px" class="common_img" />
+<img src="../_static/media/chapter_3/section_2/media/image45.png"  style="width:500px" />
 
 The `linear` parameter sets the linear velocity. From the robot's perspective, the positive X direction points forward, with no motion along the Y or Z axes.
 

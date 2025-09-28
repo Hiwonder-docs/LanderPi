@@ -32,7 +32,7 @@ Based on the scanning method, Lidar can be functionally classified into the foll
 
 The robot is equipped with MS200 laser radar by default, which uses connectors to connect to external systems for power supply and data reception.
 
-1)  Power on the robot and connect via a remote desktop tool. For detailed connection instructions, refer to [4. Development Environment Setup and Configuration]().
+1)  Power on the robot and connect via a remote desktop tool. For detailed connection instructions, refer to [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration).
 
 2)  After a successful connection, double-click the **Tool** icon <img src="../_static/media/chapter_4/image4.png" style="width:30px"/> on the desktop.
 
@@ -86,9 +86,9 @@ The robot will detect the distance between the object in front of it and its bod
 
 This functionality can be enabled in two ways: either through the mobile app or by remotely connecting to the system and using commands.
 
-For instructions on connecting the mobile app, refer to [3.4 App Control]().
+For instructions on connecting the mobile app, refer to [3.4 App Control](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#app-control).
 
-1)  Start the robot and connect it to the remote control software VNC. For details on connecting to the remote desktop, refer to [4. Development Environment Setup and Configuration]().
+1)  Start the robot and connect it to the remote control software VNC. For details on connecting to the remote desktop, refer to [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration).
 
 2)  Click the terminal icon <img src="../_static/media/chapter_4/image15.png" style="width:30px" /> in the system desktop to open a command-line window.
 
@@ -130,9 +130,9 @@ The robot detects the distance to objects directly in front of it. If the distan
 
 This functionality can be enabled in two ways: either through the mobile app or by remotely connecting to the system and using commands.
 
-For instructions on connecting the mobile app, refer to  [3.4 App Control]().
+For instructions on connecting the mobile app, refer to  [3.4 App Control](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#app-control).
 
-1)  Start the robot and connect it to the remote control software VNC. For details on connecting to the remote desktop, refer to [4. Development Environment Setup and Configuration]().
+1)  Start the robot and connect it to the remote control software VNC. For details on connecting to the remote desktop, refer to [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration).
 
 2)  Click the terminal icon <img src="../_static/media/chapter_4/image15.png" style="width:30px" /> in the system desktop to open a command-line window.
 
@@ -178,9 +178,9 @@ The robot will detect the distance between the object in front of it and its bod
 
 This functionality can be enabled in two ways: either through the mobile app or by remotely connecting to the system and using commands.
 
-For instructions on connecting the mobile app, refer to [3.4 App Control]().
+For instructions on connecting the mobile app, refer to [3.4 App Control](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#app-control).
 
-1)  Start the robot and connect it to the remote control software VNC. For details on connecting to the remote desktop, refer to [4. Development Environment Setup and Configuration]().
+1)  Start the robot and connect it to the remote control software VNC. For details on connecting to the remote desktop, refer to [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration).
 
 2)  Click the terminal icon <img src="../_static/media/chapter_4/image15.png" style="width:30px" /> in the system desktop to open a command-line window.
 
