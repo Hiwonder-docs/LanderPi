@@ -356,23 +356,17 @@ The figure above shows the positive directions of the IMU's x, y, and z axes. Du
 ~/.stop_ros.sh
 ```
 
-<img src="../_static/media/chapter_3/section_2/media/image3.png" style="width:500px" class="common_img" />
-
 4)  Next, enter the command and press **Enter** to start the chassis control node:
 
 ```
 ros2 launch ros_robot_controller ros_robot_controller.launch.py
 ```
 
-<img src="../_static/media/chapter_3/section_2/media/image4.png" style="width:500px" class="common_img" />
-
 5)  Then, open a new terminal, enter the command, and press **Enter** to start the IMU calibration:
 
 ```
 ros2 run imu_calib do_calib --ros-args -r imu:=/ros_robot_controller/imu_raw --param output_file:=/home/ubuntu/ros2_ws/src/calibration/config/imu_calib.yaml
 ```
-
-<img src="../_static/media/chapter_3/section_2/media/image5.png" style="width:500px" class="common_img" />
 
 6)  When the following prompt appears, position the robot facing forward from its first-person perspective, then press Enter. The first direction you face is defined as **forward**, all subsequent orientations should be based on this initial direction.
 
@@ -424,8 +418,6 @@ ros2 run imu_calib do_calib --ros-args -r imu:=/ros_robot_controller/imu_raw --p
 ros2 launch peripherals imu_view.launch.py
 ```
 
-<img src="../_static/media/chapter_3/section_2/media/image20.png" style="width:500px" class="common_img" />
-
 You can rotate the physical robot to verify that its movement matches the model's orientation.
 
 <img src="../_static/media/chapter_3/section_2/media/image21.png" style="width:500px" class="common_img" />
@@ -460,8 +452,6 @@ Typically, angular velocity calibration involves rotating the robot a full circl
 cd ~/ros2_ws/src/driver/controller/config && vim calibrate_params.yaml
 ```
 
-<img src="../_static/media/chapter_3/section_2/media/image22.png" style="width:500px" class="common_img" />
-
 6)  Set the angular velocity parameter to 1.0 before proceeding with the calibration.
 
 <img src="../_static/media/chapter_3/section_2/media/image23.png" style="width:500px" class="common_img" />
@@ -481,8 +471,6 @@ ros2 launch ros_robot_controller ros_robot_controller.launch.py
 ```
 ros2 launch calibration angular_calib.launch.py
 ```
-
-<img src="../_static/media/chapter_3/section_2/media/image24.png" style="width:500px" class="common_img" />
 
 Then double-click **calibrate_angular** on the left to open the calibration interface, as shown below.
 
@@ -571,8 +559,6 @@ ros2 launch ros_robot_controller ros_robot_controller.launch.py
 ```
 ros2 launch calibration linear_calib.launch.py
 ```
-
-<img src="../_static/media/chapter_3/section_2/media/image30.png" style="width:500px" class="common_img" />
 
 9)  After the calibration program starts, double-click on **calibrate_linear** on the left to open the calibration interface as shown below:
 
@@ -674,8 +660,6 @@ ros2 launch ros_robot_controller ros_robot_controller.launch.py
 ros2 launch peripherals imu_filter.launch.py
 ```
 
-<img src="../_static/media/chapter_3/section_2/media/image34.png"  style="width:500px" class="common_img" />
-
 * **View Data**
 
 1)  Open a terminal, enter the command to list the current topics:
@@ -699,8 +683,6 @@ ros2 topic info /imu
 ```
 ros2 topic echo /imu
 ```
-
-<img src="../_static/media/chapter_3/section_2/media/image37.png"  style="width:500px" class="common_img" />
 
 <img src="../_static/media/chapter_3/section_2/media/image38.png"  style="width:500px" class="common_img" />
 
@@ -731,8 +713,6 @@ The message content shows the data collected from the three axes of the IMU.
 ```
 ros2 launch controller odom_publisher.launch.py
 ```
-
-<img src="../_static/media/chapter_3/section_2/media/image39.png"  style="width:500px" class="common_img" />
 
 **2. View Data**
 
@@ -801,8 +781,6 @@ The source code for this program is located at: `/home/ubuntu/ros2_ws/src/driver
 ```
 ros2 launch controller controller.launch.py
 ```
-
-<img src="../_static/media/chapter_3/section_2/media/image44.png"  style="width:500px" class="common_img" />
 
 5)  Open a new ROS2 terminal and enter the command to enable speed control:
 

@@ -217,23 +217,17 @@ To understand the URDF model, you can refer to the section [URDF Model Basic Syn
 ~/.stop_ros.sh
 ```
 
-<img src="../_static/media/chapter_6/section_1/media/image23.png" style="width:500px" class="common_img"/>
-
 4)  Enter the following command to open the robot simulation model folder.
 
 ```
 cd /home/ubuntu/ros2_ws/src/simulations/landerpi_description/urdf/
 ```
 
-<img src="../_static/media/chapter_6/section_1/media/image24.png" style="width:500px" class="common_img"/>
-
 5)  Enter the following command to open the robot simulation model folder.
 
 ```
 vim landerpi.xacro
 ```
-
-<img src="../_static/media/chapter_6/section_1/media/image25.png" style="width:500px" class="common_img"/>
 
 6)  Find the code section shown in the image below:
 
@@ -1387,23 +1381,17 @@ Export Files from the Robot
 ~/.stop_ros.sh
 ```
 
-<img src="../_static/media/chapter_6/section_1/media/image38.png" style="width:500px" class="common_img"/>
-
 (4) Compress the navigation, slam, and simulations directories from the workspace into a **.tar** package and copy it into the shared tmp directory:
 
 ```
 tar -cvf ~/shared/src.tar -C ~/ros2_ws/src ./navigation ./slam ./simulations
 ```
 
-<img src="../_static/media/chapter_6/section_1/media/image39.png" style="width:500px" class="common_img"/>
-
 (5) Copy the hidden configuration file **.typerc** into the same shared directory:
 
 ```
 cp ~/ros2_ws/.typerc ~/shared
 ```
-
-<img src="../_static/media/chapter_6/section_1/media/image40.png" style="width:500px" class="common_img"/>
 
 (6) Use the SSH client MobaXterm to transfer the files **src.tar** and **.typerc** from the Raspberry Pi system directory `/home/pi/docker/tmp` to your local PC.
 
@@ -1435,15 +1423,11 @@ Import Files into the Virtual Machine
 mkdir -p ros2_ws/src
 ```
 
-<img src="../_static/media/chapter_6/section_1/media/image47.png" style="width:500px" class="common_img"/>
-
 (3) Extract **src.tar** into the current `/home/ubuntu` directory.
 
 ```
 tar -xvf src.tar -C ~/ros2_ws/src
 ```
-
-<img src="../_static/media/chapter_6/section_1/media/image48.png" style="width:500px" class="common_img"/>
 
 (4) Move the .typerc file to the `ros2_ws` directory.
 
@@ -1451,15 +1435,11 @@ tar -xvf src.tar -C ~/ros2_ws/src
 mv .typerc ~/ros2_ws
 ```
 
-<img src="../_static/media/chapter_6/section_1/media/image49.png" style="width:500px" class="common_img"/>
-
 (5) Navigate to the workspace directory:
 
 ```
 cd ~/ros2_ws
 ```
-
-<img src="../_static/media/chapter_6/section_1/media/image50.png" style="width:500px" class="common_img"/>
 
 (6) Enter the command to verify that **.typerc** has been moved to the workspace:
 
@@ -1475,15 +1455,11 @@ ls -a
 colcon build
 ```
 
-<img src="../_static/media/chapter_6/section_1/media/image52.png" style="width:500px" class="common_img"/>
-
 (8) Edit the **.bashrc** file to configure the environment:
 
 ```
 gedit ~/.bashrc
 ```
-
-<img src="../_static/media/chapter_6/section_1/media/image53.png" style="width:500px" class="common_img"/>
 
 Add the following lines at the end of the **.bashrc** file:
 
@@ -1515,15 +1491,11 @@ source ~/.bashrc
 cd ~/wifi_manager
 ```
 
-<img src="../_static/media/chapter_6/section_1/media/image58.png" style="width:500px" class="common_img"/>
-
 (2) Edit the Wi-Fi configuration file to set the robot to local network mode. Update the file with your Wi-Fi name and password:
 
 ```
 gedit wifi_manager/wifi_conf.py
 ```
-
-<img src="../_static/media/chapter_6/section_1/media/image59.png" style="width:500px" class="common_img"/>
 
 <img src="../_static/media/chapter_6/section_1/media/image60.png" style="width:500px" class="common_img"/>
 
@@ -1592,8 +1564,6 @@ ros2 launch slam slam.launch.py
 ```
 ros2 launch slam rviz_slam.launch.py
 ```
-
-<img src="../_static/media/chapter_6/section_1/media/image69.png" style="width:500px" class="common_img"/>
 
 <img src="../_static/media/chapter_6/section_1/media/image70.png" style="width:500px" class="common_img"/>
 

@@ -8,7 +8,7 @@ As a high-precision and high-speed remote sensing technology, Lidar plays a crit
 
 Lidar holds a pivotal position in autonomous driving and intelligent transportation by providing real-time detection of obstacles, pedestrians, and vehicles on the road, while delivering precise distance and positional information. In robotic navigation and environmental perception, it supplies robots with accurate maps and detailed information about their surrounding environment. Furthermore, it is widely employed in 3D modeling and mapping, security monitoring, and remote sensing survey applications.
 
-<img src="../_static/media/chapter_4/section_1/media/image2.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_4/image2.png" style="width:500px" class="common_img"/>
 
 ### 4.1.2 Lidar Components and Classification
 
@@ -28,37 +28,37 @@ Based on the scanning method, Lidar can be functionally classified into the foll
 
 ### 4.1.3 Lidar Version Description
 
-<img src="../_static/media/chapter_4/section_1/media/image3.png" style="width:300px"  class="common_img"/>
+<img src="../_static/media/chapter_4/image3.png" style="width:300px"  class="common_img"/>
 
 The robot is equipped with MS200 laser radar by default, which uses connectors to connect to external systems for power supply and data reception.
 
 1)  Power on the robot and connect via a remote desktop tool. For detailed connection instructions, refer to [4. Development Environment Setup and Configuration]().
 
-2)  After a successful connection, double-click the **Tool** icon <img src="../_static/media/chapter_4/section_1/media/image4.png" style="width:30px"/> on the desktop.
+2)  After a successful connection, double-click the **Tool** icon <img src="../_static/media/chapter_4/image4.png" style="width:30px"/> on the desktop.
 
 3)  Then click the **Execute** button to run the program:
 
-<img src="../_static/media/chapter_4/section_1/media/image5.png" style="width:400px" class="common_img"/>
+<img src="../_static/media/chapter_4/image5.png" style="width:400px" class="common_img"/>
 
 4)  The interface is as follows:
 
-<img src="../_static/media/chapter_4/section_1/media/image6.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_4/image6.png" style="width:500px" class="common_img"/>
 
 5)  Click the dropdown button on the Lidar tab and select the model that matches your robot. For example, the robot is equipped by default with the MS200 Lidar. Then click **Save** and **Apply**.
 
-<img src="../_static/media/chapter_4/section_1/media/image7.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_4/image7.png" style="width:500px" class="common_img"/>
 
 6)  A popup window, as shown below, will appear. The robot's auto-start service will restart, and the Lidar model will be configured according to the selected option.
 
-<img src="../_static/media/chapter_4/section_1/media/image8.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_4/image8.png" style="width:500px" class="common_img"/>
 
 7)  After the restart is complete, click **Exit**.
 
-<img src="../_static/media/chapter_4/section_1/media/image9.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_4/image9.png" style="width:500px" class="common_img"/>
 
-8)  After switching, click the ROS2 command-line terminal icon <img src="../_static/media/chapter_4/section_1/media/image10.png" /> to verify the Lidar version.
+8)  After switching, click the ROS2 command-line terminal icon <img src="../_static/media/chapter_4/image10.png" /> to verify the Lidar version.
 
-<img src="../_static/media/chapter_4/section_1/media/image11.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_4/image11.png" style="width:500px" class="common_img"/>
 
 ## 4.2 Operating Principles and Distance Measurement
 
@@ -68,17 +68,17 @@ Common LiDAR systems use two methods to determine the distance to a target: tria
 
 For TOF, as illustrated below, the Lidar emits a laser beam toward the target. The target reflects the light directly back to the Lidar, which calculates the time of flight. Multiplying this time by the speed of light yields the distance between the target and the Lidar.
 
-<img src="../_static/media/chapter_4/section_1/media/image12.png" style="width:500px"  class="common_img"/>
+<img src="../_static/media/chapter_4/image12.png" style="width:500px"  class="common_img"/>
 
 Triangulation can be understood with reference to the diagram below. During manufacturing, the Lidar is adjusted so that the laser is emitted at a specific angle rather than directly striking the target. This angle is preset and remains unchanged during operation. The distance from the target to the Lidar can then be calculated using trigonometric functions based on this angle.
 
-<img src="../_static/media/chapter_4/section_1/media/image13.png" style="width:500px"  class="common_img"/>
+<img src="../_static/media/chapter_4/image13.png" style="width:500px"  class="common_img"/>
 
 ### 4.2.2 Lidar Performance and Results
 
 LiDAR emits laser beams that strike the surface of a target. When the Lidar receives the reflected light from the target, it marks the contours of the object at the points where the laser was reflected. Refer to the diagram below to understand the Lidar effect.
 
-<img src="../_static/media/chapter_4/section_1/media/image14.png" style="width:500px"  class="common_img"/>
+<img src="../_static/media/chapter_4/image14.png" style="width:500px"  class="common_img"/>
 
 ## 4.3 Lidar Obstacle Avoidance
 
@@ -90,7 +90,7 @@ For instructions on connecting the mobile app, refer to [3.4 App Control]().
 
 1)  Start the robot and connect it to the remote control software VNC. For details on connecting to the remote desktop, refer to [4. Development Environment Setup and Configuration]().
 
-2)  Click the terminal icon <img src="../_static/media/chapter_4/section_1/media/image15.png" style="width:30px" /> in the system desktop to open a command-line window.
+2)  Click the terminal icon <img src="../_static/media/chapter_4/image15.png" style="width:30px" /> in the system desktop to open a command-line window.
 
 3. Enter the command to stop the APP auto-start service and press **Enter**.
 
@@ -134,7 +134,7 @@ For instructions on connecting the mobile app, refer to  [3.4 App Control]().
 
 1)  Start the robot and connect it to the remote control software VNC. For details on connecting to the remote desktop, refer to [4. Development Environment Setup and Configuration]().
 
-2)  Click the terminal icon <img src="../_static/media/chapter_4/section_1/media/image15.png" style="width:30px" /> in the system desktop to open a command-line window.
+2)  Click the terminal icon <img src="../_static/media/chapter_4/image15.png" style="width:30px" /> in the system desktop to open a command-line window.
 
 3. Enter the command to stop the APP auto-start service and press **Enter**.
 
@@ -182,7 +182,7 @@ For instructions on connecting the mobile app, refer to [3.4 App Control]().
 
 1)  Start the robot and connect it to the remote control software VNC. For details on connecting to the remote desktop, refer to [4. Development Environment Setup and Configuration]().
 
-2)  Click the terminal icon <img src="../_static/media/chapter_4/section_1/media/image15.png" style="width:30px" /> in the system desktop to open a command-line window.
+2)  Click the terminal icon <img src="../_static/media/chapter_4/image15.png" style="width:30px" /> in the system desktop to open a command-line window.
 
 3. Enter the command to stop the app auto-start service and press **Enter**.
 
