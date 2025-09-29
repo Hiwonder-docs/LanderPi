@@ -42,7 +42,7 @@ python3 /home/ubuntu/software/lab_tool/main.py
 
  <img src="../_static/media/chapter_7/section_1/media/image6.png" style="width:200px" class="common_img"/>
 
-7)  After closing the LAB Tool, you need to restart the APP auto-start service by entering the corresponding command in the black terminal<img src="../_static/media/chapter_7/section_1/media/image7.png" style="width:30px"/>. Once the service starts, the robot arm will return to its initial position.
+7)  After closing the LAB Tool, you need to restart the APP auto-start service by entering the corresponding command in the black terminal <img src="../_static/media/chapter_7/section_1/media/image7.png" style="width:30px"/>. Once the service starts, the robot arm will return to its initial position.
 
 ```
 sudo systemctl restart start_app_node.service
@@ -162,7 +162,7 @@ Besides the built-in recognition colors, you can add new colors. For example, ye
 
 3. Select the color you added before in the drop-down menu.
 
-    <img src="../_static/media/chapter_7/section_1/media/image26.png" style="width:150px" class="common_img"/>
+<img src="../_static/media/chapter_7/section_1/media/image26.png" style="width:150px" class="common_img"/>
 
 4)  Face the camera to the yellow block. And then drag the slider of L, A and B to adjust the color threshold till the object at left turns white and other area turns black.
 
@@ -252,15 +252,15 @@ The source code for this program is located at:
 
 `/home/ubuntu/ros2_ws/src/example/example/color_detect/color_detect_demo.py`
 
-<img src="../_static/media/chapter_7/section_1/media/image33.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_7/section_1/media/image33.png" style="width:800px" class="common_img"/>
 
-<img src="../_static/media/chapter_7/section_1/media/image34.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_7/section_1/media/image34.png" style="width:800px" class="common_img"/>
 
 * **Main Function**
 
 Initializes the `ROS` node and create the color detection node named `color_detect_node`, subscribes to the image topic `/depth_cam/rgb/image_raw` with `image_callback` as its callback function, runs the color detection `main` function using multi-threading, and waits for the node to shut down.
 
-<img src="../_static/media/chapter_7/section_1/media/image35.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_7/section_1/media/image35.png" style="width:800px" class="common_img"/>
 
 * **Functions**
 
@@ -268,37 +268,37 @@ Initializes the `ROS` node and create the color detection node named `color_dete
 
  Reads the video stream from the topic and pushes frames into a queue to ensure real-time display.
 
-<img src="../_static/media/chapter_7/section_1/media/image36.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_7/section_1/media/image36.png" style="width:800px" class="common_img"/>
 
 **2. Color Detection `main` Function**
 
  Reads images from the queue and feeds them into the `run` function to obtain color-detected frames. Finally, displays the processed frames using `cv2`.
 
-<img src="../_static/media/chapter_7/section_1/media/image37.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_7/section_1/media/image37.png" style="width:800px" class="common_img"/>
 
 **3. YAML File Reading Function**
 
-<img src="../_static/media/chapter_7/section_1/media/image38.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_7/section_1/media/image38.png" style="width:800px" class="common_img"/>
 
 **4. Maximum Contour Function**
 
 Takes contours detected by OpenCV as input, identifies the largest contour, and returns both the contour and its area.
 
-<img src="../_static/media/chapter_7/section_1/media/image39.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_7/section_1/media/image39.png" style="width:800px" class="common_img"/>
 
 **5. Color Detection Function**
 
 Inputs an image and resizes it to `size(320, 240)` for faster processing, then applies Gaussian blur and converts the image to the LAB color space.
 
-<img src="../_static/media/chapter_7/section_1/media/image40.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_7/section_1/media/image40.png" style="width:800px" class="common_img"/>
 
  Iterates through a list of target colors to detect the color of the largest contour.
 
-<img src="../_static/media/chapter_7/section_1/media/image41.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_7/section_1/media/image41.png" style="width:800px" class="common_img"/>
 
  Filters out contours with an area smaller than 200. For valid contours, calculates contour coordinates and draws the detected color's position on the frame.
 
-<img src="../_static/media/chapter_7/section_1/media/image42.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_7/section_1/media/image42.png" style="width:800px" class="common_img"/>
 
 ## 7.3 QR Code Creation and Recognition
 
@@ -356,15 +356,15 @@ The source code for this program is located at:
 
 `/home/ubuntu/ros2_ws/src/example/example/qrcode/qrcode_creater.py`
 
-<img src="../_static/media/chapter_7/section_1/media/image46.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_7/section_1/media/image46.png" style="width:700px" class="common_img"/>
 
-<img src="../_static/media/chapter_7/section_1/media/image47.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_7/section_1/media/image47.png" style="width:700px" class="common_img"/>
 
 **1. Creating a QR Code Tool Object**
 
 Use the `qrcode` module to create the required object and set the parameters for the QR code.
 
-<img src="../_static/media/chapter_7/section_1/media/image48.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_7/section_1/media/image48.png" style="width:700px" class="common_img"/>
 
 The meanings of the parameters in the function above are as follows:
 
@@ -386,7 +386,7 @@ The meanings of the parameters in the function above are as follows:
 
 Use the `add_data` and `make` functions to input and encode the data, then generate the QR code image using the `make_image` function.
 
-<img src="../_static/media/chapter_7/section_1/media/image49.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_7/section_1/media/image49.png" style="width:700px" class="common_img"/>
 
 The parameters of the `make_image` function are as follows:
 
@@ -398,21 +398,19 @@ The parameters of the `make_image` function are as follows:
 
 Convert the image color space using `cvtColor`, and then display it in a window using `imshow`.
 
-<img src="../_static/media/chapter_7/section_1/media/image50.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_7/section_1/media/image50.png" style="width:700px" class="common_img"/>
 
 **4. Saving the Image**
 
 Save the generated QR code image using `imwrite` and print out the relevant information.
 
-<img src="../_static/media/chapter_7/section_1/media/image51.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_7/section_1/media/image51.png" class="common_img"/>
 
 The parameters of the imwrite function are:
 
 \(1\) `file_name` – the path where the image will be saved.
 
 \(2\) `opencv_img` – the image to be saved.
-
-
 
 ### 7.3.2 QR Code Recognition
 
@@ -579,8 +577,6 @@ ros2 service call /line_following/exit std_srvs/srv/Trigger {}
 ### 7.4.3 Program Outcome
 
 After starting the feature, the camera feed will appear. In the feed, the selected color track will be highlighted, and the robot will move along the track accordingly.
-
-
 
 ### 7.4.4 Program Brief Analysis
 

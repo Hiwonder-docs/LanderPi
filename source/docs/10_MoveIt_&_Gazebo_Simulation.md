@@ -14,51 +14,51 @@ In simple terms, a virtual machine (VM) allows you to run another operating syst
 
 (2) Locate the extracted virtual machine folder, then double-click the virtual machine executable file with the .exe extension
 
-<img src="../_static/media/chapter_10\section_1.1/media/image3.png"   style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_1.1/media/image3.png" style="width:500px" class="common_img"/>
 
 (3) Follow the instructions below to complete the installation.
 
-<img src="../_static/media/chapter_10\section_1.1/media/image4.png"   style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_1.1/media/image4.png" style="width:500px" class="common_img"/>
 
-<img src="../_static/media/chapter_10\section_1.1/media/image5.png"   style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_1.1/media/image5.png" style="width:500px" class="common_img"/>
 
-<img src="../_static/media/chapter_10\section_1.1/media/image6.png"   style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_1.1/media/image6.png" style="width:500px" class="common_img"/>
 
-<img src="../_static/media/chapter_10\section_1.1/media/image7.png"   style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_1.1/media/image7.png" style="width:500px" class="common_img"/>
 
-<img src="../_static/media/chapter_10\section_1.1/media/image8.png"   style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_1.1/media/image8.png" style="width:500px" class="common_img"/>
 
-<img src="../_static/media/chapter_10\section_1.1/media/image9.png"   style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_1.1/media/image9.png" style="width:500px" class="common_img"/>
 
-<img src="../_static/media/chapter_10\section_1.1/media/image10.png"   style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_1.1/media/image10.png" style="width:500px" class="common_img"/>
 
 (4) If this is your first time starting the virtual machine, you need to enter a product key. Use any key from the **VMware16 Activation Key** file located in the virtual machine folder, then click **Continue**.
 
-<img src="../_static/media/chapter_10\section_1.1/media/image11.png"   style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_1.1/media/image11.png" style="width:500px" class="common_img"/>
 
 **2. VirtualBox Installation**
 
 (1) Open the software installation package in the same directory and click **Next**.
 
-<img src="../_static/media/chapter_10\section_1.1/media/image17.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_1.1/media/image17.png" style="width:500px" class="common_img"/>
 
 (2) Modify the installation path as needed, then click **Next**.
 
-<img src="../_static/media/chapter_10\section_1.1/media/image18.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_1.1/media/image18.png" style="width:500px" class="common_img"/>
 
 (3) Leave the settings unchanged and click **Next**.
 
-<img src="../_static/media/chapter_10\section_1.1/media/image19.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_1.1/media/image19.png" style="width:500px" class="common_img"/>
 
 (4) Confirm the installation and click **Install** to begin.
 
-<img src="../_static/media/chapter_10\section_1.1/media/image20.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_1.1/media/image20.png" style="width:500px" class="common_img"/>
 
-<img src="../_static/media/chapter_10\section_1.1/media/image21.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_1.1/media/image21.png" style="width:500px" class="common_img"/>
 
-(5) After the installation is complete, click “**Finish**.”
+(5) After the installation is complete, click "**Finish**."
 
-<img src="../_static/media/chapter_10\section_1.1/media/image22.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_1.1/media/image22.png" style="width:500px" class="common_img"/>
 
 * **Configuration Tasks**
 
@@ -66,11 +66,11 @@ The first startup of the virtual machine may take a longer time than usual, whic
 
 After starting the virtual machine, the interface will appear as shown below:
 
-<img src="../_static/media/chapter_10\section_1.1/media/image23.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_1.1/media/image23.png" style="width:500px" class="common_img"/>
 
 **1. Preparations**
 
-(1) Power on the robot and click <img src="../_static/media/chapter_10\section_1.1/media/image24.png"  style="width:30px"   class="common_img"/>to open a terminal on the desktop.
+(1) Power on the robot and click <img src="../_static/media/chapter_10/section_1.1/media/image24.png" style="width:30px"/> to open a terminal on the desktop.
 
 (2) Enter the following command to navigate to the corresponding directory.
 
@@ -84,13 +84,13 @@ cd ros2_ws
 cp .typerc ~/shared
 ```
 
-(4) Following the [10.1.3 Using the Transfer Tool]() tutorial in the same directory as this document, transfer the **.typerc** file to a directory on your computer.
+(4) Following the [10.1.3 Using the Transfer Tool](#anchor_10_1_3) tutorial in the same directory as this document, transfer the **.typerc** file to a directory on your computer.
 
 **2. Importing Feature Packages**
 
-(1) Start the virtual machine. Click the icon <img src="../_static/media/chapter_10\section_1.1/media/image27.png"  style="width:30px"   class="common_img"/> to open the command-line terminal.
+(1) Start the virtual machine. Click the icon <img src="../_static/media/chapter_10/section_1.1/media/image27.png" style="width:30px"/> to open the command-line terminal.
 
-(2) Click **Home** <img src="../_static/media/chapter_10\section_1.1/media/image28.png"  style="width:50px"   class="common_img"/>on the desktop.
+(2) Click **Home** <img src="../_static/media/chapter_10/section_1.1/media/image28.png" style="width:50px"/>on the desktop.
 
 (3) Locate the **driver.zip, hiwonder_moveit_config.zip, robot_gazebo.zip**, and **landerpi_description.zip** archives in [Feature Package Files](), along with the **.typerc** file previously transferred to your computer. Drag all these files into the Home directory of the virtual machine.
 
@@ -98,31 +98,31 @@ cp .typerc ~/shared
 >
 > **Drag one file at a time.**
 
-(4) Right-click in the “**Home**” directory and select “**Open in Terminal**” to launch the terminal.
+(4) Right-click in the "**Home**" directory and select "**Open in Terminal**" to launch the terminal.
 
-<img src="../_static/media/chapter_10\section_1.1/media/image29.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_1.1/media/image29.png" style="width:500px" class="common_img"/>
 
 (5) Enter the following command to create a directory.
 
 ```
-mkdir -p ~/ros2_ws/src
+mkdir -p ~/ros2_ws/src
 ```
 
 (6) Enter the following commands in sequence to unzip and navigate to the source code directory, then move the **.typerc** file to this path:
 
 ```
-unzip  ~/driver.zip -d ~/ros2_ws/src
+unzip  ~/driver.zip -d ~/ros2_ws/src
 
-unzip  ~/hiwonder_moveit_config.zip -d ~/ros2_ws/src
+unzip  ~/hiwonder_moveit_config.zip -d ~/ros2_ws/src
 
-unzip  ~/robot_gazebo.zip -d ~/ros2_ws/src
+unzip  ~/robot_gazebo.zip -d ~/ros2_ws/src
 
 unzip ~/landerpi_description.zip -d ~/ros2_ws/src
 ```
 
 If the prompt below appears, type **A** and press **Enter**.
 
-<img src="../_static/media/chapter_10\section_1.1/media/image35.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_1.1/media/image35.png" style="width:500px" class="common_img"/>
 
 (7) Enter the following command to compile the feature package, then wait patiently.
 
@@ -142,7 +142,7 @@ mv /home/ubuntu/.typerc ~/ros2_ws/.typerc
 cd ~/ros2_ws/ && ls -a
 ```
 
-<img src="../_static/media/chapter_10\section_1.1/media/image38.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_1.1/media/image38.png" style="width:500px" class="common_img"/>
 
 (10) Modify the **.bashrc** file by entering the following command:
 
@@ -150,7 +150,7 @@ cd ~/ros2_ws/ && ls -a
 gedit ~/.bashrc
 ```
 
-<img src="../_static/media/chapter_10\section_1.1/media/image39.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_1.1/media/image39.png" style="width:500px" class="common_img"/>
 
 Copy and add the following content into the **.bashrc** file:
 
@@ -160,11 +160,11 @@ source /home/ubuntu/ros2_ws/.typerc
 source /home/ubuntu/ros2_ws/install/setup.bash
 ```
 
-<img src="../_static/media/chapter_10\section_1.1/media/image40.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_1.1/media/image40.png" style="width:500px" class="common_img"/>
 
 11) After editing, save and exit by pressing **Ctrl + S** or by clicking the **Save**.
 
-    <img src="../_static/media/chapter_10\section_1.1/media/image41.png"  style="width:500px"   class="common_img"/>
+    <img src="../_static/media/chapter_10/section_1.1/media/image41.png" style="width:500px" class="common_img"/>
 
 12) Enter the command below to reload the configuration file and update the settings.
 
@@ -177,7 +177,7 @@ source /home/ubuntu/ros2_ws/install/setup.bash
 
 To ensure proper communication between the virtual machine and the robot for subsequent coordinated operations, we need to configure the device network first.
 
-(1) Power on the robot and click<img src="../_static/media/chapter_10\section_1.1/media/image43.png"  style="width:30px"   class="common_img"/> to open a terminal on the desktop.
+(1) Power on the robot and click<img src="../_static/media/chapter_10/section_1.1/media/image43.png" style="width:30px" class="common_img"/> to open a terminal on the desktop.
 
 (2) Enter the following command to configure the Wi-Fi file:
 
@@ -187,7 +187,7 @@ cd ~/wifi_manager && gedit wifi_conf.py
 
 (3) Change the configuration to LAN mode and enter the Wi-Fi name and password. You may need to prepare a Wi-Fi router or mobile hotspot for subsequent connections.
 
-<img src="../_static/media/chapter_10\section_1.1/media/image45.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_1.1/media/image45.png" style="width:500px" class="common_img"/>
 
 (4) Press **Ctrl + S** to save and close.
 
@@ -197,7 +197,7 @@ cd ~/wifi_manager && gedit wifi_conf.py
 ifconfig
 ```
 
-<img src="../_static/media/chapter_10\section_1.1/media/image46.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_1.1/media/image46.png" style="width:500px" class="common_img"/>
 
 As shown in the above figure, the virtual machine and the robot are both on the 192.168.11 network segment, allowing normal communication.
 
@@ -213,15 +213,15 @@ As shown in the above figure, the virtual machine and the robot are both on the 
 
 In the previous section, the network environment has been configured. However, on the same network, the virtual machine and the robot must have matching ID numbers to communicate with each other. The following is the configuration method.
 
-(1) Power on the robot and click <img src="../_static/media/chapter_10\section_1.1/media/image47.png"  style="width:40px"   class="common_img"/>to open a terminal on the desktop.
+(1) Power on the robot and click <img src="../_static/media/chapter_10/section_1.1/media/image47.png" style="width:40px" class="common_img"/>to open a terminal on the desktop.
 
 (2) The terminal will display the device’s `DOMAIN_ID`, as shown in the figure below:
 
-<img src="../_static/media/chapter_10\section_1.1/media/image48.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_1.1/media/image48.png" style="width:500px" class="common_img"/>
 
 In this example, 23 is used to demonstrate the configuration of the virtual machine.
 
-(3) Start the virtual machine. Click <img src="../_static/media/chapter_10\section_1.1/media/image27.png"  style="width:40px"   class="common_img"/> to open the command-line terminal.。
+(3) Start the virtual machine. Click <img src="../_static/media/chapter_10/section_1.1/media/image27.png" style="width:40px" class="common_img"/> to open the command-line terminal.。
 
 (4) Enter the following command to open the configuration file:
 
@@ -229,21 +229,21 @@ In this example, 23 is used to demonstrate the configuration of the virtual mach
 gedit ~/ros2_ws/.typerc
 ```
 
-<img src="../_static/media/chapter_10\section_1.1/media/image49.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_1.1/media/image49.png" style="width:500px" class="common_img"/>
 
 (5) Change the ID shown in the figure below to `23`:
 
-<img src="../_static/media/chapter_10\section_1.1/media/image50.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_1.1/media/image50.png" style="width:500px" class="common_img"/>
 
-<img src="../_static/media/chapter_10\section_1.1/media/image51.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_1.1/media/image51.png" style="width:500px" class="common_img"/>
 
 (6) Press **Ctrl + S** to save and close the file.
 
 (7) Close the current terminal and open a new one. You should see that the ID has been changed to 23:
 
-<img src="../_static/media/chapter_10\section_1.1/media/image52.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_1.1/media/image52.png" style="width:500px" class="common_img"/>
 
-
+<p id="anchor_10_1_2"></p>
 
 ### 10.1.2 Remote File Transfer Tool Installation
 
@@ -251,65 +251,63 @@ gedit ~/ros2_ws/.typerc
 
 WinSCP is an open-source graphical SFTP client for Windows that uses SSH and also supports the SCP protocol. It is primarily designed to securely transfer files between a local and remote computer, and also allows direct file editing. The installation steps are as follows:
 
-1)  First, double-click the installer “**WinSCP-5.15.3-Setup.exe**” located in the [05 File Transmitting Tool](), and then click the **Accept** button.
+1)  First, double-click the installer "**WinSCP-5.15.3-Setup.exe**" located in the [05 File Transmitting Tool](), and then click the **Accept** button.
 
-<img src="../_static/media/chapter_10\section_1.2\media\image2.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_1.2/media/image2.png" style="width:500px" class="common_img"/>
 
 2)  Click the **Next** button.
 
-<img src="../_static/media/chapter_10\section_1.2\media\image3.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_1.2/media/image3.png" style="width:500px" class="common_img"/>
 
 3)  Click the **Next** button again.
 
-<img src="../_static/media/chapter_10\section_1.2\media\image4.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_1.2/media/image4.png" style="width:500px" class="common_img"/>
 
 4)  Keep the default installation location, and click the **Install** button.
 
-<img src="../_static/media/chapter_10\section_1.2\media\image5.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_1.2/media/image5.png" style="width:500px" class="common_img"/>
 
 5)  Wait a moment until the installation completes, then click the **Finish** button.
 
-<img src="../_static/media/chapter_10\section_1.2\media\image6.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_1.2/media/image6.png" style="width:500px" class="common_img"/>
 
-6)  The installation is complete, click the icon <img src="../_static/media/chapter_10\section_1.2\media\image7.png"  style="width:40px"   class="common_img"/>to open WinSCP.
+6)  The installation is complete, click the icon <img src="../_static/media/chapter_10/section_1.2/media/image7.png" style="width:40px" />to open WinSCP.
 
-
+<p id="anchor_10_1_3"></p>
 
 ### 10.1.3 Using the Transfer Tool
 
-1. Following the instructions in [10.1.2 Remote File Transfer Tool Installation](), install and launch the WinSCP tool.
+1. Following the instructions in [10.1.2 Remote File Transfer Tool Installation](#anchor_10_1_2), install and launch the WinSCP tool.
 
-   <img src="../_static/media/chapter_10/section_1.3/media/image2.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_1.3/media/image2.png" style="width:500px" class="common_img"/>
 
 2. In direct connection mode, enter the Raspberry Pi’s IP address (192.168.149.1), username (pi), and password (raspberrypi), then click **Login**.
 
-   <img src="../_static/media/chapter_10/section_1.3/media/image3.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_1.3/media/image3.png" style="width:500px" class="common_img"/>
 
 3. In the pop-up window, click **Accept** to continue.
 
-   <img src="../_static/media/chapter_10/section_1.3/media/image4.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_1.3/media/image4.png" style="width:500px" class="common_img"/>
 
 4. As shown below, the left pane displays the computer’s directory, and the right pane displays the Raspberry Pi’s home directory.
 
-   <img src="../_static/media/chapter_10/section_1.3/media/image5.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_1.3/media/image5.png" style="width:500px" class="common_img"/>
 
 5. Select the folder **docker-\>tmp** to open the folder shared with **docker**.
 
-   <img src="../_static/media/chapter_10/section_1.3/media/image6.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_1.3/media/image6.png" style="width:500px" class="common_img"/>
 
 6. You can drag target files from the computer directory on the left to the **tmp** directory on the right to transfer them. Similarly, files in the **tmp** directory can be dragged back to the computer directory for reverse transfer.
 
-   <img src="../_static/media/chapter_10/section_1.3/media/image7.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_1.3/media/image7.png" style="width:500px" class="common_img"/>
 
-7. Close the WinSCP tool and use VNC to remotely connect to the Raspberry Pi. Open the red terminal<img src="../_static/media/chapter_10/section_1.3/media/image8.png"  style="width:30px"   class="common_img"/>, use the **cd** command to navigate to the correct directory
+7. Close the WinSCP tool and use VNC to remotely connect to the Raspberry Pi. Open the red terminal<img src="../_static/media/chapter_10/section_1.3/media/image8.png" style="width:30px" class="common_img"/>, use the **cd** command to navigate to the correct directory
 
    ```
    cd share
    ```
 
 8. Use the `mv` command to move the target file to the desired directory.
-
-
 
 ## 10.2 Getting Started with URDF Model
 
@@ -347,7 +345,7 @@ For instance, when describing the two legs of a humanoid robot, the URDF model w
 sudo apt update
 ```
 
-<img src="../_static/media/chapter_10\section_2\media\image2.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image2.png" style="width:500px" class="common_img"/>
 
 (2) Run the following command and press Enter to install the URDF dependencies:
 
@@ -357,7 +355,7 @@ sudo apt-get install ros-humble-urdf
 
 When the output matches the image below, the installation is successful:
 
-<img src="../_static/media/chapter_10\section_2\media\image4.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image4.png" style="width:500px" class="common_img"/>
 
 (3) Run the following command and press Enter to install the Xacro model extension for URDF:
 
@@ -367,7 +365,10 @@ sudo apt-get install ros-humble-xacro
 
 When the output matches the image below, the installation is successful:
 
-<img src="../_static/media/chapter_10\section_2\media\image6.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image6.png" style="width:500px" class="common_img"/>
+
+
+<p id="anchor_10_2_1_1_3"></p>
 
 **3. URDF Model Basic Syntax**
 
@@ -401,7 +402,7 @@ Comments have no impact on the definition of other properties and elements. Plea
 
 The Link element describes the visual and physical properties of the robot's rigid component. The following tags are commonly used to define the motion of a link:
 
-<img src="../_static/media/chapter_10\section_2\media\image7.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image7.png" style="width:500px" class="common_img"/>
 
 \<visual\>: Describe the appearance of the `link`, such as size, color and shape.
 
@@ -434,7 +435,7 @@ In a URDF model, joints are defined using the `joint` tag. They describe the kin
 
 When defining joint behavior, the following tags are commonly used:
 
-<img src="../_static/media/chapter_10\section_2\media\image8.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image8.png" style="width:500px" class="common_img"/>
 
 \<parent_link\>: Specifies the parent link.
 
@@ -460,49 +461,49 @@ Each tag contains the corresponding child tag. The functions of the tags are lis
 
 The complete top tags of a robot, including the \<link\> and \<joint\> tags, must be enclosed within the \<robot\> tag. The format is as follows:
 
-<img src="../_static/media/chapter_10\section_2\media\image9.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image9.png" style="width:500px" class="common_img"/>
 
 **(5) gazebo Tag**
 
 This tag is used in conjunction with the Gazebo simulator. Within this tag, you can define simulation parameters and import Gazebo plugins, as well as specify Gazebo's physical properties, and more.
 
-<img src="../_static/media/chapter_10\section_2\media\image10.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image10.png" style="width:500px" class="common_img"/>
 
 **(6) Write Simple URDF Model**
 
 **Name the model of the robot**
 
-To start writing the URDF model, we need to set the name of the robot following this format: “\<robot name=“robot model name”\>”. Lastly, input “\</robot\>” at the end to represent that the model is written successfully.
+To start writing the URDF model, we need to set the name of the robot following this format: "\<robot name="robot model name"\>". Lastly, input "\</robot\>" at the end to represent that the model is written successfully.
 
-<img src="../_static/media/chapter_10\section_2\media\image11.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image11.png" style="width:500px" class="common_img"/>
 
-<img src="../_static/media/chapter_10\section_2\media\image12.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image12.png" style="width:500px" class="common_img"/>
 
 **Set links**
 
 ① To write the first link and use indentation to indicate that it is part of the currently set model. Set the name of the link using the following format: \<link name="link name"\>. Finally, conclude with "\</link\>" to indicate the successful completion of the link definition.
 
-<img src="../_static/media/chapter_10\section_2\media\image13.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image13.png" style="width:500px" class="common_img"/>
 
-<img src="../_static/media/chapter_10\section_2\media\image14.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image14.png" style="width:500px" class="common_img"/>
 
 ② When writing the link description, use indentation to indicate that the description belongs to the current link. Start the description with \<visual\> and end it with \</visual\>.
 
-<img src="../_static/media/chapter_10\section_2\media\image15.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image15.png" style="width:500px" class="common_img"/>
 
-<img src="../_static/media/chapter_10\section_2\media\image16.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image16.png" style="width:500px" class="common_img"/>
 
 ③ The "\<geometry\>" tag is employed to define the shape of a link. Once the description is complete, include "\</geometry\>". Within the "\<geometry\>" tag, indentation is used to specify the detailed description of the link's shape. The following example demonstrates a link with a cylindrical shape: "\<cylinder length="0.01" radius="0.2"/\>". In this instance, "length="0.01" signifies a length of 0.01 meters for the link, while "radius="0.2" denotes a radius of 0.2 meters, resulting in a cylindrical shape.
 
-<img src="../_static/media/chapter_10\section_2\media\image17.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image17.png" style="width:500px" class="common_img"/>
 
 ④ The "\<origin\>" tag is utilized to specify the position of a link, with indentation used to indicate the detailed description of the link's position. The following example demonstrates the position of a link: "\<origin rpy="0 0 0" xyz="0 0 0" /\>". In this example, "rpy" represents the angles of the link, while "xyz" represents the coordinates of the link's position. This particular example indicates that the link is positioned at the origin of the coordinate system.
 
-<img src="../_static/media/chapter_10\section_2\media\image18.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image18.png" style="width:500px" class="common_img"/>
 
 ⑤ The "\<material\>" tag is used to define the visual appearance of a link, with indentation used to specify the detailed description of the link's color. To start describing the color, include "\<material\>", and end with "\</material\>" when the description is complete. The following example demonstrates setting a link color to yellow: "\<color rgba="1 1 0 1" /\>". In this example, "rgba="1 1 0 1"" represents the color threshold for achieving a yellow color.
 
-<img src="../_static/media/chapter_10\section_2\media\image19.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image19.png" style="width:500px" class="common_img"/>
 
 **Set Joint**
 
@@ -510,66 +511,64 @@ To start writing the URDF model, we need to set the name of the robot following 
 
 > [!NOTE]
 >
-> **To learn about the type of the joint, please refer to the section “Joint” in this document.**
+> **To learn about the type of the joint, please refer to the section "Joint" in this document.**
 
-<img src="../_static/media/chapter_10\section_2\media\image20.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image20.png" style="width:500px" class="common_img"/>
 
-<img src="../_static/media/chapter_10\section_2\media\image21.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image21.png" style="width:500px" class="common_img"/>
 
 ② Write the description section for the connection between the link and the joint. Use indentation to indicate that it is part of the currently defined joint. The parent parameter and child parameter should be set using the following format: "\<parent link="parent link"/\>", and "\<child link="child link" /\>". With the parent link serving as the pivot, the joint rotates the child link.
 
-<img src="../_static/media/chapter_10\section_2\media\image22.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image22.png" style="width:500px" class="common_img"/>
 
-③ “\<origin\>” describes the position of the joint, with indentation used to specify the detailed coordinates of the joint. The image below describes the position of the joint: “\<origin xyz=“0 0 0.1” /\>”. xyz is the coordinate of the joint, indicating that the joint is located at x=0, y=0, z=0.1 in the coordinate system.
+③ "\<origin\>" describes the position of the joint, with indentation used to specify the detailed coordinates of the joint. The image below describes the position of the joint: "\<origin xyz="0 0 0.1" /\>". xyz is the coordinate of the joint, indicating that the joint is located at x=0, y=0, z=0.1 in the coordinate system.
 
-<img src="../_static/media/chapter_10\section_2\media\image23.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image23.png" style="width:500px" class="common_img"/>
 
-④ “\<axis\>” describes the orientation of the joint, with indentation used to specify its precise posture. The figure below shows the posture of a joint \<axis xyz="0 0 1" /\>, where xyz defines the orientation of the joint.
+④ "\<axis\>" describes the orientation of the joint, with indentation used to specify its precise posture. The figure below shows the posture of a joint \<axis xyz="0 0 1" /\>, where xyz defines the orientation of the joint.
 
-<img src="../_static/media/chapter_10\section_2\media\image24.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image24.png" style="width:500px" class="common_img"/>
 
 ⑤ \<limit\> is used to restrict joint motion, with indentation applied to specify detailed angle constraints. The figure below shows a joint whose maximum torque does not exceed 300 N, with an upper rotation limit of 3.14 radians and a lower limit of -3.14 radians. These limits are defined according to the following formula: effort = joint torque (N), velocity = joint speed, lower = lower bound of the rotation angle (radians), upper = upper bound of the rotation angle (radians).
 
-<img src="../_static/media/chapter_10\section_2\media\image25.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image25.png" style="width:500px" class="common_img"/>
 
 ⑥ \<dynamics\> describes the dynamic properties of the joint, with indentation used to specify detailed motion parameters. The figure below shows an example of a joint’s dynamics parameters: \<dynamics damping="50" friction="1" /\>  
 where damping specifies the damping value, and friction specifies the friction coefficient.
 
-<img src="../_static/media/chapter_10\section_2\media\image26.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image26.png" style="width:500px" class="common_img"/>
 
 **The complete code is shown as follows:**
 
-<img src="../_static/media/chapter_10\section_2\media\image27.png"  style="width:500px"   class="common_img"/>
-
-
+<img src="../_static/media/chapter_10/section_2/media/image27.png" style="width:500px" class="common_img"/>
 
 ### 10.2.2 ROS Robot URDF Model Instructions
 
 * **Preparation**
 
-To understand the URDF model, you can refer to the [3. URDF Model Basic Syntax](). This section provides a brief analysis of the robot model code and component models.
+To understand the URDF model, you can refer to the [3. URDF Model Basic Syntax](#anchor_10_2_1_1_3). This section provides a brief analysis of the robot model code and component models.
 
 * **Viewing the Robot Model Code**
 
 1. Launch the virtual machine,
 
-2. Click the terminal icon <img src="../_static/media/chapter_10\section_2\media\image28.png"  style="width:40px"   class="common_img"/> in the left of system desktop to open a command-line window.
+2. Click the terminal icon <img src="../_static/media/chapter_10/section_2/media/image28.png" style="width:40px" class="common_img"/> in the left of system desktop to open a command-line window.
 
 3. Enter the following command and press Enter to go to the startup program directory.
 
-   ```
-   cd ros2_ws/src/landerpi_description/urdf/
-   ```
+```
+cd ros2_ws/src/landerpi_description/urdf/
+```
 
 4. Enter the following command to open the robot simulation model file.
 
-   ```
-   vim landerpi.xacro
-   ```
+```
+vim landerpi.xacro
+```
 
 5)  Find the code section shown in the image below:
 
-<img src="../_static/media/chapter_10\section_2\media\image31.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image31.png" style="width:500px" class="common_img"/>
 
 Multiple URDF models are called to form the complete robot.
 
@@ -596,11 +595,11 @@ This is the beginning of the URDF file. It specifies the XML version and encodin
 
 This line of code defines a Xacro property named `mesh_dir`, which specifies the directory where the 3D mesh files used in the robot model are stored.
 
-<img src="../_static/media/chapter_10\section_2\media\image33.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image33.png" style="width:500px" class="common_img"/>
 
 Within the file, you’ll find a link definition named `base_footprint`, which represents the robot’s chassis.
 
-<img src="../_static/media/chapter_10\section_2\media\image34.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image34.png" style="width:500px" class="common_img"/>
 
 The following code defines key reference links and fixed joints in the robot model. First, \<link name="base_footprint"/\> creates a link named `base_footprint`.
 
@@ -608,11 +607,11 @@ Next, \<joint name="base_footprint_to_base_link" type="fixed"\> defines a fixed 
 
 The pose of base_link relative to base_footprint is specified by \<origin xyz="0 0 0.054" rpy="0 0 0"/\>, which places base_link 0.054 meters directly above base_footprint with no rotation.
 
-<img src="../_static/media/chapter_10\section_2\media\image35.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image35.png" style="width:500px" class="common_img"/>
 
 The following code is an XML fragment that defines a link in the robot model. Let us break down and analyze its structure and purpose.
 
-<img src="../_static/media/chapter_10\section_2\media\image36.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image36.png" style="width:500px" class="common_img"/>
 
 The code begins with a \<link\> tag, which defines a link in the robot model. The name of this link is "base_link". Inside the \<link\> tag, there are three main components: \<inertial\>, \<visual\>, and \<collision\>.
 
@@ -626,7 +625,7 @@ Overall, this code snippet defines a link in the robot model, including its iner
 
 Next section shows the link description.
 
-<img src="../_static/media/chapter_10\section_2\media\image37.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image37.png" style="width:500px" class="common_img"/>
 
 The code above describes a link named "back_shell_middle_link". The link includes information about inertial, visual, and collision properties.
 
@@ -636,7 +635,7 @@ Visual (\<visual\>): Describes the appearance of the link. The visual representa
 
 Collision (\<collision\>): Describes the collision shape of the link. The collision shape is also defined by a 3D mesh, using the same file as in the visual section.
 
-<img src="../_static/media/chapter_10\section_2\media\image38.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image38.png" style="width:500px" class="common_img"/>
 
 The code above is an XML fragment used to define a joint and a link in a robot model. Joint Definition
 
@@ -662,7 +661,7 @@ Visual: Specifies the visual representation of the link, including its position,
 
 Collision: Specifies the collision properties of the link, including its position, orientation, and geometry (mesh).
 
-<img src="../_static/media/chapter_10\section_2\media\image39.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image39.png" style="width:500px" class="common_img"/>
 
 The link defined in the code above is named: `back_shell_black_link`
 
@@ -678,7 +677,7 @@ Visual Properties (\<visual\>): Define the visual representation of the link. In
 
 Collision Properties (\<collision\>): Define the collision characteristics of the link. The collision properties are the same as the visual representation, using the same mesh.
 
-<img src="../_static/media/chapter_10\section_2\media\image40.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image40.png" style="width:500px" class="common_img"/>
 
 The description above refers to a link named wheel_left_front_link, which includes inertial, visual, and collision properties. The link’s geometry is represented by a mesh file.
 
@@ -700,7 +699,7 @@ The description above refers to a link named wheel_left_front_link, which includ
 
 9. \<mesh\>: Specifies the mesh file used for the link’s geometry, specifically "wheel_left_front_link.STL".
 
-<img src="../_static/media/chapter_10\section_2\media\image41.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image41.png" style="width:500px" class="common_img"/>
 
 The following code also describes a joint. The name of this joint is "wheel_left_front_joint".
 
@@ -752,31 +751,31 @@ For a robotic arm, inverse kinematics involves determining the rotation angles o
 
 Inverse kinematic analysis typically involves extensive matrix computations, and the process is complex with significant computational requirements, making implementation challenging. To better suit our needs, we use a geometric approach to analyze the robotic arm.
 
-<img src="../_static/media/chapter_10/section_3/media/image5.png"   style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_3/media/image5.png" style="width:500px" class="common_img"/>
 
 We simplify the model of the robotic arm by removing the base pan-tilt and the end effector, focusing on the main body of the arm. From the diagram, we can see the coordinates (x, y) of the endpoint P of the robotic arm. Ultimately, it is composed of three parts (x1 + x2 + x3, y1 + y2 + y3).
 
 In the diagram, θ1, θ2, and θ3 are the angles of the servos that we need to solve, and α is the angle between the gripper and the horizontal plane. From the diagram, it's evident that the top-down angle of the gripper α = θ1 + θ2 + θ3. Based on this observation, we can formulate the following equation:
 
-<img src="../_static/media/chapter_10/section_3/media/image6.png"   style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_3/media/image6.png" style="width:500px" class="common_img"/>
 
 The values of x and y are provided by the user, while l1, l2, and l3 represent the inherent mechanical properties of the robotic arm's structure.
 
 For ease of calculation, we will preprocess the known components for a holistic consideration:
 
-<img src="../_static/media/chapter_10/section_3/media/image7.png"   style="width:200px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_3/media/image7.png" style="width:200px" class="common_img"/>
 
 Substituting m and n into the existing equation and simplifying further, we can obtain:
 
-<img src="../_static/media/chapter_10/section_3/media/image8.png"   style="width:400px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_3/media/image8.png" style="width:400px" class="common_img"/>
 
 Through calculation, we have:
 
-<img src="../_static/media/chapter_10/section_3/media/image9.png"   style="width:300px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_3/media/image9.png" style="width:300px" class="common_img"/>
 
 We observe that the above expression is the quadratic formula for a single variable, where:
 
-<img src="../_static/media/chapter_10/section_3/media/image10.png"   style="width:300px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_3/media/image10.png" style="width:300px" class="common_img"/>
 
 With this information, we can determine the angles θ1 and, similarly, calculate θ2. Consequently, we can determine the angles for all three servos. By controlling the servos based on these angles, we can achieve control over the coordinate position.
 
@@ -796,7 +795,7 @@ The DH Parameter Table (Denavit-Hartenberg Parameter Table) is a standardized me
 
 While these definitions might seem complex, they become much clearer when viewed in the context of coordinate systems.
 
-First, you should focus on the two most important “lines”: - The axis of a joint (axis). - The common normal between the axis of one joint and the axis of the adjacent joint.
+First, you should focus on the two most important "lines": - The axis of a joint (axis). - The common normal between the axis of one joint and the axis of the adjacent joint.
 
 In the DH parameter system, we define the axis as the z-axis, and the common normal as the x-axis, where the direction of the x-axis is from the current joint to the next joint.
 
@@ -806,7 +805,7 @@ In applications such as robotic arm simulations, we may use other methods to est
 
 The diagram below shows two typical robot joints. Although these joints and links may not resemble any specific joints or links from real robots, they are quite common and can easily represent any joint in a real robot.
 
-<img src="../_static/media/chapter_10/section_3/media/image11.png"   style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_3/media/image11.png" style="width:500px" class="common_img"/>
 
 **(2) Determine Coordinate System**
 
@@ -822,7 +821,7 @@ Special Cases: When the Z-axes of two joints are parallel, there are infinitely 
 
 Once the coordinate system is assigned to each joint, the model can be represented as shown in the diagram below:
 
-<img src="../_static/media/chapter_10/section_3/media/image12.png"   style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_3/media/image12.png" style="width:500px" class="common_img"/>
 
 After determining the coordinate system, we can represent the four parameters more simply:
 
@@ -838,19 +837,19 @@ Joint angle θ<sub>i</sub>: Defined as the rotation angle measured around the po
 
 The base coordinate frame is located at the base of the robotic arm. In the diagram below, the origin is at the bottom servo, with the green axis representing X, the red axis representing Y, and the blue axis representing Z.
 
-<img src="../_static/media/chapter_10/section_3/media/image13.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_3/media/image13.png" style="width:500px" class="common_img"/>
 
 **(4) Joint Coordinate Frames**
 
 The robot arm consists of two main components: rotary joints and links. In the diagram of the arm model below, each joint’s coordinate frame is shown. The origin is represented by the pink cone, with the green axis as X, the red axis as Y, and the blue axis as Z.
 
-<img src="../_static/media/chapter_10/section_3/media/image14.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_3/media/image14.png" style="width:500px" class="common_img"/>
 
 **(5) Tool Coordinate Frame**
 
 Tools can be attached to the end of the robot arm to perform different tasks. The default tool for the arm is the gripper. In the diagram of the arm model, the tool coordinate frame of the gripper has its origin at the pink cone, with the green axis as X, the red axis as Y, and the blue axis as Z.
 
-<img src="../_static/media/chapter_10/section_3/media/image15.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_3/media/image15.png" style="width:500px" class="common_img"/>
 
 > [!NOTE]
 >
@@ -876,7 +875,7 @@ Additionally, MoveIt2 offers a suite of robust plugins and tools for the quick c
 >
 > **When entering commands, be sure to use correct case and spacing. You can use the Tab key to auto-complete keywords.**
 
-1. Launch the virtual machine. Click the terminal icon <img src="../_static/media/chapter_10/section_3/media/image16.png"  style="width:40px"   class="common_img"/> in the system desktop to open a command-line window.
+1. Launch the virtual machine. Click the terminal icon <img src="../_static/media/chapter_10/section_3/media/image16.png" style="width:40px" class="common_img"/> in the system desktop to open a command-line window.
 
 2. Entering the following command to launch the MoveIt2 configuration tool.
 
@@ -886,21 +885,21 @@ Additionally, MoveIt2 offers a suite of robust plugins and tools for the quick c
 
 3. Click **Edit Existing MoveIt2 Configuration Package** to begin editing an existing configuration package.
 
-   <img src="../_static/media/chapter_10/section_3/media/image18.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image18.png" style="width:500px" class="common_img"/>
 
 4. Click **Browse** and navigate to the following directory: **home/ubuntu/ros2_ws/src/hiwonder_moveIt_config**, then select the folder and click **Open**.
 
-   <img src="../_static/media/chapter_10/section_3/media/image19.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image19.png" style="width:500px" class="common_img"/>
 
-   <img src="../_static/media/chapter_10/section_3/media/image20.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image20.png" style="width:500px" class="common_img"/>
 
 5. Click **Load Files** and wait for the files to load.
 
-   <img src="../_static/media/chapter_10/section_3/media/image21.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image21.png" style="width:500px" class="common_img"/>
 
    Once the progress reaches 100%, the robot model will appear on the right side, indicating a successful load.
 
-   <img src="../_static/media/chapter_10/section_3/media/image22.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image22.png" style="width:500px" class="common_img"/>
 
 6. Adjust settings for options such as **Virtual Joints** and **Robot Pose** in the left-hand menu.
 
@@ -916,49 +915,49 @@ Generate a custom collision matrix. The default collision matrix generator scans
 
 Sampling density refers to the number of random joint configurations sampled to check for collisions. Higher density increases computation time. The default value is 10,000 collision checks.
 
-<img src="../_static/media/chapter_10/section_3/media/image23.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_3/media/image23.png" style="width:500px" class="common_img"/>
 
 **2. Virtual joints**
 
 Add virtual joints, which are primarily used to connect the robot to a simulation environment. In this step, a virtual joint is defined to link the **base_footprint** frame to the **world_frame**.
 
-<img src="../_static/media/chapter_10/section_3/media/image24.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_3/media/image24.png" style="width:500px" class="common_img"/>
 
 **3. Planning Groups**
 
 Add joint groups, which are used to define the various joint components required to assemble the robot.
 
-<img src="../_static/media/chapter_10/section_3/media/image25.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_3/media/image25.png" style="width:500px" class="common_img"/>
 
 **4. Robot Poses**
 
 Define robot pose and custom pose names for the robot and specify the joint groups involved in achieving each pose.
 
-<img src="../_static/media/chapter_10/section_3/media/image26.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_3/media/image26.png" style="width:500px" class="common_img"/>
 
 **5. Passive Joints**
 
 Define unused joints, specify which joints are available and which are disabled.
 
-<img src="../_static/media/chapter_10/section_3/media/image27.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_3/media/image27.png" style="width:500px" class="common_img"/>
 
 **6. ROS2 Controllers**
 
 Using the ROS2 Controllers panel, you can add simulated controllers for the joints. This enables MoveIt2 to simulate the motion of the robotic arm.
 
-<img src="../_static/media/chapter_10/section_3/media/image28.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_3/media/image28.png" style="width:500px" class="common_img"/>
 
 **7. ros2_control URDF Modifications**
 
 Configure the URDF file required for the simulation.
 
-<img src="../_static/media/chapter_10/section_3/media/image29.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_3/media/image29.png" style="width:500px" class="common_img"/>
 
 **8. Author Information**
 
 Provide the author's details.
 
-<img src="../_static/media/chapter_10/section_3/media/image30.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_3/media/image30.png" style="width:500px" class="common_img"/>
 
 **9. Configuration Files**
 
@@ -966,7 +965,7 @@ The factory settings are already configured, so **no reconfiguration is required
 
 Generate configuration files, after confirming the file path, click **Generate Package** to generate the configuration package.
 
-<img src="../_static/media/chapter_10/section_3/media/image31.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_3/media/image31.png" style="width:500px" class="common_img"/>
 
 
 
@@ -986,49 +985,49 @@ The program interface is shown in the image below:
 
 Position 1: RViz Toolbar. Position 2: MoveIt Debugging Area. Position 3: Simulation Model Adjustment Area.
 
-<img src="../_static/media/chapter_10/section_3/media/image33.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_3/media/image33.png" style="width:500px" class="common_img"/>
 
 * **Control Instructions**
 
 1. In the MoveIt2 Debugging Area, find and click the **Planning** section.
 
-   <img src="../_static/media/chapter_10/section_3/media/image34.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image34.png" style="width:500px" class="common_img"/>
 
 2. In the Simulation Model Adjustment Area, you will see arrows in red, green, and blue colors. Click and drag the arrows to adjust the robotic arm's pose. In the robot's first-person view: Green represents the X-axis, with the positive direction pointing to the robot's left. Red represents the Y-axis, with the positive direction pointing to the robot's front. Blue represents the Z-axis, with the positive direction pointing upwards from the robot.
 
-   <img src="../_static/media/chapter_10/section_3/media/image15.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image15.png" style="width:500px" class="common_img"/>
 
 3. Besides adjusting the pose using the arrows, you can also adjust individual joints directly. Click the triangle icon on the right, then locate and open the **Joints** panel.
 
-   <img src="../_static/media/chapter_10/section_3/media/image35.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image35.png" style="width:500px" class="common_img"/>
 
 4. Drag the sliders for the corresponding joints to adjust their angles individually.
 
-   <img src="../_static/media/chapter_10/section_3/media/image36.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image36.png" style="width:500px" class="common_img"/>
 
 5. After successfully planning the robotic arm's motion path, the new position will be highlighted in orange. If the new position causes a collision with other parts of the robot, it will be marked in red. You must adjust the configuration to avoid collisions. Otherwise, the motion cannot be executed.
 
    Orange Executable State is shown in the following image.
 
-   <img src="../_static/media/chapter_10/section_3/media/image37.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image37.png" style="width:500px" class="common_img"/>
 
 For example, if the robotic arm is planned to be in the position shown in the image, it will collide with the depth camera. Turn the state red to non-executable, as shown in the figure below:
 
-<img src="../_static/media/chapter_10/section_3/media/image38.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_3/media/image38.png" style="width:500px" class="common_img"/>
 
 6. After planning the path, return to the **Planning** section and click the **Plan** option. The simulation model will display the motion path from the original position to the newly planned position.
 
-   <img src="../_static/media/chapter_10/section_3/media/image39.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image39.png" style="width:500px" class="common_img"/>
 
 7. Then, click the **Execute** option to make both the simulation model and robotic arm follow the planned motion path.
 
-   <img src="../_static/media/chapter_10/section_3/media/image40.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image40.png" style="width:500px" class="common_img"/>
 
-   <img src="../_static/media/chapter_10/section_3/media/image41.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image41.png" style="width:500px" class="common_img"/>
 
 8. Alternatively, you can click **Plan & Execute**, where the robotic arm will first display the new planned motion path and then execute the movement.
 
-<img src="../_static/media/chapter_10/section_3/media/image42.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_3/media/image42.png" style="width:500px" class="common_img"/>
 
 9)  To exit the feature, press **Ctrl+C** in the terminal. If the program does not close successfully, try pressing **Ctrl + C** again.
 
@@ -1040,7 +1039,7 @@ In this section, MoveIt2 will be used to plan a path and control the simulation 
 
 * **Start MoveIt2 Tool**
 
-1. On the virtual machine, click the desktop icon <img src="../_static/media/chapter_10/section_3/media/image16.png"  style="width:30px"   class="common_img"/> to open a terminal.
+1. On the virtual machine, click the desktop icon <img src="../_static/media/chapter_10/section_3/media/image16.png" style="width:30px" class="common_img"/> to open a terminal.
 
 2. Enter the command to launch MoveIt2 tool.
 
@@ -1052,29 +1051,29 @@ The program interface is shown in the image below:
 
 Position 1: RViz Toolbar. Position 2: MoveIt Debugging Area. Position 3: Simulation Model Adjustment Area.
 
-<img src="../_static/media/chapter_10/section_3/media/image33.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_3/media/image33.png" style="width:500px" class="common_img"/>
 
 * **Control Instructions**
 
 1. In the MoveIt2 Debugging Area, find and click the **Planning** section.
 
-   <img src="../_static/media/chapter_10/section_3/media/image43.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image43.png" style="width:500px" class="common_img"/>
 
 2. In the simulation model adjustment area, there are arrows in red, green, and blue colors. In the robot's first-person view: Green represents the X-axis, with the positive direction pointing to the robot's left. Red represents the Y-axis, with the positive direction pointing to the robot's front. Blue represents the Z-axis, with the positive direction pointing upwards from the robot.
 
-   <img src="../_static/media/chapter_10/section_3/media/image15.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image15.png" style="width:500px" class="common_img"/>
 
 3. In the **Query** category, click the dropdown menu under **Planning Group** and select the joint group, which is also servo group, you wish to control. For example, the default selection is the **arm** group.
 
-   <img src="../_static/media/chapter_10/section_3/media/image44.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image44.png" style="width:500px" class="common_img"/>
 
 4. Click the dropdown menu under **Goal State** and choose the desired target position.
 
-   <img src="../_static/media/chapter_10/section_3/media/image45.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image45.png" style="width:500px" class="common_img"/>
 
 5. The parameter list in the dropdown menu is as follows:
 
-   <img src="../_static/media/chapter_10/section_3/media/image46.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image46.png" style="width:500px" class="common_img"/>
 
    The description of the parameters are as follows:
 
@@ -1092,11 +1091,11 @@ Position 1: RViz Toolbar. Position 2: MoveIt Debugging Area. Position 3: Simulat
 
 6. To avoid the possibility of collisions, select **random valid** to randomly generate a valid target position. Each time you click this option, a new target position will be randomly generated and displayed in the simulation model.
 
-   <img src="../_static/media/chapter_10/section_3/media/image47.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image47.png" style="width:500px" class="common_img"/>
 
 7. Click **Plan & Execute**, and both the simulation model and robotic arm will perform the motion simultaneously. The simulation model will show the newly planned movement path, and the robotic arm will execute the motion.
 
-   <img src="../_static/media/chapter_10/section_3/media/image48.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image48.png" style="width:500px" class="common_img"/>
 
 8. To exit the feature, press **Ctrl + C** in the terminal. If the program does not close successfully, try pressing **Ctrl + C** again.
 
@@ -1116,7 +1115,7 @@ The Cartesian coordinate system is a general term for both orthogonal and skewed
 
 In most cases when describing spatial position, velocity, and acceleration, we use the Cartesian coordinate system. When referring to rotations around an axis, the positive direction is determined by the right-hand rule, as shown in the diagram below:
 
-<img src="../_static/media/chapter_10/section_3/media/image49.png"   style="width:400px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_3/media/image49.png" style="width:400px" class="common_img"/>
 
 **2. Cartesian Path Analysis**
 
@@ -1146,27 +1145,27 @@ This section will add Cartesian path constraints to the path planning, restricti
 
 * **Start MoveIt2 Tool**
 
-1. Launch the virtual machine. Click the terminal icon <img src="../_static/media/chapter_10/section_3/media/image16.png"  style="width:40px"   class="common_img"/> in the system desktop to open a command-line window.
+1. Launch the virtual machine. Click the terminal icon <img src="../_static/media/chapter_10/section_3/media/image16.png" style="width:40px" class="common_img"/> in the system desktop to open a command-line window.
 
 2. Start a new command-line terminal, and run the following command to launch the MoveIt2 tool.
 
    ```
-   ros2 launch hiwonder_moveit_config demo.launch.py
+   ros2 launch hiwonder_moveit_config demo.launch.py
    ```
 
    The program interface is shown in the image below:
 
 Position 1: RViz Toolbar. Position 2: MoveIt Debugging Area. Position 3: Simulation Model Adjustment Area.
 
-<img src="../_static/media/chapter_10/section_3/media/image33.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_3/media/image33.png" style="width:500px" class="common_img"/>
 
 3. Locate the **Planning** section, and tick **Use Cartesian Path** to enable Cartesian path planning.
 
-   <img src="../_static/media/chapter_10/section_3/media/image51.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image51.png" style="width:500px" class="common_img"/>
 
 4. Next, use the mouse to drag the arrows in the "Simulation Model Adjustment Area" to plan the robotic arm's path. In the robot's first-person view: Green represents the X-axis, with the positive direction pointing to the robot's left. Red represents the Y-axis, with the positive direction pointing to the robot's front. Blue represents the Z-axis, with the positive direction pointing upwards from the robot.
 
-   <img src="../_static/media/chapter_10/section_3/media/image15.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image15.png" style="width:500px" class="common_img"/>
 
 5. Once the planning is complete, click **Plan & Execute**. The simulation model will execute the action and attempt to linearly move the end effector in Cartesian space. If the action cannot be performed within the Cartesian path constraints, it will display a failure message.
 
@@ -1218,63 +1217,63 @@ If the value corresponding to two objects in the ACM is set to 1, it means colli
 
 * **Start MoveIt2 Tool**
 
-1. Launch the virtual machine. Click the terminal icon <img src="../_static/media/chapter_10/section_3/media/image16.png"  style="width:40px"   class="common_img"/> in the system desktop to open a command-line window.
+1. Launch the virtual machine. Click the terminal icon <img src="../_static/media/chapter_10/section_3/media/image16.png" style="width:40px" class="common_img"/> in the system desktop to open a command-line window.
 
 2. Enter the command to launch MoveIt2 tool.
 
    ```
-   ros2 launch hiwonder_moveit_config demo.launch.py
+   ros2 launch hiwonder_moveit_config demo.launch.py
    ```
 
 The program interface is shown in the image below:
 
 Position 1: RViz Toolbar. Position 2: MoveIt Debugging Area. Position 3: Simulation Model Adjustment Area.
 
-<img src="../_static/media/chapter_10/section_3/media/image33.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_3/media/image33.png" style="width:500px" class="common_img"/>
 
 3. In the Simulation Model Adjustment Area, you will see arrows in red, green, and blue colors. Click and drag the arrows to adjust the robotic arm's pose. In the robot's first-person view: Green represents the X-axis, with the positive direction pointing to the robot's left. Red represents the Y-axis, with the positive direction pointing to the robot's front. Blue represents the Z-axis, with the positive direction pointing upwards from the robot.
 
    After planning the path, the new position will be highlighted in orange, as shown in the image below:
 
-   <img src="../_static/media/chapter_10/section_3/media/image37.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image37.png" style="width:500px" class="common_img"/>
 
 4. Once the robotic arm's path is planned, click the **Scene Objects** section to add a collision model.
 
-   <img src="../_static/media/chapter_10/section_3/media/image52.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image52.png" style="width:500px" class="common_img"/>
 
 5. The section is divided into 4 areas, as described below:
 
-   <img src="../_static/media/chapter_10/section_3/media/image53.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image53.png" style="width:500px" class="common_img"/>
 
 6. Click the **Box** dropdown menu and select a collision model. Here, we will use the **Sphere** model as an example.
 
-   <img src="../_static/media/chapter_10/section_3/media/image54.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image54.png" style="width:500px" class="common_img"/>
 
-   <img src="../_static/media/chapter_10/section_3/media/image55.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image55.png" style="width:500px" class="common_img"/>
 
 7. Click the plus icon to add the currently selected collision model.
 
-   <img src="../_static/media/chapter_10/section_3/media/image56.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image56.png" style="width:500px" class="common_img"/>
 
    The model will be placed at the robot's base by default, as shown in the image below:
 
-   <img src="../_static/media/chapter_10/section_3/media/image57.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image57.png" style="width:500px" class="common_img"/>
 
 8. Use the slider to adjust the size of the collision model. It is recommended to shrink it to about 50% of the original size.
 
-   <img src="../_static/media/chapter_10/section_3/media/image58.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image58.png" style="width:500px" class="common_img"/>
 
 9. Drag the 3D arrows on the sphere to move the collision model between the start and target positions to test the collision detection effect.
 
-   <img src="../_static/media/chapter_10/section_3/media/image59.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image59.png" style="width:500px" class="common_img"/>
 
 10. Click the **Planning** section and check the **Collision-aware IK** option to enable the collision detection for the model.
 
-    <img src="../_static/media/chapter_10/section_3/media/image60.png"  style="width:500px"   class="common_img"/>
+    <img src="../_static/media/chapter_10/section_3/media/image60.png" style="width:500px" class="common_img"/>
 
 11. Next, click **Plan & Execute** to begin moving along the planned path. When the following prompt appears, select **Yes**.
 
-    <img src="../_static/media/chapter_10/section_3/media/image61.png"  style="width:500px"   class="common_img"/>
+    <img src="../_static/media/chapter_10/section_3/media/image61.png" style="width:500px" class="common_img"/>
 
 12. After confirming, the robot arm will plan the movement path, avoiding any obstacles along the way to prevent collisions.
 
@@ -1308,57 +1307,57 @@ In this section, we will explain how to add object models to the scene.
 
 * **Start MoveIt2 Tool**
 
-1. Launch the virtual machine. Click the terminal icon <img src="../_static/media/chapter_10/section_3/media/image16.png"  style="width:40px"   class="common_img"/> in the system desktop to open a command-line window.
+1. Launch the virtual machine. Click the terminal icon <img src="../_static/media/chapter_10/section_3/media/image16.png" style="width:40px" class="common_img"/> in the system desktop to open a command-line window.
 
 2. Start a new command-line terminal, and run the following command to launch the MoveIt2 tool.
 
    ```
-   ros2 launch hiwonder_moveit_config demo.launch.py
+   ros2 launch hiwonder_moveit_config demo.launch.py
    ```
 
 The program interface is shown in the image below:
 
 Position 1: RViz Toolbar. Position 2: MoveIt Debugging Area. Position 3: Simulation Model Adjustment Area.
 
-<img src="../_static/media/chapter_10/section_3/media/image33.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_3/media/image33.png" style="width:500px" class="common_img"/>
 
 After planning the path, the new position will be highlighted in orange, as shown in the image below:
 
-<img src="../_static/media/chapter_10/section_3/media/image37.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_3/media/image37.png" style="width:500px" class="common_img"/>
 
 3. In the debugging area, locate the **Scene Objects** section to add scene object models.
 
-   <img src="../_static/media/chapter_10/section_3/media/image52.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image52.png" style="width:500px" class="common_img"/>
 
 4. The section is divided into 4 areas, as described below:
 
-   <img src="../_static/media/chapter_10/section_3/media/image53.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image53.png" style="width:500px" class="common_img"/>
 
 5. In the **Custom Model** section, select the required basic model. Here, we use the cube model as an example.
 
-   <img src="../_static/media/chapter_10/section_3/media/image54.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image54.png" style="width:500px" class="common_img"/>
 
-   <img src="../_static/media/chapter_10/section_3/media/image62.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image62.png" style="width:500px" class="common_img"/>
 
 6. Above the model selection, adjust the initial size of the object model in meters. As shown below:
 
-   <img src="../_static/media/chapter_10/section_3/media/image63.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image63.png" style="width:500px" class="common_img"/>
 
 7. After adjusting, click the "+" button to add the currently configured object model to the scene.
 
-   <img src="../_static/media/chapter_10/section_3/media/image64.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image64.png" style="width:500px" class="common_img"/>
 
 8. Once added, the model list will be updated with the newly added model, which will appear at the center of the scene, which is the robot's center.
 
-   <img src="../_static/media/chapter_10/section_3/media/image65.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image65.png" style="width:500px" class="common_img"/>
 
 9. In the Simulation Model Adjustment Area, you will see arrows in red, green, and blue colors. Click and drag the arrows to adjust the robotic arm's pose. In the robot's first-person view: Green represents the X-axis, with the positive direction pointing to the robot's left. Red represents the Y-axis, with the positive direction pointing to the robot's front. Blue represents the Z-axis, with the positive direction pointing upwards from the robot.
 
-   <img src="../_static/media/chapter_10/section_3/media/image66.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image66.png" style="width:500px" class="common_img"/>
 
 10. In addition to using arrow dragging, you can also make adjustments in the position and scale adjustment area.
 
-    <img src="../_static/media/chapter_10/section_3/media/image67.png"  style="width:500px"   class="common_img"/>
+    <img src="../_static/media/chapter_10/section_3/media/image67.png" style="width:500px" class="common_img"/>
 
     **Position**: Adjust the object's position on the X, Y, and Z axes.
 
@@ -1368,11 +1367,11 @@ After planning the path, the new position will be highlighted in orange, as show
 
 11. After making adjustments, click **Publish** to send the model's topic message. MoveIt2 will automatically subscribe to this message.
 
-    <img src="../_static/media/chapter_10/section_3/media/image68.png"  style="width:500px"   class="common_img"/>
+    <img src="../_static/media/chapter_10/section_3/media/image68.png" style="width:500px" class="common_img"/>
 
 12. To prevent object models from colliding, go to the **Planning** section and check the **Collision-aware IK** box to enable collision detection for the model.
 
-    <img src="../_static/media/chapter_10/section_3/media/image69.png"  style="width:500px"   class="common_img"/>
+    <img src="../_static/media/chapter_10/section_3/media/image69.png" style="width:500px" class="common_img"/>
 
 13. To exit the feature, press **Ctrl+C** in the terminal. If the program does not close successfully, try pressing **Ctrl + C** again.
 
@@ -1420,51 +1419,51 @@ This section integrates the OMPL and CHOMP planners. By default, the OMPL planne
 
 * **Start MoveIt2 Tool**
 
-1. Launch the virtual machine. Click the terminal icon <img src="../_static/media/chapter_10/section_3/media/image16.png"  style="width:40px"   class="common_img"/> in the system desktop to open a command-line window.
+1. Launch the virtual machine. Click the terminal icon <img src="../_static/media/chapter_10/section_3/media/image16.png" style="width:40px" class="common_img"/> in the system desktop to open a command-line window.
 
 2. Enter the command to launch MoveIt2 tool.
 
    ```
-   ros2 launch hiwonder_moveit_config demo.launch.py
+   ros2 launch hiwonder_moveit_config demo.launch.py
    ```
 
    The program interface is shown in the image below:
 
 Position 1: RViz Toolbar. Position 2: MoveIt Debugging Area. Position 3: Simulation Model Adjustment Area.
 
-<img src="../_static/media/chapter_10/section_3/media/image33.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_3/media/image33.png" style="width:500px" class="common_img"/>
 
 3. In the Simulation Model Adjustment Area, you will see arrows in red, green, and blue colors. Click and drag the arrows to adjust the robotic arm's pose. In the robot's first-person view: Green represents the X-axis, with the positive direction pointing to the robot's left. Red represents the Y-axis, with the positive direction pointing to the robot's front. Blue represents the Z-axis, with the positive direction pointing upwards from the robot.
 
-   <img src="../_static/media/chapter_10/section_3/media/image15.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image15.png" style="width:500px" class="common_img"/>
 
 4. Besides adjusting the pose using the arrows, you can also adjust individual joints directly. Find and click the **Joints** panel.
 
-   <img src="../_static/media/chapter_10/section_3/media/image70.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image70.png" style="width:500px" class="common_img"/>
 
 5. Drag the sliders for the corresponding joints to adjust their angles individually.
 
-   <img src="../_static/media/chapter_10/section_3/media/image71.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image71.png" style="width:500px" class="common_img"/>
 
 6. After successfully planning the robotic arm's motion path, the new position will be highlighted in orange. If the new position causes a collision with other parts of the robot, it will be marked in red. You must adjust the configuration to avoid collisions. Otherwise, the motion cannot be executed.
 
    Orange Executable State is shown in the following image.
 
-   <img src="../_static/media/chapter_10/section_3/media/image37.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image37.png" style="width:500px" class="common_img"/>
 
 7. In the RVIZ toolbar, click **Motion Planning** and **Planned Path**, then check the **Show Trail** option. This will display the visual trail of each frame of the robotic arm's movement.
 
-   <img src="../_static/media/chapter_10/section_3/media/image72.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image72.png" style="width:500px" class="common_img"/>
 
 8. Return to the **Planning** section and click the **Plan** option. The simulation model will display the motion path from the original position to the newly planned position.
 
-   <img src="../_static/media/chapter_10/section_3/media/image39.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image39.png" style="width:500px" class="common_img"/>
 
-   <img src="../_static/media/chapter_10/section_3/media/image73.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image73.png" style="width:500px" class="common_img"/>
 
 9. After observing the demonstration, uncheck the **Show Trail** option. Then, click the **Execute** button. The simulation model and the robot will simultaneously execute the planned motion.
 
-   <img src="../_static/media/chapter_10/section_3/media/image40.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image40.png" style="width:500px" class="common_img"/>
 
 10. To exit the feature, press **Ctrl + C** in the terminal. If the program does not close successfully, try pressing **Ctrl + C** again.
 
@@ -1482,7 +1481,7 @@ In this section, we will plan a motion trajectory in the simulation and execute 
 
 * **Starting Robot Services**
 
-1. First to power on the robot. Click the terminal icon <img src="../_static/media/chapter_10/section_3/media/image74.png"  style="width:40px"   class="common_img"/> in the system desktop to open a command-line window, then enter the command to disable the auto-start service.
+1. First to power on the robot. Click the terminal icon <img src="../_static/media/chapter_10/section_3/media/image74.png" style="width:40px" class="common_img"/> in the system desktop to open a command-line window, then enter the command to disable the auto-start service.
 
    ```
    ~/.stop_ros.sh
@@ -1496,7 +1495,7 @@ In this section, we will plan a motion trajectory in the simulation and execute 
 
 * **Starting Services on Virtual Machine**
 
-1. Launch the virtual machine. Click the terminal icon <img src="../_static/media/chapter_10/section_3/media/image16.png"  style="width:40px"   class="common_img"/> in the system desktop to open a command-line window.
+1. Launch the virtual machine. Click the terminal icon <img src="../_static/media/chapter_10/section_3/media/image16.png" style="width:40px" class="common_img"/> in the system desktop to open a command-line window.
 
 2. Enter the following command in the terminal to launch the servo control node, which enables coordination between the simulation and the real robot arm.
 
@@ -1507,12 +1506,12 @@ In this section, we will plan a motion trajectory in the simulation and execute 
 3. Start a new command-line terminal, and run the following command to launch the MoveIt2 tool.
 
    ```
-   ros2 launch hiwonder_moveit_config demo.launch.py
+   ros2 launch hiwonder_moveit_config demo.launch.py
    ```
 
 4. Use the slider to adjust the motion planning for the robotic arm, then click **Plan & Execute**. The simulated robotic arm and the real robotic arm will execute the action synchronously.
 
-   <img src="../_static/media/chapter_10/section_3/media/image42.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_3/media/image42.png" style="width:500px" class="common_img"/>
 
    > [!NOTE]
    >
@@ -1538,7 +1537,7 @@ Gazebo supports URDF and SDF file formats for describing simulation environments
 
 The simulation software interface is as below:
 
-<img src="../_static/media/chapter_10/section_4/media/image4.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_4/media/image4.png" style="width:500px" class="common_img"/>
 
 The specific functions of each position are detailed in the table below:
 
@@ -1554,7 +1553,7 @@ For more information about Gazebo, please visit the official website: [http://ga
 
 * **Gazebo Learning Resources**
 
-Gazebo Official Website: https://gazebosim.org/
+Gazebo Official Website: <https://gazebosim.org/>
 
 Gazebo Tutorials: [https://gazebosim.org/tutorials](https://gazebosim.org/tutorials)
 
@@ -1574,7 +1573,7 @@ To better understand the robot's model and structure, you can use Gazebo for vis
 >
 > **When entering commands, be sure to use correct case and spacing. You can use the Tab key to auto-complete keywords.**
 
-1. Launch the virtual machine. Click the terminal icon <img src="../_static/media/chapter_10/section_4/media/image5.png"  style="width:30px"   class="common_img"/> in the system desktop to open a command-line window.
+1. Launch the virtual machine. Click the terminal icon <img src="../_static/media/chapter_10/section_4/media/image5.png" style="width:30px" class="common_img"/> in the system desktop to open a command-line window.
 
 2. Enter the following command to open the Gazebo simulation model:
 
@@ -1584,7 +1583,7 @@ To better understand the robot's model and structure, you can use Gazebo for vis
 
    If the interface shown below appears, the tool has launched successfully:
 
-<img src="../_static/media/chapter_10/section_4/media/image7.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_4/media/image7.png" style="width:500px" class="common_img"/>
 
 3)  To close the currently running program in the terminal window, press the shortcut **Ctrl + C**.
 
@@ -1601,17 +1600,17 @@ This section introduces some commonly used shortcuts and tools in Gazebo, using 
 
 Next to explain a few tools from the toolbar using the following example:
 
-4. Selection tool <img src="../_static/media/chapter_10/section_4/media/image8.png"  style="width:30px"   class="common_img"/>: It is Gazebo's default tool, used to select models.
+4. Selection tool <img src="../_static/media/chapter_10/section_4/media/image8.png" style="width:30px" class="common_img"/>: It is Gazebo's default tool, used to select models.
 
-<img src="../_static/media/chapter_10/section_4/media/image9.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_4/media/image9.png" style="width:500px" class="common_img"/>
 
-5. Move Tool <img src="../_static/media/chapter_10/section_4/media/image10.png"  style="width:30px"   class="common_img"/>: Use this tool to select a model and drag the three axes to control its movement.
+5. Move Tool <img src="../_static/media/chapter_10/section_4/media/image10.png" style="width:30px" class="common_img"/>: Use this tool to select a model and drag the three axes to control its movement.
 
-<img src="../_static/media/chapter_10/section_4/media/image11.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_4/media/image11.png" style="width:500px" class="common_img"/>
 
-6. Rotate Tool <img src="../_static/media/chapter_10/section_4/media/image12.png"  style="width:30px"   class="common_img"/>: Use this tool to select a model and drag the three axes to control its rotation.
+6. Rotate Tool <img src="../_static/media/chapter_10/section_4/media/image12.png" style="width:30px" class="common_img"/>: Use this tool to select a model and drag the three axes to control its rotation.
 
-<img src="../_static/media/chapter_10/section_4/media/image13.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_4/media/image13.png" style="width:500px" class="common_img"/>
 
 For more information about Gazebo, please visit the official website: [http://gazebosim.org/](http://gazebosim.org/)
 
@@ -1629,7 +1628,7 @@ To understand the simulation models of various extended devices on the robot, it
 
 1. Launch the VMware virtual machine.
 
-2. Click the terminal icon <img src="../_static/media/chapter_10/section_4/media/image5.png"  style="width:40px"   class="common_img"/> in the system desktop to open a command-line window.
+2. Click the terminal icon <img src="../_static/media/chapter_10/section_4/media/image5.png" style="width:40px" class="common_img"/> in the system desktop to open a command-line window.
 
 3. Enter the following command and press Enter to go to the startup program directory.
 
@@ -1645,7 +1644,7 @@ To understand the simulation models of various extended devices on the robot, it
 
    This file describes the Lidar simulation model, including its name, detection range, position, noise reduction settings, topic messages, and other properties. To fully understand this file, you can refer to [10.2 Getting Started with URDF Model]() to learn the relevant syntax.
 
-   <img src="../_static/media/chapter_10/section_4/media/image15.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_4/media/image15.png" style="width:500px" class="common_img"/>
 
 * **IMU Simulation**
 
@@ -1653,7 +1652,7 @@ To understand the simulation models of various extended devices on the robot, it
 >
 > **When entering commands, be sure to use correct case and spacing. You can use the Tab key to auto-complete keywords.**
 
-1. Launch the virtual machine. Click the terminal icon <img src="../_static/media/chapter_10/section_4/media/image5.png"  style="width:30px"   class="common_img"/> in the system desktop to open a command-line window.
+1. Launch the virtual machine. Click the terminal icon <img src="../_static/media/chapter_10/section_4/media/image5.png" style="width:30px" class="common_img"/> in the system desktop to open a command-line window.
 
 2. Enter the following command and press Enter to go to the startup program directory.
 
@@ -1669,7 +1668,7 @@ To understand the simulation models of various extended devices on the robot, it
 
 This file describes the IMU simulation model, including its name, offset settings, noise reduction settings, acceleration settings, topic messages, and other properties. To fully understand this file, refer to [10.2 Getting Started with URDF Model]() for the relevant syntax.
 
-<img src="../_static/media/chapter_10/section_4/media/image17.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_4/media/image17.png" style="width:500px" class="common_img"/>
 
 
 
@@ -1683,7 +1682,7 @@ This file describes the IMU simulation model, including its name, offset setting
 
 If you want to perform mapping in an ideal environment but cannot build it in the real world, you can instead create the desired scene in Gazebo and carry out mapping simulation there.
 
-1)  Launch the virtual machine. Click the terminal icon <img src="../_static/media/chapter_10/section_4/media/image5.png"  style="width:30px"   class="common_img"/> in the system desktop to open a command-line window.
+1)  Launch the virtual machine. Click the terminal icon <img src="../_static/media/chapter_10/section_4/media/image5.png" style="width:30px" class="common_img"/> in the system desktop to open a command-line window.
 
 > [!NOTE]
 >
@@ -1695,19 +1694,19 @@ If you want to perform mapping in an ideal environment but cannot build it in th
    ros2 launch robot_gazebo room_worlds.launch.py
    ```
 
-   <img src="../_static/media/chapter_10/section_4/media/image18.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_4/media/image18.png" style="width:500px" class="common_img"/>
 
-   <img src="../_static/media/chapter_10/section_4/media/image19.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_4/media/image19.png" style="width:500px" class="common_img"/>
 
-2. Open a new terminal<img src="../_static/media/chapter_10/section_4/media/image5.png"  style="width:30px"   class="common_img"/>. Enter the following command to start the mapping service.
+2. Open a new terminal<img src="../_static/media/chapter_10/section_4/media/image5.png" style="width:30px" class="common_img"/>. Enter the following command to start the mapping service.
 
    ```
    ros2 launch robot_gazebo slam.launch.py
    ```
 
-   <img src="../_static/media/chapter_10/section_4/media/image21.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_4/media/image21.png" style="width:500px" class="common_img"/>
 
-   <img src="../_static/media/chapter_10/section_4/media/image22.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_4/media/image22.png" style="width:500px" class="common_img"/>
 
 * **Mapping Operation**
 
@@ -1726,17 +1725,17 @@ If you want to perform mapping in an ideal environment but cannot build it in th
 |     a      |             Turn left              |   Long press    |
 |     d      |             Turn right             |   Long press    |
 
-<img src="../_static/media/chapter_10/section_4/media/image23.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_4/media/image23.png" style="width:500px" class="common_img"/>
 
 2. Control the robot to explore and build the simulation map. The mapping progress will be displayed simultaneously in RViz, as shown below:
 
-   <img src="../_static/media/chapter_10/section_4/media/image24.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_4/media/image24.png" style="width:500px" class="common_img"/>
 
-   <img src="../_static/media/chapter_10/section_4/media/image25.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_4/media/image25.png" style="width:500px" class="common_img"/>
 
    Once the map has been scanned to the approximate state shown below,
 
-   <img src="../_static/media/chapter_10/section_4/media/image26.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_10/section_4/media/image26.png" style="width:500px" class="common_img"/>
 
 3. enter the following command to navigate to the map storage directory and save the map:
 
@@ -1746,7 +1745,7 @@ cd ~/ros2_ws/src/robot_gazebo/maps && ros2 run nav2_map_server map_saver_cli -f 
 
 In this command, **map_01** is the map name, which can be renamed as needed. If the following prompt appears, it means the map has been saved successfully.
 
-<img src="../_static/media/chapter_10/section_4/media/image27.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_4/media/image27.png" style="width:500px" class="common_img"/>
 
 4. To close the currently running program in each terminal window, press **Ctrl + C**.
 
@@ -1778,7 +1777,7 @@ Once the mapping process has been completed in Gazebo, you can also perform navi
 >
 > **When entering commands, be sure to use correct case and spacing. You can use the Tab key to auto-complete keywords.**
 
-1. Launch the virtual machine. Click the terminal icon <img src="../_static/media/chapter_10/section_4/media/image5.png"  style="width:30px"   class="common_img"/> in the system desktop to open a command-line window.
+1. Launch the virtual machine. Click the terminal icon <img src="../_static/media/chapter_10/section_4/media/image5.png" style="width:30px" class="common_img"/> in the system desktop to open a command-line window.
 
 
 > [!NOTE]
@@ -1791,49 +1790,49 @@ Once the mapping process has been completed in Gazebo, you can also perform navi
    ros2 launch robot_gazebo room_worlds.launch.py nav:=true
    ```
 
-2. Open a new terminal<img src="../_static/media/chapter_10/section_4/media/image5.png"  style="width:30px"   class="common_img"/>.
+2. Open a new terminal<img src="../_static/media/chapter_10/section_4/media/image5.png" style="width:30px" class="common_img"/>.
 
 3. Enter the following command to load the map for navigation and start the navigation process:
 
    ```
-   ros2 launch robot_gazebo navigation.launch.py map:=map_01
+   ros2 launch robot_gazebo navigation.launch.py map:=map_01
    ```
 
-The **map_01** at the end of the command is the map name and can be modified according to your needs. The map is stored at the directory of [/home/ubuntu/ros2_ws/src/robot_gazebo/maps](/home/ubuntu/ros2_ws/src/robot_gazebo/maps).
+The **map_01** at the end of the command is the map name and can be modified according to your needs. The map is stored at the directory of `/home/ubuntu/ros2_ws/src/robot_gazebo/maps`.
 
-<img src="../_static/media/chapter_10/section_4/media/image30.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_4/media/image30.png" style="width:500px" class="common_img"/>
 
 * **Starting Navigation**
 
 The software menu bar provides three tools: 2D Pose Estimate, 2D Goal Pose, and Nav2 Goal.
 
-<img src="../_static/media/chapter_10/section_4/media/image31.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_4/media/image31.png" style="width:500px" class="common_img"/>
 
 **2D Pose Estimate** is used to set the robot’s initial position, **2D Goal Pose** is used to set a single target point, and **Nav2 Goal** is used to set multiple target points.
 
 1. Click **2D Goal Pose** in the menu bar, then click once to select a target point on the map interface. If you click and drag the mouse, you can also define the robot’s orientation at the target point. The robot will automatically generate a path and move to the selected point.
 
-<img src="../_static/media/chapter_10/section_4/media/image32.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_4/media/image32.png" style="width:500px" class="common_img"/>
 
 2. After confirming the goal point, the map will display the planned path, and the simulated robot model will move accordingly.
 
-<img src="../_static/media/chapter_10/section_4/media/image33.png"  style="width:400px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_4/media/image33.png" style="width:400px" class="common_img"/>
 
-<img src="../_static/media/chapter_10/section_4/media/image34.png"  style="width:400px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_4/media/image34.png" style="width:400px" class="common_img"/>
 
-<img src="../_static/media/chapter_10/section_4/media/image35.png"  style="width:400px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_4/media/image35.png" style="width:400px" class="common_img"/>
 
 3. To use the multi-point navigation function, first click the button in the lower-left corner of the interface.
 
-<img src="../_static/media/chapter_10/section_4/media/image36.png"  style="width:400px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_4/media/image36.png" style="width:400px" class="common_img"/>
 
-4. Then click the icon<img src="../_static/media/chapter_10/section_4/media/image37.png"  style="width:100px"   class="common_img"/>, and on the map, left-click and drag to set a goal point with an orientation. Repeat this step to add multiple goal points.
+4. Then click the icon<img src="../_static/media/chapter_10/section_4/media/image37.png" style="width:100px" class="common_img"/>, and on the map, left-click and drag to set a goal point with an orientation. Repeat this step to add multiple goal points.
 
-<img src="../_static/media/chapter_10/section_4/media/image38.png"  style="width:300px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_4/media/image38.png" style="width:300px" class="common_img"/>
 
 5. Click the button in the lower-left corner again to start navigation.
 
-<img src="../_static/media/chapter_10/section_4/media/image39.png"  style="width:400px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_4/media/image39.png" style="width:400px" class="common_img"/>
 
 6. To end navigation, return to the terminal window and press **Ctrl + C** in each terminal to close the running programs.
 
@@ -1843,7 +1842,7 @@ The software menu bar provides three tools: 2D Pose Estimate, 2D Goal Pose, and 
 
 * **Enable Service**
 
-1. Launch the virtual machine. Click the terminal icon <img src="../_static/media/chapter_10/section_4/media/image5.png"  style="width:30px"   class="common_img"/> in the system desktop to open a command-line window.
+1. Launch the virtual machine. Click the terminal icon <img src="../_static/media/chapter_10/section_4/media/image5.png" style="width:30px" class="common_img"/> in the system desktop to open a command-line window.
 
 2. Execute the following command to initiate the integration of the Gazebo and MoveIt2.
 
@@ -1865,56 +1864,56 @@ The MoveIt2 interface is shown below:
 
 Position 1: RViz Toolbar. Position 2: MoveIt Debugging Area. Position 3: Simulation Model Adjustment Area.
 
-<img src="../_static/media/chapter_10/section_4/media/image40.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_4/media/image40.png" style="width:500px" class="common_img"/>
 
 (1) In the MoveIt2 Debugging Area, find and click the **Planning** section.
 
-<img src="../_static/media/chapter_10/section_4/media/image41.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_4/media/image41.png" style="width:500px" class="common_img"/>
 
 (2) In the Simulation Model Adjustment Area, you will see arrows in red, green, and blue colors. Click and drag the arrows to adjust the robotic arm's pose. In the robot's first-person view: Green represents the X-axis, with the positive direction pointing to the robot's left. Red represents the Y-axis, with the positive direction pointing to the robot's front. Blue represents the Z-axis, with the positive direction pointing upwards from the robot.
 
-<img src="../_static/media/chapter_10/section_4/media/image42.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_4/media/image42.png" style="width:500px" class="common_img"/>
 
 (3) After successfully planning the robotic arm's motion path, the new position will be highlighted in orange. If the new position causes a collision with other parts of the robot, it will be marked in red. You must adjust the configuration to avoid collisions. Otherwise, the motion cannot be executed.
 
 Orange Executable State is shown in the following image.
 
-<img src="../_static/media/chapter_10/section_4/media/image43.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_4/media/image43.png" style="width:500px" class="common_img"/>
 
 For example, if the robotic arm is planned to be in the position shown in the image, it will collide with the depth camera. Turn the state red to non-executable, as shown in the figure below:
 
-<img src="../_static/media/chapter_10/section_4/media/image44.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_4/media/image44.png" style="width:500px" class="common_img"/>
 
 (4) After planning the path, return to the **Planning** section and click the **Plan** option. The simulation model will display the motion path from the original position to the newly planned position.
 
-<img src="../_static/media/chapter_10/section_4/media/image45.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_4/media/image45.png" style="width:500px" class="common_img"/>
 
 (5) Then, click the **Execute** option to make both the simulation model and robotic arm follow the planned motion path.
 
-<img src="../_static/media/chapter_10/section_4/media/image46.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_4/media/image46.png" style="width:500px" class="common_img"/>
 
-<img src="../_static/media/chapter_10/section_4/media/image47.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_4/media/image47.png" style="width:500px" class="common_img"/>
 
 (6) Alternatively, you can click **Plan & Execute**, where the robotic arm will first display the new planned motion path and then execute the movement.
 
-<img src="../_static/media/chapter_10/section_4/media/image48.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_4/media/image48.png" style="width:500px" class="common_img"/>
 
 (7) You can also observe that the path planned in MoveIt2 is synchronized with the Gazebo interface.
 
-<img src="../_static/media/chapter_10/section_4/media/image49.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_4/media/image49.png" style="width:500px" class="common_img"/>
 
 **2. Gripper Control**
 
 (1) To control the gripper movement, select **gripper** in the **Planning Group**.
 
-<img src="../_static/media/chapter_10/section_4/media/image50.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_4/media/image50.png" style="width:500px" class="common_img"/>
 
 (2) Drag the **r joint** to control the gripper's rotation.
 
-<img src="../_static/media/chapter_10/section_4/media/image51.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_4/media/image51.png" style="width:500px" class="common_img"/>
 
-<img src="../_static/media/chapter_10/section_4/media/image52.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_4/media/image52.png" style="width:500px" class="common_img"/>
 
 (3) Once the motion trajectory is planned, return to **Planning** and click **Plan & Execute** to execute the movement.
 
-<img src="../_static/media/chapter_10\section_4/media/image53.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_10/section_4/media/image53.png" style="width:500px" class="common_img"/>
