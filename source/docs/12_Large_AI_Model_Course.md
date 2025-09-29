@@ -156,7 +156,7 @@ sudo apt install python3 python3-pip python3-all-dev python3-pyaudio portaudio11
 
 (2) Importing the Large Model Program Directory
 
-① In this section, locate the '[Appendix -> Source Code]()' folder within the same directory as this tutorial document.
+① In this section, locate the '[Appendix -> Source Code](https://drive.google.com/drive/folders/1Na86By9er9Jj1_1YXz3sxAwePrIgSUcN?usp=sharing)' folder within the same directory as this tutorial document.
 
 <img  src="../_static/media/chapter_12/section_1.1/03/image4.png" style="width:500px" class="common_img"/>
 
@@ -451,7 +451,7 @@ The following demonstration uses the Raspberry Pi 5 as an example. The connectio
 
 ① Connection Illustration and Detection
 
-<img  src="../_static/media/chapter_12/section_1.2/02/image3.png"      style="width:500px" class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.2/02/image3.png" style="width:500px" class="common_img"/>
 
 If the main controller is a Raspberry Pi, you can use VNC remote desktop access (refer to the appendix: Remote Access and File Transfer) to log into the Raspberry Pi system. Once connected, check the upper right corner of the desktop for microphone and speaker icons. As shown in the image below, the presence of these icons indicates a successful connection.
 
@@ -715,7 +715,7 @@ python3 wakeup_demo.py
 
 If you'd like to create more advanced or customized wake words and voice commands, please refer to the document titled:  
 
-"[**Appendix →  Firmware Flashing Tool → Creating Firmware for WonderEchoPro**](https://docs.hiwonder.com/projects/JetArm/en/latest/docs/resources_download.html)".
+"[**Appendix →  Firmware Flashing Tool → Creating Firmware for WonderEchoPro**](https://drive.google.com/drive/folders/1Na86By9er9Jj1_1YXz3sxAwePrIgSUcN?usp=sharing)".
 
 * **Speech Recognition**
 
@@ -1205,7 +1205,7 @@ After running the program, the output printed matches our request of "**Describe
 
 <img  src="../_static/media/chapter_12/section_1.3/02/image4.png" style="width:500px" class="common_img"/>
 
-<img  src="../_static/media/chapter_12/section_1.3/02/image5.jpeg"      style="width:300px" class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.3/02/image5.jpeg" style="width:300px" class="common_img"/>
 
 * **Vision Language Model: Object Detection**
 
@@ -1245,7 +1245,7 @@ We can switch the image and change the large model to experience different funct
 
 Change Pictures:
 
-① Click on the path box to navigate to the following directory: [/home/ubuntu/large_models/resources/pictures/](../_static/source_code/11/pictures.zip)
+① Click on the path box to navigate to the following directory: `/home/ubuntu/large_models/resources/pictures/`
 
 Here, you can drag in other images, for example, in the apples.png format.
 
@@ -1313,7 +1313,7 @@ After running the program, the output printed matches our request of "**Describe
 
 <img  src="../_static/media/chapter_12/section_1.3/04/image4.png" style="width:500px" class="common_img"/>
 
-<img  src="../_static/media/chapter_12/section_1.3/04/image5.jpeg"      style="width:400px" class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.3/04/image5.jpeg" style="width:400px" class="common_img"/>
 
 (3) Function Expansion
 
@@ -1341,7 +1341,7 @@ python3 ~/large_models/openai_vllm_understand.py
 
 <img  src="../_static/media/chapter_12/section_1.3/04/image10.png" style="width:500px" class="common_img"/>
 
-<img  src="../_static/media/chapter_12/section_1.3/04/image11.png"      style="width:500px" class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.3/04/image11.png" style="width:500px" class="common_img"/>
 
 * **Vision Language Model: Optical Character Recognition** 
 
@@ -1385,7 +1385,7 @@ Change Pictures：
 
 <img  src="../_static/media/chapter_12/section_1.3/05/image6.png" style="width:500px" class="common_img"/>
 
-<img  src="../_static/media/chapter_12/section_1.3/05/image7.png"      style="width:400px" class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.3/05/image7.png" style="width:400px" class="common_img"/>
 
 ② Then, input the command:
 
@@ -1416,8 +1416,6 @@ python3 ~/large_models/openai_vllm_ocr.py
 ```
 
 <img  src="../_static/media/chapter_12/section_1.3/05/image12.png" style="width:500px" class="common_img"/>
-
-
 
 ### 12.1.4 Multimodal Model Basic Courses
 
@@ -1547,7 +1545,7 @@ python3 openai_agent_demo.py
 
 ① After running the program, the voice device will announce, **"I'm ready".** At this point, say **"HELLO_HIWONDER"** to the device to activate the agent.  
 
-When the device responds with "**I'm here**", it indicates that the agent has been successfully awakened. To modify the wake word. For the Six-channel Microphone, refer to Section 2.3 Voice Wake-Up – 2. 6-Microphone Circular Array for instructions on customizing the wake word. For WonderEcho Pro, refer to Section "[**Firmware Flashing Tool->WonderEchoPro Firmware Generation**](https://docs.hiwonder.com/projects/JetArm/en/latest/docs/resources_download.html)".
+When the device responds with "**I'm here**", it indicates that the agent has been successfully awakened. To modify the wake word. For the Six-channel Microphone, refer to Section 2.3 Voice Wake-Up – 2. 6-Microphone Circular Array for instructions on customizing the wake word. For WonderEcho Pro, refer to Section "[**Firmware Flashing Tool->WonderEchoPro Firmware Generation**](https://drive.google.com/drive/folders/1Na86By9er9Jj1_1YXz3sxAwePrIgSUcN?usp=sharing)".
 
 ② After updating the wake word, you can say: "Take two steps forward, turn left and take one step back". The agent will respond according to the format we have defined.
 
@@ -1587,15 +1585,15 @@ By integrating various voice processing modules, the voice recognition module us
 
 **1. Connection Setup & Detection**
 
-<img src="../_static/media/chapter_12/section_2.1\media\image1.png"      style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.1/media/image1.png" style="width:500px" class="common_img"/>
 
 If you're using a Raspberry Pi as the controller, you can use a remote desktop tool to access the Raspberry Pi desktop, such as VNC, see [4.1 Remote Control Tool Introduction and Installation](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration) in the user manual. Check the top-right corner of the screen for microphone and speaker icons. If these icons are present, the device has been successfully connected.
 
-<img src="../_static/media/chapter_12/section_2.1\media\image2.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.1/media/image2.png" style="width:500px" class="common_img"/>
 
 If you're using a Jetson device, you can connect via NoMachine and check the top-right corner of the desktop for a speaker icon to confirm the audio output is recognized.
 
-<img src="../_static/media/chapter_12/section_2.1\media\image3.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.1/media/image3.png" style="width:500px" class="common_img"/>
 
 **2. Recording Test**
 
@@ -1609,7 +1607,7 @@ If you're using a Jetson device, you can connect via NoMachine and check the top
 arecord -l
 ```
 
-<img src="../_static/media/chapter_12/section_2.1\media\image4.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.1/media/image4.png" style="width:500px" class="common_img"/>
 
 (2) Start recording with the following command, replacing the first `0` with the correct card number:
 
@@ -1619,7 +1617,7 @@ arecord -D hw:0,0 -f S16_LE -r 16000 -c 2 test.wav
 
 (3) This will create a **test.wav** file in the current directory.
 
-<img src="../_static/media/chapter_12/section_2.1\media\image5.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.1/media/image5.png" style="width:500px" class="common_img"/>
 
 (4) You can try to speak into the microphone for around 5 seconds, then press **Ctrl + C** to stop recording.
 
@@ -1631,7 +1629,7 @@ arecord -D hw:0,0 -f S16_LE -r 16000 -c 2 test.wav
 ls
 ```
 
-<img src="../_static/media/chapter_12/section_2.1\media\image6.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.1/media/image6.png" style="width:500px" class="common_img"/>
 
 (2) If you see **test.wav** in the list, the recording was successful. Play the audio using the command:
 
@@ -1657,13 +1655,13 @@ In this lesson, we will learn how to flash firmware for WonderEcho Pro.
 
    <img src="../_static/media/chapter_12/section_2.3/media/image1.png" style="width:500px" class="common_img"/>
 
-2. Open the file under the same folder of this document: [Appendix\Firmware Flashing Tool\PACK_UPDATE_TOOL.exe](https://drive.google.com/drive/folders/1IlUyU4vpAsuT-lCUE9aQ9RP48G6mWv0D?usp=sharing), select the **CI1302** chip, and then click **Update**.
+2. Open the file under the same folder of this document: [Appendix\Firmware Flashing Tool\PACK_UPDATE_TOOL.exe](https://drive.google.com/drive/folders/1Na86By9er9Jj1_1YXz3sxAwePrIgSUcN?usp=sharing), select the **CI1302** chip, and then click **Update**.
 
 <img src="../_static/media/chapter_12/section_2.3/media/image2.png" style="width:500px" class="common_img"/>
 
 As an example, we will flash the **CI1302_English_SingleMic_V00916_UART0_115200_2M**. The same steps apply for flashing other wake word versions in Chinese.
 
-3. Click the button to select firmware, then locate and choose the firmware file: [CI1302_English_SingleMic_V00916_UART0_115200_2M.bin](https://drive.google.com/drive/folders/1tD7dg2xF04d26WJP-dF12kazCk4_jtA6?usp=sharing) under the folder **Appendix**.
+3. Click the button to select firmware, then locate and choose the firmware file: [CI1302_English_SingleMic_V00916_UART0_115200_2M.bin](https://drive.google.com/drive/folders/1Na86By9er9Jj1_1YXz3sxAwePrIgSUcN?usp=sharing) under the folder **Appendix**.
    
 <img src="../_static/media/chapter_12/section_2.3/media/image3.png" style="width:500px" class="common_img"/>
 
@@ -1679,7 +1677,7 @@ As an example, we will flash the **CI1302_English_SingleMic_V00916_UART0_115200_
 
 * **Wake Word Test**
 
-After flashing the firmware, refer to [Serial Port Debugging Tool]() in the folder **Appendix** to install the serial debugging software. Then follow the steps below to test whether the microphone is working properly:
+After flashing the firmware, refer to [Serial Port Debugging Tool](https://drive.google.com/drive/folders/1Na86By9er9Jj1_1YXz3sxAwePrIgSUcN?usp=sharing) in the folder **Appendix** to install the serial debugging software. Then follow the steps below to test whether the microphone is working properly:
 
 1. Connect the WonderEcho Pro to your computer's USB port using a Type-C to USB cable.
 
@@ -1711,7 +1709,7 @@ Website: <https://aiplatform.chipintelli.com/home/index.html>
 
 2. Click the **Platform Features** tab in the menu bar, then navigate to **In-depth development of Product Firmware & SDK** under the **Product Development** section.
 
-<img src="../_static/media/chapter_12/section_2.4\media\image1.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.4/media/image1.png" style="width:500px" class="common_img"/>
 
 3. The system will prompt you to log in. If you do not have an account yet, please complete the registration first. For international users, we provide a shared account:  
 
@@ -1720,37 +1718,37 @@ Password: hiwonder
 
 Once logged in, click **In-depth development of Product Firmware & SDK** again.
 
-<img src="../_static/media/chapter_12/section_2.4\media\image2.png" style="width:400px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.4/media/image2.png" style="width:400px" class="common_img"/>
 
-4)  When the page redirects, click the option <img src="../_static/media/chapter_12/section_2.4\media\image3.png" style="width:100px" class="common_img"/> on the left panel to create a new product as shown in the image below. Product name and description can be customized. Other fields must be selected according to the red boxes in the example. Product type needs to select **Select General Smart Control Hub**, then click **Create** to complete.
+4)  When the page redirects, click the option <img src="../_static/media/chapter_12/section_2.4/media/image3.png" style="width:100px"/> on the left panel to create a new product as shown in the image below. Product name and description can be customized. Other fields must be selected according to the red boxes in the example. Product type needs to select **Select General Smart Control Hub**, then click **Create** to complete.
 
-<img src="../_static/media/chapter_12/section_2.4\media\image4.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.4/media/image4.png" style="width:500px" class="common_img"/>
 
 5. Now fill in the basic project information. Since we're recognizing English in this example, set Language Type to **English**. If you're recognizing Chinese, select Chinese as the Speech Type and set the Acoustic Model to Chinese. Configure the rest of the parameters as shown in the illustration, then click **Continue**.
 
-<img src="../_static/media/chapter_12/section_2.4\media\image5.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.4/media/image5.png" style="width:500px" class="common_img"/>
 
 6. Once you've entered the firmware configuration interface, we will focus on the steps for modifying key parameters. First, in the Algorithm Parameters section, enable the **Echo Cancellation** feature.
 
-<img src="../_static/media/chapter_12/section_2.4\media\image6.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.4/media/image6.png" style="width:500px" class="common_img"/>
 
 7. In the **Hardware Parameters** section, set the **Crystal vibration source** to Internal RC and disable **Baud Rate Calibration**.
 
-<img src="../_static/media/chapter_12/section_2.4\media\image7.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.4/media/image7.png" style="width:500px" class="common_img"/>
 
 8. In the UART Print Settings, configure UART1 to Open-Drain Mode, supporting external 5V pull-up.
 
-<img src="../_static/media/chapter_12/section_2.4\media\image8.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.4/media/image8.png" style="width:500px" class="common_img"/>
 
 9. For Communication UART Settings, set the Baud Rate to 115200 and configure UART0 to Open-Drain Mode, also supporting external 5V pull-up. After adjusting these settings, click **Continue** to move forward.
 
-<img src="../_static/media/chapter_12/section_2.4\media\image9.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.4/media/image9.png" style="width:500px" class="common_img"/>
 
 10. The next step involves configuring the command words. You will need to choose a voice output for the wake-up command. For this example, select **Dane – English Male Voice** as the output voice. If you're using Chinese as the language, you may choose the voice option **Chengcheng – Standard Boy Voice**. The selection between Chinese and English voices is determined by the language settings configured in Step 5.
 
-<img src="../_static/media/chapter_12/section_2.4\media\image10.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.4/media/image10.png" style="width:500px" class="common_img"/>
 
-<img src="../_static/media/chapter_12/section_2.4\media\image11.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.4/media/image11.png" style="width:500px" class="common_img"/>
 
 11. Then, upload the command word file named **Command Word Broadcast Protocol English Template** by dragging the corresponding spreadsheet into the webpage.
 
@@ -1758,19 +1756,19 @@ Once logged in, click **In-depth development of Product Firmware & SDK** again.
 >
 > **If you wish to change the wake word, open the spreadsheet and replace the default wake word HELLO-HIWONDER with your preferred word. Keep in mind that the English version of the firmware only supports English wake words, and mixed-language wake words are not allowed. Additionally, English wake words must be written in uppercase letters to function properly.**
 
-<img src="../_static/media/chapter_12/section_2.4\media\image12.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.4/media/image12.png" style="width:500px" class="common_img"/>
 
-<img src="../_static/media/chapter_12/section_2.4\media\image13.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.4/media/image13.png" style="width:500px" class="common_img"/>
 
 12. After uploading the file, you will see the command data populated in the table below.
 
-<img src="../_static/media/chapter_12/section_2.4\media\image14.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.4/media/image14.png" style="width:500px" class="common_img"/>
 
 13. Click **Submit Now** and wait a few minutes for the firmware generation process to complete. Once finished, click **Download File** to obtain your customized firmware.
 
-<img src="../_static/media/chapter_12/section_2.4\media\image15.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.4/media/image15.png" style="width:500px" class="common_img"/>
 
-<img src="../_static/media/chapter_12/section_2.4\media\image16.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.4/media/image16.png" style="width:500px" class="common_img"/>
 
 ## 12.3 Multimodal Large Model Applications
 
@@ -1908,7 +1906,7 @@ LAN Mode Connection in the section [1.4 Development Environment Setup and Config
 
 1)  Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration) in the user manual.
 
-2)  On the Raspberry Pi desktop, double-click the icon <img src="../_static/media/chapter_12/section_3/media/image21.png" style="width:30px" class="common_img"/> to open the terminal, and enter the ROS2 development environment.
+2)  On the Raspberry Pi desktop, double-click the icon <img src="../_static/media/chapter_12/section_3/media/image21.png" style="width:30px"/> to open the terminal, and enter the ROS2 development environment.
 
 3)  Enter the command to disable the auto-start service.
 
@@ -1968,7 +1966,7 @@ Once the feature is activated, you can phrase your commands as you desire to con
 
 * **Program Brief Analysis**
 
-The program file is located at: [/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/llm_control_move.launch.py](/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/llm_control_move.launch.py)
+The program file is located at: `/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/llm_control_move.launch.py`
 
 <img src="../_static/media/chapter_12/section_3/media/image29.png" style="width:500px" class="common_img"/>
 
@@ -1986,8 +1984,9 @@ The `controller` activates the motion control node to control the motor, servo, 
 
 **(1) Program Brief Analysis**
 
-The source code for this program is located at:  
-[/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examplesllm_control_move.py](/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examplesllm_control_move.py)
+The source code for this program is located at: 
+
+`/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examplesllm_control_move.py`
 
 <img src="../_static/media/chapter_12/section_3/media/image30.png" style="width:500px" class="common_img"/>
 
@@ -2083,7 +2082,7 @@ The robot must be connected to the Internet during this feature, either in STA (
 
 1)  Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration) in user manual.
 
-2)  On the Raspberry Pi desktop, double-click the icon <img src="../_static/media/chapter_12/section_3/media/image21.png" style="width:30px" class="common_img"/> to open the terminal, and enter the ROS2 development environment.
+2)  On the Raspberry Pi desktop, double-click the icon <img src="../_static/media/chapter_12/section_3/media/image21.png" style="width:30px"/> to open the terminal, and enter the ROS2 development environment.
 
 3)  Enter the command to disable the app auto-start service.
 
@@ -2145,7 +2144,7 @@ Once this feature is enabled, you can control the robot with voice commands. For
 
 The launch file is located at the directory:
 
-[/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/llm_visual_patrol.launch.py](/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/llm_visual_patrol.launch.py)
+`/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/llm_visual_patrol.launch.py`
 
 <img src="../_static/media/chapter_12/section_3/media/image40.png" style="width:500px" class="common_img"/>
 
@@ -2159,8 +2158,9 @@ The launch file is located at the directory:
 
 **1. Program Brief Analysis**
 
-The source code for this program is located at:  
-[/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/llm_visual_patrol.py](/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/llm_visual_patrol.py)
+The source code for this program is located at: 
+
+`/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/llm_visual_patrol.py`
 
 <img src="../_static/media/chapter_12/section_3/media/image41.png" style="width:500px" class="common_img"/>
 
@@ -2224,7 +2224,7 @@ The main function runs.
 
 **Large Model Interaction Logic Analysis**
 
-The source code for this demo is located at [/home/ubuntu/ros2_ws/src/app/app/line_following.py](/home/ubuntu/ros2_ws/src/app/app/line_following.py)
+The source code for this demo is located at `/home/ubuntu/ros2_ws/src/app/app/line_following.py`
 
 This script receives the target line color information from the large model. The large model sends the target color name to this node by calling the `~/set_large_model_target_color` service.
 
@@ -2307,7 +2307,7 @@ The robot must be connected to the Internet during this feature, either in STA (
 
 1)  Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration) in the user manual.
 
-2)  On the Raspberry Pi desktop, double-click the icon <img src="../_static/media/chapter_12/section_3/media/image21.png" style="width:30px" class="common_img"/> to open the terminal, and enter the ROS2 development environment.
+2)  On the Raspberry Pi desktop, double-click the icon <img src="../_static/media/chapter_12/section_3/media/image21.png" style="width:30px"/> to open the terminal, and enter the ROS2 development environment.
 
 3)  Enter the command to disable the app auto-start service.
 
@@ -2371,7 +2371,7 @@ Once the feature is activated, you can phrase commands, such as **Track the red 
 
 The launch file is located at the directory:
 
-[/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/llm_color_track.launch.py](/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/llm_color_track.launch.py)
+`/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/llm_color_track.launch.py`
 
 <img src="../_static/media/chapter_12/section_3/media/image54.png" style="width:500px" class="common_img"/>
 
@@ -2385,8 +2385,9 @@ The launch file is located at the directory:
 
 **1. Program Brief Analysis**
 
-The source code for this program is located at: 
-[/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/llm_color_track.py](/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/llm_color_track.py)
+The source code for this program is located at:
+
+`/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/llm_color_track.py`
 
 <img src="../_static/media/chapter_12/section_3/media/image55.png" style="width:500px" class="common_img"/>
 
@@ -2448,7 +2449,7 @@ The main function executes.
 
 **(1) Large Model Interaction Logic Analysis**
 
-The source code for this demo is located at [/home/ubuntu/ros2_ws/src/app/app/object_tracking.py.](/home/ubuntu/ros2_ws/src/app/app/object_tracking.py.)
+The source code for this demo is located at `/home/ubuntu/ros2_ws/src/app/app/object_tracking.py`.
 
 Function This script receives the target line color information from the large model. The large model sends the target color name to this node by calling the `~/set_large_model_target_color` service.
 
@@ -2541,7 +2542,7 @@ This function is used to retrieve the current tracked target color. If a valid `
 1)  In the command-line terminal, enter the following command to navigate to the directory where the large model keys are configured.
 
    ```
-   cd /home/ubuntu/ros2_ws/src/large_models/large_models/large_models
+   cd /home/ubuntu/ros2_ws/src/large_models/large_models/large_models
    ```
 
 2. Next, open the configuration file with the following command.
@@ -2652,7 +2653,7 @@ The robot must be connected to the Internet during this feature, either in STA (
 
 1)  Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration) in the user manual.
 
-2)  On the Raspberry Pi desktop, double-click the icon <img src="../_static/media/chapter_12/section_4/media/image29.png" style="width:30px" class="common_img"/> to open the terminal, and enter the ROS2 development environment.
+2)  On the Raspberry Pi desktop, double-click the icon <img src="../_static/media/chapter_12/section_4/media/image29.png" style="width:30px"/> to open the terminal, and enter the ROS2 development environment.
 
 3)  Enter the command to disable the app auto-start service.
 
@@ -2704,7 +2705,7 @@ Once the feature is activated, you can phrase your own commands. For example, wh
 
 File Path:
 
-[/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/vllm_with_camera.launch.py](/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/vllm_with_camera.launch.py)
+`/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/vllm_with_camera.launch.py`
 
 **Import Libraries**
 
@@ -2768,7 +2769,7 @@ File Path:
 
 The source code for this program is located at:
 
-[/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/vllm_with_camera.py](/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/vllm_with_camera.py)
+`/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/vllm_with_camera.py`
 
 **Import the Necessary Libraries**
 
@@ -2975,7 +2976,7 @@ Before starting this activity, make sure to follow [SLAM Mapping Steps](https://
 
 1. Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration) in the user manual.
 
-2. On the Raspberry Pi desktop, double-click the icon <img src="../_static/media/chapter_12/section_4/media/image29.png" style="width:30px" class="common_img"/> to open the terminal, and enter the ROS2 development environment.
+2. On the Raspberry Pi desktop, double-click the icon <img src="../_static/media/chapter_12/section_4/media/image29.png" style="width:30px"/> to open the terminal, and enter the ROS2 development environment.
 
 3. Enter the command to disable the auto-start service of the mobile app.
 
@@ -2991,7 +2992,7 @@ Before starting this activity, make sure to follow [SLAM Mapping Steps](https://
 
 5. When the terminal displays output shown in the figure and the voice device announces **I'm ready**, the voice device has completed initialization. Then, you can say the wake words: **Hello Hiwonder**.
 
-   <img src="../_static/media/chapter_12/section_4/media/image32.png" style="width:500px" class="common_img"/>
+   <img src="../_static/media/chapter_12/section_4/media/image32.png" style="width:500px"/>
 
 6. When the terminal displays the corresponding output shown in the figure and the device responds with **I'm here**, it indicates successful activation. The system will begin recording your voice command.
 
@@ -3025,7 +3026,7 @@ Once the feature is started, you can phrase commands such as: **Go to the zoo an
 
 File Path:
 
-[/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples /vllm_navigation.launch.py](/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples /vllm_navigation.launch.py)
+`/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples /vllm_navigation.launch.py`
 
 **Import Libraries**
 
@@ -3077,7 +3078,7 @@ File Path:
 
 File Path:
 
-[/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/vllm_navigation.py](/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/vllm_navigation.py)
+`/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/vllm_navigation.py`
 
 **Import the Necessary Libraries**
 
@@ -3219,9 +3220,9 @@ This method handles the callback notification indicating the completion of audio
 
 <img src="../_static/media/chapter_12/section_4/media/image76.png" style="width:500px" class="common_img"/>
 
-(1) **Check LLM Result** 
+(1) **Check LLM Result**
 
-`if self.llm_result`: check whether `self.llm_result` contains content. If not empty, it indicates that a new result from the LLM needs to be processed. Otherwise, the system enters a short sleep to wait for new results.
+`if self.llm_result`: check whether `self.llm_result` contains content. If not empty, it indicates that a new result from the LLM needs to be processed. Otherwise, the system enters a short sleep to wait for new results.
 
 (2) **Check for Action Commands**
 
@@ -3284,7 +3285,7 @@ If the feature lags or the effect is not satisfactory, you can display RVIZ in t
 ros2 launch large_models vllm_navigation_virtual.launch.py
 ```
 
-2)  On the virtual machine, click the desktop icon <img src="../_static/media/chapter_12/section_4/media/image82.png" style="width:30px" class="common_img"/> to open a terminal.
+2)  On the virtual machine, click the desktop icon <img src="../_static/media/chapter_12/section_4/media/image82.png" style="width:30px"/> to open a terminal.
 
 3)  Enter the following command to launch RViz and visualize navigation:
 
@@ -3348,7 +3349,7 @@ The robot must be connected to the Internet during this feature, either in STA (
 
 1. Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration) in the user manual.
 
-2. On the Raspberry Pi desktop, double-click the icon <img src="../_static/media/chapter_12/section_4/media/image29.png" style="width:30px" class="common_img"/> to open the terminal, and enter the ROS2 development environment.
+2. On the Raspberry Pi desktop, double-click the icon <img src="../_static/media/chapter_12/section_4/media/image29.png" style="width:30px"/> to open the terminal, and enter the ROS2 development environment.
 
 3. Enter the command to disable the app auto-start service.
 
@@ -3402,7 +3403,7 @@ After the feature is activated, you can phrase your command freely—for example
 
 File Path:
 
-[/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/vllm_track.launch.py](/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/vllm_track.launch.py)
+`/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/vllm_track.launch.py`
 
 **Import Libraries**
 
@@ -3452,7 +3453,7 @@ File Path:
 
 The source code for this program is located at:
 
-[/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/vllm_track.py](/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/vllm_track.py)
+`/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/vllm_track.py`
 
 **Import the Necessary Libraries**
 
@@ -3574,8 +3575,6 @@ It converts received RGB and depth camera image messages to `NumPy` arrays and s
 
 An instance of the `VLLMTrack` node is created, and a multithreaded executor is used to handle the node's tasks. Call `executor.spin()` to start processing ROS events. Upon shutdown, the node is properly destroyed using `node.destroy_node()`.
 
-
-
 ### 12.4.6 Intelligent Transport in Embodied AI Applications
 
 * **Overview**
@@ -3624,7 +3623,7 @@ Before starting the intelligent handling process, you need to adjust the graspin
 
 (1) Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration) in the user manual.
 
-(2) On the Raspberry Pi desktop, double-click the icon <img src="../_static/media/chapter_12/section_4/media/image29.png" style="width:30px" class="common_img"/> to open the terminal, and enter the ROS2 development environment.
+(2) On the Raspberry Pi desktop, double-click the icon <img src="../_static/media/chapter_12/section_4/media/image29.png" style="width:30px"/> to open the terminal, and enter the ROS2 development environment.
 
 (3) Enter the command to disable the app auto-start service.
 
@@ -3662,19 +3661,19 @@ Before enabling this feature, a map must be created in advance. Please refer to 
 >
 > * **The robot must be connected to the Internet, either in STA (LAN) mode or AP (direct connection) mode via Ethernet.**
 
-1. Double click on the icon <img src="../_static/media/chapter_12/section_4/media/image109.png" style="width:30px" class="common_img"/> to open a terminal.
+1. Double click on the icon <img src="../_static/media/chapter_12/section_4/media/image109.png" style="width:30px"/> to open a terminal.
 
 2. Enter the command to disable the app auto-start service.
 
-   ```
-   ~/.stop_ros.sh
-   ```
+```
+~/.stop_ros.sh
+```
 
 3. Enter the following command and press Enter to launch the intelligent transport feature.
 
-   ```
-   ros2 launch large_models_examples vllm_navigation_transport.launch.py map:=map_01
-   ```
+```
+ros2 launch large_models_examples vllm_navigation_transport.launch.py map:=map_01
+```
 
 4. Use the virtual machine to open the navigation RViz tool. For details, refer to the section [6.1 Navigation Instruction](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/6_Mapping_Navigation_Course.html#mapping-instruction) in the file 6. Mapping & Navigation Course.
 
@@ -3690,33 +3689,33 @@ Before enabling this feature, a map must be created in advance. Please refer to 
 
 7. When the terminal displays the corresponding output shown in the figure and the device responds with **I'm here**, it indicates successful activation. The system will begin recording your voice command.
 
-   Speak a command such as **Put the red square in the blue box.** The voice device will capture the speech, and the large language model will process the command.
+Speak a command such as **Put the red square in the blue box.** The voice device will capture the speech, and the large language model will process the command.
 
-   <img src="../_static/media/chapter_12/section_4/media/image114.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image114.png" style="width:500px" class="common_img"/>
 
 8. Upon successful recognition by the speech recognition service of cloud-based large speech model, the parsed command will be displayed under the `publish_asr_result` output in the terminal.
 
-   <img src="../_static/media/chapter_12/section_4/media/image114.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image114.png" style="width:500px" class="common_img"/>
 
 9. Upon receiving user input shown in the figure, the terminal will display output indicating that the cloud-based large language model has been successfully invoked. The model will interpret the command, generate a language response, and execute a corresponding action based on the meaning of the command.
 
-   > [!NOTE]
-   >
-   > **The response is automatically generated by the model. While the semantic content is accurate, the wording and structure may vary due to randomness in language generation.**
+> [!NOTE]
+>
+> **The response is automatically generated by the model. While the semantic content is accurate, the wording and structure may vary due to randomness in language generation.**
 
-   <img src="../_static/media/chapter_12/section_4/media/image115.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image115.png" style="width:500px" class="common_img"/>
 
 10. The robot will first move to the red block and complete the task of picking it up.
 
-    <img src="../_static/media/chapter_12/section_4/media/image116.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image116.png" style="width:500px" class="common_img"/>
 
 11. Then it will go to the blue box and place the block inside.
 
-    <img src="../_static/media/chapter_12/section_4/media/image117.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image117.png" style="width:500px" class="common_img"/>
 
 12. When the terminal shows the output shown in the figure indicating the end of one interaction cycle, the system is ready for the next round. To initiate another interaction, repeat step 4 by speaking the wake words again.
 
-    <img src="../_static/media/chapter_12/section_4/media/image118.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image118.png" style="width:500px" class="common_img"/>
 
 13. To exit the feature, press **Ctrl+C** in the terminal. If the feature does not exit immediately, press **Ctrl+C** multiple times.
 
@@ -3764,7 +3763,7 @@ For example, given the quaternion: Quaternion(x=0.0, y=0.0, z=-0.567717391497303
 
 File Path:
 
-[/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/navigation_transport/vllm_navigation_transport.launch.py](/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/navigation_transport/vllm_navigation_transport.launch.py)
+`/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/navigation_transport/vllm_navigation_transport.launch.py`
 
 **Import Libraries**
 
@@ -3820,7 +3819,7 @@ File Path:
 
 File Path:
 
-[/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/navigation_transport/vllm_navigation_transport.py](/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/navigation_transport/vllm_navigation_transport.py)
+`/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/navigation_transport/vllm_navigation_transport.py`
 
 **Import the Necessary Libraries**
 
@@ -3938,7 +3937,7 @@ It defines 3 prompt strings `PROMPT` used to guide how user commands and image d
 
 (15) `self.create_service`: creates a service to signal the completion of initialization.
 
-(16) `self.get_logger().info`: prints log messages.
+(16) `self.get_logger().info`: prints log messages.
 
 **send_request Method**
 
@@ -3966,7 +3965,7 @@ It defines 3 prompt strings `PROMPT` used to guide how user commands and image d
 
 (4) `SetContent.Request`: request message used to set the LLM content.
 
-(5) `self.get_logger().info`: prints log messages.
+(5) `self.get_logger().info`: prints log messages.
 
 (6) `self.send_request`: sends the service request.
 
