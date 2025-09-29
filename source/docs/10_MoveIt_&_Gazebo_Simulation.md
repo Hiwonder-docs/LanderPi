@@ -1741,11 +1741,11 @@ In this command, **map_01** is the map name, which can be renamed as needed. If 
 
 > [!NOTE]
 >
-> **To forcefully terminate all processes, use the following commands:**
+> **To forcefully terminate all processes, use the following commands:**<br>
 >
-> `ps aux \| grep ign \| grep -v grep \| awk '{ print "sudo kill -9", \$2 }' \| sh`
+> `ps aux | grep ign | grep -v grep | awk '{ print "sudo kill -9", $2 }' | sh`
 > 
-> `ps aux \| grep ros \| grep -v grep \| awk '{ print "sudo kill -9", \$2 }' \| sh`
+> `ps aux | grep ros | grep -v grep | awk '{ print "sudo kill -9", $2 }' | sh`
 
 ### 10.4.5 Gazebo Navigation Simulation
 
