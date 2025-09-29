@@ -6,7 +6,7 @@
 
 1)  In this lesson, two robot units will be used as an example, please prepare at least two LanderPi.
 
-2)  To set up the development environment, please follow the instructions in [4. Development Environment Setup and Configuration]() in the user manual to download and install the remote connection tool VNC.
+2)  To set up the development environment, please follow the instructions in [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration) in the user manual to download and install the remote connection tool VNC.
 
 ### 13.1.2 Working Principle
 

@@ -1535,6 +1535,8 @@ Virtual Machine:
 
 <img src="../_static/media/chapter_6/image67.png" style="width:700px" class="common_img"/>
 
+<p id="anchor_6_1_4_2"></p>
+
 * **SLAM Mapping Steps**
 
 1. On the Robot

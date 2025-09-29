@@ -1553,6 +1553,8 @@ When the device responds with "**I'm here**", it indicates that the agent has be
 
 <img  src="../_static/media/chapter_12/section_1.4/image9.png" style="width:500px" class="common_img"/>
 
+<p id="anchor_12_2"></p>
+
 ## 12.2 Voice Module Introduction and Installation
 
 ### 12.2.1 Introduction to WonderEcho Pro
@@ -1585,15 +1587,15 @@ By integrating various voice processing modules, the voice recognition module us
 
 **1. Connection Setup & Detection**
 
-<img src="../_static/media/chapter_12\section_2.1\media\image1.png"      style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.1\media\image1.png"      style="width:500px" class="common_img"/>
 
 If you're using a Raspberry Pi as the controller, you can use a remote desktop tool to access the Raspberry Pi desktop, such as VNC, see [4.1 Remote Control Tool Introduction and Installation](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration) in the user manual. Check the top-right corner of the screen for microphone and speaker icons. If these icons are present, the device has been successfully connected.
 
-<img src="../_static/media/chapter_12\section_2.1\media\image2.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.1\media\image2.png" style="width:500px" class="common_img"/>
 
 If you're using a Jetson device, you can connect via NoMachine and check the top-right corner of the desktop for a speaker icon to confirm the audio output is recognized.
 
-<img src="../_static/media/chapter_12\section_2.1\media\image3.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.1\media\image3.png" style="width:500px" class="common_img"/>
 
 **2. Recording Test**
 
@@ -1607,7 +1609,7 @@ If you're using a Jetson device, you can connect via NoMachine and check the top
 arecord -l
 ```
 
-<img src="../_static/media/chapter_12\section_2.1\media\image4.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.1\media\image4.png" style="width:500px" class="common_img"/>
 
 (2) Start recording with the following command, replacing the first `0` with the correct card number:
 
@@ -1617,7 +1619,7 @@ arecord -D hw:0,0 -f S16_LE -r 16000 -c 2 test.wav
 
 (3) This will create a **test.wav** file in the current directory.
 
-<img src="../_static/media/chapter_12\section_2.1\media\image5.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.1\media\image5.png" style="width:500px" class="common_img"/>
 
 (4) You can try to speak into the microphone for around 5 seconds, then press **Ctrl + C** to stop recording.
 
@@ -1629,7 +1631,7 @@ arecord -D hw:0,0 -f S16_LE -r 16000 -c 2 test.wav
 ls
 ```
 
-<img src="../_static/media/chapter_12\section_2.1\media\image6.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.1\media\image6.png" style="width:500px" class="common_img"/>
 
 (2) If you see **test.wav** in the list, the recording was successful. Play the audio using the command:
 
@@ -1637,17 +1639,13 @@ ls
 aplay test.wav
 ```
 
-
-
 ### 12.2.2 WonderEchoPro Installation
 
 > [!NOTE]
 >
 > **When installing the WonderEcho Pro, ensure that the front of the robot is facing forward, and the USB port of the WonderEcho Pro is facing to the left, which is the direction of the Raspberry Pi's USB port.**
 
-<img src="../_static/media/chapter_12\section_2.2/media/image1.png" style="width:500px" class="common_img"/>
-
-
+<img src="../_static/media/chapter_12/section_2.2/media/image1.png" style="width:500px" class="common_img"/>
 
 ### 12.2.3 Firmware Flashing
 
@@ -1659,25 +1657,23 @@ In this lesson, we will learn how to flash firmware for WonderEcho Pro.
 
    <img src="../_static/media/chapter_12/section_2.3/media/image1.png" style="width:500px" class="common_img"/>
 
-2. Open the file under the same folder of this document: [Appendix\Firmware Flashing Tool\PACK_UPDATE_TOOL.exe](), select the **CI1302** chip, and then click **Update**.
+2. Open the file under the same folder of this document: [Appendix\Firmware Flashing Tool\PACK_UPDATE_TOOL.exe](https://drive.google.com/drive/folders/1IlUyU4vpAsuT-lCUE9aQ9RP48G6mWv0D?usp=sharing), select the **CI1302** chip, and then click **Update**.
 
 <img src="../_static/media/chapter_12/section_2.3/media/image2.png" style="width:500px" class="common_img"/>
 
-
-
 As an example, we will flash the **CI1302_English_SingleMic_V00916_UART0_115200_2M**. The same steps apply for flashing other wake word versions in Chinese.
 
-3. Click the button to select firmware, then locate and choose the firmware file: [CI1302_English_SingleMic_V00916_UART0_115200_2M.bin]() under the folder **Appendix**.
+3. Click the button to select firmware, then locate and choose the firmware file: [CI1302_English_SingleMic_V00916_UART0_115200_2M.bin](https://drive.google.com/drive/folders/1tD7dg2xF04d26WJP-dF12kazCk4_jtA6?usp=sharing) under the folder **Appendix**.
    
-   <img src="../_static/media/chapter_12/section_2.3/media/image3.png" style="width:500px" class="common_img"/>
-   
+<img src="../_static/media/chapter_12/section_2.3/media/image3.png" style="width:500px" class="common_img"/>
+
 4. Locate and select the appropriate serial port.
 
-   <img src="../_static/media/chapter_12/section_2.3/media/image4.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.3/media/image4.png" style="width:500px" class="common_img"/>
 
 5. Press the **RST** button on the voice interaction module to enter flashing mode. Then, wait for the flashing process to complete successfully.
 
-   <img src="../_static/media/chapter_12/section_2.3/media/image5.png" style="width:300px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.3/media/image5.png" style="width:300px" class="common_img"/>
 
 <img src="../_static/media/chapter_12/section_2.3/media/image6.png" style="width:500px" class="common_img"/>
 
@@ -1687,17 +1683,15 @@ After flashing the firmware, refer to [Serial Port Debugging Tool]() in the fold
 
 1. Connect the WonderEcho Pro to your computer's USB port using a Type-C to USB cable.
 
-   <img src="../_static/media/chapter_12/section_2.3/media/image1.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.3/media/image1.png" style="width:500px" class="common_img"/>
 
 2. Open Serial Port Utility, select the detected COM port usually labeled with CH340, and set the baud rate to 115200, as shown in the figure.
 
-   <img src="../_static/media/chapter_12/section_2.3/media/image7.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.3/media/image7.png" style="width:500px" class="common_img"/>
 
 3. Then, say the wake word **Hello Hiwonder**. If the recognition is successful, the right side will display **AA 55 03 00 FB**.
 
-   <img src="../_static/media/chapter_12\section_2.3/media/image8.png" style="width:500px" class="common_img"/>
-
-
+<img src="../_static/media/chapter_12/section_2.3/media/image8.png" style="width:500px" class="common_img"/>
 
 ### 12.2.4 Firmware Creation
 
@@ -1713,11 +1707,11 @@ We will use the wake word **HELLO-HIWONDER** as an example to demonstrate firmwa
 
 1. First, open the following link to access the firmware creation website ChipIntelli Voice AI Platform (chipintelli.com).
 
-Website: https://aiplatform.chipintelli.com/home/index.html
+Website: <https://aiplatform.chipintelli.com/home/index.html>
 
 2. Click the **Platform Features** tab in the menu bar, then navigate to **In-depth development of Product Firmware & SDK** under the **Product Development** section.
 
-<img src="../_static/media/chapter_12\section_2.4\media\image1.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.4\media\image1.png" style="width:500px" class="common_img"/>
 
 3. The system will prompt you to log in. If you do not have an account yet, please complete the registration first. For international users, we provide a shared account:  
 
@@ -1726,37 +1720,37 @@ Password: hiwonder
 
 Once logged in, click **In-depth development of Product Firmware & SDK** again.
 
-<img src="../_static/media/chapter_12\section_2.4\media\image2.png" style="width:400px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.4\media\image2.png" style="width:400px" class="common_img"/>
 
-4)  When the page redirects, click the option <img src="../_static/media/chapter_12\section_2.4\media\image3.png" style="width:100px" class="common_img"/> on the left panel to create a new product as shown in the image below. Product name and description can be customized. Other fields must be selected according to the red boxes in the example. Product type needs to select **Select General Smart Control Hub**, then click **Create** to complete.
+4)  When the page redirects, click the option <img src="../_static/media/chapter_12/section_2.4\media\image3.png" style="width:100px" class="common_img"/> on the left panel to create a new product as shown in the image below. Product name and description can be customized. Other fields must be selected according to the red boxes in the example. Product type needs to select **Select General Smart Control Hub**, then click **Create** to complete.
 
-<img src="../_static/media/chapter_12\section_2.4\media\image4.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.4\media\image4.png" style="width:500px" class="common_img"/>
 
 5. Now fill in the basic project information. Since we're recognizing English in this example, set Language Type to **English**. If you're recognizing Chinese, select Chinese as the Speech Type and set the Acoustic Model to Chinese. Configure the rest of the parameters as shown in the illustration, then click **Continue**.
 
-<img src="../_static/media/chapter_12\section_2.4\media\image5.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.4\media\image5.png" style="width:500px" class="common_img"/>
 
 6. Once you've entered the firmware configuration interface, we will focus on the steps for modifying key parameters. First, in the Algorithm Parameters section, enable the **Echo Cancellation** feature.
 
-<img src="../_static/media/chapter_12\section_2.4\media\image6.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.4\media\image6.png" style="width:500px" class="common_img"/>
 
 7. In the **Hardware Parameters** section, set the **Crystal vibration source** to Internal RC and disable **Baud Rate Calibration**.
 
-<img src="../_static/media/chapter_12\section_2.4\media\image7.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.4\media\image7.png" style="width:500px" class="common_img"/>
 
 8. In the UART Print Settings, configure UART1 to Open-Drain Mode, supporting external 5V pull-up.
 
-<img src="../_static/media/chapter_12\section_2.4\media\image8.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.4\media\image8.png" style="width:500px" class="common_img"/>
 
 9. For Communication UART Settings, set the Baud Rate to 115200 and configure UART0 to Open-Drain Mode, also supporting external 5V pull-up. After adjusting these settings, click **Continue** to move forward.
 
-<img src="../_static/media/chapter_12\section_2.4\media\image9.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.4\media\image9.png" style="width:500px" class="common_img"/>
 
 10. The next step involves configuring the command words. You will need to choose a voice output for the wake-up command. For this example, select **Dane – English Male Voice** as the output voice. If you're using Chinese as the language, you may choose the voice option **Chengcheng – Standard Boy Voice**. The selection between Chinese and English voices is determined by the language settings configured in Step 5.
 
-<img src="../_static/media/chapter_12\section_2.4\media\image10.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.4\media\image10.png" style="width:500px" class="common_img"/>
 
-<img src="../_static/media/chapter_12\section_2.4\media\image11.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.4\media\image11.png" style="width:500px" class="common_img"/>
 
 11. Then, upload the command word file named **Command Word Broadcast Protocol English Template** by dragging the corresponding spreadsheet into the webpage.
 
@@ -1764,21 +1758,23 @@ Once logged in, click **In-depth development of Product Firmware & SDK** again.
 >
 > **If you wish to change the wake word, open the spreadsheet and replace the default wake word HELLO-HIWONDER with your preferred word. Keep in mind that the English version of the firmware only supports English wake words, and mixed-language wake words are not allowed. Additionally, English wake words must be written in uppercase letters to function properly.**
 
-<img src="../_static/media/chapter_12\section_2.4\media\image12.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.4\media\image12.png" style="width:500px" class="common_img"/>
 
-<img src="../_static/media/chapter_12\section_2.4\media\image13.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.4\media\image13.png" style="width:500px" class="common_img"/>
 
 12. After uploading the file, you will see the command data populated in the table below.
 
-<img src="../_static/media/chapter_12\section_2.4\media\image14.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.4\media\image14.png" style="width:500px" class="common_img"/>
 
 13. Click **Submit Now** and wait a few minutes for the firmware generation process to complete. Once finished, click **Download File** to obtain your customized firmware.
 
-<img src="../_static/media/chapter_12\section_2.4\media\image15.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.4\media\image15.png" style="width:500px" class="common_img"/>
 
-<img src="../_static/media/chapter_12\section_2.4\media\image16.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.4\media\image16.png" style="width:500px" class="common_img"/>
 
 ## 12.3 Multimodal Large Model Applications
+
+<p id="anchor_12_3_1"></p>
 
 ### 12.3.1 Obtain and Configure the Large Model API Key
 
@@ -1876,7 +1872,7 @@ Then, you can control the robot using voice commands, for example, by saying **H
 
 **1. Confirm WonderEcho Pro Firmware**
 
-The factory default wake-up word for the WonderEcho Pro is **Hello Hiwonder** in the English firmware. If you want to change the wake-up word to Xiaohuan Xiaohuan in Chinese, you can refer to the tutorial in the [12.2 Voice Module Introduction and Installation]() to flash the Chinese firmware.
+The factory default wake-up word for the WonderEcho Pro is **Hello Hiwonder** in the English firmware. If you want to change the wake-up word to Xiaohuan Xiaohuan in Chinese, you can refer to the tutorial in the [12.2 Voice Module Introduction and Installation](#anchor_12_2) to flash the Chinese firmware.
 
 If you have previously flashed a different firmware, such as the one using the wake word "**Xiaohuan Xiaohuan,**" you must use the corresponding wake word.
 
@@ -1884,7 +1880,7 @@ The examples in this course will assume the default factory wake word: "**Hello,
 
 **2. Configuring the Large Model API-KEY**
 
-By default, the program does not include the configuration of the Large Model-related API keys. Before activating features related to the Large AI Model, please refer to the section [12.3.1 Obtain and Configure the Large Model API Key]() to configure the necessary keys. This step is mandatory and cannot be skipped, as it is crucial for the proper functioning and experience of the large model features.
+By default, the program does not include the configuration of the Large Model-related API keys. Before activating features related to the Large AI Model, please refer to the section [12.3.1 Obtain and Configure the Large Model API Key](#anchor_12_3_1) to configure the necessary keys. This step is mandatory and cannot be skipped, as it is crucial for the proper functioning and experience of the large model features.
 
 **3. Network Configuration**
 
@@ -1896,11 +1892,11 @@ The robot must be connected to the Internet during this feature, either in STA (
 
 (1) To configure the network using the mobile app, you may refer to the tutorial of
 
-[LAN Mode Connection (Optional)]() in the LanderPi User Manual.
+[LAN Mode Connection (Optional)](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#anchor_1_4_2_2) in the LanderPi User Manual.
 
 (2) Connect to the robot via VNC and modify the network configuration files as described in
 
-LAN Mode Connection in the section [4. Development Environment Setup and Configuration]() of the LanderPi User Manual.
+LAN Mode Connection in the section [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration) of the LanderPi User Manual.
 
 * **Operation Steps**
 
@@ -1910,7 +1906,7 @@ LAN Mode Connection in the section [4. Development Environment Setup and Configu
 >
 > * **The robot must be connected to the Internet, either in STA (LAN) mode or AP (direct connection) mode via Ethernet.**
 
-1)  Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to [4. Development Environment Setup and Configuration]() in the user manual.
+1)  Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration) in the user manual.
 
 2)  On the Raspberry Pi desktop, double-click the icon <img src="../_static/media/chapter_12/section_3/media/image21.png" style="width:30px" class="common_img"/> to open the terminal, and enter the ROS2 development environment.
 
@@ -2051,7 +2047,7 @@ Then, the robot can be controlled via voice to follow a line, for example, by sa
 
 **1. Confirm WonderEcho Pro Firmware**
 
-The factory default wake-up word for the WonderEcho Pro is **Hello Hiwonder** in the English firmware. If you want to change the wake-up word to 'Xiaohuan Xiaohuan in Chinese, you can refer to the tutorial in the [12.2 Voice Module Introduction and Installation]() to flash the Chinese firmware.
+The factory default wake-up word for the WonderEcho Pro is **Hello Hiwonder** in the English firmware. If you want to change the wake-up word to 'Xiaohuan Xiaohuan in Chinese, you can refer to the tutorial in the [12.2 Voice Module Introduction and Installation](#anchor_12_2) to flash the Chinese firmware.
 
 If you have previously flashed a different firmware, such as the one using the wake word "Xiaohuan Xiaohuan," you must use the corresponding wake word.
 
@@ -2059,7 +2055,7 @@ The examples in this course will assume the default factory wake word: **Hello, 
 
 **2. Configuring the Large Model API-KEY**
 
-By default, the program does not include the configuration of the Large Model-related API keys. Before activating features related to the Large AI Model, please refer to the section [12.3.1 Obtain and Configure the Large Model API Key]() to configure the necessary keys. This step is mandatory and cannot be skipped, as it is crucial for the proper functioning and experience of the large model features.
+By default, the program does not include the configuration of the Large Model-related API keys. Before activating features related to the Large AI Model, please refer to the section [12.3.1 Obtain and Configure the Large Model API Key](#anchor_12_3_1) to configure the necessary keys. This step is mandatory and cannot be skipped, as it is crucial for the proper functioning and experience of the large model features.
 
 **3. Network Configuration**
 
@@ -2071,11 +2067,11 @@ The robot must be connected to the Internet during this feature, either in STA (
 
 (1) To configure the network using the mobile app, you may refer to the tutorial of
 
-[LAN Mode Connection (Optional)]() in the LanderPi User Manual.
+[LAN Mode Connection (Optional)](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#anchor_1_4_2_2) in the LanderPi User Manual.
 
 (2) Connect to the robot via VNC and modify the network configuration files as described in
 
-[LAN Mode Connection]() in the section 4. Development Environment Setup and Configuration of the LanderPi User Manual.
+[LAN Mode Connection](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#anchor_1_4_2_2) in the section 4. Development Environment Setup and Configuration of the LanderPi User Manual.
 
 * **Operation Steps**
 
@@ -2085,7 +2081,7 @@ The robot must be connected to the Internet during this feature, either in STA (
 >
 > * **The robot must be connected to the Internet, either in STA (LAN) mode or AP (direct connection) mode via Ethernet.**
 
-1)  Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to [4. Development Environment Setup and Configuration]() in user manual.
+1)  Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration) in user manual.
 
 2)  On the Raspberry Pi desktop, double-click the icon <img src="../_static/media/chapter_12/section_3/media/image21.png" style="width:30px" class="common_img"/> to open the terminal, and enter the ROS2 development environment.
 
@@ -2274,7 +2270,7 @@ Then, you can control the robot by voice commands, such as saying **Follow the r
 
 **1. Confirm WonderEcho Pro Firmware**
 
-The factory default wake-up word for the WonderEcho Pro is **Hello Hiwonder** in the English firmware. If you want to change the wake-up word to 'Xiaohuan Xiaohuan in Chinese, you can refer to the tutorial in the section [12.2 Voice Module Introduction and Installation]() to flash the Chinese firmware.
+The factory default wake-up word for the WonderEcho Pro is **Hello Hiwonder** in the English firmware. If you want to change the wake-up word to 'Xiaohuan Xiaohuan in Chinese, you can refer to the tutorial in the section [12.2 Voice Module Introduction and Installation](#anchor_12_2) to flash the Chinese firmware.
 
 If you have previously flashed a different firmware, such as the one using the wake word "Xiaohuan Xiaohuan," you must use the corresponding wake word.
 
@@ -2282,7 +2278,7 @@ The examples in this course will assume the default factory wake word: **Hello, 
 
 **2. Configuring the Large Model API-KEY**
 
-By default, the program does not include the configuration of the Large Model-related API keys. Before activating features related to the Large AI Model, please refer to the section [12.3.1 Obtain and Configure the Large Model API Key]() to configure the necessary keys. This step is mandatory and cannot be skipped, as it is crucial for the proper functioning and experience of the large model features.
+By default, the program does not include the configuration of the Large Model-related API keys. Before activating features related to the Large AI Model, please refer to the section [12.3.1 Obtain and Configure the Large Model API Key](#anchor_12_3_1) to configure the necessary keys. This step is mandatory and cannot be skipped, as it is crucial for the proper functioning and experience of the large model features.
 
 **3. Network Configuration**
 
@@ -2295,11 +2291,11 @@ The robot must be connected to the Internet during this feature, either in STA (
 
 (1) To configure the network using the mobile app, you may refer to the tutorial of
 
-[LAN Mode Connection (Optional)]() in the LanderPi User Manual.
+[LAN Mode Connection (Optional)](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#anchor_1_4_2_2) in the LanderPi User Manual.
 
 (2) Connect to the robot via VNC and modify the network configuration files as described in
 
-[LAN Mode Connection]() in the section 4. Development Environment Setup and Configuration of the LanderPi User Manual.
+[LAN Mode Connection](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#anchor_1_4_2_2) in the section 4. Development Environment Setup and Configuration of the LanderPi User Manual.
 
 * **Operation Steps**
 
@@ -2309,7 +2305,7 @@ The robot must be connected to the Internet during this feature, either in STA (
 >
 > * **The robot must be connected to the Internet, either in STA (LAN) mode or AP (direct connection) mode via Ethernet.**
 
-1)  Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to [4. Development Environment Setup and Configuration]() in the user manual.
+1)  Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration) in the user manual.
 
 2)  On the Raspberry Pi desktop, double-click the icon <img src="../_static/media/chapter_12/section_3/media/image21.png" style="width:30px" class="common_img"/> to open the terminal, and enter the ROS2 development environment.
 
@@ -2480,7 +2476,7 @@ Based on the coordinates provided in the request:
 
 This function is used to retrieve the current tracked target color. If a valid `tracker` object exists, it returns its `target_rgb` value.
 
-<img src="../_static/media/chapter_12\section_3/media/image65.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image65.png" style="width:500px" class="common_img"/>
 
 
 
@@ -2620,7 +2616,7 @@ By activating this feature, you can freely give voice commands, and the robot wi
 
 **1. Confirm WonderEcho Pro Firmware**
 
-The factory default wake-up word for the WonderEcho Pro is Hello HiWonder in the English firmware. If you want to change the wake-up word to 'Xiaohuan Xiaohuan in Chinese, you can refer to the tutorial in the section [12.2 Voice Module Introduction and Installation]() to flash the Chinese firmware.
+The factory default wake-up word for the WonderEcho Pro is Hello HiWonder in the English firmware. If you want to change the wake-up word to 'Xiaohuan Xiaohuan in Chinese, you can refer to the tutorial in the section [12.2 Voice Module Introduction and Installation](#anchor_12_2) to flash the Chinese firmware.
 
 If you have previously flashed a different firmware, such as the one using the wake word "Xiaohuan Xiaohuan," you must use the corresponding wake word.
 
@@ -2628,7 +2624,7 @@ The examples in this course will assume the default factory wake word: **Hello, 
 
 **2. Configuring the Large Model API-KEY**
 
-By default, the program does not include the configuration of the Large Model-related API keys. Before activating features related to the Large AI Model, please refer to the section [12.3.1 Obtain and Configure the Large Model API Key]() to configure the necessary keys. This step is mandatory and cannot be skipped, as it is crucial for the proper functioning and experience of the large model features.
+By default, the program does not include the configuration of the Large Model-related API keys. Before activating features related to the Large AI Model, please refer to the section [12.3.1 Obtain and Configure the Large Model API Key](#anchor_12_3_1) to configure the necessary keys. This step is mandatory and cannot be skipped, as it is crucial for the proper functioning and experience of the large model features.
 
 **3. Network Configuration**
 
@@ -2640,11 +2636,11 @@ The robot must be connected to the Internet during this feature, either in STA (
 
 - To configure the network using the mobile app, you may refer to the tutorial of
 
-[LAN Mode Connection (Optional)]() in the LanderPi User Manual.
+[LAN Mode Connection (Optional)](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#anchor_1_4_2_2) in the LanderPi User Manual.
 
 - Connect to the robot via VNC and modify the network configuration files as described in
 
-[LAN Mode Connection]() in the section 4. Development Environment Setup and Configuration of the LanderPi User Manual.
+[LAN Mode Connection](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#anchor_1_4_2_2) in the section 4. Development Environment Setup and Configuration of the LanderPi User Manual.
 
 * **Operation Steps**
 
@@ -2654,7 +2650,7 @@ The robot must be connected to the Internet during this feature, either in STA (
 >
 > **The robot must be connected to the Internet, either in STA (LAN) mode or AP (direct connection) mode via Ethernet.**
 
-1)  Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to [4. Development Environment Setup and Configuration]() in the user manual.
+1)  Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration) in the user manual.
 
 2)  On the Raspberry Pi desktop, double-click the icon <img src="../_static/media/chapter_12/section_4/media/image29.png" style="width:30px" class="common_img"/> to open the terminal, and enter the ROS2 development environment.
 
@@ -2937,7 +2933,7 @@ Once activated, the robot can be controlled via voice commands. For example, giv
 
 **1. Confirm WonderEcho Pro Firmware**
 
-The factory default wake-up word for the WonderEcho Pro is Hello HiWonder in the English firmware. If you want to change the wake-up word to 'Xiaohuan Xiaohuan in Chinese, you can refer to the tutorial in the section [12.2 Voice Module Introduction and Installation]() to flash the Chinese firmware.
+The factory default wake-up word for the WonderEcho Pro is Hello HiWonder in the English firmware. If you want to change the wake-up word to 'Xiaohuan Xiaohuan in Chinese, you can refer to the tutorial in the section [12.2 Voice Module Introduction and Installation](#anchor_12_2) to flash the Chinese firmware.
 
 If you have previously flashed a different firmware, such as the one using the wake word "Xiaohuan Xiaohuan," you must use the corresponding wake word.
 
@@ -2945,7 +2941,7 @@ The examples in this course will assume the default factory wake word: **Hello, 
 
 **2. Configuring the Large Model API-KEY**
 
-By default, the program does not include the configuration of the Large Model-related API keys. Before activating features related to the Large AI Model, please refer to the section [12.3.1 Obtain and Configure the Large Model API Key]() to configure the necessary keys. This step is mandatory and cannot be skipped, as it is crucial for the proper functioning and experience of the large model features.
+By default, the program does not include the configuration of the Large Model-related API keys. Before activating features related to the Large AI Model, please refer to the section [12.3.1 Obtain and Configure the Large Model API Key](#anchor_12_3_1) to configure the necessary keys. This step is mandatory and cannot be skipped, as it is crucial for the proper functioning and experience of the large model features.
 
 **3. Network Configuration**
 
@@ -2957,15 +2953,17 @@ The robot must be connected to the Internet during this feature, either in STA (
 
 (1) To configure the network using the mobile app, you may refer to the tutorial of
 
-[LAN Mode Connection (Optional)]() in the LanderPi User Manual.
+[LAN Mode Connection (Optional)](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#anchor_1_4_2_2) in the LanderPi User Manual.
 
 (2) Connect to the robot via VNC and modify the network configuration files as described in
 
-[LAN Mode Connection]() in the section 4. Development Environment Setup and Configuration of the LanderPi User Manual.
+[LAN Mode Connection](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#anchor_1_4_2_2) in the section 4. Development Environment Setup and Configuration of the LanderPi User Manual.
 
 **4. Mapping Operation**
 
-Before starting this activity, make sure to follow [SLAM Mapping Steps]() in 6.1 Mapping Instruction to build and save the map in advance.
+Before starting this activity, make sure to follow [SLAM Mapping Steps](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/6_Mapping_Navigation_Course.html#anchor_6_1_4_2) in 6.1 Mapping Instruction to build and save the map in advance.
+
+<p id="operation_steps_5"></p>
 
 * **Operation Steps**
 
@@ -2975,7 +2973,7 @@ Before starting this activity, make sure to follow [SLAM Mapping Steps]() in 6.1
 >
 > * **The robot must be connected to the Internet, either in STA (LAN) mode or AP (direct connection) mode via Ethernet.**
 
-1. Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to [4. Development Environment Setup and Configuration]() in the user manual.
+1. Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration) in the user manual.
 
 2. On the Raspberry Pi desktop, double-click the icon <img src="../_static/media/chapter_12/section_4/media/image29.png" style="width:30px" class="common_img"/> to open the terminal, and enter the ROS2 development environment.
 
@@ -3259,9 +3257,9 @@ This method handles the callback notification indicating the completion of audio
 
 To modify the navigation positions in the program, edit the file located at the following path:
 
-[/home/ubuntu/ros2_ws/src/large_models/large_models/vllm_navigation.py](/home/ubuntu/ros2_ws/src/large_models/large_models/vllm_navigation.py)
+`/home/ubuntu/ros2_ws/src/large_models/large_models/vllm_navigation.py`
 
-1)  Begin by launching the program and displaying the map in rviz following the section [Operation Steps]() above. Then, click on **2D Goal Pose** in the rviz interface to set the desired navigation target on the map.
+1)  Begin by launching the program and displaying the map in rviz following the section [Operation Steps](#operation_steps_5) above. Then, click on **2D Goal Pose** in the rviz interface to set the desired navigation target on the map.
 
 <img src="../_static/media/chapter_12/section_4/media/image78.png" style="width:500px" class="common_img"/>
 
@@ -3278,7 +3276,7 @@ roll ≈ 0°, pitch ≈ 0°, yaw ≈ -69.3°
 
 **Launching RVIZ in the Virtual Machine**
 
-If the feature lags or the effect is not satisfactory, you can display RVIZ in the virtual machine. Follow the steps in [Mapping and Navigation Setup]() in the file 6. Mapping & Navigation Course.
+If the feature lags or the effect is not satisfactory, you can display RVIZ in the virtual machine. Follow the steps in [Mapping and Navigation Setup](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/6_Mapping_Navigation_Course.html#anchor_6_1_4_3) in the file 6. Mapping & Navigation Course.
 
 1)  On the Raspberry Pi, enter the following command and press Enter to launch the smart home assistant feature.
 
@@ -3314,7 +3312,7 @@ Once activated, the robot can be controlled via voice commands. For example, say
 
 **1. Confirm WonderEcho Pro Firmware**
 
-The factory default wake-up word for the WonderEcho Pro is Hello HiWonder in the English firmware. If you want to change the wake-up word to 'Xiaohuan Xiaohuan in Chinese, you can refer to the tutorial in the section [12.2 Voice Module Introduction and Installation]() to flash the Chinese firmware.
+The factory default wake-up word for the WonderEcho Pro is Hello HiWonder in the English firmware. If you want to change the wake-up word to 'Xiaohuan Xiaohuan in Chinese, you can refer to the tutorial in the section [12.2 Voice Module Introduction and Installation](#anchor_12_2) to flash the Chinese firmware.
 
 If you have previously flashed a different firmware, such as the one using the wake word "Xiaohuan Xiaohuan," you must use the corresponding wake word.
 
@@ -3322,7 +3320,7 @@ The examples in this course will assume the default factory wake word: **Hello, 
 
 **2. Configuring the Large Model API-KEY**
 
-By default, the program does not include the configuration of the Large Model-related API keys. Before activating features related to the Large AI Model, please refer to the section [12.3.1 Obtain and Configure the Large Model API Key]() to configure the necessary keys. This step is mandatory and cannot be skipped, as it is crucial for the proper functioning and experience of the large model features.
+By default, the program does not include the configuration of the Large Model-related API keys. Before activating features related to the Large AI Model, please refer to the section [12.3.1 Obtain and Configure the Large Model API Key](#anchor_12_3_1) to configure the necessary keys. This step is mandatory and cannot be skipped, as it is crucial for the proper functioning and experience of the large model features.
 
 **3. Network Configuration**
 
@@ -3334,11 +3332,11 @@ The robot must be connected to the Internet during this feature, either in STA (
 
 (1) To configure the network using the mobile app, you may refer to the tutorial of
 
-[LAN Mode Connection (Optional)]() in the LanderPi User Manual.
+[LAN Mode Connection (Optional)](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#anchor_1_4_2_2) in the LanderPi User Manual.
 
 (2) Connect to the robot via VNC and modify the network configuration files as described in
 
-[LAN Mode Connection]() in the section 4. Development Environment Setup and Configuration of the LanderPi User Manual.
+[LAN Mode Connection](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#anchor_1_4_2_2) in the section 4. Development Environment Setup and Configuration of the LanderPi User Manual.
 
 * **Operation Steps**
 
@@ -3348,7 +3346,7 @@ The robot must be connected to the Internet during this feature, either in STA (
 >
 > * **The robot must be connected to the Internet, either in STA (LAN) mode or AP (direct connection) mode via Ethernet.**
 
-1. Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to [4. Development Environment Setup and Configuration]() in the user manual.
+1. Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration) in the user manual.
 
 2. On the Raspberry Pi desktop, double-click the icon <img src="../_static/media/chapter_12/section_4/media/image29.png" style="width:30px" class="common_img"/> to open the terminal, and enter the ROS2 development environment.
 
@@ -3594,7 +3592,7 @@ Once activated, the robot can be controlled by voice commands. For example, you 
 
 **1. Confirm WonderEcho Pro Firmware**
 
-The factory default wake-up word for the WonderEcho Pro is Hello HiWonder in the English firmware. If you want to change the wake-up word to 'Xiaohuan Xiaohuan in Chinese, you can refer to the tutorial in the section [12.2 Voice Module Introduction and Installation]() to flash the Chinese firmware.
+The factory default wake-up word for the WonderEcho Pro is Hello HiWonder in the English firmware. If you want to change the wake-up word to 'Xiaohuan Xiaohuan in Chinese, you can refer to the tutorial in the section [12.2 Voice Module Introduction and Installation](#anchor_12_2) to flash the Chinese firmware.
 
 If you have previously flashed a different firmware, such as the one using the wake word "Xiaohuan Xiaohuan," you must use the corresponding wake word.
 
@@ -3602,7 +3600,7 @@ The examples in this course will assume the default factory wake word: **Hello, 
 
 **2. Configuring the Large Model API-KEY**
 
-By default, the program does not include the configuration of the Large Model-related API keys. Before activating features related to the Large AI Model, please refer to the section [12.3.1 Obtain and Configure the Large Model API Key]() to configure the necessary keys. This step is mandatory and cannot be skipped, as it is crucial for the proper functioning and experience of the large model features.
+By default, the program does not include the configuration of the Large Model-related API keys. Before activating features related to the Large AI Model, please refer to the section [12.3.1 Obtain and Configure the Large Model API Key](#anchor_12_3_1) to configure the necessary keys. This step is mandatory and cannot be skipped, as it is crucial for the proper functioning and experience of the large model features.
 
 **3. Network Configuration**
 
@@ -3614,17 +3612,17 @@ The robot must be connected to the Internet during this feature, either in STA (
 
 (1) To configure the network using the mobile app, you may refer to the tutorial of
 
-[LAN Mode Connection (Optional)]() in the LanderPi User Manual.
+[LAN Mode Connection (Optional)](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#anchor_1_4_2_2) in the LanderPi User Manual.
 
 (2) Connect to the robot via VNC and modify the network configuration files as described in
 
-[LAN Mode Connection]() in the section 4. Development Environment Setup and Configuration of the LanderPi User Manual.
+[LAN Mode Connection](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#anchor_1_4_2_2) in the section 4. Development Environment Setup and Configuration of the LanderPi User Manual.
 
 **4. Grasp and Placement Calibration**
 
 Before starting the intelligent handling process, you need to adjust the grasping behavior to ensure accurate performance. If the robotic arm fails to pick up the colored blocks during the demo or operation, you can follow the steps below to perform grasp calibration. This allows you to adjust the pickup area using program commands.
 
-(1) Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to [4. Development Environment Setup and Configuration]() in the user manual.
+(1) Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration) in the user manual.
 
 (2) On the Raspberry Pi desktop, double-click the icon <img src="../_static/media/chapter_12/section_4/media/image29.png" style="width:30px" class="common_img"/> to open the terminal, and enter the ROS2 development environment.
 
@@ -3654,7 +3652,7 @@ ros2 launch large_models_examples automatic_pick.launch.py debug:=place
 
 **5. Navigation Map Construction**
 
-Before enabling this feature, a map must be created in advance. Please refer to [6.1 Mapping Instruction]() in 6. Mapping & Navigation Course for detailed instructions on how to build the map.
+Before enabling this feature, a map must be created in advance. Please refer to [6.1 Mapping Instruction](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/6_Mapping_Navigation_Course.html#mapping-instruction) in 6. Mapping & Navigation Course for detailed instructions on how to build the map.
 
 * **Operation Steps**
 
@@ -3678,7 +3676,7 @@ Before enabling this feature, a map must be created in advance. Please refer to 
    ros2 launch large_models_examples vllm_navigation_transport.launch.py map:=map_01
    ```
 
-4. Use the virtual machine to open the navigation RViz tool. For details, refer to the section [6.1 Navigation Instruction]() in the file 6. Mapping & Navigation Course.
+4. Use the virtual machine to open the navigation RViz tool. For details, refer to the section [6.1 Navigation Instruction](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/6_Mapping_Navigation_Course.html#mapping-instruction) in the file 6. Mapping & Navigation Course.
 
 5. After opening the map in RViz, click the **2D Pose Estimate** icon to set the robot's initial position.
 
@@ -3730,7 +3728,7 @@ Once the program is activated, you can phrase your own commands. For example, sa
 
 To modify the navigation positions in the program, edit the file located at the following path:
 
-[~/ros2_ws/src/large_models_examples/large_models_examples/navigation_transport/vllm_navigation_transport.py]()
+`~/ros2_ws/src/large_models_examples/large_models_examples/navigation_transport/vllm_navigation_transport.py`
 
 1)  Begin by launching the program and displaying the map in rviz following step 4 above. Then, click on **2D Goal Pose** in the rviz interface to set the desired navigation target on the map.
 
