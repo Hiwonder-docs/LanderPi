@@ -2,6 +2,8 @@
 
 ## 9.1 Robotic Arm Basic Control
 
+<p id="anchor_9_1_1"></p>
+
 ### 9.1.1 Basic Control
 
 * **Introduction to Robotic Arm**
@@ -498,7 +500,7 @@ This section explains how to export action group files from the host computer an
 cp /home/ubuntu/software/arm_pc/ActionGroups/pick.d6a /home/ubuntu/shared/
 ```
 
-② If you use MobaXterm for remote connection, please refer to the [4.2.3 SSH Connection]() in the **1. LanderPi User Manual** for connection tutorial.
+② If you use MobaXterm for remote connection, please refer to the [4.2.3 SSH Connection](#anchor_ssh_connection) in the **1. LanderPi User Manual** for connection tutorial.
 
 ③ You can export the action file by dragging it directly to the computer desktop.
 
@@ -570,8 +572,6 @@ Z: Position in the vertical direction.
 
 <img src="../_static/media/chapter_9/section_1.1/media/image84.png" style="width:500px" class="common_img"/>
 
-
-
 ### 9.1.2 Robotic Arm Deviation Adjustment (Optional)
 
 Over time, the servo angles on the robotic arm may drift due to usage. If any joint fails to reach its intended position, you can manually adjust the servo offsets following the instructions in this document.
@@ -604,6 +604,8 @@ The bus servos use serial communication, connecting multiple servos to the contr
 
 * **Calibration Steps**
 
+<p id="anchor_calibration_standards"></p>
+
 **1. Calibration Standards**
 
 Before adjusting the servo deviations, it is necessary to identify and understand the function of each servo on the robotic arm, specifically its corresponding ID number, which will be used later during the adjustment process.
@@ -622,6 +624,8 @@ Criteria 1: In the neutral position of the robotic arm, servos 1, 2, 3, 4, and 5
 
 Criteria 2: The gripper on the robotic arm should maintain an open distance of 2–3 cm, which represents the neutral position standard for the gripper servo. You can measure this distance by comparing it to the width of your own index and middle fingers; if they fit exactly, the standard is met.
 
+<p id="anchor_calibration_steps"></p>
+
 **2. Calibration Steps：**
 
 Now, based on your understanding of the adjustment standards, you can proceed to adjust the robotic arm deviations according to these criteria. Taking the deviation adjustment of servo 3 on the LanderPi robotic arm as an example, the figure below shows that servo 3 has a deviation, causing the positions of servos 4, 5, and 10 to shift. Therefore, adjustment is required through the robot's host computer software.
@@ -630,7 +634,7 @@ Now, based on your understanding of the adjustment standards, you can proceed to
 
 The operation steps are shown as following.
 
-(1) Connect to the robot, then click the icon<img src="../_static/media/chapter_9/section_1.2/media/image9.png" style="width:30px"/> in the left taskbar to open the ROS2 terminal.
+(1) Connect to the robot, then click the icon <img src="../_static/media/chapter_9/section_1.2/media/image9.png" style="width:30px"/> in the left taskbar to open the ROS2 terminal.
 
 (2) In the terminal, enter the following command to stop the auto-start service:
 
@@ -642,7 +646,7 @@ The operation steps are shown as following.
 
 <img src="../_static/media/chapter_9/section_1.2/media/image11.png" style="width:500px" class="common_img"/>
 
-For the interface and related features of the "Arm" software, please refer to section [9.1.1 Basic Control]() for details.
+For the interface and related features of the "Arm" software, please refer to section [9.1.1 Basic Control](#anchor_9_1_1) for details.
 
 (4) Click the **Reset servo**  button, and you will notice that servo No. 3 has a deviation.
 
@@ -662,11 +666,11 @@ For the interface and related features of the "Arm" software, please refer to se
 
 <img src="../_static/media/chapter_9/section_1.2/media/image15.png" style="width:500px" class="common_img"/>
 
-(8) As shown in the figure above, the deviation value of Servo 3 is –18. When such a deviation occurs, adjust it in the opposite direction until it meets the standard specified in **Criteria 1** of [1. Calibration Standards]().
+(8) As shown in the figure above, the deviation value of Servo 3 is –18. When such a deviation occurs, adjust it in the opposite direction until it meets the standard specified in **Criteria 1** of [1. Calibration Standards](#anchor_calibration_standards).
 
 <img src="../_static/media/chapter_9/section_1.2/media/image16.png" style="width:500px" class="common_img"/>
 
-At this point, the deviation value of Servo 3 has been adjusted to **10**, and the robotic arm state has been set to **Criteria 1** under [1. Calibration Standards](). This completes the deviation adjustment state setting for Servo 3.
+At this point, the deviation value of Servo 3 has been adjusted to **10**, and the robotic arm state has been set to **Criteria 1** under [1. Calibration Standards](#anchor_calibration_standards). This completes the deviation adjustment state setting for Servo 3.
 The next step is to save the current value to the robot's local computer. Afterward, when the robot is restarted, it will read the saved data for servo control. The same method applies to other servos with different ID numbers.
 
 (9) Click **Download deviation**.
@@ -693,7 +697,7 @@ After clicking on the button, the status of the mobile robot is shown in the fig
 
 <img src="../_static/media/chapter_9/section_1.2/media/image22.jpeg" style="width:400px" class="common_img"/>
 
-After completing the above steps, servo 3 on the mobile robot arm has been fully adjusted. If any of the other bus servos on the robot show deviations that do not meet the criteria, you will need to repeat [2. Calibration Steps]() to adjust the corresponding servo deviations. During adjustment, always move the bottom slider and then click **Download deviation** for the changes to take effect. The slider's location is indicated by the green box in the figure below.
+After completing the above steps, servo 3 on the mobile robot arm has been fully adjusted. If any of the other bus servos on the robot show deviations that do not meet the criteria, you will need to repeat [2. Calibration Steps](#anchor_calibration_steps) to adjust the corresponding servo deviations. During adjustment, always move the bottom slider and then click **Download deviation** for the changes to take effect. The slider's location is indicated by the green box in the figure below.
 
 <img src="../_static/media/chapter_9/section_1.2/media/image23.png" style="width:500px" class="common_img"/>
 
@@ -709,7 +713,7 @@ It is recommended to keep servo 10 within the range \[200, 700\] during adjustme
 
 **Q2. Why does the software freeze after clicking Read deviation?**
 
-**A:** The bus servos use serial communication. If the auto-start service is not disabled after the robot starts, message transmission may be blocked, causing the software to freeze. Disable the auto-start service to fix this. See [2. Calibration Steps]() for instructions.
+**A:** The bus servos use serial communication. If the auto-start service is not disabled after the robot starts, message transmission may be blocked, causing the software to freeze. Disable the auto-start service to fix this. See [2. Calibration Steps](#anchor_calibration_steps) for instructions.
 
 ## 9.2 Robotic Arm Vision Application
 
@@ -1041,6 +1045,8 @@ Finally, inverse kinematics is employed to calculate the angles necessary to ali
 
 The source code for this program is located at: `/home/ubuntu/ros2_ws/src/example/example/color_track/color_track_node.py`
 
+<p id="operation_steps_5"></p>
+
 **2. Operation Steps**
 
 > [!NOTE]
@@ -1203,7 +1209,7 @@ vim color_track_node.py
 
 <img src="../_static/media/chapter_9/section_2.1/media/image59.png" style="width:500px" class="common_img"/>
 
-(7) Then, follow the steps in [2. Operation Steps]() to run the feature.
+(7) Then, follow the steps in [2. Operation Steps](#operation_steps_5) to run the feature.
 
 * **Line Following with Obstacle Removal**
 
@@ -1220,6 +1226,8 @@ Next, identify the center position of the line in the image and calculate its de
 Finally, when colored block obstacles are detected on the path, call the obstacle removal action group to have the robot arm clear them from the line.
 
 The source code for this program is located at: `/home/ubuntu/ros2_ws/src/example/example/line_follow_clean/line_follow_clean_node.py`
+
+<p id="operation_steps_6"></p>
 
 **2. Operation Steps**
 
@@ -1387,9 +1395,7 @@ ros2 launch example line_follow_clean_node.launch.py debug:=true
 
 (5) This feature will pause the line-following function while keeping the color block picking function active. The program waits for the robot arm to move to the picking position, places the color block in the center of the gripper, then waits for the arm to reset. It marks the recognized bounding box position, and finally waits for the arm to perform the picking action, marking the picking position.
 
-(6) Run the program following the steps outlined in [2. Operation Steps]().
-
-
+(6) Run the program following the steps outlined in [2. Operation Steps](#operation_steps_6).
 
 * **Waste Classification**
 
@@ -1583,7 +1589,7 @@ Finally, upon reaching the destination and identifying the target color block, t
 >
 > **When entering commands, be sure to use correct case and spacing. You can use the Tab key to auto-complete keywords.**
 
-(1) Before starting, complete the Lidar mapping of the area where navigation and transport will be performed, and prepare the color blocks. Use red markers within the area to indicate the placement locations. For more information on Lidar mapping, please refer to [6.1 Mapping Instruction]().
+(1) Before starting, complete the Lidar mapping of the area where navigation and transport will be performed, and prepare the color blocks. Use red markers within the area to indicate the placement locations. For more information on Lidar mapping, please refer to [6.1 Mapping Instruction](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/6_Mapping_Navigation_Course.html#mapping-instruction).
 
 (2) Power on LanderPi and connect it to the remote control software VNC. For detail informations, please refer to [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration) in the user manual.
 

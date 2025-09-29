@@ -1,5 +1,7 @@
 # 10. MoveIt & Gazebo Simulation
 
+<p id="anchor_10_1"></p>
+
 ## 10.1 Virtual Machine Configuration and File Import
 
 ### 10.1.1 Virtual Machine Installation and Import
@@ -92,7 +94,7 @@ cp .typerc ~/shared
 
 (2) Click **Home** <img src="../_static/media/chapter_10/section_1.1/media/image28.png" style="width:50px"/>on the desktop.
 
-(3) Locate the **driver.zip, hiwonder_moveit_config.zip, robot_gazebo.zip**, and **landerpi_description.zip** archives in [Feature Package Files](), along with the **.typerc** file previously transferred to your computer. Drag all these files into the Home directory of the virtual machine.
+(3) Locate the **driver.zip, hiwonder_moveit_config.zip, robot_gazebo.zip**, and **landerpi_description.zip** archives in [Feature Package Files](https://drive.google.com/drive/folders/1mX8eoHW54l2WStXcokgtzwm6WoCi7inR?usp=sharing), along with the **.typerc** file previously transferred to your computer. Drag all these files into the Home directory of the virtual machine.
 
 > [!NOTE]
 >
@@ -250,7 +252,7 @@ gedit ~/ros2_ws/.typerc
 
 WinSCP is an open-source graphical SFTP client for Windows that uses SSH and also supports the SCP protocol. It is primarily designed to securely transfer files between a local and remote computer, and also allows direct file editing. The installation steps are as follows:
 
-1)  First, double-click the installer "**WinSCP-5.15.3-Setup.exe**" located in the [05 File Transmitting Tool](), and then click the **Accept** button.
+1)  First, double-click the installer "**WinSCP-5.15.3-Setup.exe**" located in the [05 File Transmitting Tool](https://drive.google.com/drive/folders/1IlUyU4vpAsuT-lCUE9aQ9RP48G6mWv0D?usp=sharing), and then click the **Accept** button.
 
 <img src="../_static/media/chapter_10/section_1.2/media/image2.png" style="width:500px" class="common_img"/>
 
@@ -307,6 +309,8 @@ cd share
 ```
 
 8. Use the `mv` command to move the target file to the desired directory.
+
+<p id="anchor_10_2"></p>
 
 ## 10.2 Getting Started with URDF Model
 
@@ -849,9 +853,7 @@ Tools can be attached to the end of the robot arm to perform different tasks. Th
 
 > [!NOTE]
 >
-> **This tutorial uses a virtual machine as an example for configuration and learning. If the virtual machine is not yet installed, please follow the instructions in the [10.1 Virtual Machine Configuration and File Import]() to install it before proceeding with the tutorial.**
-
-
+> **This tutorial uses a virtual machine as an example for configuration and learning. If the virtual machine is not yet installed, please follow the instructions in the [10.1 Virtual Machine Configuration and File Import](#anchor_10_1) to install it before proceeding with the tutorial.**
 
 ### 10.3.2 MoveIt2 Configuration
 
@@ -875,33 +877,33 @@ Additionally, MoveIt2 offers a suite of robust plugins and tools for the quick c
 
 2. Entering the following command to launch the MoveIt2 configuration tool.
 
-   ```
-   ros2 launch moveit_setup_assistant setup_assistant.launch.py
-   ```
+```
+ros2 launch moveit_setup_assistant setup_assistant.launch.py
+```
 
 3. Click **Edit Existing MoveIt2 Configuration Package** to begin editing an existing configuration package.
 
-   <img src="../_static/media/chapter_10/section_3/media/image18.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_10/section_3/media/image18.png" style="width:500px" class="common_img"/>
 
 4. Click **Browse** and navigate to the following directory: **home/ubuntu/ros2_ws/src/hiwonder_moveIt_config**, then select the folder and click **Open**.
 
-   <img src="../_static/media/chapter_10/section_3/media/image19.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_10/section_3/media/image19.png" style="width:500px" class="common_img"/>
 
-   <img src="../_static/media/chapter_10/section_3/media/image20.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_10/section_3/media/image20.png" style="width:500px" class="common_img"/>
 
 5. Click **Load Files** and wait for the files to load.
 
-   <img src="../_static/media/chapter_10/section_3/media/image21.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_10/section_3/media/image21.png" style="width:500px" class="common_img"/>
 
-   Once the progress reaches 100%, the robot model will appear on the right side, indicating a successful load.
+Once the progress reaches 100%, the robot model will appear on the right side, indicating a successful load.
 
-   <img src="../_static/media/chapter_10/section_3/media/image22.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_10/section_3/media/image22.png" style="width:500px" class="common_img"/>
 
 6. Adjust settings for options such as **Virtual Joints** and **Robot Pose** in the left-hand menu.
 
-   > [!NOTE]
-   >
-   > **Reconfiguring will overwrite previous settings. Errors during this process may result in functionality issues.**
+> [!NOTE]
+>
+> **Reconfiguring will overwrite previous settings. Errors during this process may result in functionality issues.**
 
 * **Configuration Introduction**
 
@@ -1626,9 +1628,9 @@ cd /home/ubuntu/ros2_ws/src/robot_gazebo/urdf
 vim lidar.gazebo.xacro
 ```
 
-This file describes the Lidar simulation model, including its name, detection range, position, noise reduction settings, topic messages, and other properties. To fully understand this file, you can refer to [10.2 Getting Started with URDF Model]() to learn the relevant syntax.
+This file describes the Lidar simulation model, including its name, detection range, position, noise reduction settings, topic messages, and other properties. To fully understand this file, you can refer to [10.2 Getting Started with URDF Model](#anchor_10_2) to learn the relevant syntax.
 
-   <img src="../_static/media/chapter_10/section_4/media/image15.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_10/section_4/media/image15.png" style="width:500px" class="common_img"/>
 
 * **IMU Simulation**
 
@@ -1650,7 +1652,7 @@ cd /home/ubuntu/ros2_ws/src/robot_gazebo/urdf
 vim imu.gazebo.xacro
 ```
 
-This file describes the IMU simulation model, including its name, offset settings, noise reduction settings, acceleration settings, topic messages, and other properties. To fully understand this file, refer to [10.2 Getting Started with URDF Model]() for the relevant syntax.
+This file describes the IMU simulation model, including its name, offset settings, noise reduction settings, acceleration settings, topic messages, and other properties. To fully understand this file, refer to [10.2 Getting Started with URDF Model](#anchor_10_2) for the relevant syntax.
 
 <img src="../_static/media/chapter_10/section_4/media/image17.png" style="width:500px" class="common_img"/>
 
@@ -1741,7 +1743,7 @@ In this command, **map_01** is the map name, which can be renamed as needed. If 
 
 > [!NOTE]
 >
-> **To forcefully terminate all processes, use the following commands:**<br>
+> **To forcefully terminate all processes, use the following commands:**<br><br>
 >
 > `ps aux | grep ign | grep -v grep | awk '{ print "sudo kill -9", $2 }' | sh`
 > 

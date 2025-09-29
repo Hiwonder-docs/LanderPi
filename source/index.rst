@@ -23,3 +23,4 @@ LanderPi
    docs/11_Voice_Control_Course.md
    docs/12_Large_AI_Model_Course.md
    docs/13_Group_Control.md
+   Download <https://drive.google.com/drive/folders/1PQmoEIc0jQx20Lk4pmy5CA_bdfu59ayU?usp=sharing>

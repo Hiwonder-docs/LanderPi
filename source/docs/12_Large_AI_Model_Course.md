@@ -1,9 +1,5 @@
 # 12. Large AI Model Course
 
-[TOC]
-
-
-
 ## 12.1 Large Models Basic Courses
 
 ### 12.1.1 Large Language Model Courses
@@ -12,7 +8,7 @@
 
 A Large Language Model (LLM) is an advanced artificial intelligence model developed to comprehend and generate human language.
 
-<img  src="../_static/media/chapter_12/section_1.1/01/image2.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.1/01/image2.png" style="width:500px" class="common_img"/>
 
 (1) Basic Concept
 
@@ -76,25 +72,25 @@ This section outlines the steps to register on the official OpenAI website and o
 
 Open the OpenAI website and click on the "**Sign Up**" button in the top right corner.
 
-<img  src="../_static/media/chapter_12/section_1.1/02/image2.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.1/02/image2.png" style="width:500px" class="common_img"/>
 
 ② Follow the prompts to register and log in using your Google, Microsoft, or Apple account.
 
-<img  src="../_static/media/chapter_12/section_1.1/02/image3.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.1/02/image3.png" style="width:500px" class="common_img"/>
 
 ③ Click on the settings icon, then select Billing, followed by Payment Methods, to link your payment method. Recharge your account to purchase tokens.
 
-<img  src="../_static/media/chapter_12/section_1.1/02/image4.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.1/02/image4.png" style="width:500px" class="common_img"/>
 
-<img  src="../_static/media/chapter_12/section_1.1/02/image5.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.1/02/image5.png" style="width:500px" class="common_img"/>
 
 ④ After completing the setup, click on API Keys, then select Create New Secret Key. Follow the prompts to fill in the required information. Once the key is created, make sure to save it for future use.
 
-<img  src="../_static/media/chapter_12/section_1.1/02/image6.png"     style="width:200px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.1/02/image6.png" style="width:200px" class="common_img"/>
 
-<img  src="../_static/media/chapter_12/section_1.1/02/image7.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.1/02/image7.png" style="width:500px" class="common_img"/>
 
-<img  src="../_static/media/chapter_12/section_1.1/02/image8.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.1/02/image8.png" style="width:500px" class="common_img"/>
 
 ⑤ With these steps, the large model has been successfully created and deployed. You can now use the API in the upcoming lessons.
 
@@ -104,21 +100,21 @@ Open the OpenAI website and click on the "**Sign Up**" button in the top right c
 
 Open the webpage in your browser and click "**Sign In**". Register using your Google account or another available login option.
 
-<img  src="../_static/media/chapter_12/section_1.1/02/image9.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.1/02/image9.png" style="width:500px" class="common_img"/>
 
-<img  src="../_static/media/chapter_12/section_1.1/02/image10.png"     style="width:400px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.1/02/image10.png" style="width:400px" class="common_img"/>
 
 ② After logging in, click the icon in the top-right corner and select **"Credits"** to link your payment method.
 
-<img  src="../_static/media/chapter_12/section_1.1/02/image11.png"     style="width:400px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.1/02/image11.png" style="width:400px" class="common_img"/>
 
-<img  src="../_static/media/chapter_12/section_1.1/02/image12.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.1/02/image12.png" style="width:500px" class="common_img"/>
 
 ③ To create an API key, go to **"API Keys"**, then click **"Create Key"**. Follow the prompts to complete the process. Once the key is generated, make sure to save it for future use.
 
-<img  src="../_static/media/chapter_12/section_1.1/02/image13.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.1/02/image13.png" style="width:500px" class="common_img"/>
 
-<img  src="../_static/media/chapter_12/section_1.1/02/image14.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.1/02/image14.png" style="width:500px" class="common_img"/>
 
 ④ At this point, the large model is successfully created and deployed. You can now use the API in the upcoming lessons.
 
@@ -134,7 +130,7 @@ To proceed with this section, you will need to register on the appropriate websi
 
 It is important to ensure a stable network connection for the development board. For optimal performance, we also recommend connecting the main controller to a wired network for enhanced stability.
 
-<img  src="../_static/media/chapter_12/section_1.1/03/image2.png"     style="width:300px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.1/03/image2.png" style="width:300px" class="common_img"/>
 
 (1) Environment Configuration
 
@@ -162,17 +158,17 @@ sudo apt install gedit
 sudo apt install python3 python3-pip python3-all-dev python3-pyaudio portaudio11-dev libsndfile1
 ```
 
-<img  src="../_static/media/chapter_12/section_1.1/03/image3.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.1/03/image3.png" style="width:500px" class="common_img"/>
 
 (2) Importing the Large Model Program Directory
 
 ① In this section, locate the '[Appendix -> Source Code](https://docs.hiwonder.com/projects/JetArm/en/latest/docs/resources_download.html)' folder within the same directory as this tutorial document.
 
-<img  src="../_static/media/chapter_12/section_1.1/03/image4.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.1/03/image4.png" style="width:500px" class="common_img"/>
 
 ② Using the MobaXterm remote connection tool (as outlined in the '5.5 Remote Access and File Transfer' tutorial), drag the folder into the root directory of the main controller. The software installation package can be found in the '[Appendix -\> Remote Access and File Transfer](https://docs.hiwonder.com/projects/JetArm/en/latest/docs/resources_download.html)' directory.
 
-<img  src="../_static/media/chapter_12/section_1.1/03/image5.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.1/03/image5.png" style="width:500px" class="common_img"/>
 
 ③ Next, execute the command to navigate to the **'speech_pkg' directory**.
 
@@ -214,7 +210,7 @@ cd ~/large_models/speech_pkg/speech
 ls
 ```
 
-<img  src="../_static/media/chapter_12/section_1.1/03/image13.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.1/03/image13.png" style="width:500px" class="common_img"/>
 
 ⑦ Depending on the type of main controller and Python version you're using, switch to the appropriate folder for packaging and distribution. This tutorial uses the Jetson Orin controller as an example.
 
@@ -271,7 +267,7 @@ vim config.py
 
 ③ Once the file is open, configure the OpenAI and OpenRouter keys by filling in the llm_api_key and vllm_api_key parameters, respectively (you can obtain these keys from the '[11.1.1 Large Language Model Courses -> Large Language Model Deployment](#anchor_11_1_1_2)' course).
 
-<img  src="../_static/media/chapter_12/section_1.1/03/image21.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.1/03/image21.png" style="width:500px" class="common_img"/>
 
 For instance, copy the key created in Section 1.2 of this chapter and paste it into the appropriate field. To paste the key, place the cursor between the quotation marks, hold the **"Shift"** key, right-click, and select **"Paste"** .
 
@@ -281,7 +277,7 @@ Do not mix keys from different models, as this may cause the functionality to ma
 
 :::
 
-<img  src="../_static/media/chapter_12/section_1.1/03/image22.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.1/03/image22.png" style="width:500px" class="common_img"/>
 
 ④  After pasting, press the **'Esc'** key, then type the following command and press Enter to save the file:
 
@@ -293,7 +289,7 @@ Do not mix keys from different models, as this may cause the functionality to ma
 
 Once the keys are configured, you can run the demo program (openai_llm_demo.py) to experience the text generation capabilities of the large model. For example, the program's prompt might be: 'Write a 50-word article about how technology is changing life.'
 
-<img  src="../_static/media/chapter_12/section_1.1/03/image24.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.1/03/image24.png" style="width:500px" class="common_img"/>
 
 ① To run the demo, enter the following command in the terminal:
 
@@ -303,7 +299,7 @@ python3 openai_llm_demo.py
 
 ② After running the program, the output will appear as shown in the image below.
 
-<img  src="../_static/media/chapter_12/section_1.1/03/image26.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.1/03/image26.png" style="width:500px" class="common_img"/>
 
 * **Semantic Understanding with Large Language Model**
 
@@ -325,11 +321,11 @@ python3 openai_llm_nlu_demo.py
 
 (3) As shown in the output, the model demonstrates strong summarization abilities.
 
-<img  src="../_static/media/chapter_12/section_1.1/01/image4.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.1/01/image4.png" style="width:500px" class="common_img"/>
 
 (4) The result matches the prompt defined in the program — where a passage of text is provided to the model, and it generates a concise summary.
 
-<img  src="../_static/media/chapter_12/section_1.1/01/image5.png"    style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.1/01/image5.png" style="width:500px" class="common_img"/>
 
 * **Emotional Perception with Large Language Model**
 
@@ -351,11 +347,11 @@ python3 openai_llm_er_demo.py
 
 (3) From the output, you will see that the model successfully identifies and understands the emotions conveyed, providing a text-based response accordingly.
 
-<img  src="../_static/media/chapter_12/section_1.1/01/image6.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.1/01/image6.png" style="width:500px" class="common_img"/>
 
 (4) In this program, we send two emotional expressions to the model: the first is an expression of sadness, **"So Sad"**. After the model responds, we then send an expression of happiness, "**Ha Ha**", and observe how the model reacts.
 
-<img  src="../_static/media/chapter_12/section_1.1/01/image7.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.1/01/image7.png" style="width:500px" class="common_img"/>
 
 
 
@@ -447,7 +443,7 @@ Introduction：
 
 The 6-Microphone Circular Array is a high-sensitivity, high signal-to-noise ratio microphone board. It features six analog silicon microphones arranged in a circular pattern. When paired with a main control board, it supports high-performance Acoustic Echo Cancellation (AEC), environmental noise reduction, and factory-level voice pickup from up to 10 meters.
 
-<img  src="../_static/media/chapter_12/section_1.2/02/image2.png"     style="width:300px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.2/02/image2.png" style="width:300px" class="common_img"/>
 
 Features and Specifications：
 
@@ -465,15 +461,15 @@ The following demonstration uses the Raspberry Pi 5 as an example. The connectio
 
 ① Connection Illustration and Detection
 
-<img  src="../_static/media/chapter_12/section_1.2/02/image3.png"      style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.2/02/image3.png"      style="width:500px" class="common_img"/>
 
 If the main controller is a Raspberry Pi, you can use VNC remote desktop access (refer to the appendix: Remote Access and File Transfer) to log into the Raspberry Pi system. Once connected, check the upper right corner of the desktop for microphone and speaker icons. As shown in the image below, the presence of these icons indicates a successful connection.
 
-<img  src="../_static/media/chapter_12/section_1.2/02/image4.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.2/02/image4.png" style="width:500px" class="common_img"/>
 
 If you're using a NVIDIA Jetson device, you can connect via the NoMachine remote access tool. After logging in, check the upper right corner of the system interface for the speaker icon to confirm successful detection.
 
-<img  src="../_static/media/chapter_12/section_1.2/02/image5.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.2/02/image5.png" style="width:500px" class="common_img"/>
 
 ② Recording Test
 
@@ -483,7 +479,7 @@ Next, open a new terminal window and enter the following command to check the av
 arecord -l
 ```
 
-<img  src="../_static/media/chapter_12/section_1.2/02/image6.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.2/02/image6.png" style="width:500px" class="common_img"/>
 
 Then, use the following command to start recording. Replace the red-marked card number (hw:0,0) with the actual number you found in the previous step:
 
@@ -503,7 +499,7 @@ After the recording is complete, you can check whether the audio file was succes
 ls
 ```
 
-<img  src="../_static/media/chapter_12/section_1.2/02/image8.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.2/02/image8.png" style="width:500px" class="common_img"/>
 
 If test.wav appears in the list, the recording was successful. To play back the recording, use the following command:
 
@@ -543,7 +539,7 @@ ll /dev | grep USB
 
 Please take note of this device name—it may vary depending on the main controller being used.
 
-<img  src="../_static/media/chapter_12/section_1.2/03/image3.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.2/03/image3.png" style="width:500px" class="common_img"/>
 
 Wake-Up Test：
 
@@ -555,7 +551,7 @@ vim wakeup_demo.py
 
 Press i to enter edit mode and make the necessary changes as shown below (update the port number accordingly and adjust comments as needed).
 
-<img  src="../_static/media/chapter_12/section_1.2/03/image4.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.2/03/image4.png" style="width:500px" class="common_img"/>
 
 Once the changes are complete, press ESC, then type :wq and press Enter to save and exit the editor.
 
@@ -567,7 +563,7 @@ If the output includes **"keyword detect"**, it indicates that the firmware has 
 python3 ~/large_models/wakeup_demo.py
 ```
 
-<img  src="../_static/media/chapter_12/section_1.2/03/image5.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.2/03/image5.png" style="width:500px" class="common_img"/>
 
 (2) 6-Microphone Circular Array
 
@@ -591,11 +587,11 @@ vim ~/large_models/wakeup_demo.py
 
 ③ Update the port to match the device port number you previously identified. Comment out the WonderEcho Pro configuration (add \# at the beginning of the corresponding line), and uncomment the line using the voice device on line 11 as the input device (see red box in the referenced image).
 
-<img  src="../_static/media/chapter_12/section_1.2/03/image7.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.2/03/image7.png" style="width:500px" class="common_img"/>
 
 ④ Press ESC to return to command mode, then type :wq and press Enter to save and exit.
 
-<img  src="../_static/media/chapter_12/section_1.2/03/image8.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.2/03/image8.png" style="width:500px" class="common_img"/>
 
 ⑤ In the terminal, run the wake-up program with the following command:
 
@@ -605,7 +601,7 @@ python3 ~/large_models/wakeup_demo.py
 
 ⑥ After about 30 seconds of initialization, speak the wake word **"hello hiwonder"** to test the device.
 
-<img  src="../_static/media/chapter_12/section_1.2/03/image10.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.2/03/image10.png" style="width:500px" class="common_img"/>
 
 (3) Brief Program Overview
 
@@ -713,7 +709,7 @@ vim wakeup_demo.py
 i
 ```
 
-<img  src="../_static/media/chapter_12/section_1.2/03/image17.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.2/03/image17.png" style="width:500px" class="common_img"/>
 
 ③ Press ESC, then type **:wq** and press Enter to save and exit.
 
@@ -765,7 +761,7 @@ cd large_models/
 vim config.py
 ```
 
-<img  src="../_static/media/chapter_12/section_1.2/04/image3.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.2/04/image3.png" style="width:500px" class="common_img"/>
 
 ④ Run the speech recognition program with:
 
@@ -777,7 +773,7 @@ python3 openai_asr_demo.py
 
 After the program starts, the microphone will recognize the recorded audio content from the user and print the converted text output.
 
-<img  src="../_static/media/chapter_12/section_1.2/04/image5.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.2/04/image5.png" style="width:500px" class="common_img"/>
 
 (6) Brief Program Analysis
 
@@ -837,7 +833,7 @@ vim openai_asr_demo.py
 i
 ```
 
-<img  src="../_static/media/chapter_12/section_1.2/04/image10.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.2/04/image10.png" style="width:500px" class="common_img"/>
 
 ③ Then, run the program with the command:
 
@@ -847,7 +843,7 @@ python3 openai_asr_demo.py
 
 ④ Record a sample sentence such as "**Hello, can you hear me clearly?**", and the recognized text will be printed on the console.
 
-<img  src="../_static/media/chapter_12/section_1.2/04/image12.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.2/04/image12.png" style="width:500px" class="common_img"/>
 
 * **Speech Synthesis**
 
@@ -881,7 +877,7 @@ cd large_models/
 vim config.py
 ```
 
-<img  src="../_static/media/chapter_12/section_1.2/05/image3.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.2/05/image3.png" style="width:500px" class="common_img"/>
 
 ④ Finally, run the program with the following command:
 
@@ -895,7 +891,7 @@ Upon running the program, it will play an audio message saying "**Hello, Can I H
 
 [/home/ubuntu/large_models/resources/audio/](../_static/source_code/11/audio.zip)
 
-<img  src="../_static/media/chapter_12/section_1.2/05/image5.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.2/05/image5.png" style="width:500px" class="common_img"/>
 
 (6) Brief Program Analysis
 
@@ -953,9 +949,9 @@ Step2 : Press i on your keyboard to enter INSERT mode. Locate the line voice="**
 i
 ```
 
-<img  src="../_static/media/chapter_12/section_1.2/05/image9.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.2/05/image9.png" style="width:500px" class="common_img"/>
 
-<img  src="../_static/media/chapter_12/section_1.2/05/image10.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.2/05/image10.png" style="width:500px" class="common_img"/>
 
 Step3 : Press Esc, then type :wq and hit Enter to save and exit.
 
@@ -963,7 +959,7 @@ Step3 : Press Esc, then type :wq and hit Enter to save and exit.
 :wq
 ```
 
-<img  src="../_static/media/chapter_12/section_1.2/05/image11.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.2/05/image11.png" style="width:500px" class="common_img"/>
 
 Step4 : Execute the program with the following command:
 
@@ -971,7 +967,7 @@ Step4 : Execute the program with the following command:
 python3 openai_tts_demo.py
 ```
 
-<img  src="../_static/media/chapter_12/section_1.2/05/image12.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.2/05/image12.png" style="width:500px" class="common_img"/>
 
 Once the program starts, the speaker will play the synthesized audio using the newly selected voice style.
 
@@ -999,7 +995,7 @@ ll /dev | grep USB
 
 After disconnecting the microphone, no USB device should appear.
 
-<img  src="../_static/media/chapter_12/section_1.2/06/image2.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.2/06/image2.png" style="width:500px" class="common_img"/>
 
 Upon reconnecting the microphone, a USB port (e.g., ttyCH341USB1) will be listed (make sure to note this device name). The device name may vary depending on the main controller.
 
@@ -1015,7 +1011,7 @@ cd large_models/
 vim config.py
 ```
 
-<img  src="../_static/media/chapter_12/section_1.2/06/image4.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.2/06/image4.png" style="width:500px" class="common_img"/>
 
 ⑤ Enter the port number you obtained and modify the corresponding microphone port settings for either WonderEcho Pro or the six-microphone setup. Uncomment the configuration for the port you intend to use and comment out the settings for any unused ports.
 
@@ -1027,7 +1023,7 @@ If you are using the WonderEcho Pro, modify the corresponding section:
 
 If you are using the 6-Microphone Array, modify the relevant section:
 
-<img  src="../_static/media/chapter_12/section_1.2/06/image5.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.2/06/image5.png" style="width:500px" class="common_img"/>
 
 ⑥ Run the program:
 
@@ -1043,7 +1039,7 @@ After successful execution, the voice device will announce 'I'm ready.' Then, up
 
 For example: 'What are some fun places to visit in New York?'
 
-<img  src="../_static/media/chapter_12/section_1.2/06/image7.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.2/06/image7.png" style="width:500px" class="common_img"/>
 
 (5) Brief Program Analysis
 
@@ -1221,9 +1217,9 @@ python3 openai_vllm_understand.py
 
 After running the program, the output printed matches our request of "**Describe the image**".
 
-<img  src="../_static/media/chapter_12/section_1.3/02/image4.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.3/02/image4.png" style="width:500px" class="common_img"/>
 
-<img  src="../_static/media/chapter_12/section_1.3/02/image5.jpeg"      style="width:300px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.3/02/image5.jpeg"      style="width:300px" class="common_img"/>
 
 * **Vision Language Model: Object Detection**
 
@@ -1255,9 +1251,9 @@ python3 qwen_vllm_detect_demo.py
 
 After running the program, the positions of the fruits in the image will be circled.
 
-<img  src="../_static/media/chapter_12/section_1.3/03/image4.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.3/03/image4.png" style="width:500px" class="common_img"/>
 
-<img  src="../_static/media/chapter_12/section_1.3/03/image5.png"     style="width:400px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.3/03/image5.png" style="width:400px" class="common_img"/>
 
 (3) Function Expansion
 
@@ -1269,11 +1265,11 @@ Change Pictures:
 
 Here, you can drag in other images, for example, in the apples.png format.
 
-<img  src="../_static/media/chapter_12/section_1.3/03/image6.png"     style="width:400px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.3/03/image6.png" style="width:400px" class="common_img"/>
 
-<img  src="../_static/media/chapter_12/section_1.3/03/image7.png"     style="width:400px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.3/03/image7.png" style="width:400px" class="common_img"/>
 
-<img  src="../_static/media/chapter_12/section_1.3/03/image8.png"     style="width:400px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.3/03/image8.png" style="width:400px" class="common_img"/>
 
 ② Then, input the command:
 
@@ -1287,13 +1283,13 @@ vim large_models/qwen_vllm_detect_demo.py
 i
 ```
 
-<img  src="../_static/media/chapter_12/section_1.3/03/image10.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.3/03/image10.png" style="width:500px" class="common_img"/>
 
 ④ Change the image recognition path from: `./resources/pictures/test_image_understand.jpeg`
 
 To: image = cv2.imread('./resources/pictures/apples.png')
 
-<img  src="../_static/media/chapter_12/section_1.3/03/image11.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.3/03/image11.png" style="width:500px" class="common_img"/>
 
 ⑤ Next, input the following command and execute the program again to see the results
 
@@ -1301,7 +1297,7 @@ To: image = cv2.imread('./resources/pictures/apples.png')
 python3 qwen_vllm_detect_demo.py
 ```
 
-<img  src="../_static/media/chapter_12/section_1.3/03/image12.png"     style="width:400px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.3/03/image12.png" style="width:400px" class="common_img"/>
 
 * **Vision Language Model: Scene Understanding**
 
@@ -1332,9 +1328,9 @@ python3 openai_vllm_understand.py
 
 After running the program, the output printed matches our request of "**Describe the image**".
 
-<img  src="../_static/media/chapter_12/section_1.3/04/image4.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.3/04/image4.png" style="width:500px" class="common_img"/>
 
-<img  src="../_static/media/chapter_12/section_1.3/04/image5.jpeg"      style="width:400px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.3/04/image5.jpeg"      style="width:400px" class="common_img"/>
 
 (3) Function Expansion
 
@@ -1342,7 +1338,7 @@ If you need to recognize your own image, you should place the image in the corre
 
 ① First, drag your image directly into the ~/large_models/resources/pictures/ path using MobaXterm, and rename the image to test.png.
 
-<img  src="../_static/media/chapter_12/section_1.3/04/image6.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.3/04/image6.png" style="width:500px" class="common_img"/>
 
 ② Then, open the scene understanding script by entering the following command in the terminal:
 
@@ -1352,7 +1348,7 @@ vim ~/large_models/vllm_understand.py
 
 ③ Change the image path in the code to reflect the name of your image (e.g., test.png).
 
-<img  src="../_static/media/chapter_12/section_1.3/04/image8.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.3/04/image8.png" style="width:500px" class="common_img"/>
 
 ④ Run the program:
 
@@ -1360,9 +1356,9 @@ vim ~/large_models/vllm_understand.py
 python3 ~/large_models/openai_vllm_understand.py
 ```
 
-<img  src="../_static/media/chapter_12/section_1.3/04/image10.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.3/04/image10.png" style="width:500px" class="common_img"/>
 
-<img  src="../_static/media/chapter_12/section_1.3/04/image11.png"      style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.3/04/image11.png"      style="width:500px" class="common_img"/>
 
 * **Vision Language Model: Optical Character Recognition** 
 
@@ -1394,9 +1390,9 @@ python3 openai_vllm_ocr.py
 
 After running the program, the output printed will be consistent with the content of the image sent.
 
-<img  src="../_static/media/chapter_12/section_1.3/05/image4.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.3/05/image4.png" style="width:500px" class="common_img"/>
 
-<img  src="../_static/media/chapter_12/section_1.3/05/image5.png"     style="width:400px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.3/05/image5.png" style="width:400px" class="common_img"/>
 
 (3) Function Expansion
 
@@ -1406,9 +1402,9 @@ Change Pictures：
 
 ① Drag the image directly into the `~/large_models/resources/pictures/` path using MobaXterm. Here, we can drag in the image named 'ocr1.png' as an example, and let the program recognize the text 'COME ON'.
 
-<img  src="../_static/media/chapter_12/section_1.3/05/image6.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.3/05/image6.png" style="width:500px" class="common_img"/>
 
-<img  src="../_static/media/chapter_12/section_1.3/05/image7.png"      style="width:400px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.3/05/image7.png"      style="width:400px" class="common_img"/>
 
 ② Then, input the command:
 
@@ -1422,7 +1418,7 @@ vim ~/large_models/openai_vllm_ocr.py
 i
 ```
 
-<img  src="../_static/media/chapter_12/section_1.3/05/image9.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.3/05/image9.png" style="width:500px" class="common_img"/>
 
 ④ Change the image recognition path from: ./resources/pictures/ocr.jpeg
 
@@ -1438,7 +1434,7 @@ image = cv2.imread('./resources/pictures/ocr1.png)
 python3 ~/large_models/openai_vllm_ocr.py
 ```
 
-<img  src="../_static/media/chapter_12/section_1.3/05/image12.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.3/05/image12.png" style="width:500px" class="common_img"/>
 
 
 
@@ -1522,7 +1518,7 @@ ll /dev | grep USB
 
 After disconnecting the microphone, no USB device should appear.
 
-<img  src="../_static/media/chapter_12/section_1.4/image2.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.4/image2.png" style="width:500px" class="common_img"/>
 
 Upon reconnecting the microphone, a USB port (e.g., ttyCH341USB1) will be listed (make sure to note this device name). The device name may vary depending on the main controller.
 
@@ -1538,7 +1534,7 @@ cd large_models/
 vim config.py
 ```
 
-<img  src="../_static/media/chapter_12/section_1.4/image4.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.4/image4.png" style="width:500px" class="common_img"/>
 
 ④ Fill in the detected port number and update the corresponding microphone port settings for either the WonderEcho Pro or the Six-channel Microphone.  
 
@@ -1550,11 +1546,11 @@ vim openai_agent_demo.py
 
 Modify the settings as follows. For WonderEcho Pro, update the corresponding configuration
 
-<img  src="../_static/media/chapter_12/section_1.4/image5.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.4/image5.png" style="width:500px" class="common_img"/>
 
 For 6-channel Microphone, update the respective settings:
 
-<img  src="../_static/media/chapter_12/section_1.4/image6.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.4/image6.png" style="width:500px" class="common_img"/>
 
 ⑤ Run the program:
 
@@ -1564,7 +1560,7 @@ python3 openai_agent_demo.py
 
 ⑥ The program will print the prompts configured for the large model. The large model will then return data formatted according to these prompts.
 
-<img  src="../_static/media/chapter_12/section_1.4/image8.png"     style="width:500px"   class="common_img"/>
+<img  src="../_static/media/chapter_12/section_1.4/image8.png" style="width:500px" class="common_img"/>
 
 
 
@@ -1576,9 +1572,7 @@ When the device responds with "**I'm here**", it indicates that the agent has be
 
 ② After updating the wake word, you can say: "Take two steps forward, turn left and take one step back". The agent will respond according to the format we have defined.
 
-<img  src="../_static/media/chapter_12/section_1.4/image9.png"     style="width:500px"   class="common_img"/>
-
-
+<img  src="../_static/media/chapter_12/section_1.4/image9.png" style="width:500px" class="common_img"/>
 
 ## 12.2 Voice Module Introduction and Installation
 
@@ -1608,19 +1602,19 @@ By integrating various voice processing modules, the voice recognition module us
 
 * **Recording and Playback Test**
 
-**Here’s how to test recording and playback using a Raspberry Pi 5. The same steps also apply to compatible devices like the robots with Jetson controller.**
+**Here's how to test recording and playback using a Raspberry Pi 5. The same steps also apply to compatible devices like the robots with Jetson controller.**
 
 **1. Connection Setup & Detection**
 
-<img src="../_static/media/chapter_12\section_2.1\media\image1.png"      style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12\section_2.1\media\image1.png"      style="width:500px" class="common_img"/>
 
 If you're using a Raspberry Pi as the controller, you can use a remote desktop tool to access the Raspberry Pi desktop, such as VNC, see [4.1 Remote Control Tool Introduction and Installation]() in the user manual. Check the top-right corner of the screen for microphone and speaker icons. If these icons are present, the device has been successfully connected.
 
-<img src="../_static/media/chapter_12\section_2.1\media\image2.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12\section_2.1\media\image2.png" style="width:500px" class="common_img"/>
 
 If you're using a Jetson device, you can connect via NoMachine and check the top-right corner of the desktop for a speaker icon to confirm the audio output is recognized.
 
-<img src="../_static/media/chapter_12\section_2.1\media\image3.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12\section_2.1\media\image3.png" style="width:500px" class="common_img"/>
 
 **2. Recording Test**
 
@@ -1634,7 +1628,7 @@ If you're using a Jetson device, you can connect via NoMachine and check the top
 arecord -l
 ```
 
-<img src="../_static/media/chapter_12\section_2.1\media\image4.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12\section_2.1\media\image4.png" style="width:500px" class="common_img"/>
 
 (2) Start recording with the following command, replacing the first `0` with the correct card number:
 
@@ -1644,7 +1638,7 @@ arecord -D hw:0,0 -f S16_LE -r 16000 -c 2 test.wav
 
 (3) This will create a **test.wav** file in the current directory.
 
-<img src="../_static/media/chapter_12\section_2.1\media\image5.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12\section_2.1\media\image5.png" style="width:500px" class="common_img"/>
 
 (4) You can try to speak into the microphone for around 5 seconds, then press **Ctrl + C** to stop recording.
 
@@ -1656,7 +1650,7 @@ arecord -D hw:0,0 -f S16_LE -r 16000 -c 2 test.wav
 ls
 ```
 
-<img src="../_static/media/chapter_12\section_2.1\media\image6.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12\section_2.1\media\image6.png" style="width:500px" class="common_img"/>
 
 (2) If you see **test.wav** in the list, the recording was successful. Play the audio using the command:
 
@@ -1672,7 +1666,7 @@ aplay test.wav
 >
 > **When installing the WonderEcho Pro, ensure that the front of the robot is facing forward, and the USB port of the WonderEcho Pro is facing to the left, which is the direction of the Raspberry Pi's USB port.**
 
-<img src="../_static/media/chapter_12\section_2.2/media/image1.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12\section_2.2/media/image1.png" style="width:500px" class="common_img"/>
 
 
 
@@ -1684,11 +1678,11 @@ In this lesson, we will learn how to flash firmware for WonderEcho Pro.
 
 1. Connect the WonderEcho Pro to your computer using a Type-C data cable.
 
-   <img src="../_static/media/chapter_12/section_2.3/media/image1.png"     style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_2.3/media/image1.png" style="width:500px" class="common_img"/>
 
 2. Open the file under the same folder of this document: [Appendix\Firmware Flashing Tool\PACK_UPDATE_TOOL.exe](), select the **CI1302** chip, and then click **Update**.
 
-<img src="../_static/media/chapter_12/section_2.3/media/image2.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.3/media/image2.png" style="width:500px" class="common_img"/>
 
 
 
@@ -1696,33 +1690,33 @@ As an example, we will flash the **CI1302_English_SingleMic_V00916_UART0_115200_
 
 3. Click the button to select firmware, then locate and choose the firmware file: [CI1302_English_SingleMic_V00916_UART0_115200_2M.bin]() under the folder **Appendix**.
    
-   <img src="../_static/media/chapter_12/section_2.3/media/image3.png"     style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_2.3/media/image3.png" style="width:500px" class="common_img"/>
    
 4. Locate and select the appropriate serial port.
 
-   <img src="../_static/media/chapter_12/section_2.3/media/image4.png"     style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_2.3/media/image4.png" style="width:500px" class="common_img"/>
 
 5. Press the **RST** button on the voice interaction module to enter flashing mode. Then, wait for the flashing process to complete successfully.
 
-   <img src="../_static/media/chapter_12/section_2.3/media/image5.png"     style="width:300px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_2.3/media/image5.png" style="width:300px" class="common_img"/>
 
-<img src="../_static/media/chapter_12/section_2.3/media/image6.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_2.3/media/image6.png" style="width:500px" class="common_img"/>
 
 * **Wake Word Test**
 
 After flashing the firmware, refer to [Serial Port Debugging Tool]() in the folder **Appendix** to install the serial debugging software. Then follow the steps below to test whether the microphone is working properly:
 
-1. Connect the WonderEcho Pro to your computer’s USB port using a Type-C to USB cable.
+1. Connect the WonderEcho Pro to your computer's USB port using a Type-C to USB cable.
 
-   <img src="../_static/media/chapter_12/section_2.3/media/image1.png"     style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_2.3/media/image1.png" style="width:500px" class="common_img"/>
 
 2. Open Serial Port Utility, select the detected COM port usually labeled with CH340, and set the baud rate to 115200, as shown in the figure.
 
-   <img src="../_static/media/chapter_12/section_2.3/media/image7.png"     style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_2.3/media/image7.png" style="width:500px" class="common_img"/>
 
 3. Then, say the wake word **Hello Hiwonder**. If the recognition is successful, the right side will display **AA 55 03 00 FB**.
 
-   <img src="../_static/media/chapter_12\section_2.3/media/image8.png"     style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_12\section_2.3/media/image8.png" style="width:500px" class="common_img"/>
 
 
 
@@ -1740,71 +1734,70 @@ We will use the wake word **HELLO-HIWONDER** as an example to demonstrate firmwa
 
 1. First, open the following link to access the firmware creation website ChipIntelli Voice AI Platform (chipintelli.com).
 
-   Website: https://aiplatform.chipintelli.com/home/index.html
+Website: https://aiplatform.chipintelli.com/home/index.html
 
 2. Click the **Platform Features** tab in the menu bar, then navigate to **In-depth development of Product Firmware & SDK** under the **Product Development** section.
 
-   <img src="../_static/media/chapter_12\section_2.4\media\image1.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12\section_2.4\media\image1.png" style="width:500px" class="common_img"/>
 
 3. The system will prompt you to log in. If you do not have an account yet, please complete the registration first. For international users, we provide a shared account:  
-   Username: 18033085495  
-   Password: hiwonder
 
-   Once logged in, click **In-depth development of Product Firmware & SDK** again.
+Username: 18033085495  
+Password: hiwonder
 
-<img src="../_static/media/chapter_12\section_2.4\media\image2.png"     style="width:400px"   class="common_img"/>
+Once logged in, click **In-depth development of Product Firmware & SDK** again.
 
-4)  When the page redirects, click the option <img src="../_static/media/chapter_12\section_2.4\media\image3.png"     style="width:100px"   class="common_img"/> on the left panel to create a new product as shown in the image below. Product name and description can be customized. Other fields must be selected according to the red boxes in the example. Product type needs to select **Select General Smart Control Hub**, then click **Create** to complete.
+<img src="../_static/media/chapter_12\section_2.4\media\image2.png" style="width:400px" class="common_img"/>
 
-<img src="../_static/media/chapter_12\section_2.4\media\image4.png"     style="width:500px"   class="common_img"/>
+4)  When the page redirects, click the option <img src="../_static/media/chapter_12\section_2.4\media\image3.png" style="width:100px" class="common_img"/> on the left panel to create a new product as shown in the image below. Product name and description can be customized. Other fields must be selected according to the red boxes in the example. Product type needs to select **Select General Smart Control Hub**, then click **Create** to complete.
 
-5. Now fill in the basic project information. Since we’re recognizing English in this example, set Language Type to **English**. If you're recognizing Chinese, select Chinese as the Speech Type and set the Acoustic Model to Chinese. Configure the rest of the parameters as shown in the illustration, then click **Continue**.
+<img src="../_static/media/chapter_12\section_2.4\media\image4.png" style="width:500px" class="common_img"/>
 
-   <img src="../_static/media/chapter_12\section_2.4\media\image5.png"     style="width:500px"   class="common_img"/>
+5. Now fill in the basic project information. Since we're recognizing English in this example, set Language Type to **English**. If you're recognizing Chinese, select Chinese as the Speech Type and set the Acoustic Model to Chinese. Configure the rest of the parameters as shown in the illustration, then click **Continue**.
+
+<img src="../_static/media/chapter_12\section_2.4\media\image5.png" style="width:500px" class="common_img"/>
 
 6. Once you've entered the firmware configuration interface, we will focus on the steps for modifying key parameters. First, in the Algorithm Parameters section, enable the **Echo Cancellation** feature.
 
-   <img src="../_static/media/chapter_12\section_2.4\media\image6.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12\section_2.4\media\image6.png" style="width:500px" class="common_img"/>
 
 7. In the **Hardware Parameters** section, set the **Crystal vibration source** to Internal RC and disable **Baud Rate Calibration**.
 
-   <img src="../_static/media/chapter_12\section_2.4\media\image7.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12\section_2.4\media\image7.png" style="width:500px" class="common_img"/>
 
 8. In the UART Print Settings, configure UART1 to Open-Drain Mode, supporting external 5V pull-up.
 
-   <img src="../_static/media/chapter_12\section_2.4\media\image8.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12\section_2.4\media\image8.png" style="width:500px" class="common_img"/>
 
 9. For Communication UART Settings, set the Baud Rate to 115200 and configure UART0 to Open-Drain Mode, also supporting external 5V pull-up. After adjusting these settings, click **Continue** to move forward.
 
-   <img src="../_static/media/chapter_12\section_2.4\media\image9.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12\section_2.4\media\image9.png" style="width:500px" class="common_img"/>
 
 10. The next step involves configuring the command words. You will need to choose a voice output for the wake-up command. For this example, select **Dane – English Male Voice** as the output voice. If you're using Chinese as the language, you may choose the voice option **Chengcheng – Standard Boy Voice**. The selection between Chinese and English voices is determined by the language settings configured in Step 5.
 
-    <img src="../_static/media/chapter_12\section_2.4\media\image10.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12\section_2.4\media\image10.png" style="width:500px" class="common_img"/>
 
-    <img src="../_static/media/chapter_12\section_2.4\media\image11.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12\section_2.4\media\image11.png" style="width:500px" class="common_img"/>
 
 11. Then, upload the command word file named **Command Word Broadcast Protocol English Template** by dragging the corresponding spreadsheet into the webpage.
 
-    > [!NOTE]
-    >
-    > **If you wish to change the wake word, open the spreadsheet and replace the default wake word HELLO-HIWONDER with your preferred word. Keep in mind that the English version of the firmware only supports English wake words, and mixed-language wake words are not allowed. Additionally, English wake words must be written in uppercase letters to function properly.**
+> [!NOTE]
+>
+> **If you wish to change the wake word, open the spreadsheet and replace the default wake word HELLO-HIWONDER with your preferred word. Keep in mind that the English version of the firmware only supports English wake words, and mixed-language wake words are not allowed. Additionally, English wake words must be written in uppercase letters to function properly.**
 
-    <img src="../_static/media/chapter_12\section_2.4\media\image12.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12\section_2.4\media\image12.png" style="width:500px" class="common_img"/>
 
-    <img src="../_static/media/chapter_12\section_2.4\media\image13.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12\section_2.4\media\image13.png" style="width:500px" class="common_img"/>
 
 12. After uploading the file, you will see the command data populated in the table below.
 
-    <img src="../_static/media/chapter_12\section_2.4\media\image14.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12\section_2.4\media\image14.png" style="width:500px" class="common_img"/>
 
 13. Click **Submit Now** and wait a few minutes for the firmware generation process to complete. Once finished, click **Download File** to obtain your customized firmware.
 
-    <img src="../_static/media/chapter_12\section_2.4\media\image15.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12\section_2.4\media\image15.png" style="width:500px" class="common_img"/>
 
-    <img src="../_static/media/chapter_12\section_2.4\media\image16.png"     style="width:500px"   class="common_img"/>
-
-
+<img src="../_static/media/chapter_12\section_2.4\media\image16.png" style="width:500px" class="common_img"/>
 
 ## 12.3 Multimodal Large Model Applications
 
@@ -1818,25 +1811,25 @@ We will use the wake word **HELLO-HIWONDER** as an example to demonstrate firmwa
 
 1)  Copy and open the following URL: [https://platform.openai.com/docs/overview](https://platform.openai.com/docs/overview) to click the **Sign Up** button in the upper-right corner.
 
-<img src="../_static/media/chapter_12/section_3/media/image4.png"     style="width:300px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image4.png" style="width:300px" class="common_img"/>
 
 2)  Register and log in using a Google, Microsoft, or Apple account, as prompted.
 
-<img src="../_static/media/chapter_12/section_3/media/image5.png"     style="width:400px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image5.png" style="width:400px" class="common_img"/>
 
 3)  After logging in, click the **Settings** button, then go to **Billing**, and click **Payment Methods** to add a payment method. Recharge your account to purchase tokens as needed.
 
-<img src="../_static/media/chapter_12/section_3/media/image6.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image6.png" style="width:500px" class="common_img"/>
 
-<img src="../_static/media/chapter_12/section_3/media/image7.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image7.png" style="width:500px" class="common_img"/>
 
 4)  Once your account is set up, go to the **API Keys** section and click **Create new key**. Follow the instructions to generate a new API key and save it securely for later use.
 
-<img src="../_static/media/chapter_12/section_3/media/image8.png"     style="width:200px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image8.png" style="width:200px" class="common_img"/>
 
-<img src="../_static/media/chapter_12/section_3/media/image9.png"     style="width:800px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image9.png" style="width:800px" class="common_img"/>
 
-<img src="../_static/media/chapter_12/section_3/media/image10.png"     style="width:400px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image10.png" style="width:400px" class="common_img"/>
 
 5)  The creation and deployment of the large model have been completed, and this API will be used in the following lessons.
 
@@ -1844,19 +1837,19 @@ We will use the wake word **HELLO-HIWONDER** as an example to demonstrate firmwa
 
 1)  In the website [https://openrouter.ai/](https://openrouter.ai/), click **Sign In**, and register or sign in using Google or another available account.
 
-<img src="../_static/media/chapter_12/section_3/media/image11.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image11.png" style="width:500px" class="common_img"/>
 
-<img src="../_static/media/chapter_12/section_3/media/image12.png"     style="width:300px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image12.png" style="width:300px" class="common_img"/>
 
 2)  After logging in, click the icon in the top-right corner, then select **Credits** to add a payment method.
 
-<img src="../_static/media/chapter_12/section_3/media/image13.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image13.png" style="width:500px" class="common_img"/>
 
-<img src="../_static/media/chapter_12/section_3/media/image14.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image14.png" style="width:500px" class="common_img"/>
 
 3)  To create an API key, go to **API Keys**, then click **Create Key**. Follow the prompts to generate a key and save the API key securely for later use.
 
-<img src="../_static/media/chapter_12/section_3/media/image15.png"     style="width:500px"   class="common_img"/><img src="../_static/media/chapter_12/section_3/media/image16.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image15.png" style="width:500px" class="common_img"/><img src="../_static/media/chapter_12/section_3/media/image16.png" style="width:500px" class="common_img"/>
 
 4)  The creation and deployment of the large model have been completed, and this API will be used in the following lessons.
 
@@ -1864,19 +1857,19 @@ We will use the wake word **HELLO-HIWONDER** as an example to demonstrate firmwa
 
 1)  In the command-line terminal, enter the following command to navigate to the directory where the large model keys are configured.
 
-   ```
-   cd /home/ubuntu/ros2_ws/src/large_models/large_models/large_models
-   ```
+```
+cd /home/ubuntu/ros2_ws/src/large_models/large_models/large_models
+```
 
 2. Next, open the configuration file with the following command.
 
-   ```
-   vim config.py
-   ```
+```
+vim config.py
+```
 
 3)  Once the file is open, you need to configure the OpenAI and OpenRouter keys by filling them into the parameters `llm_api_key` and `vllm_api_key`, respectively.
 
-<img src="../_static/media/chapter_12/section_3/media/image19.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image19.png" style="width:500px" class="common_img"/>
 
 For example, copy the keys you created in this chapter and paste them into the corresponding fields. Place the cursor between the quotation marks, right-click, and select **Paste**. 
 
@@ -1886,17 +1879,15 @@ For example, copy the keys you created in this chapter and paste them into the c
 
 4. After pasting, press **Esc**, then enter the following command and press **Enter** to save the file:
 
-   ```
-   :wq
-   ```
-
-
+```
+:wq
+```
 
 ### 12.3.2 Voice Control with Multimodal Large Model
 
 * **Overview**
 
-When the program starts running, WonderEcho Pro will announce **I’m ready** and begin monitoring the environment.
+When the program starts running, WonderEcho Pro will announce **I'm ready** and begin monitoring the environment.
 
 Say the wake word to activate WonderEcho Pro, and it will respond with **I'm here**. By default, the firmware uses the wake word **Hello Hiwonder**, please confirm the firmware version to use the correct wake word.
 
@@ -1908,9 +1899,9 @@ Then, you can control the robot using voice commands, for example, by saying **H
 
 The factory default wake-up word for the WonderEcho Pro is **Hello Hiwonder** in the English firmware. If you want to change the wake-up word to Xiaohuan Xiaohuan in Chinese, you can refer to the tutorial in the [12.2 Voice Module Introduction and Installation]() to flash the Chinese firmware.
 
-If you have previously flashed a different firmware, such as the one using the wake word “Xiaohuan Xiaohuan,” you must use the corresponding wake word.
+If you have previously flashed a different firmware, such as the one using the wake word "**Xiaohuan Xiaohuan,**" you must use the corresponding wake word.
 
-The examples in this course will assume the default factory wake word: “**Hello, Hiwonder**.”
+The examples in this course will assume the default factory wake word: "**Hello, Hiwonder**."
 
 **2. Configuring the Large Model API-KEY**
 
@@ -1942,7 +1933,7 @@ LAN Mode Connection in the section [4. Development Environment Setup and Configu
 
 1)  Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to [4. Development Environment Setup and Configuration]() in the user manual.
 
-2)  On the Raspberry Pi desktop, double-click the icon <img src="../_static/media/chapter_12/section_3/media/image21.png"     style="width:30px"   class="common_img"/> to open the terminal, and enter the ROS2 development environment.
+2)  On the Raspberry Pi desktop, double-click the icon <img src="../_static/media/chapter_12/section_3/media/image21.png" style="width:30px" class="common_img"/> to open the terminal, and enter the ROS2 development environment.
 
 3)  Enter the command to disable the auto-start service.
 
@@ -1958,19 +1949,19 @@ ros2 launch large_models_examples llm_control_move.launch.py
 
 5)  When the terminal displays output shown in the figure, the device has completed initialization. Then, you can say the wake words: **Hello, Hiwonder**.
 
-<img src="../_static/media/chapter_12/section_3/media/image24.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image24.png" style="width:500px" class="common_img"/>
 
-6)  When the terminal displays the corresponding output shown in the figure and the device responds with **I’m here**, it indicates successful activation. The system will begin recording your voice command.
+6)  When the terminal displays the corresponding output shown in the figure and the device responds with **I'm here**, it indicates successful activation. The system will begin recording your voice command.
 
-<img src="../_static/media/chapter_12/section_3/media/image25.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image25.png" style="width:500px" class="common_img"/>
 
 7)  You can give commands to control the robot's movement, such as saying **Move forward**.
 
-<img src="../_static/media/chapter_12/section_3/media/image26.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image26.png" style="width:500px" class="common_img"/>
 
 8)  Upon successful recognition by the speech recognition service of cloud-based large speech model, the parsed command will be displayed under the **publish asr result** output in the terminal.
 
-<img src="../_static/media/chapter_12/section_3/media/image26.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image26.png" style="width:500px" class="common_img"/>
 
 9. Upon receiving user input shown in the figure, the terminal will display output indicating that the cloud-based large language model has been successfully invoked. The model will interpret the command, generate a language response, and an action sequence `action` that aligns with the intent of the command.
 
@@ -1980,15 +1971,15 @@ ros2 launch large_models_examples llm_control_move.launch.py
    >
    > **The response is automatically generated by the model. While the semantic content is accurate, the wording and structure may vary due to randomness in language generation.**
 
-   <img src="../_static/media/chapter_12/section_3/media/image27.png"     style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_3/media/image27.png" style="width:500px" class="common_img"/>
 
 10. When the terminal shows the output as shown in the following figure, it indicates that the Raspberry Pi has successfully invoked the voice synthesis service of the cloud-based voice large model. WonderEcho Pro will broadcast the audio synthesized by `response` in Step 9.
 
-<img src="../_static/media/chapter_12/section_3/media/image27.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image27.png" style="width:500px" class="common_img"/>
 
 11) When the terminal shows the output shown in the figure indicating the end of one interaction cycle, the system is ready for the next round. To initiate another interaction, repeat step 1 by speaking the wake words again.
 
-<img src="../_static/media/chapter_12/section_3/media/image28.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image28.png" style="width:500px" class="common_img"/>
 
 12) To exit the feature, press **Ctrl+C** in the terminal. If the feature does not exit immediately, press **Ctrl+C** multiple times.
 
@@ -2004,7 +1995,7 @@ Once the feature is activated, you can phrase your commands as you desire to con
 
 The program file is located at: [/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/llm_control_move.launch.py](/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/llm_control_move.launch.py)
 
-<img src="../_static/media/chapter_12/section_3/media/image29.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image29.png" style="width:500px" class="common_img"/>
 
 **Reading Chassis Type**
 
@@ -2023,11 +2014,11 @@ The `controller` activates the motion control node to control the motor, servo, 
 The source code for this program is located at:  
 [/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examplesllm_control_move.py](/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examplesllm_control_move.py)
 
-<img src="../_static/media/chapter_12/section_3/media/image30.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image30.png" style="width:500px" class="common_img"/>
 
 **Language and Chassis Type Detection**
 
-<img src="../_static/media/chapter_12/section_3/media/image31.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image31.png" style="width:500px" class="common_img"/>
 
 **Import Libraries**
 
@@ -2037,13 +2028,13 @@ The program has imported the following modules and libraries to implement functi
 
 Call `rclpy.init()` to initialize the ROS2 environment and inherit the `Node` class to create a node instance.
 
-<img src="../_static/media/chapter_12/section_3/media/image32.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image32.png" style="width:500px" class="common_img"/>
 
 **Variable Initialization**
 
 Define `action` (action list), `llm_result` (the result string returned by the large model), `running` (running flag), and `result` (the parsed result).
 
-<img src="../_static/media/chapter_12/section_3/media/image33.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image33.png" style="width:500px" class="common_img"/>
 
 **Publication and Subscriber Initialization**
 
@@ -2057,13 +2048,13 @@ Define `action` (action list), `llm_result` (the result string returned by the l
 
 ⑤ `play_audio_finish_callback`: Subscribe to messages from the topic `tts_node/play_finish`. This topic tells the program whether the voice playback is completed.
 
-<img src="../_static/media/chapter_12/section_3/media/image34.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image34.png" style="width:500px" class="common_img"/>
 
 **Processing action process**
 
 When instructions are received from the LLM, the script parses the JSON data to obtain the actions that need to be performed, such as moving forward, rotating, etc.
 
-<img src="../_static/media/chapter_12/section_3/media/image35.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image35.png" style="width:500px" class="common_img"/>
 
 
 
@@ -2071,7 +2062,7 @@ When instructions are received from the LLM, the script parses the JSON data to 
 
 * **Overview**
 
-When the program starts running, WonderEcho Pro will announce **I’m ready** and begin monitoring the environment.
+When the program starts running, WonderEcho Pro will announce **I'm ready** and begin monitoring the environment.
 
 Say the wake word to activate WonderEcho Pro, and it will respond with **I'm here**. By default, the firmware uses the wake word **Hello Hiwonder**, please confirm the firmware version to use the correct wake word.
 
@@ -2083,7 +2074,7 @@ Then, the robot can be controlled via voice to follow a line, for example, by sa
 
 The factory default wake-up word for the WonderEcho Pro is **Hello Hiwonder** in the English firmware. If you want to change the wake-up word to 'Xiaohuan Xiaohuan in Chinese, you can refer to the tutorial in the [12.2 Voice Module Introduction and Installation]() to flash the Chinese firmware.
 
-If you have previously flashed a different firmware, such as the one using the wake word “Xiaohuan Xiaohuan,” you must use the corresponding wake word.
+If you have previously flashed a different firmware, such as the one using the wake word "Xiaohuan Xiaohuan," you must use the corresponding wake word.
 
 The examples in this course will assume the default factory wake word: **Hello, Hiwonder**.
 
@@ -2117,7 +2108,7 @@ The robot must be connected to the Internet during this feature, either in STA (
 
 1)  Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to [4. Development Environment Setup and Configuration]() in user manual.
 
-2)  On the Raspberry Pi desktop, double-click the icon <img src="../_static/media/chapter_12/section_3/media/image21.png"     style="width:30px"   class="common_img"/> to open the terminal, and enter the ROS2 development environment.
+2)  On the Raspberry Pi desktop, double-click the icon <img src="../_static/media/chapter_12/section_3/media/image21.png" style="width:30px" class="common_img"/> to open the terminal, and enter the ROS2 development environment.
 
 3)  Enter the command to disable the app auto-start service.
 
@@ -2133,17 +2124,17 @@ ros2 launch large_models_examples llm_visual_patrol.launch.py
 
 5)  When the terminal displays output shown in the figure, the device has completed initialization. Then, you can say the wake words: **Hello, Hiwonder**.
 
-<img src="../_static/media/chapter_12/section_3/media/image24.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image24.png" style="width:500px" class="common_img"/>
 
-6)  When the terminal displays the corresponding output shown in the figure and the device responds with **I’m here**, it indicates successful activation. The system will begin recording your voice command.
+6)  When the terminal displays the corresponding output shown in the figure and the device responds with **I'm here**, it indicates successful activation. The system will begin recording your voice command.
 
 7)  You can phrase your commands to control the LanderPi for autonomous patrolling, for example, **Follow the black line**.
 
-<img src="../_static/media/chapter_12/section_3/media/image25.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image25.png" style="width:500px" class="common_img"/>
 
 8)  Upon successful recognition by the speech recognition service of cloud-based large speech model, the parsed command will be displayed under the **publish asr result** output in the terminal.
 
-<img src="../_static/media/chapter_12/section_3/media/image37.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image37.png" style="width:500px" class="common_img"/>
 
 9. Upon receiving user input shown in the figure, the terminal will display output indicating that the cloud-based large language model has been successfully invoked. The model will interpret the command, generate a language response, and parse the command to enable autonomous line following.
 
@@ -2153,17 +2144,17 @@ ros2 launch large_models_examples llm_visual_patrol.launch.py
    >
    > **The response is automatically generated by the model. While the semantic content is accurate, the wording and structure may vary due to randomness in language generation.**
 
-<img src="../_static/media/chapter_12/section_3/media/image38.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image38.png" style="width:500px" class="common_img"/>
 
 10. When the terminal shows the output as shown in the following figure, it indicates that the Raspberry Pi has successfully invoked the voice synthesis service of the cloud-based voice large model. WonderEcho Pro will broadcast the audio synthesized by `response` in Step 9.
 
     > [!NOTE]
     >
-    > **Once the “Autonomous Line Following” mode is activated, the feature will continue running. To stop it, press Ctrl+C in the command-line terminal.**
+    > **Once the "Autonomous Line Following" mode is activated, the feature will continue running. To stop it, press Ctrl+C in the command-line terminal.**
 
 11. When the terminal shows the output shown in the figure indicating the end of one interaction cycle, the system is ready for the next round. To initiate another interaction, repeat step 5 by speaking the wake words again.
 
-<img src="../_static/media/chapter_12/section_3/media/image39.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image39.png" style="width:500px" class="common_img"/>
 
 12) To exit the feature, press **Ctrl+C** in the terminal. If the feature does not exit immediately, press **Ctrl+C** multiple times.
 
@@ -2181,7 +2172,7 @@ The launch file is located at the directory:
 
 [/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/llm_visual_patrol.launch.py](/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/llm_visual_patrol.launch.py)
 
-<img src="../_static/media/chapter_12/section_3/media/image40.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image40.png" style="width:500px" class="common_img"/>
 
 **Line Following Node**
 
@@ -2196,7 +2187,7 @@ The launch file is located at the directory:
 The source code for this program is located at:  
 [/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/llm_visual_patrol.py](/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/llm_visual_patrol.py)
 
-<img src="../_static/media/chapter_12/section_3/media/image41.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image41.png" style="width:500px" class="common_img"/>
 
 **Import Libraries**
 
@@ -2206,13 +2197,13 @@ The program has imported the following modules and libraries to implement functi
 
 Call `rclpy.init()` to initialize the ROS2 environment and inherit the Node class to create a node instance.
 
-<img src="../_static/media/chapter_12/section_3/media/image32.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image32.png" style="width:500px" class="common_img"/>
 
 **Variable Initialization**
 
 Define `action` (action list), `llm_result` (the result string returned by the large model), `running` (running flag), and `result` (the parsed result).
 
-<img src="../_static/media/chapter_12/section_3/media/image33.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image33.png" style="width:500px" class="common_img"/>
 
 **Publication and Subscriber Initialization**
 
@@ -2224,17 +2215,17 @@ Define `action` (action list), `llm_result` (the result string returned by the l
 
 ④ `play_audio_finish_callback`: Subscribe to messages from the topic `tts_node/play_finish`. This topic tells the program whether the voice playback is completed.
 
-<img src="../_static/media/chapter_12/section_3/media/image42.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image42.png" style="width:500px" class="common_img"/>
 
 **Check if it's Chinese**
 
-<img src="../_static/media/chapter_12/section_3/media/image43.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image43.png" style="width:500px" class="common_img"/>
 
 **Send the PROMPT**
 
 The `PROMPT` variable defines the prompt message sent to the LLM. The LLM parse user input and generate output in JSON format containing actions and responses.
 
-<img src="../_static/media/chapter_12/section_3/media/image44.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image44.png" style="width:500px" class="common_img"/>
 
 **init_process Method**
 
@@ -2246,13 +2237,13 @@ The `PROMPT` variable defines the prompt message sent to the LLM. The LLM parse 
 
 ④ After all actions are executed, the `interrupt` flag is reset, the `llm_result` variable is cleared, and the voice wake-up functionality is re-enabled.
 
-<img src="../_static/media/chapter_12/section_3/media/image45.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image45.png" style="width:500px" class="common_img"/>
 
 **main Function**
 
 The main function runs.
 
-<img src="../_static/media/chapter_12/section_3/media/image46.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image46.png" style="width:500px" class="common_img"/>
 
 **2. Large Model Line Following Logic Analysis**
 
@@ -2262,7 +2253,7 @@ The source code for this demo is located at [/home/ubuntu/ros2_ws/src/app/app/li
 
 This script receives the target line color information from the large model. The large model sends the target color name to this node by calling the `~/set_large_model_target_color` service.
 
-<img src="../_static/media/chapter_12/section_3/media/image47.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image47.png" style="width:500px" class="common_img"/>
 
 **image_callback Callback Function**
 
@@ -2272,21 +2263,21 @@ This script receives the target line color information from the large model. The
 
 ③ Motion Control The robot's movement is adjusted based on the output of the PID controller only when `deflection_angle` is not `None`, `is_running` is `True`, and no obstacles are detected.
 
-<img src="../_static/media/chapter_12/section_3/media/image48.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image48.png" style="width:500px" class="common_img"/>
 
 **Auto-Stop Mechanism**
 
 ① The `start_stop_timer` method starts a timer that waits 5 seconds before calling `stop_after_lose`.
 
-② The `stop_after_lose` method stops the robot’s movement and sets the `is_running` flag to `False` to end the line-following.
+② The `stop_after_lose` method stops the robot's movement and sets the `is_running` flag to `False` to end the line-following.
 
-<img src="../_static/media/chapter_12/section_3/media/image49.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image49.png" style="width:500px" class="common_img"/>
 
 **Voice Wake-Up Stop Handling**
 
 When a voice wake-up signal is detected, the system may stop the robot—but only if `large_model_tracking` is set to `True`. This ensures that the voice wake-up signal is only responded to when the autonomous line following was initiated by the large language model.
 
-<img src="../_static/media/chapter_12/section_3/media/image50.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image50.png" style="width:500px" class="common_img"/>
 
 
 
@@ -2294,7 +2285,7 @@ When a voice wake-up signal is detected, the system may stop the robot—but onl
 
 * **Overview**
 
-When the program starts running, WonderEcho Pro will announce **I’m ready** and begin monitoring the environment.
+When the program starts running, WonderEcho Pro will announce **I'm ready** and begin monitoring the environment.
 
 Say the wake word to activate WonderEcho Pro, and it will respond with **I'm here**. By default, the firmware uses the wake word Hello Hiwonder, please confirm the firmware version to use the correct wake word.
 
@@ -2306,7 +2297,7 @@ Then, you can control the robot by voice commands, such as saying **Follow the r
 
 The factory default wake-up word for the WonderEcho Pro is **Hello Hiwonder** in the English firmware. If you want to change the wake-up word to 'Xiaohuan Xiaohuan in Chinese, you can refer to the tutorial in the section [12.2 Voice Module Introduction and Installation]() to flash the Chinese firmware.
 
-If you have previously flashed a different firmware, such as the one using the wake word “Xiaohuan Xiaohuan,” you must use the corresponding wake word.
+If you have previously flashed a different firmware, such as the one using the wake word "Xiaohuan Xiaohuan," you must use the corresponding wake word.
 
 The examples in this course will assume the default factory wake word: **Hello, Hiwonder**.
 
@@ -2341,7 +2332,7 @@ The robot must be connected to the Internet during this feature, either in STA (
 
 1)  Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to [4. Development Environment Setup and Configuration]() in the user manual.
 
-2)  On the Raspberry Pi desktop, double-click the icon <img src="../_static/media/chapter_12/section_3/media/image21.png"     style="width:30px"   class="common_img"/> to open the terminal, and enter the ROS2 development environment.
+2)  On the Raspberry Pi desktop, double-click the icon <img src="../_static/media/chapter_12/section_3/media/image21.png" style="width:30px" class="common_img"/> to open the terminal, and enter the ROS2 development environment.
 
 3)  Enter the command to disable the app auto-start service.
 
@@ -2357,17 +2348,17 @@ ros2 launch large_models_examples llm_color_track.launch.py
 
 5)  When the terminal displays output shown in the figure, the device has completed initialization. Then, you can say the wake word **Hello Hiwonder**.
 
-<img src="../_static/media/chapter_12/section_3/media/image24.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image24.png" style="width:500px" class="common_img"/>
 
-6)  When the terminal displays the corresponding output shown in the figure and the device responds with **I’m here**, it indicates successful activation. The system will begin recording your voice command.
+6)  When the terminal displays the corresponding output shown in the figure and the device responds with **I'm here**, it indicates successful activation. The system will begin recording your voice command.
 
 7)  Then, you can give commands to enable the color tracking feature, such as saying **Track the red color**.
 
-<img src="../_static/media/chapter_12/section_3/media/image25.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image25.png" style="width:500px" class="common_img"/>
 
 8)  Upon successful recognition by the speech recognition service of cloud-based large speech model, the parsed command will be displayed under the **publish asr result** output in the terminal.
 
-<img src="../_static/media/chapter_12/section_3/media/image52.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image52.png" style="width:500px" class="common_img"/>
 
 9. Upon receiving user input shown in the figure, the terminal will display output indicating that the cloud-based large language model has been successfully invoked. The model will interpret the command, generate a language response, and parse the command to enable autonomous line following.
 
@@ -2377,19 +2368,19 @@ ros2 launch large_models_examples llm_color_track.launch.py
    >
    > **The response is automatically generated by the model. While the semantic content is accurate, the wording and structure may vary due to randomness in language generation.**
 
-<img src="../_static/media/chapter_12/section_3/media/image53.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image53.png" style="width:500px" class="common_img"/>
 
 10) When the terminal shows the output as shown in the following figure, it indicates that the Raspberry Pi has successfully invoked the voice synthesis service of the cloud-based voice large model. WonderEcho Pro will broadcast the audio synthesized by `response` in Step 9.
 
-<img src="../_static/media/chapter_12/section_3/media/image53.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image53.png" style="width:500px" class="common_img"/>
 
 > [!NOTE]
 >
-> **Once the “color tracking” mode is activated, the feature will continue running. To stop it, press Ctrl+C in the command-line terminal.**
+> **Once the "color tracking" mode is activated, the feature will continue running. To stop it, press Ctrl+C in the command-line terminal.**
 
 11) When the terminal shows the output shown in the figure indicating the end of one interaction cycle, the system is ready for the next round. To initiate another interaction, repeat step 5 by speaking the wake words again.
 
-<img src="../_static/media/chapter_12/section_3/media/image39.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image39.png" style="width:500px" class="common_img"/>
 
 12) To exit the feature, press **Ctrl+C** in the terminal. If the feature does not exit immediately, press **Ctrl+C** multiple times.
 
@@ -2407,7 +2398,7 @@ The launch file is located at the directory:
 
 [/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/llm_color_track.launch.py](/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/llm_color_track.launch.py)
 
-<img src="../_static/media/chapter_12/section_3/media/image54.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image54.png" style="width:500px" class="common_img"/>
 
 **Color Tracking Control**
 
@@ -2422,7 +2413,7 @@ The launch file is located at the directory:
 The source code for this program is located at: 
 [/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/llm_color_track.py](/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/llm_color_track.py)
 
-<img src="../_static/media/chapter_12/section_3/media/image55.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image55.png" style="width:500px" class="common_img"/>
 
 **Import Libraries**
 
@@ -2432,13 +2423,13 @@ The program has imported the following modules and libraries to implement functi
 
 Call `rclpy.init()` to initialize the ROS2 environment and inherit the `Node` class to create a node instance.
 
-<img src="../_static/media/chapter_12/section_3/media/image56.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image56.png" style="width:500px" class="common_img"/>
 
 **Variable Initialization**
 
 Define `action` (action list), `llm_result` (the result string returned by the large model), `running` (running flag), and `result` (the parsed result).
 
-<img src="../_static/media/chapter_12/section_3/media/image57.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image57.png" style="width:500px" class="common_img"/>
 
 **Publication and Subscriber Initialization**
 
@@ -2448,17 +2439,17 @@ Define `action` (action list), `llm_result` (the result string returned by the l
 
 (3) `play_audio_finish_callback`: Subscribe to messages from the topic `tts_node/play_finish`. This topic tells the program whether the voice playback is completed.
 
-<img src="../_static/media/chapter_12/section_3/media/image58.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image58.png" style="width:500px" class="common_img"/>
 
 **Check if it's Chinese**
 
-<img src="../_static/media/chapter_12/section_3/media/image43.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image43.png" style="width:500px" class="common_img"/>
 
 **Send the PROMPT**
 
 The `PROMPT` variable defines the prompt message sent to the LLM. The LLM parse user input and generate output in JSON format containing actions and responses.
 
-<img src="../_static/media/chapter_12/section_3/media/image59.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image59.png" style="width:500px" class="common_img"/>
 
 **init_process Method**
 
@@ -2470,13 +2461,13 @@ The `PROMPT` variable defines the prompt message sent to the LLM. The LLM parse 
 
 (4) After all actions are executed, the `interrupt` flag is reset, the `llm_result` variable is cleared, and the voice wake-up functionality is re-enabled.
 
-<img src="../_static/media/chapter_12/section_3/media/image60.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image60.png" style="width:500px" class="common_img"/>
 
 **main Function**
 
 The main function executes.
 
-<img src="../_static/media/chapter_12/section_3/media/image61.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image61.png" style="width:500px" class="common_img"/>
 
 **2. Large Model Line Following Logic Analysis**
 
@@ -2486,15 +2477,15 @@ The source code for this demo is located at [/home/ubuntu/ros2_ws/src/app/app/ob
 
 Function This script receives the target line color information from the large model. The large model sends the target color name to this node by calling the `~/set_large_model_target_color` service.
 
-<img src="../_static/media/chapter_12/section_3/media/image62.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image62.png" style="width:500px" class="common_img"/>
 
 **image_callback Callback Function**
 
-① If the `tracker` exists, it calls the tracker’s `__call__` method to process the image and publishes motion control commands based on the results.
+① If the `tracker` exists, it calls the tracker's `__call__` method to process the image and publishes motion control commands based on the results.
 
-② If `is_running` is `True`, the motion control commands are published. Otherwise, the PID controller’s output is cleared (reset).
+② If `is_running` is `True`, the motion control commands are published. Otherwise, the PID controller's output is cleared (reset).
 
-<img src="../_static/media/chapter_12/section_3/media/image63.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image63.png" style="width:500px" class="common_img"/>
 
 **Set Target Color Service Request**
 
@@ -2504,13 +2495,13 @@ Based on the coordinates provided in the request:
 
 ② If the coordinates are valid, initialize the color selector and publish a `Twist` message.
 
-<img src="../_static/media/chapter_12/section_3/media/image64.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_3/media/image64.png" style="width:500px" class="common_img"/>
 
 **Handle Target Color Service Request**
 
 This function is used to retrieve the current tracked target color. If a valid `tracker` object exists, it returns its `target_rgb` value.
 
-<img src="../_static/media/chapter_12\section_3/media/image65.png"     style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12\section_3/media/image65.png" style="width:500px" class="common_img"/>
 
 
 
@@ -2526,25 +2517,25 @@ This function is used to retrieve the current tracked target color. If a valid `
 
 1. Copy and open the following URL: [https://platform.openai.com/docs/overview](https://platform.openai.com/docs/overview)
 
-   <img src="../_static/media/chapter_12/section_4/media/image4.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_4/media/image4.png" style="width:500px" class="common_img"/>
 
 2. Register and log in using a Google, Microsoft, or Apple account, as prompted.
 
-   <img src="../_static/media/chapter_12/section_4/media/image5.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_4/media/image5.png" style="width:500px" class="common_img"/>
 
 3. After logging in, click the Settings button, then go to **Billing**, and click **Payment Methods** to add a payment method. Recharge your account to purchase tokens as needed.
 
-   <img src="../_static/media/chapter_12/section_4/media/image6.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_4/media/image6.png" style="width:500px" class="common_img"/>
 
-   <img src="../_static/media/chapter_12/section_4/media/image7.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_4/media/image7.png" style="width:500px" class="common_img"/>
 
 4. Once your account is set up, go to the **API Keys** section and click **Create new key**. Follow the instructions to generate a new API key and save it securely for later use.
 
-   <img src="../_static/media/chapter_12/section_4/media/image8.png"  style="width:200px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_4/media/image8.png" style="width:200px" class="common_img"/>
 
-   <img src="../_static/media/chapter_12/section_4/media/image9.png"  style="width:700px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_4/media/image9.png" style="width:700px" class="common_img"/>
 
-   <img src="../_static/media/chapter_12/section_4/media/image10.png"  style="width:300px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_4/media/image10.png" style="width:300px" class="common_img"/>
 
 5. The creation and deployment of the large model have been completed, and this API will be used in the following lessons.
 
@@ -2552,21 +2543,21 @@ This function is used to retrieve the current tracked target color. If a valid `
 
 1. Copy and open the following URL: [https://openrouter.ai/](https://openrouter.ai/) and click **Sign in**, and register or sign in using Google or another available account.
 
-   <img src="../_static/media/chapter_12/section_4/media/image11.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_4/media/image11.png" style="width:500px" class="common_img"/>
 
-   <img src="../_static/media/chapter_12/section_4/media/image12.png"  style="width:300px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_4/media/image12.png" style="width:300px" class="common_img"/>
 
 2. After logging in, click the icon in the top-right corner, then select **Credits** to add a payment method.
 
-   <img src="../_static/media/chapter_12/section_4/media/image13.png"  style="width:400px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_4/media/image13.png" style="width:400px" class="common_img"/>
 
-   <img src="../_static/media/chapter_12/section_4/media/image14.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_4/media/image14.png" style="width:500px" class="common_img"/>
 
 3. To create an API key, go to **API Keys**, then click **Create Key**. Follow the prompts to generate a key and save the API key securely for later use.
 
-   <img src="../_static/media/chapter_12/section_4/media/image15.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_4/media/image15.png" style="width:500px" class="common_img"/>
 
-   <img src="../_static/media/chapter_12/section_4/media/image16.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_4/media/image16.png" style="width:500px" class="common_img"/>
 
 4. The creation and deployment of the large model have been completed, and this API will be used in the following lessons.
 
@@ -2586,7 +2577,7 @@ This function is used to retrieve the current tracked target color. If a valid `
 
 3. Once the file is open, you need to configure the OpenAI and OpenRouter keys by filling them into the parameters `llm_api_key` and `vllm_api_key`, respectively.
 
-   <img src="../_static/media/chapter_12/section_4/media/image19.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_4/media/image19.png" style="width:500px" class="common_img"/>
 
    For example, copy the keys you created in this chapter and paste them into the corresponding fields. Place the cursor between the quotation marks, right-click, and select Paste. 
 
@@ -2606,9 +2597,9 @@ This function is used to retrieve the current tracked target color. If a valid `
 
 * **Overview of Embodied Intelligence**
 
-Embodied Intelligence represents a key branch of artificial intelligence that emphasizes learning and decision-making through the interaction between a physical entity and its environment. At its core lies the principle that intelligence emerges from the dynamic interplay between an agent’s physical embodiment and its environment. This approach moves beyond the limitations of traditional AI, which often relies solely on static data. Embodied intelligence has found broad applications across industries such as manufacturing, healthcare, service, education, and military.
+Embodied Intelligence represents a key branch of artificial intelligence that emphasizes learning and decision-making through the interaction between a physical entity and its environment. At its core lies the principle that intelligence emerges from the dynamic interplay between an agent's physical embodiment and its environment. This approach moves beyond the limitations of traditional AI, which often relies solely on static data. Embodied intelligence has found broad applications across industries such as manufacturing, healthcare, service, education, and military.
 
-<img src="../_static/media/chapter_12/section_4/media/image21.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image21.png" style="width:500px" class="common_img"/>
 
 * **Multimodal Information Fusion**
 
@@ -2618,11 +2609,11 @@ Several common approaches to multimodal information fusion include the following
 
 **Early Fusion:** Combines data from different modalities at an early stage of processing. This typically occurs at the input level, where raw data is aligned and transformed into a shared space to create a richer, more expressive representation. For example, image and speech data can be concatenated directly and fed into a neural network.
 
-<img src="../_static/media/chapter_12/section_4/media/image22.jpeg"   style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image22.jpeg" style="width:500px" class="common_img"/>
 
 **Late Fusion:** Integrates data from multiple modalities at intermediate or output stages of the model. This approach allows each modality to be processed independently using specialized algorithms, making it easier to add or replace modalities in the future. For instance, results from image recognition and text analysis can be combined to support final decision-making.
 
-<img src="../_static/media/chapter_12/section_4/media/image23.jpeg"   style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image23.jpeg" style="width:500px" class="common_img"/>
 
 **Hybrid Fusion:** Leverages both early and late fusion techniques by performing integration at multiple stages. This method takes advantage of modality complementarity and can improve both performance and model robustness.
 
@@ -2652,7 +2643,7 @@ By activating this feature, you can freely give voice commands, and the robot wi
 
 The factory default wake-up word for the WonderEcho Pro is Hello HiWonder in the English firmware. If you want to change the wake-up word to 'Xiaohuan Xiaohuan in Chinese, you can refer to the tutorial in the section [12.2 Voice Module Introduction and Installation]() to flash the Chinese firmware.
 
-If you have previously flashed a different firmware, such as the one using the wake word “Xiaohuan Xiaohuan,” you must use the corresponding wake word.
+If you have previously flashed a different firmware, such as the one using the wake word "Xiaohuan Xiaohuan," you must use the corresponding wake word.
 
 The examples in this course will assume the default factory wake word: **Hello, Hiwonder**.
 
@@ -2686,7 +2677,7 @@ The robot must be connected to the Internet during this feature, either in STA (
 
 1)  Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to [4. Development Environment Setup and Configuration]() in the user manual.
 
-2)  On the Raspberry Pi desktop, double-click the icon <img src="../_static/media/chapter_12/section_4/media/image29.png"  style="width:30px"   class="common_img"/> to open the terminal, and enter the ROS2 development environment.
+2)  On the Raspberry Pi desktop, double-click the icon <img src="../_static/media/chapter_12/section_4/media/image29.png" style="width:30px" class="common_img"/> to open the terminal, and enter the ROS2 development environment.
 
 3)  Enter the command to disable the app auto-start service.
 
@@ -2702,15 +2693,15 @@ The robot must be connected to the Internet during this feature, either in STA (
 
 5. When the terminal displays output shown in the figure and the voice device announces **I'm ready**, the voice device has completed initialization. Then, you can say the wake words: **Hello Hiwonder**.
 
-   <img src="../_static/media/chapter_12/section_4/media/image32.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_4/media/image32.png" style="width:500px" class="common_img"/>
 
-6. When the terminal displays the corresponding output shown in the figure and the device responds with **I’m here**, it indicates successful activation. The system will begin recording your voice command.
+6. When the terminal displays the corresponding output shown in the figure and the device responds with **I'm here**, it indicates successful activation. The system will begin recording your voice command.
 
-   <img src="../_static/media/chapter_12/section_4/media/image33.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_4/media/image33.png" style="width:500px" class="common_img"/>
 
 7. When the terminal displays the next output as the reference image, it shows the recognized speech transcribed by the device.
 
-   <img src="../_static/media/chapter_12/section_4/media/image34.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_4/media/image34.png" style="width:500px" class="common_img"/>
 
 8. Upon successful recognition by the speech recognition service of cloud-based large speech model, the parsed command will be displayed under the `publish_asr_result` output in the terminal.
 
@@ -2722,11 +2713,11 @@ The robot must be connected to the Internet during this feature, either in STA (
 
 10. When the terminal shows the output shown in the figure indicating the end of one interaction cycle, the system is ready for the next round. To initiate another interaction, repeat step 4 by speaking the wake words again.
 
-    <img src="../_static/media/chapter_12/section_4/media/image35.png"  style="width:500px"   class="common_img"/>
+    <img src="../_static/media/chapter_12/section_4/media/image35.png" style="width:500px" class="common_img"/>
 
 11. To exit the feature, press **Ctrl+C** in the terminal. If the feature does not exit immediately, press **Ctrl+C** multiple times.
 
-    <img src="../_static/media/chapter_12/section_4/media/image36.png"  style="width:500px"   class="common_img"/>
+    <img src="../_static/media/chapter_12/section_4/media/image36.png" style="width:500px" class="common_img"/>
 
 * **Project Outcome**
 
@@ -2742,7 +2733,7 @@ File Path:
 
 **Import Libraries**
 
-<img src="../_static/media/chapter_12/section_4/media/image37.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image37.png" style="width:500px" class="common_img"/>
 
 (1) `os`: used for handling file paths and operating system-related functions.
 
@@ -2760,7 +2751,7 @@ File Path:
 
 **Defining the launch_setup Function**
 
-<img src="../_static/media/chapter_12/section_4/media/image38.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image38.png" style="width:500px" class="common_img"/>
 
 (1) This function is used to configure and initialize launch actions.
 
@@ -2780,7 +2771,7 @@ File Path:
 
 **Definition of the generate_launch_description Function**
 
-<img src="../_static/media/chapter_12/section_4/media/image39.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image39.png" style="width:500px" class="common_img"/>
 
 (1) This function is responsible for generating the complete launch description.
 
@@ -2788,7 +2779,7 @@ File Path:
 
 **Main Program Entry**
 
-<img src="../_static/media/chapter_12/section_4/media/image40.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image40.png" style="width:500px" class="common_img"/>
 
 (1) `ld = generate_launch_description()` generates the launch description object.
 
@@ -2806,7 +2797,7 @@ The source code for this program is located at:
 
 **Import the Necessary Libraries**
 
-<img src="../_static/media/chapter_12/section_4/media/image41.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image41.png" style="width:500px" class="common_img"/>
 
 (1) **cv2**: Utilized for image processing and display using OpenCV.
 
@@ -2845,9 +2836,9 @@ multithreaded executor in ROS 2 for handling concurrent tasks.
 
 **VLLMWithCamera Class**
 
-<img src="../_static/media/chapter_12/section_4/media/image42.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image42.png" style="width:500px" class="common_img"/>
 
-<img src="../_static/media/chapter_12/section_4/media/image43.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image43.png" style="width:500px" class="common_img"/>
 
 (1) `Display_size`: defines the size of the display window.
 
@@ -2873,13 +2864,13 @@ multithreaded executor in ROS 2 for handling concurrent tasks.
 
 **get_node_state Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image44.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image44.png" style="width:500px" class="common_img"/>
 
 `return response`: returns a response object.
 
 **init_process Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image45.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image45.png" style="width:500px" class="common_img"/>
 
 (1) `self.timer.cancel()`: stops the timer.
 
@@ -2897,7 +2888,7 @@ multithreaded executor in ROS 2 for handling concurrent tasks.
 
 **send_request Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image46.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image46.png" style="width:500px" class="common_img"/>
 
 (1) `client.call_async(msg)`: makes an asynchronous service call.
 
@@ -2905,13 +2896,13 @@ multithreaded executor in ROS 2 for handling concurrent tasks.
 
 **vllm_result_callback Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image47.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image47.png" style="width:500px" class="common_img"/>
 
 This callback receives results from the `agent_process/result` topic and stores them in `self.vllm_result`.
 
 **process Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image48.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image48.png" style="width:500px" class="common_img"/>
 
 (1) `cv2.namedWindow` and `cv2.moveWindow`: create and position a window for image display.
 
@@ -2927,23 +2918,23 @@ This callback receives results from the `agent_process/result` topic and stores 
 
 **`play_audio_callback` Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image49.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image49.png" style="width:500px" class="common_img"/>
 
 It sends a request to enable the wake-up feature once audio playback is complete.
 
 **image_callback Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image50.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image50.png" style="width:500px" class="common_img"/>
 
 It converts received ROS image messages to `NumPy` arrays and stores them in the queue.
 
 **`main` Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image51.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image51.png" style="width:500px" class="common_img"/>
 
 (1) Create an instance of the `VLLMWithCamera` node.
 
-(2) A multithreaded executor is used to handle the node’s tasks.
+(2) A multithreaded executor is used to handle the node's tasks.
 
 (3) Call `executor.spin()` to start processing ROS events.
 
@@ -2969,7 +2960,7 @@ Once activated, the robot can be controlled via voice commands. For example, giv
 
 The factory default wake-up word for the WonderEcho Pro is Hello HiWonder in the English firmware. If you want to change the wake-up word to 'Xiaohuan Xiaohuan in Chinese, you can refer to the tutorial in the section [12.2 Voice Module Introduction and Installation]() to flash the Chinese firmware.
 
-If you have previously flashed a different firmware, such as the one using the wake word “Xiaohuan Xiaohuan,” you must use the corresponding wake word.
+If you have previously flashed a different firmware, such as the one using the wake word "Xiaohuan Xiaohuan," you must use the corresponding wake word.
 
 The examples in this course will assume the default factory wake word: **Hello, Hiwonder**.
 
@@ -3007,7 +2998,7 @@ Before starting this activity, make sure to follow [SLAM Mapping Steps]() in 6.1
 
 1. Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to [4. Development Environment Setup and Configuration]() in the user manual.
 
-2. On the Raspberry Pi desktop, double-click the icon <img src="../_static/media/chapter_12/section_4/media/image29.png"  style="width:30px"   class="common_img"/> to open the terminal, and enter the ROS2 development environment.
+2. On the Raspberry Pi desktop, double-click the icon <img src="../_static/media/chapter_12/section_4/media/image29.png" style="width:30px" class="common_img"/> to open the terminal, and enter the ROS2 development environment.
 
 3. Enter the command to disable the auto-start service of the mobile app.
 
@@ -3023,15 +3014,15 @@ Before starting this activity, make sure to follow [SLAM Mapping Steps]() in 6.1
 
 5. When the terminal displays output shown in the figure and the voice device announces **I'm ready**, the voice device has completed initialization. Then, you can say the wake words: **Hello Hiwonder**.
 
-   <img src="../_static/media/chapter_12/section_4/media/image32.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_4/media/image32.png" style="width:500px" class="common_img"/>
 
-6. When the terminal displays the corresponding output shown in the figure and the device responds with **I’m here**, it indicates successful activation. The system will begin recording your voice command.
+6. When the terminal displays the corresponding output shown in the figure and the device responds with **I'm here**, it indicates successful activation. The system will begin recording your voice command.
 
-   <img src="../_static/media/chapter_12/section_4/media/image33.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_4/media/image33.png" style="width:500px" class="common_img"/>
 
 7. When the terminal displays the next output as the reference image, it shows the recognized speech transcribed by the voice device.
 
-   <img src="../_static/media/chapter_12/section_4/media/image54.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_4/media/image54.png" style="width:500px" class="common_img"/>
 
 8. Upon receiving user input shown in the figure, the terminal will display output indicating that the cloud-based large language model has been successfully invoked. The model will interpret the command, generate a language response, and execute a corresponding action based on the meaning of the command.
 
@@ -3039,11 +3030,11 @@ Before starting this activity, make sure to follow [SLAM Mapping Steps]() in 6.1
    >
    > **The response is automatically generated by the model. While the semantic content is accurate, the wording and structure may vary due to randomness in language generation.**
 
-   <img src="../_static/media/chapter_12/section_4/media/image55.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_4/media/image55.png" style="width:500px" class="common_img"/>
 
 9. When the terminal shows the output shown in the figure indicating the end of one interaction cycle, the system is ready for the next round. To initiate another interaction, repeat step 4 by speaking the wake words again.
 
-   <img src="../_static/media/chapter_12/section_4/media/image56.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_4/media/image56.png" style="width:500px" class="common_img"/>
 
 10. To exit the feature, press **Ctrl+C** in the terminal. If the feature does not exit immediately, press **Ctrl+C** multiple times.
 
@@ -3061,7 +3052,7 @@ File Path:
 
 **Import Libraries**
 
-<img src="../_static/media/chapter_12/section_4/media/image57.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image57.png" style="width:500px" class="common_img"/>
 
 (1) **os**: used for handling file paths and operating system-related functions.
 
@@ -3079,7 +3070,7 @@ File Path:
 
 **Defining the launch_setup Function**
 
-<img src="../_static/media/chapter_12/section_4/media/image58.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image58.png" style="width:500px" class="common_img"/>
 
 (1) `mode = LaunchConfiguration('mode', default=1)` defines a launch argument named `mode` with a default value of 1.
 
@@ -3091,11 +3082,11 @@ File Path:
 
 **Definition of the `generate_launch_description` Function**
 
-<img src="../_static/media/chapter_12/section_4/media/image59.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image59.png" style="width:500px" class="common_img"/>
 
 **Main Program Entry**
 
-<img src="../_static/media/chapter_12/section_4/media/image60.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image60.png" style="width:500px" class="common_img"/>
 
 (1) `ld = generate_launch_description()` generates the launch description object.
 
@@ -3113,7 +3104,7 @@ File Path:
 
 **Import the Necessary Libraries**
 
-<img src="../_static/media/chapter_12/section_4/media/image61.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image61.png" style="width:500px" class="common_img"/>
 
 (1) **cv2**: Utilized for image processing and display using OpenCV.
 
@@ -3129,19 +3120,19 @@ File Path:
 
 **Setting Navigation Locations**
 
-<img src="../_static/media/chapter_12/section_4/media/image62.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image62.png" style="width:500px" class="common_img"/>
 
 **LLM_PROMPT String**
 
-<img src="../_static/media/chapter_12/section_4/media/image63.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image63.png" style="width:500px" class="common_img"/>
 
 **VLLM_PROMPT String**
 
-<img src="../_static/media/chapter_12/section_4/media/image64.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image64.png" style="width:500px" class="common_img"/>
 
 **VLLMObjectTransport Class**
 
-<img src="../_static/media/chapter_12/section_4/media/image65.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image65.png" style="width:500px" class="common_img"/>
 
 (1) `self.llm_result`：stores results returned from LLM.
 
@@ -3159,13 +3150,13 @@ File Path:
 
 **get_node_state Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image66.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image66.png" style="width:500px" class="common_img"/>
 
 `return response`: returns a response object.
 
 **init_process Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image67.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image67.png" style="width:500px" class="common_img"/>
 
 (1) `SetModel.Request()`: creates a request message to set the model.
 
@@ -3181,7 +3172,7 @@ File Path:
 
 **send_request Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image68.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image68.png" style="width:500px" class="common_img"/>
 
 (1) `client.call_async(msg)`: makes an asynchronous service call.
 
@@ -3189,19 +3180,19 @@ File Path:
 
 **llm_result_callback Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image69.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image69.png" style="width:500px" class="common_img"/>
 
 This callback receives results from the `agent_process/result` topic and stores them in `self.vllm_result`.
 
 **wakeup_callback Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image70.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image70.png" style="width:500px" class="common_img"/>
 
 This method is invoked when the user activates the system via voice to receive and process the wake-up signal from the `vocal_detect/wakeup` topic.
 
 **move(self, position) Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image71.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image71.png" style="width:500px" class="common_img"/>
 
 (1) Parameter receiving: receives a location name, such as zoo and supermarket.
 
@@ -3215,13 +3206,13 @@ This method enables the robot to navigate between predefined locations, serving 
 
 **play_audio(self) Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image72.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image72.png" style="width:500px" class="common_img"/>
 
 This method plays the text content stored in `self.response_text`. The play_audio_finish_callback method sends a wake-up signal after audio playback is completed.
 
 **reach_goal_callback(self, msg) Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image73.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image73.png" style="width:500px" class="common_img"/>
 
 (1) Parameter Receiving: receives a Boolean message indicating whether the robot has reached its destination.
 
@@ -3231,7 +3222,7 @@ This callback handles feedback from the navigation controller and informs the sy
 
 **vision(self, query) Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image74.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image74.png" style="width:500px" class="common_img"/>
 
 This method processes visual queries using the Vision-Language Large Model (VLLM).
 
@@ -3243,13 +3234,13 @@ This method processes visual queries using the Vision-Language Large Model (VLLM
 
 **play_audio_finish_callback(self, msg) Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image75.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image75.png" style="width:500px" class="common_img"/>
 
 This method handles the callback notification indicating the completion of audio playback.
 
 **process Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image76.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image76.png" style="width:500px" class="common_img"/>
 
 (1) **Check LLM Result** 
 
@@ -3275,11 +3266,11 @@ This method handles the callback notification indicating the completion of audio
 
 **main Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image77.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image77.png" style="width:500px" class="common_img"/>
 
 (1) Create an instance of the `VLLMObjectTransport` node.
 
-(2) A multithreaded executor is used to handle the node’s tasks.
+(2) A multithreaded executor is used to handle the node's tasks.
 
 (3) Call `executor.spin()` to start processing ROS events.
 
@@ -3293,13 +3284,13 @@ To modify the navigation positions in the program, edit the file located at the 
 
 1)  Begin by launching the program and displaying the map in rviz following the section [Operation Steps]() above. Then, click on **2D Goal Pose** in the rviz interface to set the desired navigation target on the map.
 
-<img src="../_static/media/chapter_12/section_4/media/image78.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image78.png" style="width:500px" class="common_img"/>
 
 2. Return to the command terminal and check the published target position parameters, then fill them into the program accordingly.
 
-   <img src="../_static/media/chapter_12/section_4/media/image79.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_4/media/image79.png" style="width:500px" class="common_img"/>
 
-<img src="../_static/media/chapter_12/section_4/media/image80.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image80.png" style="width:500px" class="common_img"/>
 
 Each list contains five values in the following order: x coordinate in meters, y coordinate in meters, roll angle with rotation around the x-axis in degrees, pitch angle with rotation around the y-axis in degrees, and yaw angle with rotation around the z-axis in degrees. Fill in the x and y coordinates according to the position reference in the diagram above. Next, convert the quaternion:  Quaternion(x=0.0, y=0.0, z=-0.5677173914973032, w=0.8232235197025761). After conversion to Euler angles (roll, pitch, yaw), the result is approximately:  
 roll ≈ 0°, pitch ≈ 0°, yaw ≈ -69.3°
@@ -3316,7 +3307,7 @@ If the feature lags or the effect is not satisfactory, you can display RVIZ in t
 ros2 launch large_models vllm_navigation_virtual.launch.py
 ```
 
-2)  On the virtual machine, click the desktop icon <img src="../_static/media/chapter_12/section_4/media/image82.png"  style="width:30px"   class="common_img"/> to open a terminal.
+2)  On the virtual machine, click the desktop icon <img src="../_static/media/chapter_12/section_4/media/image82.png" style="width:30px" class="common_img"/> to open a terminal.
 
 3)  Enter the following command to launch RViz and visualize navigation:
 
@@ -3324,7 +3315,7 @@ ros2 launch large_models vllm_navigation_virtual.launch.py
 ros2 launch navigation rviz_navigation.launch.py
 ```
 
-<img src="../_static/media/chapter_12/section_4/media/image84.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image84.png" style="width:500px" class="common_img"/>
 
 
 
@@ -3346,7 +3337,7 @@ Once activated, the robot can be controlled via voice commands. For example, say
 
 The factory default wake-up word for the WonderEcho Pro is Hello HiWonder in the English firmware. If you want to change the wake-up word to 'Xiaohuan Xiaohuan in Chinese, you can refer to the tutorial in the section [12.2 Voice Module Introduction and Installation]() to flash the Chinese firmware.
 
-If you have previously flashed a different firmware, such as the one using the wake word “Xiaohuan Xiaohuan,” you must use the corresponding wake word.
+If you have previously flashed a different firmware, such as the one using the wake word "Xiaohuan Xiaohuan," you must use the corresponding wake word.
 
 The examples in this course will assume the default factory wake word: **Hello, Hiwonder**.
 
@@ -3380,7 +3371,7 @@ The robot must be connected to the Internet during this feature, either in STA (
 
 1. Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to [4. Development Environment Setup and Configuration]() in the user manual.
 
-2. On the Raspberry Pi desktop, double-click the icon <img src="../_static/media/chapter_12/section_4/media/image29.png"  style="width:30px"   class="common_img"/> to open the terminal, and enter the ROS2 development environment.
+2. On the Raspberry Pi desktop, double-click the icon <img src="../_static/media/chapter_12/section_4/media/image29.png" style="width:30px" class="common_img"/> to open the terminal, and enter the ROS2 development environment.
 
 3. Enter the command to disable the app auto-start service.
 
@@ -3396,19 +3387,19 @@ The robot must be connected to the Internet during this feature, either in STA (
 
 5. When the terminal displays output shown in the figure and the voice device announces **I'm ready**, the voice device has completed initialization. Then, you can say the wake words: **Hello Hiwonder**.
 
-   <img src="../_static/media/chapter_12/section_4/media/image32.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_4/media/image32.png" style="width:500px" class="common_img"/>
 
-6. When the terminal displays the corresponding output shown in the figure and the device responds with **I’m here**, it indicates successful activation. The system will begin recording your voice command.
+6. When the terminal displays the corresponding output shown in the figure and the device responds with **I'm here**, it indicates successful activation. The system will begin recording your voice command.
 
-   <img src="../_static/media/chapter_12/section_4/media/image33.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_4/media/image33.png" style="width:500px" class="common_img"/>
 
 7. When the terminal displays the next output as the reference image, it shows the recognized speech transcribed by the voice device.
 
-   <img src="../_static/media/chapter_12/section_4/media/image86.png"   style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_4/media/image86.png" style="width:500px" class="common_img"/>
 
 8. Upon successful recognition by the speech recognition service of cloud-based large speech model, the parsed command will be displayed under the `publish_asr_result` output in the terminal.
 
-   <img src="../_static/media/chapter_12/section_4/media/image86.png"   style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_4/media/image86.png" style="width:500px" class="common_img"/>
 
 9. Upon receiving user input shown in the figure, the terminal will display output indicating that the cloud-based large language model has been successfully invoked. The model will interpret the command, generate a language response, and execute a corresponding action based on the meaning of the command.
 
@@ -3416,11 +3407,11 @@ The robot must be connected to the Internet during this feature, either in STA (
    >
    > **The response is automatically generated by the model. While the semantic content is accurate, the wording and structure may vary due to randomness in language generation.**
 
-   <img src="../_static/media/chapter_12/section_4/media/image87.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_4/media/image87.png" style="width:500px" class="common_img"/>
 
 10. When the terminal shows the output shown in the figure indicating the end of one interaction cycle, the system is ready for the next round. To initiate another interaction, repeat step 4 by speaking the wake words again.
 
-    <img src="../_static/media/chapter_12/section_4/media/image88.png"  style="width:500px"   class="common_img"/>
+    <img src="../_static/media/chapter_12/section_4/media/image88.png" style="width:500px" class="common_img"/>
 
 11. To exit the feature, press **Ctrl+C** in the terminal. If the feature does not exit immediately, press **Ctrl+C** multiple times.
 
@@ -3438,7 +3429,7 @@ File Path:
 
 **Import Libraries**
 
-<img src="../_static/media/chapter_12/section_4/media/image89.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image89.png" style="width:500px" class="common_img"/>
 
 (1) **ament_index_python.packages.get_package_share_directory**: retrieves the share directory path of ROS 2 package.
 
@@ -3454,7 +3445,7 @@ File Path:
 
 **Defining the launch_setup Function**
 
-<img src="../_static/media/chapter_12/section_4/media/image90.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image90.png" style="width:500px" class="common_img"/>
 
 (1) `mode = LaunchConfiguration('mode', default=1)` defines a `launch` argument named `mode` with a default value of 1.
 
@@ -3466,11 +3457,11 @@ File Path:
 
 **Definition of the generate_launch_description Function**
 
-<img src="../_static/media/chapter_12/section_4/media/image91.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image91.png" style="width:500px" class="common_img"/>
 
 **Main Program Entry**
 
-<img src="../_static/media/chapter_12/section_4/media/image92.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image92.png" style="width:500px" class="common_img"/>
 
 (1) `ld = generate_launch_description()` generates the launch description object.
 
@@ -3488,7 +3479,7 @@ The source code for this program is located at:
 
 **Import the Necessary Libraries**
 
-<img src="../_static/media/chapter_12/section_4/media/image93.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image93.png" style="width:500px" class="common_img"/>
 
 (1) **cv2**: Utilized for image processing and display using OpenCV.
 
@@ -3504,13 +3495,13 @@ The source code for this program is located at:
 
 **PROMPT String**
 
-<img src="../_static/media/chapter_12/section_4/media/image94.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image94.png" style="width:500px" class="common_img"/>
 
 It defines a prompt string `PROMPT` used to guide how user commands and image data are processed. It specifies the recognition task logic and expected output format.
 
 **VLLMTrack Class**
 
-<img src="../_static/media/chapter_12/section_4/media/image95.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image95.png" style="width:500px" class="common_img"/>
 
 (1) `self.vllm_result`: stores the results processed by the model.
 
@@ -3530,7 +3521,7 @@ It defines a prompt string `PROMPT` used to guide how user commands and image da
 
 **on_parameter_update Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image96.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image96.png" style="width:500px" class="common_img"/>
 
 (1) `self.pid_params`: a dictionary storing PID parameters.
 
@@ -3538,19 +3529,19 @@ It defines a prompt string `PROMPT` used to guide how user commands and image da
 
 **create_update_callback Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image97.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image97.png" style="width:500px" class="common_img"/>
 
 It generates a dynamic update callback function for each PID parameter.
 
 **get_node_state Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image98.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image98.png" style="width:500px" class="common_img"/>
 
 `return response`: returns a response object.
 
 **init_process Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image99.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image99.png" style="width:500px" class="common_img"/>
 
 (1) `SetModel.Request()`: creates a request message to set the model.
 
@@ -3566,7 +3557,7 @@ It generates a dynamic update callback function for each PID parameter.
 
 **send_request Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image100.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image100.png" style="width:500px" class="common_img"/>
 
 (1) `client.call_async(msg)`: makes an asynchronous service call.
 
@@ -3574,19 +3565,19 @@ It generates a dynamic update callback function for each PID parameter.
 
 **vllm_result_callback Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image101.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image101.png" style="width:500px" class="common_img"/>
 
 This callback receives results from the `agent_process/result` topic and stores them in `self.vllm_result`.
 
 **Play_audio_finish_callback Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image102.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image102.png" style="width:500px" class="common_img"/>
 
 The `play_audio_finish_callback` method sends a wake-up signal after audio playback is completed.
 
 **process Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image103.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image103.png" style="width:500px" class="common_img"/>
 
 (1) Retrieve image data from the `image_queue.get` queue, then subscribe to the results received in `vllm_result`. Use `json.load` to parse the image recognition results and process them, and finally call the `track.set_track_target` function to set the tracking target.
 
@@ -3596,15 +3587,15 @@ The `play_audio_finish_callback` method sends a wake-up signal after audio playb
 
 **multi_callback Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image104.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image104.png" style="width:500px" class="common_img"/>
 
 It converts received RGB and depth camera image messages to `NumPy` arrays and stores them in the queue.
 
 **main Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image105.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image105.png" style="width:500px" class="common_img"/>
 
-An instance of the `VLLMTrack` node is created, and a multithreaded executor is used to handle the node’s tasks. Call `executor.spin()` to start processing ROS events. Upon shutdown, the node is properly destroyed using `node.destroy_node()`.
+An instance of the `VLLMTrack` node is created, and a multithreaded executor is used to handle the node's tasks. Call `executor.spin()` to start processing ROS events. Upon shutdown, the node is properly destroyed using `node.destroy_node()`.
 
 
 
@@ -3626,7 +3617,7 @@ Once activated, the robot can be controlled by voice commands. For example, you 
 
 The factory default wake-up word for the WonderEcho Pro is Hello HiWonder in the English firmware. If you want to change the wake-up word to 'Xiaohuan Xiaohuan in Chinese, you can refer to the tutorial in the section [12.2 Voice Module Introduction and Installation]() to flash the Chinese firmware.
 
-If you have previously flashed a different firmware, such as the one using the wake word “Xiaohuan Xiaohuan,” you must use the corresponding wake word.
+If you have previously flashed a different firmware, such as the one using the wake word "Xiaohuan Xiaohuan," you must use the corresponding wake word.
 
 The examples in this course will assume the default factory wake word: **Hello, Hiwonder**.
 
@@ -3656,7 +3647,7 @@ Before starting the intelligent handling process, you need to adjust the graspin
 
 (1) Power on the robot and connect it to a remote control tool like VNC. For detail informations, please refer to [4. Development Environment Setup and Configuration]() in the user manual.
 
-(2) On the Raspberry Pi desktop, double-click the icon <img src="../_static/media/chapter_12/section_4/media/image29.png"  style="width:30px"   class="common_img"/> to open the terminal, and enter the ROS2 development environment.
+(2) On the Raspberry Pi desktop, double-click the icon <img src="../_static/media/chapter_12/section_4/media/image29.png" style="width:30px" class="common_img"/> to open the terminal, and enter the ROS2 development environment.
 
 (3) Enter the command to disable the app auto-start service.
 
@@ -3672,9 +3663,9 @@ ros2 launch large_models_examples automatic_pick.launch.py debug:=pick
 
 (5) Wait until the program finishes loading and you hear the voice prompt **I'm ready**.
 
-(6) The robotic arm will perform a calibration grasping action and place the object at the gripper’s pickup location. Once the robotic arm returns to its original posture, use the **mouse** to left-click and **drag a bounding box** around the target object on the screen. Once the object is correctly identified, the system will automatically calibrate the pickup position for that specific target.
+(6) The robotic arm will perform a calibration grasping action and place the object at the gripper's pickup location. Once the robotic arm returns to its original posture, use the **mouse** to left-click and **drag a bounding box** around the target object on the screen. Once the object is correctly identified, the system will automatically calibrate the pickup position for that specific target.
 
-<img src="../_static/media/chapter_12/section_4/media/image107.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image107.png" style="width:500px" class="common_img"/>
 
 (7) The calibration process for placing objects is the same as for grasping. To begin placement calibration, run the following command:
 
@@ -3694,7 +3685,7 @@ Before enabling this feature, a map must be created in advance. Please refer to 
 >
 > * **The robot must be connected to the Internet, either in STA (LAN) mode or AP (direct connection) mode via Ethernet.**
 
-1. Double click on the icon <img src="../_static/media/chapter_12/section_4/media/image109.png"  style="width:30px"   class="common_img"/> to open a terminal.
+1. Double click on the icon <img src="../_static/media/chapter_12/section_4/media/image109.png" style="width:30px" class="common_img"/> to open a terminal.
 
 2. Enter the command to disable the app auto-start service.
 
@@ -3710,25 +3701,25 @@ Before enabling this feature, a map must be created in advance. Please refer to 
 
 4. Use the virtual machine to open the navigation RViz tool. For details, refer to the section [6.1 Navigation Instruction]() in the file 6. Mapping & Navigation Course.
 
-5. After opening the map in RViz, click the **2D Pose Estimate** icon to set the robot’s initial position.
+5. After opening the map in RViz, click the **2D Pose Estimate** icon to set the robot's initial position.
 
-   <img src="../_static/media/chapter_12/section_4/media/image111.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_4/media/image111.png" style="width:500px" class="common_img"/>
 
-6. When the terminal displays output shown in the figure and the voice device announces **I’m ready**, the device has completed initialization and yolov8 model will be initialized at the same time. Then, you can say the wake words **Hello Hiwonder**.
+6. When the terminal displays output shown in the figure and the voice device announces **I'm ready**, the device has completed initialization and yolov8 model will be initialized at the same time. Then, you can say the wake words **Hello Hiwonder**.
 
-   <img src="../_static/media/chapter_12/section_4/media/image112.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_4/media/image112.png" style="width:500px" class="common_img"/>
 
-   <img src="../_static/media/chapter_12/section_4/media/image113.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_4/media/image113.png" style="width:500px" class="common_img"/>
 
-7. When the terminal displays the corresponding output shown in the figure and the device responds with **I’m here**, it indicates successful activation. The system will begin recording your voice command.
+7. When the terminal displays the corresponding output shown in the figure and the device responds with **I'm here**, it indicates successful activation. The system will begin recording your voice command.
 
    Speak a command such as **Put the red square in the blue box.** The voice device will capture the speech, and the large language model will process the command.
 
-   <img src="../_static/media/chapter_12/section_4/media/image114.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_4/media/image114.png" style="width:500px" class="common_img"/>
 
 8. Upon successful recognition by the speech recognition service of cloud-based large speech model, the parsed command will be displayed under the `publish_asr_result` output in the terminal.
 
-   <img src="../_static/media/chapter_12/section_4/media/image114.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_4/media/image114.png" style="width:500px" class="common_img"/>
 
 9. Upon receiving user input shown in the figure, the terminal will display output indicating that the cloud-based large language model has been successfully invoked. The model will interpret the command, generate a language response, and execute a corresponding action based on the meaning of the command.
 
@@ -3736,19 +3727,19 @@ Before enabling this feature, a map must be created in advance. Please refer to 
    >
    > **The response is automatically generated by the model. While the semantic content is accurate, the wording and structure may vary due to randomness in language generation.**
 
-   <img src="../_static/media/chapter_12/section_4/media/image115.png"  style="width:500px"   class="common_img"/>
+   <img src="../_static/media/chapter_12/section_4/media/image115.png" style="width:500px" class="common_img"/>
 
 10. The robot will first move to the red block and complete the task of picking it up.
 
-    <img src="../_static/media/chapter_12/section_4/media/image116.png"  style="width:500px"   class="common_img"/>
+    <img src="../_static/media/chapter_12/section_4/media/image116.png" style="width:500px" class="common_img"/>
 
 11. Then it will go to the blue box and place the block inside.
 
-    <img src="../_static/media/chapter_12/section_4/media/image117.png"  style="width:500px"   class="common_img"/>
+    <img src="../_static/media/chapter_12/section_4/media/image117.png" style="width:500px" class="common_img"/>
 
 12. When the terminal shows the output shown in the figure indicating the end of one interaction cycle, the system is ready for the next round. To initiate another interaction, repeat step 4 by speaking the wake words again.
 
-    <img src="../_static/media/chapter_12/section_4/media/image118.png"  style="width:500px"   class="common_img"/>
+    <img src="../_static/media/chapter_12/section_4/media/image118.png" style="width:500px" class="common_img"/>
 
 13. To exit the feature, press **Ctrl+C** in the terminal. If the feature does not exit immediately, press **Ctrl+C** multiple times.
 
@@ -3764,17 +3755,17 @@ To modify the navigation positions in the program, edit the file located at the 
 
 1)  Begin by launching the program and displaying the map in rviz following step 4 above. Then, click on **2D Goal Pose** in the rviz interface to set the desired navigation target on the map.
 
-<img src="../_static/media/chapter_12/section_4/media/image119.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image119.png" style="width:500px" class="common_img"/>
 
 2)  Return to the command terminal and check the published target position parameters.
 
-<img src="../_static/media/chapter_12/section_4/media/image79.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image79.png" style="width:500px" class="common_img"/>
 
 Locate the corresponding section of the code shown below, and fill in your target location parameters after the appropriate location name.
 
-<img src="../_static/media/chapter_12/section_4/media/image120.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image120.png" style="width:500px" class="common_img"/>
 
-In the program, each location is defined as a target navigation point relative to the map’s origin, which corresponds to the robot’s starting position during the mapping process. Each navigation point includes five parameters:
+In the program, each location is defined as a target navigation point relative to the map's origin, which corresponds to the robot's starting position during the mapping process. Each navigation point includes five parameters:
 
 x: position on the x-axis (meters)
 
@@ -3800,7 +3791,7 @@ File Path:
 
 **Import Libraries**
 
-<img src="../_static/media/chapter_12/section_4/media/image121.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image121.png" style="width:500px" class="common_img"/>
 
 (1) **os**: used for handling file paths and operating system-related functions.
 
@@ -3818,7 +3809,7 @@ File Path:
 
 **Defining the launch_setup Function**
 
-<img src="../_static/media/chapter_12/section_4/media/image122.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image122.png" style="width:500px" class="common_img"/>
 
 (1) This function includes the **navigation_transport.launch.py** file from the **large_models_examples** package, which launches the navigation-to-goal functionality.
 
@@ -3830,7 +3821,7 @@ File Path:
 
 **Definition of the generate_launch_description Function**
 
-<img src="../_static/media/chapter_12/section_4/media/image123.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image123.png" style="width:500px" class="common_img"/>
 
 (1) This function is responsible for generating the complete launch description.
 
@@ -3838,7 +3829,7 @@ File Path:
 
 **Main Program Entry**
 
-<img src="../_static/media/chapter_12/section_4/media/image124.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image124.png" style="width:500px" class="common_img"/>
 
 (1) `ld = generate_launch_description()` generates the launch description object.
 
@@ -3856,7 +3847,7 @@ File Path:
 
 **Import the Necessary Libraries**
 
-<img src="../_static/media/chapter_12/section_4/media/image125.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image125.png" style="width:500px" class="common_img"/>
 
 (1) **cv2**: Utilized for image processing and display using OpenCV.
 
@@ -3894,13 +3885,13 @@ File Path:
 
 **PROMPT String**
 
-<img src="../_static/media/chapter_12/section_4/media/image126.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image126.png" style="width:500px" class="common_img"/>
 
 It defines 3 prompt strings `PROMPT` used to guide how user commands and image data are processed. It specifies the recognition task logic and expected output format.
 
 **VLLMObjectTransport Class**
 
-<img src="../_static/media/chapter_12/section_4/media/image127.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image127.png" style="width:500px" class="common_img"/>
 
 (1) `rclpy.init()`: initializes the ROS 2 system.
 
@@ -3932,13 +3923,13 @@ It defines 3 prompt strings `PROMPT` used to guide how user commands and image d
 
 **get_node_state Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image128.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image128.png" style="width:500px" class="common_img"/>
 
 `return response`: returns a response object.
 
 **init_process Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image129.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image129.png" style="width:500px" class="common_img"/>
 
 (1) `self.timer.cancel()`: cancels the timer.
 
@@ -3974,7 +3965,7 @@ It defines 3 prompt strings `PROMPT` used to guide how user commands and image d
 
 **send_request Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image130.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image130.png" style="width:500px" class="common_img"/>
 
 (1) `client.call_async(msg)`: makes an asynchronous service call.
 
@@ -3982,13 +3973,13 @@ It defines 3 prompt strings `PROMPT` used to guide how user commands and image d
 
 **vllm_result_callback Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image131.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image131.png" style="width:500px" class="common_img"/>
 
 (1) This callback receives results from the `agent_process/result` topic and stores them in `self.vllm_result`.
 
 **get_object_position Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image132.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image132.png" style="width:500px" class="common_img"/>
 
 (1) `query`：a query request.
 
@@ -4020,7 +4011,7 @@ It defines 3 prompt strings `PROMPT` used to guide how user commands and image d
 
 **pick Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image133.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image133.png" style="width:500px" class="common_img"/>
 
 (1) **<u>Trigger Pick Preparation</u>**
 
@@ -4064,19 +4055,19 @@ so it knows where the object is located for grasping.
 
 **place Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image134.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image134.png" style="width:500px" class="common_img"/>
 
 The logic and structure are analogous to the pick method.
 
 **Play_audio_finish_callback Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image135.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image135.png" style="width:500px" class="common_img"/>
 
 This method handles updates on the transport status.
 
 **process Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image136.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image136.png" style="width:500px" class="common_img"/>
 
 (1) `while self.running`: this loop keeps running as long as `self.running` is set to `True`.
 
@@ -4130,11 +4121,11 @@ This method handles updates on the transport status.
 
 **main Method**
 
-<img src="../_static/media/chapter_12/section_4/media/image137.png"  style="width:500px"   class="common_img"/>
+<img src="../_static/media/chapter_12/section_4/media/image137.png" style="width:500px" class="common_img"/>
 
 (1) Create an instance of the `VLLMObjectTransport` node.
 
-(2) A multithreaded executor is used to handle the node’s tasks.
+(2) A multithreaded executor is used to handle the node's tasks.
 
 (3) Call `executor.spin()` to start processing ROS events.
 

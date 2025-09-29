@@ -827,6 +827,8 @@ sudo systemctl restart wifi.service
 
 10) To switch back to AP mode, edit the same configuration file again, set WIFI_MODE = 1, and restart the Wi-Fi service as shown above.
 
+<p id="anchor_ssh_connection"></p>
+
 * **SSH Connection**
 
 Unlike VNC remote tools, MobaXterm does not display the robot's desktop，but provides only a command-line interface. This allows for faster command execution and reduces the CPU and memory load compared to a full VNC session.
