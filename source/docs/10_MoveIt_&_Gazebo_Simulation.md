@@ -12,7 +12,7 @@
 
 In simple terms, a virtual machine (VM) allows you to run another operating system within your current operating system. In this example, VMware Workstation is used for demonstration, and the installation steps are as follows:
 
-(1) Extract the virtual machine software archive located at **Configuration Files -\> VMware**.
+(1) Extract the virtual machine software archive located at **[Configuration Files -\> VMware](https://drive.google.com/drive/folders/1NHIbjU3tLx8H3lygwkIDlFF1uyoWgBhD?usp=sharing)**.
 
 (2) Locate the extracted virtual machine folder, then double-click the virtual machine executable file with the .exe extension
 
@@ -1501,7 +1501,7 @@ ros2 launch hiwonder_moveit_config demo.launch.py
 
 4. Use the slider to adjust the motion planning for the robotic arm, then click **Plan & Execute**. The simulated robotic arm and the real robotic arm will execute the action synchronously.
 
-<img src="../_static/media/chapter_10/section_3/media/image42.png" style="width:500px"/>
+<img src="../_static/media/chapter_10/section_3/media/image42.png" style="width:500px" class="common_img"/>
 
 > [!NOTE]
 >

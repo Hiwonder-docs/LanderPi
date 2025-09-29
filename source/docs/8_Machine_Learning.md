@@ -407,7 +407,9 @@ Below is a table of common shortcut keys:
 ```
 cd my_data/Annotations && ls
 ```
-    
+
+<p id="anchor_8_2_4"></p>
+
 ### 8.2.4 Data Format Conversion
 
 * **Preparation**
@@ -476,7 +478,7 @@ Finally, an XML file will be generated under the **~/my_data** folder to record 
 
 * **Preparation**
 
-After converting the dataset format, you can proceed to the model training phase. Before starting, make sure the dataset with the correct format is ready. For details, refer to the section **8.2.4 Data Format Conversion**.
+After converting the dataset format, you can proceed to the model training phase. Before starting, make sure the dataset with the correct format is ready. For details, refer to the section **[8.2.4 Data Format Conversion](#anchor_8_2_4)**.
 
 * **Model Training**
 

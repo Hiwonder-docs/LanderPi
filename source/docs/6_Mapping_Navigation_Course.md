@@ -64,11 +64,11 @@ The Link element describes the visual and physical properties of the robot's rig
 
 <img src="../_static/media/chapter_6/image1.png" style="width:500px" class="common_img"/>
 
-<visua>: Describe the appearance of the link, such as size, color and shape.
+`<visua>`: Describe the appearance of the link, such as size, color and shape.
 
-<inertial>: Describe the inertia parameters of the link, which will used in dynamics calculation.
+`<inertial>`: Describe the inertia parameters of the link, which will used in dynamics calculation.
 
-<collision>: Describe the collision inertia property of the link.
+`<collision>`: Describe the collision inertia property of the link.
 
 Each tag contains the corresponding child tag. The functions of the tags are listed below.
 
@@ -1349,7 +1349,7 @@ ROS2 mapping and navigation use a virtual machine connected to the robot within 
 
 1. Install and Import the Virtual Machine
 
-(1) Locate the installation package under: [06 Virtual Machine Installation Package](3_Chassis_Motion_Control.md) and double-click the installer to begin installation.
+(1) Locate the installation package under: [06 Virtual Machine Installation Package](https://drive.google.com/drive/folders/1u2zcKkN3WeWyJPFudvRsyTKXdakkv283?usp=sharing) and double-click the installer to begin installation.
 
 <img src="../_static/media/chapter_6/image32.png" style="width:500px"  class="common_img"/>
 
@@ -1720,8 +1720,6 @@ If the prompt shown below appears, the keyboard control service has started succ
 | D | Long press to interrupt forward or backward state and rotate clockwise in place. |
 
 When using the keyboard to move the robot for mapping, you can reduce the robot's speed. A slower speed results in smaller relative odometry errors and better mapping accuracy. As the robot moves, RViz will gradually display the map, expanding until the entire environment is mapped.
-
-
 
 4. Saving the Map
 

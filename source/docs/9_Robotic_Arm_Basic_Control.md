@@ -486,7 +486,7 @@ Action File Integration involves linking two action group files end-to-end to cr
 
 * **Action File Import and Export**
 
-**1. Introduction **
+**1. Introduction**
 
 This section explains how to export action group files from the host computer and import them to other similar devices, allowing action files to be used across multiple robots.
 
@@ -500,7 +500,7 @@ This section explains how to export action group files from the host computer an
 cp /home/ubuntu/software/arm_pc/ActionGroups/pick.d6a /home/ubuntu/shared/
 ```
 
-② If you use MobaXterm for remote connection, please refer to the [4.2.3 SSH Connection](#anchor_ssh_connection) in the **1. LanderPi User Manual** for connection tutorial.
+② If you use MobaXterm for remote connection, please refer to the [SSH Connection](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#anchor_ssh_connection) in the **1. LanderPi User Manual** for connection tutorial.
 
 ③ You can export the action file by dragging it directly to the computer desktop.
 

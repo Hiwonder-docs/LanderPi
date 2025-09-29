@@ -117,7 +117,7 @@ Charging Steps:
 
 In this section, you will learn about the startup sequence of the robotic arm and verify the functionality of each module. After completing this step, you can proceed to the following chapters to explore app control and wireless controller control.
 
-If you need to connect to the robot using remote development tools, or wish to further explore advanced functions and review sample programs, please refer to the section [**1.4 Development Environment Setup and Configuration**](#anchor_4) in this document.
+If you need to connect to the robot using remote development tools, or wish to further explore advanced functions and review sample programs, please refer to the section [**1.4 Development Environment Setup and Configuration**](#anchor_1_4) in this document.
 
 * **Before Powering On**
 
@@ -354,6 +354,8 @@ For iOS users: Make sure the Wi-Fi icon <img src="../_static/media/chapter_1/ima
 
 To learn how to use each mode in detail, refer to section [Overview of App Modes](#overview-of-app-modes).
 
+<p id="anchor_1_3_3_4"></p>
+
 * **LAN Mode Connection (Optional)**
 
 1) First, connect your phone to a 5G Wi-Fi network. For example, connect to "**Hiwomder_5G**." If you are using a dual-band router with separate SSIDs, the 2.4G and 5G networks will have different names, for example, "**Hiwonder**" for 2.4G and "**Hiwonder_5G**" for 5G.
@@ -394,7 +396,7 @@ To learn how to use each mode in detail, refer to section [Overview of App Modes
 
 <img src="../_static/media/chapter_1/image40.png" style="width:500px" class="common_img"/>
 
-10) You can search for this IP in the remote desktop tool and establish a connection. For detailed instructions, refer to section [1.4 Development Environment Setup and Configuration](#anchor_4).
+10) You can search for this IP in the remote desktop tool and establish a connection. For detailed instructions, refer to section [1.4 Development Environment Setup and Configuration](#anchor_1_4).
 
 11) If you want to switch back to direct connection mode, long-press the robot icon and select **Set to direct connection mode**. The blue indicator light will start blinking, indicating that the switch was successful.
 
@@ -711,7 +713,7 @@ The following table describes the functions of the controller buttons and joysti
 | Right joystick left | Turn left, only controls front wheels on Ackerman chassis | Push |
 | Right Joystick Right | Turn right, only controls front wheels on Ackerman chassis | Push |
 
-<p id="anchor_4"></p>
+<p id="anchor_1_4"></p>
 
 ## 1.4 Development Environment Setup and Configuration
 
@@ -1093,7 +1095,7 @@ Serial communication is a commonly used method in microcontroller development an
 
 To standardize communication across software tools and different products, Hiwonder has defined a protocol called the RRC Communication Protocol, which uses hexadecimal data transmission. Future products will also follow this protocol for programming and communication between upper and lower controllers.
 
-For details on the communication protocol and parsing, refer to:  [3. RRCLite Program Analysis](https://drive.google.com/drive/folders/1RhTUdSMw-vIlK6bOv_nrZ02pVP1N-hIg?usp=sharing)  and see the document [RRC Lite and Host Computer Communication Protocol](https://drive.google.com/drive/folders/16xOMkom7BjUAtMfInDYydV_gT4Zip3SJ?usp=sharing).
+For details on the communication protocol and parsing, refer to:  [3. RRCLite Program Analysis](https://drive.google.com/drive/folders/1RhTUdSMw-vIlK6bOv_nrZ02pVP1N-hIg?usp=sharing)  and see the document [RRC Lite and Host Computer Communication Protocol](https://drive.google.com/file/d/1154LkF-UzKce9SSoH5a8n7HjI-tMGJgU/view?usp=sharing).
 
 <p id="anchor_1_7"></p>
 
@@ -1225,8 +1227,6 @@ Once complete, a confirmation message will appear in the sidebar as shown in the
 >
 > **The STM32 controller is preloaded with firmware at the factory. If needed, you can flash the provided file RosRobotControllerLite20250722.hex in source code.**
 
-
-
 ## 1.8 Hardware Introduction
 
 This chapter introduces the robot's hardware, including the electronic control system, Raspberry Pi 5 controller, Lidar, depth camera, and other sensors.
@@ -1276,7 +1276,7 @@ The microcontroller manages components such as the buzzer, robot arm, servo pan-
 
 The controller provides the circuit schematic and features an SWD debug port. It supports USB serial programming for STM32 firmware updates and enables secondary development. On-board resources and peripheral example code are provided to facilitate learning and usage.
 
-For details on the STM32F407VET6 processor's internal resources and peripherals, refer to the diagram below and the datasheet available at [STM32F407VET6 Main Controller Datasheet](https://drive.google.com/drive/folders/1lfAAMXW7YbRU1SLw8qKh7ToSUOgHyaRs?usp=sharing).
+For details on the STM32F407VET6 processor's internal resources and peripherals, refer to the diagram below and the datasheet available at [STM32F407VET6 Main Controller Datasheet](https://drive.google.com/file/d/1gLeLGeH48V9vHjxMsu4xwTD5uw5a0pvy/view?usp=sharing).
 
 <img src="../_static/media/chapter_1/image171.png" style="width:500px" class="common_img"/>
 
@@ -1326,8 +1326,6 @@ The robot must be charged using the supplied dedicated charger. The charger indi
 > [!NOTE]
 >
 > **Do not charge the robot while it is powered on. Charging should only be done when the robot is turned off.**
-
-
 
 * **Hall Encoder DC Geared Motor**
 
@@ -1579,11 +1577,9 @@ Before use, ensure the Lidar is operated within the specified power and environm
 | ROS Support | ROS1 / ROS2 |
 | Communication Interface | Standard UART |
 
-
-
 ## 1.9 System Software Architecture
 
-Before starting this section, you need to connect to the robot using VNC remote desktop software. For detailed instructions, please refer to [**1.4 Development Environment Setup and Configuration**](#anchor_4)" in this document.
+Before starting this section, you need to connect to the robot using VNC remote desktop software. For detailed instructions, please refer to [**1.4 Development Environment Setup and Configuration**](#anchor_1_4) in this document.
 
 ### 1.9.1 Introduction to Configuration Files
 
@@ -1591,7 +1587,7 @@ Before starting this section, you need to connect to the robot using VNC remote 
 
 The robot's system home directory contains the essential files required during startup.
 
-To view these files, click the terminal icon <img src="../_static/media/chapter_1/image185.png" style="width:30px" class="common_img"/> at the top of the Raspberry Pi desktop, open the command-line terminal, and enter the following command under the pi user's **home** directory, then press Enter:
+To view these files, click the terminal icon <img src="../_static/media/chapter_1/image185.png" style="width:30px"/> at the top of the Raspberry Pi desktop, open the command-line terminal, and enter the following command under the pi user's **home** directory, then press Enter:
 
 ```
 ls
@@ -1621,7 +1617,7 @@ The following table lists the main directories in the system.
 
 When using the robot's functions, all operations are executed within the ROS2 environment.
 
-(1) To open the ROS2 environment, double-click the desktop icon <img src="../_static/media/chapter_1/image187.png" style="width:30px" class="common_img"/> to launch the terminal. Enter the command below and press Enter to view the directories under the ROS2 environment.
+(1) To open the ROS2 environment, double-click the desktop icon <img src="../_static/media/chapter_1/image187.png" style="width:30px"/> to launch the terminal. Enter the command below and press Enter to view the directories under the ROS2 environment.
 
 ```
 ls
