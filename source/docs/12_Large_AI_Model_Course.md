@@ -56,15 +56,13 @@ Large Language Models excel at machine translation, enabling the conversion of t
 
 Large Language Models can be used to build question-answering systems that respond to user queries. These applications are particularly valuable in areas such as intelligent customer support, knowledge retrieval, and information lookup.
 
-<p id="anchor_19_1_1_2"></p>
+<p id="anchor_12_1_1_2"></p>
 
 * **Large Language Model Deployment**
 
-:::{Note}
-
-This section outlines the steps to register on the official OpenAI website and obtain the API key for the Large Language Model.
-
-
+> [!NOTE]
+>
+>This section outlines the steps to register on the official OpenAI website and obtain the API key for the Large Language Model.
 
 (1) OpenAI Account Registration and Setup
 
@@ -96,7 +94,7 @@ Open the OpenAI website and click on the "**Sign Up**" button in the top right c
 
 (2) OpenRouter Account Registration and Setup
 
-① Copy the following URL: https://openrouter.ai/
+① Copy the following URL: <https://openrouter.ai/>
 
 Open the webpage in your browser and click "**Sign In**". Register using your Google account or another available login option.
 
@@ -118,15 +116,13 @@ Open the webpage in your browser and click "**Sign In**". Register using your Go
 
 ④ At this point, the large model is successfully created and deployed. You can now use the API in the upcoming lessons.
 
-<p id="anchor_19_1_1_3"></p>
+<p id="anchor_12_1_1_3"></p>
 
 * **Large Language Model Accessing**
 
-:::{Note}
-
-To proceed with this section, you will need to register on the appropriate website and obtain the API key for the large model (please refer to the file ["**11.1.1 Large Language Model Courses -> Large Language Model Deployment**"](#anchor_11_1_1_2)).
-
-:::
+> [!NOTE]
+>
+>To proceed with this section, you will need to register on the appropriate website and obtain the API key for the large model (please refer to the file ["**12.1.1 Large Language Model Courses -> Large Language Model Deployment**"](#anchor_12_1_1_2)).
 
 It is important to ensure a stable network connection for the development board. For optimal performance, we also recommend connecting the main controller to a wired network for enhanced stability.
 
@@ -134,11 +130,9 @@ It is important to ensure a stable network connection for the development board.
 
 (1) Environment Configuration
 
-:::{Note}
-
-If you have purchased a robot from our company with built-in large model functionality, the environment is already pre-configured in the robot's image. You can directly proceed to Section 3 of this document to configure the API key.
-
-:::
+> [!NOTE]
+>
+>If you have purchased a robot from our company with built-in large model functionality, the environment is already pre-configured in the robot's image. You can directly proceed to Section 3 of this document to configure the API key.
 
 Install Vim and Gedit by running the corresponding commands. Install the necessary software packages and audio libraries required for PyAudio.
 
@@ -162,11 +156,11 @@ sudo apt install python3 python3-pip python3-all-dev python3-pyaudio portaudio11
 
 (2) Importing the Large Model Program Directory
 
-① In this section, locate the '[Appendix -> Source Code](https://docs.hiwonder.com/projects/JetArm/en/latest/docs/resources_download.html)' folder within the same directory as this tutorial document.
+① In this section, locate the '[Appendix -> Source Code]()' folder within the same directory as this tutorial document.
 
 <img  src="../_static/media/chapter_12/section_1.1/03/image4.png" style="width:500px" class="common_img"/>
 
-② Using the MobaXterm remote connection tool (as outlined in the '5.5 Remote Access and File Transfer' tutorial), drag the folder into the root directory of the main controller. The software installation package can be found in the '[Appendix -\> Remote Access and File Transfer](https://docs.hiwonder.com/projects/JetArm/en/latest/docs/resources_download.html)' directory.
+② Using the MobaXterm remote connection tool (as outlined in the '5.5 Remote Access and File Transfer' tutorial), drag the folder into the root directory of the main controller. The software installation package can be found in the '[Appendix -\> Remote Access and File Transfer](https://drive.google.com/drive/folders/17mfRH9lmP9OYO4_LAyzkRnHfytqRYldJ?usp=sharing)' directory.
 
 <img  src="../_static/media/chapter_12/section_1.1/03/image5.png" style="width:500px" class="common_img"/>
 
@@ -265,17 +259,15 @@ cd ~/large_models
 vim config.py
 ```
 
-③ Once the file is open, configure the OpenAI and OpenRouter keys by filling in the llm_api_key and vllm_api_key parameters, respectively (you can obtain these keys from the '[11.1.1 Large Language Model Courses -> Large Language Model Deployment](#anchor_11_1_1_2)' course).
+③ Once the file is open, configure the OpenAI and OpenRouter keys by filling in the llm_api_key and vllm_api_key parameters, respectively (you can obtain these keys from the '[12.1.1 Large Language Model Courses -> Large Language Model Deployment](#anchor_12_1_1_2)' course).
 
 <img  src="../_static/media/chapter_12/section_1.1/03/image21.png" style="width:500px" class="common_img"/>
 
 For instance, copy the key created in Section 1.2 of this chapter and paste it into the appropriate field. To paste the key, place the cursor between the quotation marks, hold the **"Shift"** key, right-click, and select **"Paste"** .
 
-:::{Note}
-
-Do not mix keys from different models, as this may cause the functionality to malfunction
-
-:::
+> [!NOTE]
+>
+>Do not mix keys from different models, as this may cause the functionality to malfunction
 
 <img  src="../_static/media/chapter_12/section_1.1/03/image22.png" style="width:500px" class="common_img"/>
 
@@ -303,7 +295,7 @@ python3 openai_llm_demo.py
 
 * **Semantic Understanding with Large Language Model**
 
-Before starting this section, make sure you have completed the API key configuration outlined in the file [11.1.1 Large Language Model Courses -\> Large Language Model Accessing](#anchor_11_1_1_3).
+Before starting this section, make sure you have completed the API key configuration outlined in the file [12.1.1 Large Language Model Courses -\> Large Language Model Accessing](#anchor_12_1_1_3).
 
 In this lesson, we'll use a large language model to analyze and summarize short passages of text.
 
@@ -329,7 +321,7 @@ python3 openai_llm_nlu_demo.py
 
 * **Emotional Perception with Large Language Model**
 
-To proceed with this section, ensure that you have completed the API key configuration as described in the file [11.1.1 Language Model Courses -> Large Language Model Accessing](#anchor_11_1_1_3).
+To proceed with this section, ensure that you have completed the API key configuration as described in the file [12.1.1 Language Model Courses -> Large Language Model Accessing](#anchor_12_1_1_3).
 
 In this lesson, we will use a large language model to assess its ability to perceive emotions based on descriptive words. We'll provide the model with emotional expressions and evaluate its response.
 
@@ -352,8 +344,6 @@ python3 openai_llm_er_demo.py
 (4) In this program, we send two emotional expressions to the model: the first is an expression of sadness, **"So Sad"**. After the model responds, we then send an expression of happiness, "**Ha Ha**", and observe how the model reacts.
 
 <img  src="../_static/media/chapter_12/section_1.1/01/image7.png" style="width:500px" class="common_img"/>
-
-
 
 ### 12.1.2 Large Speech Model Courses
 
@@ -517,11 +507,9 @@ Device Check：
 
 To proceed, we need to identify the USB device name assigned to the connected WonderEcho Pro or voice device (hereafter referred to as the voice device). Please follow the steps below carefully. 
 
-:::{Note}
-
-Do not connect any other USB devices during this process to avoid confusion.
-
-:::
+> [!NOTE]
+> 
+>Do not connect any other USB devices during this process to avoid confusion.
 
 ① First, disconnect the voice device, then open a terminal and run the following command:
 
@@ -607,7 +595,7 @@ python3 ~/large_models/wakeup_demo.py
 
 This is a Python-based wake word detection script that utilizes the speech module to process audio input and detect a specific wake word (e.g., "**HELLO_HIWONDER**").
 
-Source Code Path: [/home/ubuntu/large_models/wakeup_demo.py](../_static/source_code/11/wakeup_demo.zip)
+Source Code Path: `/home/ubuntu/large_models/wakeup_demo.py`
 
 Importing Required Modules
 
@@ -741,13 +729,13 @@ The wave library is used to extract audio data. The extracted audio is then sent
 
 (3) Preparation Before the Experiment
 
-Before proceeding, refer to the course "[**11.1.2 Large Speech Model Courses -> Large Language Models Deployment**](#anchor_11_1_1_2)" to obtain your API key, and make sure to add it into the configuration file (config).
+Before proceeding, refer to the course "[**12.1.1 Large Speech Model Courses -> Large Language Model Deployment**](#anchor_12_1_1_2)" to obtain your API key, and make sure to add it into the configuration file (config).
 
 (4) Experiment Steps
 
 ① Power on the device and connect to it using MobaXterm.  
 
-(For detailed instructions, please refer to [Appendix ->Remote Connection Tools and Instructions](https://docs.hiwonder.com/projects/JetArm/en/latest/docs/resources_download.html).)
+(For detailed instructions, please refer to [Appendix ->Remote Connection Tools and Instructions](https://drive.google.com/drive/folders/17mfRH9lmP9OYO4_LAyzkRnHfytqRYldJ?usp=sharing).)
 
 ② Navigate to the program directory by entering the following command:
 
@@ -779,7 +767,7 @@ After the program starts, the microphone will recognize the recorded audio conte
 
 This program implements a speech recognition system by calling OpenAI's Speech-to-Text API to convert audio files into text.
 
-The program source code is located at: [/home/ubuntu/large_models/openai_asr_demo.py](../_static/source_code/11/openai_asr_demo.zip)
+The program source code is located at: `/home/ubuntu/large_models/openai_asr_demo.py`
 
 ① Module Import
 
@@ -859,11 +847,11 @@ The program first sends the text to the OpenAI TTS (Text-to-Speech) model. The m
 
 (3) Preparation Before the Experiment
 
-Refer to the course "[**11.1 Large Models Basic Courses ->11.1.1Large Language Models Courses -> Large Language Models Deployment**](#anchor_11_1_1_2)" to obtain your API key, and update the configuration file accordingly.
+Refer to the course "[**12. Large AI Model Course -> Large Language Model Deployment**](#anchor_12_1_1_2)" to obtain your API key, and update the configuration file accordingly.
 
 (4) Experiment Steps
 
-① Power on the device and connect to it using MobaXterm "(**refer to the [appendix -> Remote Connection Tools and Instructions](https://docs.hiwonder.com/projects/JetArm/en/latest/docs/resources_download.html) for detailed guidance**)".
+① Power on the device and connect to it using MobaXterm "(**refer to the [appendix -> Remote Connection Tools and Instructions](https://drive.google.com/drive/folders/17mfRH9lmP9OYO4_LAyzkRnHfytqRYldJ?usp=sharing) for detailed guidance**)".
 
 ② Navigate to the program directory by entering the following command:
 
@@ -889,7 +877,7 @@ python3 openai_tts_demo.py
 
 Upon running the program, it will play an audio message saying "**Hello, Can I Help You**", and simultaneously save the audio file with the same content to the following directory:  
 
-[/home/ubuntu/large_models/resources/audio/](../_static/source_code/11/audio.zip)
+`/home/ubuntu/large_models/resources/audio/`
 
 <img  src="../_static/media/chapter_12/section_1.2/05/image5.png" style="width:500px" class="common_img"/>
 
@@ -897,7 +885,7 @@ Upon running the program, it will play an audio message saying "**Hello, Can I H
 
 This program is a speech synthesis system based on OpenAI's Text-to-Speech (TTS) API, capable of converting text into audio files. It supports input text and outputs audio in formats like PCM, WAV, FLAC, AAC, Opus, and MP3. By specifying the desired text, the program sends the request to the API and returns the synthesized audio, which can be played or saved locally.
 
-The source code for this program is located at:  [/home/ubuntu/large_models/openai_tts_demo.py](../_static/source_code/11/openai_tts_demo.zip)
+The source code for this program is located at:  `/home/ubuntu/large_models/openai_tts_demo.py`
 
 ① Module Import
 
@@ -931,7 +919,7 @@ Voice Options: nova, shimmer, echo, onyx, fable, alloy, ash, sage, coral.
 
 For more details, you can refer to the OpenAI documentation:
 
-https://platform.openai.com/docs/guides/text-to-speech
+<https://platform.openai.com/docs/guides/text-to-speech>
 
 ③ Function Extension
 
@@ -1045,7 +1033,7 @@ For example: 'What are some fun places to visit in New York?'
 
 The program integrates voice recognition, speech synthesis, and intelligent response functionalities to create a voice assistant. Interaction is initiated through the wake-up word (HELLO_HIWONDER). Users can converse with the assistant via voice commands, and the assistant will respond using text-to-speech technology. The overall structure is clear, with distinct modules that are easy to expand and maintain.
 
-The source code for this program is located at: [/home/ubuntu/large_models/openai_interaction_demo.py](../_static/source_code/11/openai_interaciton_demo.zip)
+The source code for this program is located at: `/home/ubuntu/large_models/openai_interaction_demo.py`
 
 (1) Module Import
 
@@ -1114,8 +1102,6 @@ Wake-up Detection: Continuously monitors for the wake-up word. Once detected, it
 Voice Processing: Records and recognizes the user's speech, uses the language model to generate a response, and then converts the response into speech for playback.
 
 Error Handling: Catches exit signals and runtime errors to ensure the program exits safely and releases resources.
-
-
 
 ### 12.1.3 Vision Language Model Courses
 
@@ -1189,15 +1175,15 @@ On social media platforms, VLM can generate appropriate comments or tags based o
 
 In the healthcare field, VLM can be used to analyze medical images (such as X-rays and CT scans) and generate diagnostic reports or recommendations, assisting doctors in making more accurate decisions.
 
+<p id="anchor_12_1_3_2"></p>
+
 * **Vision Language Model Accessing**
 
-:::{Note}
+> [!NOTE]
+>
+>* This section requires the configuration of the API key in "[**12.1.3 Vision Language Model Accessing -> Vision Language Model Accessing**](#anchor_12_1_3_2)" before proceeding. Additionally, ensure that the images to be used in this section are imported.
 
-* This section requires the configuration of the API key in "[**11.1.3 Vision Language Model Accessing -> Vision Language Model Accessing**](#anchor_11_1_1_3)" before proceeding. Additionally, ensure that the images to be used in this section are imported.
-
-* This experiment requires either an Ethernet cable or Wi-Fi connection to ensure the main control device can access the network properly.
-
-  :::
+>* This experiment requires either an Ethernet cable or Wi-Fi connection to ensure the main control device can access the network properly.
 
 (1) Experiment Steps
 
@@ -1223,15 +1209,13 @@ After running the program, the output printed matches our request of "**Describe
 
 * **Vision Language Model: Object Detection**
 
-:::{Note}
+> [!NOTE]
+>
+>* This section requires the configuration of the API key in "[**12.1.3 Vision Language Module Courses -> Vision Language Model Accessing**](#anchor_12_1_3_2)" before proceeding. Additionally, ensure that the images to be used in this section are imported.
 
-* This section requires the configuration of the API key in "[**11.1.3 Vision Language Module Courses -> Vision Language Model Accessing**](#anchor_11_1_1_3)" before proceeding. Additionally, ensure that the images to be used in this section are imported.
+>* This experiment requires either an Ethernet cable or Wi-Fi connection to ensure the main control device can access the network properly.
 
-* This experiment requires either an Ethernet cable or Wi-Fi connection to ensure the main control device can access the network properly.
-
-* In this course, we will use a program to transmit an image to the large model for recognition, which will then identify and locate the objects within the image by drawing bounding boxes around them.
-
-:::
+>* In this course, we will use a program to transmit an image to the large model for recognition, which will then identify and locate the objects within the image by drawing bounding boxes around them.
 
 (1) Experiment Steps
 
@@ -1301,15 +1285,14 @@ python3 qwen_vllm_detect_demo.py
 
 * **Vision Language Model: Scene Understanding**
 
-:::{Note}
+> [!NOTE]
+>
+>* This section requires the configuration of the API key in "[**Vision Language Model Accessing**](#anchor_12_1_3_2)" before proceeding. Additionally, ensure that the images to be used in this section are imported.
+>
+>* This experiment requires either an Ethernet cable or Wi-Fi connection to ensure the main control device can access the network properly.
+>
+>* In this course, we will use a program to send an image to the large model for recognition and generate a description of the content within the image.
 
-* This section requires the configuration of the API key in "[**Vision Language Model Accessing**](#anchor_11_1_1_3)" before proceeding. Additionally, ensure that the images to be used in this section are imported.
-
-* This experiment requires either an Ethernet cable or Wi-Fi connection to ensure the main control device can access the network properly.
-
-* In this course, we will use a program to send an image to the large model for recognition and generate a description of the content within the image.
-:::
-* 
 (1) Experiment Steps
 
 ① Execute the following command to navigate to the directory of Large Model.
@@ -1362,15 +1345,13 @@ python3 ~/large_models/openai_vllm_understand.py
 
 * **Vision Language Model: Optical Character Recognition** 
 
-:::{Note}
-
-* This section requires the configuration of the API key in "**1.3.2 Vision Language Model Accessing**" before proceeding. Additionally, ensure that the images to be used in this section are imported.
-
-* This experiment requires either an Ethernet cable or Wi-Fi connection to ensure the main control device can access the network properly.
-
-* In this course, we use a program to transmit an image to the large model for recognition, extracting and identifying the text within the image.
-
-:::
+> [!NOTE]
+>
+>* This section requires the configuration of the API key in "**[1.3.2 Vision Language Model Accessing](#anchor_12_1_3_2)**" before proceeding. Additionally, ensure that the images to be used in this section are imported.
+>
+>* This experiment requires either an Ethernet cable or Wi-Fi connection to ensure the main control device can access the network properly.
+>
+>* In this course, we use a program to transmit an image to the large model for recognition, extracting and identifying the text within the image.
 
 (1) Experiment Steps
 
@@ -1498,15 +1479,13 @@ Finally, Multimodal Model also play a role in scientific research. By processing
 
 * **Agent Behavior Orchestration**
 
-:::{Note}
-
-* This section requires the configuration of the API key in "[**Vision Language Model Accessing**](#anchor_11_1_1_3)" before proceeding. Additionally, ensure that the images to be used in this section are imported.
-
-* This experiment requires either an Ethernet cable or Wi-Fi connection to ensure the main control device can access the network properly.
-
-* The purpose of this course experiment is to obtain data in a specified format returned by the large model based on the prompt words set in the model. During development, you can use the returned data for further tasks.
-
-:::
+> [!NOTE]
+>
+>* This section requires the configuration of the API key in "[**Vision Language Model Accessing**](#anchor_12_1_3_2)" before proceeding. Additionally, ensure that the images to be used in this section are imported.
+>
+>* This experiment requires either an Ethernet cable or Wi-Fi connection to ensure the main control device can access the network properly.
+>
+>* The purpose of this course experiment is to obtain data in a specified format returned by the large model based on the prompt words set in the model. During development, you can use the returned data for further tasks.
 
 (1) Experiment Steps
 
@@ -1608,7 +1587,7 @@ By integrating various voice processing modules, the voice recognition module us
 
 <img src="../_static/media/chapter_12\section_2.1\media\image1.png"      style="width:500px" class="common_img"/>
 
-If you're using a Raspberry Pi as the controller, you can use a remote desktop tool to access the Raspberry Pi desktop, such as VNC, see [4.1 Remote Control Tool Introduction and Installation]() in the user manual. Check the top-right corner of the screen for microphone and speaker icons. If these icons are present, the device has been successfully connected.
+If you're using a Raspberry Pi as the controller, you can use a remote desktop tool to access the Raspberry Pi desktop, such as VNC, see [4.1 Remote Control Tool Introduction and Installation](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration) in the user manual. Check the top-right corner of the screen for microphone and speaker icons. If these icons are present, the device has been successfully connected.
 
 <img src="../_static/media/chapter_12\section_2.1\media\image2.png" style="width:500px" class="common_img"/>
 

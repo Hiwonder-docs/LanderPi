@@ -124,7 +124,7 @@ unzip ~/landerpi_description.zip -d ~/ros2_ws/src
 
 If the prompt below appears, type **A** and press **Enter**.
 
-<img src="../_static/media/chapter_10/section_1.1/media/image35.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_10/section_1.1/media/image35.png" class="common_img"/>
 
 (7) Enter the following command to compile the feature package, then wait patiently.
 
@@ -151,8 +151,6 @@ cd ~/ros2_ws/ && ls -a
 ```
 gedit ~/.bashrc
 ```
-
-<img src="../_static/media/chapter_10/section_1.1/media/image39.png" style="width:500px" class="common_img"/>
 
 Copy and add the following content into the **.bashrc** file:
 
@@ -234,7 +232,7 @@ gedit ~/ros2_ws/.typerc
 
 (5) Change the ID shown in the figure below to `23`:
 
-<img src="../_static/media/chapter_10/section_1.1/media/image50.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_10/section_1.1/media/image50.png" class="common_img"/>
 
 <img src="../_static/media/chapter_10/section_1.1/media/image51.png" style="width:500px" class="common_img"/>
 
@@ -348,7 +346,7 @@ For instance, when describing the two legs of a humanoid robot, the URDF model w
 sudo apt update
 ```
 
-<img src="../_static/media/chapter_10/section_2/media/image2.png" style="width:500px"/>
+<img src="../_static/media/chapter_10/section_2/media/image2.png" class="common_img" style="width:500px"/>
 
 (2) Run the following command and press Enter to install the URDF dependencies:
 
@@ -358,7 +356,7 @@ sudo apt-get install ros-humble-urdf
 
 When the output matches the image below, the installation is successful:
 
-<img src="../_static/media/chapter_10/section_2/media/image4.png" style="width:500px"/>
+<img src="../_static/media/chapter_10/section_2/media/image4.png" class="common_img" style="width:500px"/>
 
 (3) Run the following command and press Enter to install the Xacro model extension for URDF:
 
@@ -463,13 +461,13 @@ Each tag contains the corresponding child tag. The functions of the tags are lis
 
 The complete top tags of a robot, including the \<link\> and \<joint\> tags, must be enclosed within the \<robot\> tag. The format is as follows:
 
-<img src="../_static/media/chapter_10/section_2/media/image9.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image9.png" class="common_img"/>
 
 **(5) gazebo Tag**
 
 This tag is used in conjunction with the Gazebo simulator. Within this tag, you can define simulation parameters and import Gazebo plugins, as well as specify Gazebo's physical properties, and more.
 
-<img src="../_static/media/chapter_10/section_2/media/image10.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image10.png" class="common_img"/>
 
 **(6) Write Simple URDF Model**
 
@@ -477,35 +475,35 @@ This tag is used in conjunction with the Gazebo simulator. Within this tag, you 
 
 To start writing the URDF model, we need to set the name of the robot following this format: "\<robot name="robot model name"\>". Lastly, input "\</robot\>" at the end to represent that the model is written successfully.
 
-<img src="../_static/media/chapter_10/section_2/media/image11.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image11.png" class="common_img"/>
 
-<img src="../_static/media/chapter_10/section_2/media/image12.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image12.png" class="common_img"/>
 
 **Set links**
 
 ① To write the first link and use indentation to indicate that it is part of the currently set model. Set the name of the link using the following format: \<link name="link name"\>. Finally, conclude with "\</link\>" to indicate the successful completion of the link definition.
 
-<img src="../_static/media/chapter_10/section_2/media/image13.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image13.png" class="common_img"/>
 
-<img src="../_static/media/chapter_10/section_2/media/image14.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image14.png" class="common_img"/>
 
 ② When writing the link description, use indentation to indicate that the description belongs to the current link. Start the description with \<visual\> and end it with \</visual\>.
 
-<img src="../_static/media/chapter_10/section_2/media/image15.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image15.png" class="common_img"/>
 
-<img src="../_static/media/chapter_10/section_2/media/image16.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image16.png" class="common_img"/>
 
 ③ The "\<geometry\>" tag is employed to define the shape of a link. Once the description is complete, include "\</geometry\>". Within the "\<geometry\>" tag, indentation is used to specify the detailed description of the link's shape. The following example demonstrates a link with a cylindrical shape: "\<cylinder length="0.01" radius="0.2"/\>". In this instance, "length="0.01" signifies a length of 0.01 meters for the link, while "radius="0.2" denotes a radius of 0.2 meters, resulting in a cylindrical shape.
 
-<img src="../_static/media/chapter_10/section_2/media/image17.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image17.png" class="common_img"/>
 
 ④ The "\<origin\>" tag is utilized to specify the position of a link, with indentation used to indicate the detailed description of the link's position. The following example demonstrates the position of a link: "\<origin rpy="0 0 0" xyz="0 0 0" /\>". In this example, "rpy" represents the angles of the link, while "xyz" represents the coordinates of the link's position. This particular example indicates that the link is positioned at the origin of the coordinate system.
 
-<img src="../_static/media/chapter_10/section_2/media/image18.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image18.png" class="common_img"/>
 
 ⑤ The "\<material\>" tag is used to define the visual appearance of a link, with indentation used to specify the detailed description of the link's color. To start describing the color, include "\<material\>", and end with "\</material\>" when the description is complete. The following example demonstrates setting a link color to yellow: "\<color rgba="1 1 0 1" /\>". In this example, "rgba="1 1 0 1"" represents the color threshold for achieving a yellow color.
 
-<img src="../_static/media/chapter_10/section_2/media/image19.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image19.png" class="common_img"/>
 
 **Set Joint**
 
@@ -515,30 +513,30 @@ To start writing the URDF model, we need to set the name of the robot following 
 >
 > **To learn about the type of the joint, please refer to the section "Joint" in this document.**
 
-<img src="../_static/media/chapter_10/section_2/media/image20.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image20.png" class="common_img"/>
 
-<img src="../_static/media/chapter_10/section_2/media/image21.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image21.png" class="common_img"/>
 
 ② Write the description section for the connection between the link and the joint. Use indentation to indicate that it is part of the currently defined joint. The parent parameter and child parameter should be set using the following format: "\<parent link="parent link"/\>", and "\<child link="child link" /\>". With the parent link serving as the pivot, the joint rotates the child link.
 
-<img src="../_static/media/chapter_10/section_2/media/image22.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image22.png" class="common_img"/>
 
 ③ "\<origin\>" describes the position of the joint, with indentation used to specify the detailed coordinates of the joint. The image below describes the position of the joint: "\<origin xyz="0 0 0.1" /\>". xyz is the coordinate of the joint, indicating that the joint is located at x=0, y=0, z=0.1 in the coordinate system.
 
-<img src="../_static/media/chapter_10/section_2/media/image23.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image23.png" class="common_img"/>
 
 ④ "\<axis\>" describes the orientation of the joint, with indentation used to specify its precise posture. The figure below shows the posture of a joint \<axis xyz="0 0 1" /\>, where xyz defines the orientation of the joint.
 
-<img src="../_static/media/chapter_10/section_2/media/image24.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image24.png" class="common_img"/>
 
 ⑤ \<limit\> is used to restrict joint motion, with indentation applied to specify detailed angle constraints. The figure below shows a joint whose maximum torque does not exceed 300 N, with an upper rotation limit of 3.14 radians and a lower limit of -3.14 radians. These limits are defined according to the following formula: effort = joint torque (N), velocity = joint speed, lower = lower bound of the rotation angle (radians), upper = upper bound of the rotation angle (radians).
 
-<img src="../_static/media/chapter_10/section_2/media/image25.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image25.png" class="common_img"/>
 
 ⑥ \<dynamics\> describes the dynamic properties of the joint, with indentation used to specify detailed motion parameters. The figure below shows an example of a joint's dynamics parameters: \<dynamics damping="50" friction="1" /\>  
 where damping specifies the damping value, and friction specifies the friction coefficient.
 
-<img src="../_static/media/chapter_10/section_2/media/image26.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_10/section_2/media/image26.png" class="common_img"/>
 
 **The complete code is shown as follows:**
 
@@ -1843,7 +1841,7 @@ The MoveIt2 interface is shown below:
 
 Position 1: RViz Toolbar. Position 2: MoveIt Debugging Area. Position 3: Simulation Model Adjustment Area.
 
-<img src="../_static/media/chapter_10/section_4/media/image40.png" style="width:500px"/>
+<img src="../_static/media/chapter_10/section_4/media/image40.png" class="common_img"/>
 
 (1) In the MoveIt2 Debugging Area, find and click the **Planning** section.
 

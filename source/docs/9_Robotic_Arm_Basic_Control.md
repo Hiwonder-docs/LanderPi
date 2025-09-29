@@ -799,7 +799,7 @@ After starting this feature, the robot arm will slowly lift upward. Place your h
 
 **(1) launch File Analysis**
 
-<img src="../_static/media/chapter_9/section_2.1/media/image6.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_9/section_2.1/media/image6.png" class="common_img"/>
 
 File Path: `~/ros2_ws/src/example/example/hand_track/hand_track_node.launch.py`
 
@@ -831,7 +831,7 @@ Retrieve the paths for the following packages: **peripherals**, **controller**, 
 
 **(2) Source Code Analysis**
 
-<img src="../_static/media/chapter_9/section_2.1/media/image11.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_9/section_2.1/media/image11.png" class="common_img"/>
 
 File Path: `~/ros2_ws/src/example/example/hand_track/hand_track_node.py`
 
@@ -933,7 +933,7 @@ Red blocks are placed directly in front of the robot. Green blocks are placed to
 
 **(1) launch File Analysis**
 
-<img src="../_static/media/chapter_9/section_2.1/media/image22.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_9/section_2.1/media/image22.png" class="common_img"/>
 
 File Path:
 
@@ -957,7 +957,7 @@ File Path:
 
 **(2) Source Code Analysis**
 
-<img src="../_static/media/chapter_9/section_2.1/media/image26.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_9/section_2.1/media/image26.png" class="common_img"/>
 
 File Path: `~/ros2_ws/src/example/example/color_sorting/color_sorting_node.py`
 
@@ -1085,7 +1085,7 @@ After launching the feature, place a red block within the field of view of the r
 
 **(1) launch File Analysis**
 
-<img src="../_static/media/chapter_9/section_2.1/media/image40.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_9/section_2.1/media/image40.png" class="common_img"/>
 
 File Path: `~/ros2_ws/src/example/example/color_track/color_track_node.launch.py`
 
@@ -1109,7 +1109,7 @@ File Path: `~/ros2_ws/src/example/example/color_track/color_track_node.launch.py
 
 **(2) Source Code Analysis**
 
-<img src="../_static/media/chapter_9/section_2.1/media/image44.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_9/section_2.1/media/image44.png" class="common_img"/>
 
 File Path: `~/ros2_ws/src/example/example/color_track/color_track_node.py`
 
@@ -1271,7 +1271,7 @@ After starting the feature, the robot will follow the detected black line. When 
 
 **(1) launch File Analysis**
 
-<img src="../_static/media/chapter_9/section_2.1/media/image62.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_9/section_2.1/media/image62.png" class="common_img"/>
 
 File Path: `~/ros2_ws/src/example/example/line_follow_clean/line_follow_clean_node.launch.py`
 
@@ -1295,7 +1295,7 @@ File Path: `~/ros2_ws/src/example/example/line_follow_clean/line_follow_clean_no
 
 **(2) Source Code Analysis**
 
-<img src="../_static/media/chapter_9/section_2.1/media/image66.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_9/section_2.1/media/image66.png" class="common_img"/>
 
 File Path: `~/ros2_ws/src/example/example/line_follow_clean/line_follow_clean_node.py`
 
@@ -1467,7 +1467,7 @@ After starting the feature, the robot will detect the waste cards in the camera 
 
 **(1) launch File Analysis**
 
-<img src="../_static/media/chapter_9/section_2.1/media/image84.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_9/section_2.1/media/image84.png" class="common_img"/>
 
 File Path:
 
@@ -1491,7 +1491,7 @@ File Path:
 
 **(2) Source Code Analysis**
 
-<img src="../_static/media/chapter_9/section_2.1/media/image88.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_9/section_2.1/media/image88.png" class="common_img"/>
 
 File Path:
 
@@ -1679,7 +1679,7 @@ File Path: `~/ros2_ws/src/example/example/navigation_transport/navigation_transp
 
 **(2) Source Code Analysis**
 
-<img src="../_static/media/chapter_9/section_2.1/media/image111.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_9/section_2.1/media/image111.png" class="common_img"/>
 
 File Path: `~/ros2_ws/src/example/example/navigation_transport/navigation_transport.py`
 
@@ -1771,7 +1771,7 @@ After starting this feature, the robot will move forward autonomously. When it e
 
 **(1) launch File Analysis**
 
-<img src="../_static/media/chapter_9/section_2.2/media/image4.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_9/section_2.2/media/image4.png" class="common_img"/>
 
 File Path: `~/ros2_ws/src/example/example/rgbd_function/prevent_falling.launch.py`
 
@@ -1791,7 +1791,7 @@ File Path: `~/ros2_ws/src/example/example/rgbd_function/prevent_falling.launch.p
 
 **(2) Python Program Analysis**
 
-<img src="../_static/media/chapter_9/section_2.2/media/image7.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_9/section_2.2/media/image7.png" class="common_img"/>
 
 This section provides a program-level analysis of the fall-prevention function. The program source code can be found at: `~/ros2_ws/src/example/example/rgbd_function/prevent_falling_node.py`
 
@@ -1895,7 +1895,7 @@ Once the props are set up, start the program. The robot will automatically adjus
 
 **(1) launch File Analysis**
 
-<img src="../_static/media/chapter_9/section_2.2/media/image14.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_9/section_2.2/media/image14.png" class="common_img"/>
 
 File Path: `~/ros2_ws/src/example/example/rgbd_function/cross_bridge.launch.py`
 
@@ -1913,7 +1913,7 @@ File Path: `~/ros2_ws/src/example/example/rgbd_function/cross_bridge.launch.py`
 
 **(2) Python Program Analysis**
 
-<img src="../_static/media/chapter_9/section_2.2/media/image17.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_9/section_2.2/media/image17.png" class="common_img"/>
 
 This section analyzes the program logic behind the bridge crossing feature. The source code can be found at `~/ros2_ws/src/example/example/rgbd_function/cross_bridge_node.py`
 
@@ -1963,7 +1963,7 @@ If the center is safe, the robot performs minor correction (±0.2 rad/s).
 
 Emergency Stop Mechanism
 
-<img src="../_static/media/chapter_9/section_2.2/media/image22.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_9/section_2.2/media/image22.png" class="common_img"/>
 
 If all three left, center, and right regions detect drop-off risks, the robot immediately stops moving.
 
@@ -2017,7 +2017,7 @@ Once the feature is started, the camera tracks the object and controls the robot
 
 **(1) launch File Analysis**
 
-<img src="../_static/media/chapter_9/section_2.2/media/image24.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_9/section_2.2/media/image24.png" class="common_img"/>
 
 File Path: `~/ros2_ws/src/example/example/rgbd_function/track_object.launch.py`
 
@@ -2039,7 +2039,7 @@ File Path: `~/ros2_ws/src/example/example/rgbd_function/track_object.launch.py`
 
 This section provides a program-level analysis of the fall-prevention function. The program source code can be found at: `~/ros2_ws/src/example/example/rgbd_function/track_object_node.py`
 
-<img src="../_static/media/chapter_9/section_2.2/media/image27.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_9/section_2.2/media/image27.png" class="common_img"/>
 
 **Data Acquisition and Synchronization**
 
@@ -2133,7 +2133,7 @@ Once the feature is started, the system detects objects such as cylinders, cubes
 
 **(1) launch File Analysis**
 
-<img src="../_static/media/chapter_9/section_2.2/media/image36.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_9/section_2.2/media/image36.png" class="common_img"/>
 
 File Path: `~/ros2_ws/src/example/example/rgbd_function/track_and_grab.launch.py`
 
@@ -2157,7 +2157,7 @@ File Path: `~/ros2_ws/src/example/example/rgbd_function/track_and_grab.launch.py
 
 This section provides a program-level analysis of the fall-prevention function. The program source code can be found at: `~/ros2_ws/src/example/example/rgbd_function/track_and_grab.py`
 
-<img src="../_static/media/chapter_9/section_2.2/media/image39.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_9/section_2.2/media/image39.png" class="common_img"/>
 
 The program is primarily composed of two core classes:
 
@@ -2287,7 +2287,7 @@ Place the objects to be recognized—such as **cubes**, **spheres**, and **cylin
 
 **(1) launch File Analysis**
 
-<img src="../_static/media/chapter_9/section_2.2/media/image47.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_9/section_2.2/media/image47.png" class="common_img"/>
 
 File Path: `~/ros2_ws/src/example/example/rgbd_function/track_and_grab.launch.py`
 
@@ -2313,7 +2313,7 @@ This section provides a program-level analysis of the object classification func
 
 The flowchart below outlines the logic of the program based on this file.
 
-<img src="../_static/media/chapter_9/section_2.2/media/image50.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_9/section_2.2/media/image50.png" class="common_img"/>
 
 **Sensor Input**
 

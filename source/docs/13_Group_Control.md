@@ -1,9 +1,5 @@
 # 13. Group Control
 
-[TOC]
-
-
-
 ## 13.1 Host-Slave and Environment Variable Configuration
 
 ### 13.1.1 Preparation

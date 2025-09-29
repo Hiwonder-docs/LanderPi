@@ -507,11 +507,11 @@ You can modify the parameters above based on your specific needs. To improve mod
 
 If you see the following output, it means the training process is running successfully.
 
-<img src="../_static/media/chapter_8/section_2/media/image63.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_8/section_2/media/image63.png" class="common_img"/>
 
 After training is complete, the terminal will display the path where the trained model files are saved. The training results are stored in the directory of **Yolov8/runs/train/exp**.
 
-<img src="../_static/media/chapter_8/section_2/media/image64.png" style="width:500px" class="common_img"/>
+<img src="../_static/media/chapter_8/section_2/media/image64.png" class="common_img"/>
 
 > [!NOTE]
 >
