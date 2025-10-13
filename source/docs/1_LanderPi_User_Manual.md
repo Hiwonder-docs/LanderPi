@@ -1,5 +1,7 @@
 # 1. LanderPi User Manual
 
+
+
 ## 1.1 Product Overview
 
 LanderPi is a ROS 2-powered robot built on the Raspberry Pi 5 platform. It is available with a Mecanum chassis, an Ackerman chassis, or a Tank chassis, and comes equipped with advanced hardware including a TOF Lidar and a 3D depth camera. With these hardwares, LanderPi supports intelligent applications such as mapping navigation, path planning, image recognition, vision tracking, and human–robot interaction.
@@ -21,6 +23,10 @@ The following packing list uses the Mecanum chassis version as an example. The s
 <img src="../_static/media/chapter_1/image6.png" style="width:500px" class="common_img"/>
 
 Wiring for the Mecanum chassis:
+
+> [!NOTE]
+>
+> **The two 3-pin servo wires from the pan-tilt on the three chassis should be connected as follows: one to the servo port on the STM32 controller, and the other to the servo at the bottom of the robot arm.**
 
 <img src="../_static/media/chapter_1/image7.png" style="width:400px" class="common_img"/>
 
