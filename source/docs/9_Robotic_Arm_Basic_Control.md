@@ -1405,7 +1405,7 @@ Waste classification allows the robot to recognize waste cards placed in front o
 
 Before starting, make sure to print the waste cards in advance. Sample images of the waste cards can be found in the same directory as this document.
 
-First, subscribe to the topic published by the YOLOv8 object detection node to obtain information and images of the detected waste cards.
+First, subscribe to the topic published by the YOLOv11 object detection node to obtain information and images of the detected waste cards.
 
 Next, match the detected card information to determine the corresponding waste category.
 
@@ -1487,6 +1487,8 @@ File Path:
 
 <img src="../_static/media/chapter_9/section_2.1/media/image87.png" style="width:500px" class="common_img"/>
 
+`yolov11_node`: Used to start the yolov11 detection node.
+
 `garbage_classification_node`: Starts the waste classification node.
 
 **(2) Source Code Analysis**
@@ -1495,7 +1497,7 @@ File Path:
 
 File Path:
 
-`~/ros2_ws/src/example/example/garbage_classification/garbage_classification.py`
+**~/ros2_ws/src/example/example/garbage_classification/garbage_classification.py**
 
 **① Main Function**
 
@@ -1539,13 +1541,13 @@ Publishes the detected hand position to the kinematics node and receives the cor
 
 <img src="../_static/media/chapter_9/section_2.1/media/image95.png" style="width:500px" class="common_img"/>
 
-Starts the YOLOv8 recognition for waste classification and provides feedback on the current program status.
+Starts the YOLOv11 recognition for waste classification and provides feedback on the current program status.
 
 `stop_srv_callback`:
 
 <img src="../_static/media/chapter_9/section_2.1/media/image96.png" style="width:500px" class="common_img"/>
 
-Stops the current program and halts YOLOv8 recognition.
+Stops the current program and halts YOLOv11 recognition.
 
 `image_callback`:
 
@@ -1569,7 +1571,7 @@ Determines whether to start sorting based on the target color and ROI.
 
 <img src="../_static/media/chapter_9/section_2.1/media/image100.png" style="width:500px" class="common_img"/>
 
-Used to read the recognition results from YOLOv8.
+Used to read the recognition results from YOLOv11.
 
 
 

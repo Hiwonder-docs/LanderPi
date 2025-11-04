@@ -94,7 +94,7 @@ MXNet is designed to maximize efficiency and flexibility. As an accelerated libr
 
 ## **8.2 Machine Learning Application**
 
-### 8.2.1 Yolov8 Model
+### 8.2.1 Yolov11 Model
 
 * **Introduction to the YOLO Series of Models**
 
@@ -106,21 +106,21 @@ Before the advent of YOLOv1, the R-CNN family of algorithms dominated the object
 
 To address this issue, the YOLO series was developed. The core idea behind YOLO is to redefine object detection as a regression problem. It processes the entire image as input to the network and directly outputs Bounding Box coordinates along with their corresponding class labels. Compared to traditional object detection methods, YOLO offers faster detection speed and higher average precision.
 
-**2. Yolov8**
+**2. Yolov11**
 
-Yolov8 builds upon previous versions of the YOLO model, delivering significant improvements in both detection speed and accuracy.
+Yolov11 builds upon previous versions of the YOLO model, delivering significant improvements in both detection speed and accuracy.
 
-A typical object detection algorithm can be divided into four modules: the input module, the backbone network, the neck network, and the head output module. Analyzing Yolov8 according to these modules reveals the following enhancements:
+A typical object detection algorithm can be divided into four modules: the input module, the backbone network, the neck network, and the head output module. Analyzing Yolov11 according to these modules reveals the following enhancements:
 
-(1) Input Module: During model training, Yolov8 uses Mosaic data augmentation to improve training speed and accuracy. It also introduces adaptive anchor box calculation and adaptive image scaling.
+(1) Input Module: During model training, Yolov11 uses Mosaic data augmentation to improve training speed and accuracy. It also introduces adaptive anchor box calculation and adaptive image scaling.
 
-(2) Backbone Network: Yolov8 incorporates the Focus and CSP structures.
+(2) Backbone Network: Yolov11 incorporates the Focus and CSP structures.
 
-(3) Neck Network: Similar to YOLOv4, Yolov8 adopts the FPN+PAN architecture in this part, though there are differences in implementation details.
+(3) Neck Network: Similar to YOLOv4, Yolov11 adopts the FPN+PAN architecture in this part, though there are differences in implementation details.
 
-(4) Head Output Module: While the anchor box mechanism in Yolov8 remains consistent with YOLOv4, improvements include the use of the GIOU_Loss loss function and DIOU_NMS for filtering predicted bounding boxes.
+(4) Head Output Module: While the anchor box mechanism in Yolov11 remains consistent with YOLOv4, improvements include the use of the GIOU_Loss loss function and DIOU_NMS for filtering predicted bounding boxes.
 
-* **Yolov8 Model Structure**
+* **Yolov11 Model Structure**
 
 **1. Components**
 
@@ -130,7 +130,7 @@ Convolution is the process where an entity at multiple past time points does or 
 
 Convolution can be understood as flipping the data, and multiplication as the accumulation of the influence that past data has on the current data. The data flipping is done to establish relationships between data points, facilitating the calculation of accumulated influence with a proper reference.
 
-In Yolov8, the data to be processed is images, which are two-dimensional in computer vision. Accordingly, the convolution is two-dimensional convolution. The purpose of 2D convolution is to extract features from images. To perform 2D convolution, it is necessary to understand the convolution kernel.
+In Yolov11, the data to be processed is images, which are two-dimensional in computer vision. Accordingly, the convolution is two-dimensional convolution. The purpose of 2D convolution is to extract features from images. To perform 2D convolution, it is necessary to understand the convolution kernel.
 
 The convolution kernel is the unit region over which convolution calculation is performed each time. The unit is pixels, and the convolution sums the pixel values within the region. Typically, convolution is done by sliding the kernel across the image, and the kernel size is manually set.
 
@@ -221,7 +221,7 @@ In the first path, two convolutional blocks are used to extract features from th
 
 (4) Composite Convolutional Block
 
-In Yolov8, a key feature of the composite convolutional block is its customizable design, allowing convolutional blocks to be configured as needed. This structure also uses two paths whose outputs are merged.
+In Yolov11, a key feature of the composite convolutional block is its customizable design, allowing convolutional blocks to be configured as needed. This structure also uses two paths whose outputs are merged.
 
 The first path contains a single convolutional layer for feature extraction, while the second path includes 2𝑥+1 convolutional blocks followed by an additional convolutional layer. After sampling and concatenation, batch normalization is applied to standardize the data, followed by an activation function. Finally, a convolutional block is used to process the combined features.
 
@@ -229,7 +229,7 @@ The first path contains a single convolutional layer for feature extraction, whi
 
 (5) Composite Residual Convolutional Block
 
-The composite residual convolutional block modifies the composite convolutional block by replacing the 2𝑥 convolutional blocks with 𝑥 residual blocks. In Yolov8, this block is also customizable, allowing residual blocks to be tailored according to specific requirements.
+The composite residual convolutional block modifies the composite convolutional block by replacing the 2𝑥 convolutional blocks with 𝑥 residual blocks. In Yolov11, this block is also customizable, allowing residual blocks to be tailored according to specific requirements.
 
 <img src="../_static/media/chapter_8/section_2/media/image20.png" style="width:500px" class="common_img"/>
 
@@ -241,7 +241,7 @@ The output from a convolutional block is simultaneously passed through three sep
 
 **3. Structure**
 
-Yolov8 is composed of three main parts, each responsible for producing output at different spatial resolutions. These outputs are processed differently according to their respective sizes. The structure of Yolov8's output is shown as the diagram below.
+Yolov11 is composed of three main parts, each responsible for producing output at different spatial resolutions. These outputs are processed differently according to their respective sizes. The structure of Yolov11's output is shown as the diagram below.
 
 <img src="../_static/media/chapter_8/section_2/media/image22.png" class="common_img"/>
 
@@ -251,7 +251,7 @@ Yolov8 is composed of three main parts, each responsible for producing output at
 
 <img src="../_static/media/chapter_8/section_2/media/image25.png" class="common_img"/>
 
-### 8.2.2 Yolov8 Workflow
+### 8.2.2 Yolov11 Workflow
 
 This section explains the model's processing flow using the concepts of prior boxes, predicted boxes, and anchor boxes.
 
@@ -287,7 +287,7 @@ With each new training iteration, the predicted boxes are influenced by the anch
 
 ### 8.2.3 Image Collection and Annotation
 
-Training a YOLOv8 model requires a large dataset, so you must first collect and annotate images to prepare for model training.
+Training a YOLOv11 model requires a large dataset, so you must first collect and annotate images to prepare for model training.
 
 In this example, the demonstration uses traffic signs as target objects.
 
@@ -416,7 +416,7 @@ cd my_data/Annotations && ls
 
 Before starting this section, make sure you have completed image collection and annotation. For detailed steps, refer to the section [8.2.3 Image Collection and Annotation](#anchor_8_2_3).
 
-Before training images using the YOLOv8 model, you need to define class labels and convert the annotation data into the appropriate format.
+Before training images using the YOLOv11 model, you need to define class labels and convert the annotation data into the appropriate format.
 
 * **Data Format Conversion**
 
@@ -456,11 +456,11 @@ python3 ~/software/xml2yolo.py --data ~/my_data --yaml ~/my_data/data.yaml
 
 This command uses three main parameters:
 
-1. xml2yolo.py: A script that converts annotations from XML format to the YOLOv8 format. Make sure the path is correct.
+1. `xml2yolo.py`: A script that converts annotations from XML format to the YOLOv11 format. Make sure the path is correct.
 
-2. my_data: The directory containing your annotated dataset.
+2. `my_data`: The directory containing your annotated dataset.
 
-3. data.yaml: A YAML file that specifies how the dataset is split and configured for training. It will be saved inside the **my_data** folder.
+3. `data.yaml`: A YAML file that specifies how the dataset is split and configured for training. It will be saved inside the **my_data** folder.
 
 The following image shows a generated example of **data.yaml**:
 
@@ -489,13 +489,13 @@ After converting the dataset format, you can proceed to the model training phase
 3. Enter the following command and press Enter to go to the specific directory.
 
 ```
-cd /home/ubuntu/third_party_ros2/yolo/yolov8
+cd /home/ubuntu/third_party_ros2/yolo/yolov11
 ```
 
 4. Enter the command to start training the model.
 
 ```
-python3 train.py --img 640 --batch 64 --epochs 300 --data ~/my_data/data.yaml --weights yolov8n.pt
+python3 train.py --img 640 --batch 64 --epochs 300 --data ~/my_data/data.yaml --weights yolov11n.pt
 ```
 
 In the command, the parameters stands for:  
@@ -511,7 +511,7 @@ If you see the following output, it means the training process is running succes
 
 <img src="../_static/media/chapter_8/section_2/media/image63.png" class="common_img"/>
 
-After training is complete, the terminal will display the path where the trained model files are saved. The training results are stored in the directory of **Yolov8/runs/train/exp**.
+After training is complete, the terminal will display the path where the trained model files are saved. The training results are stored in the directory of **Yolov11/runs/train/exp**.
 
 <img src="../_static/media/chapter_8/section_2/media/image64.png" class="common_img"/>
 
@@ -689,16 +689,16 @@ The output paths depend on the actual storage location of the folders in your ro
 (2) Then enter the command to navigate to the specific directory.
 
 ```
-cd /home/ubuntu/third_party_ros2/yolo/yolov8
+cd /home/ubuntu/third_party_ros2/yolo/yolov11
 ```
 
 (3) Enter the command to start training the model.
 
 ```
-python3 train.py --img 640 --batch 8 --epochs 300 --data ~/my_data/data.yaml --weights yolov8n.pt
+python3 train.py --img 640 --batch 8 --epochs 300 --data ~/my_data/data.yaml --weights yolov11n.pt
 ```
 
-In the command, `--img` specifies the image size, `--batch` indicates the number of images input per batch, `--epochs` refers to the number of training iterations, representing how many times the machine learning model will go through the dataset. This value should be optimized based on the actual performance of the final model. In this example, the number of training epochs is set to 8 for quick testing. If the computer system is more powerful, this value can be increased to achieve better training results. `--data` is the path to the dataset, which refers to the folder containing the manually annotated data. `--weights` indicates the path to the pre-trained model weights. This specifies which .pt weight file the training process is based on. It's important to note whether you are using Yolov8n.pt, Yolov8s.pt, or another version.
+In the command, `--img` specifies the image size, `--batch` indicates the number of images input per batch, `--epochs` refers to the number of training iterations, representing how many times the machine learning model will go through the dataset. This value should be optimized based on the actual performance of the final model. In this example, the number of training epochs is set to 8 for quick testing. If the computer system is more powerful, this value can be increased to achieve better training results. `--data` is the path to the dataset, which refers to the folder containing the manually annotated data. `--weights` indicates the path to the pre-trained model weights. This specifies which .pt weight file the training process is based on. It's important to note whether you are using Yolov11n.pt, Yolov11s.pt, or another version.
 
 You can modify the parameters above based on your specific needs. To improve model accuracy, consider increasing the number of training epochs. Note that this will also increase training time.
 
@@ -731,7 +731,7 @@ After the model training is completed, the terminal will print the path where th
 2. Enter the following command to navigate to the directory where the corresponding feature's program is located:
 
 ```
-cd /home/ubuntu/third_party_ros2/yolo/yolov8
+cd /home/ubuntu/third_party_ros2/yolo/yolov11
 ```
 
 3. Enter the command to view the models in the current directory. Pretrained models are already provided, as shown below.
@@ -747,7 +747,7 @@ ls
 4. Next, enter the command to check the program that calls the model, and manually modify the model name.
 
 ```
-vim ~/ros2_ws/src/yolov8_detect/yolov8_detect/yolov8_detect_demo.py
+vim ~/ros2_ws/src/yolov11_detect/yolov11_detect/yolov11_detect_demo.py
 ```
 
 5. Change `MODEL_DEFAULT_NAME` to `best_traffic`, and then type `:wq` to save and exit.
@@ -757,7 +757,7 @@ vim ~/ros2_ws/src/yolov8_detect/yolov8_detect/yolov8_detect_demo.py
 6. After that, enter the command to run the model-calling program. A depth camera needs to be connected.
 
 ```
-ros2 launch yolov8_detect yolov8_detect_demo.launch.py
+ros2 launch yolov11_detect yolov11_detect_demo.launch.py
 ```
 
 ## 8.3 MediaPipe Human-Robot Interaction
@@ -898,7 +898,7 @@ Image callback function, used to read data from the camera node and push it into
 
 Reads the model from Mediapipe, inputs the image into the model, obtains the output image, and finally displays it using OpenCV.
 
-### 8.3.3 D Object Detection
+### 8.3.3 3D Object Detection
 
 * **Program Introduction**
 
@@ -2132,7 +2132,7 @@ This lesson focuses on recognizing traffic signs through programmed commands.
 
 (1) Before starting, make sure to lay out the map properly, ensuring it is flat without wrinkles and that the road is clear of obstacles. For detailed instructions on map setup, refer to the section [8.4.1 Map Layout and Course Props Installation](#anchor_8_4_1) in this document.
 
-(2) The traffic sign detection model used in this lesson is a YOLOv8-trained model. For more information on YOLOv8, you can refer to [8.1 Machine Learning Basics](#anchor_8_1) in this document.
+(2) The traffic sign detection model used in this lesson is a YOLOv11-trained model. For more information on YOLOv11, you can refer to [8.1 Machine Learning Basics](#anchor_8_1) in this document.
 
 (3) When performing this feature, make sure the environment is well-lit, but avoid direct light hitting the camera to prevent misrecognition.
 
@@ -2140,7 +2140,7 @@ This lesson focuses on recognizing traffic signs through programmed commands.
 
 First, capture the real-time video from the camera and perform image processing operations such as erosion and dilation.
 
-Next, use YOLOv8 to run the model and compare the processed image with the target objects.
+Next, use YOLOv11 to run the model and compare the processed image with the target objects.
 
 Finally, based on the comparison results, execute the corresponding traffic sign actions.
 
@@ -2165,13 +2165,13 @@ Finally, based on the comparison results, execute the corresponding traffic sign
 (4) Open a terminal and switch to the corresponding directory:
 
 ```
-cd ~/ros2_ws/src/yolov8_detect/yolov8_detect
+cd ~/ros2_ws/src/yolov11_detect/yolov11_detect
 ```
 
 (5) Edit the program file.
 
 ```
-vim yolov8_detect_demo.py
+vim yolov11_detect_demo.py
 ```
 
 (6) Modify the parameter to best_traffic, then save and exit the editor.
@@ -2181,7 +2181,7 @@ vim yolov8_detect_demo.py
 (7) Open a new terminal and enter the command to start the application.
 
 ```
-ros2 launch yolov8_detect yolov8_detect_demo.launch.py model:="traffic_signs_640s_7_1"
+ros2 launch yolov11_detect yolov11_detect_demo.launch.py model:="traffic_signs_640s_7_1"
 ```
 
 (8) Place the traffic sign in front of the camera. The system will detect the sign and highlight it on the display. To exit this feature, press **Ctrl + C** in the terminal. If the program does not close successfully, try pressing **Ctrl + C** again.
@@ -2220,7 +2220,7 @@ This feature allows the robot to recognize traffic lights through command execut
 
 (1) Before starting, make sure to lay out the map properly, ensuring it is flat without wrinkles and that the road is clear of obstacles. For detailed instructions on map setup, refer to the section [8.4.1 Map Layout and Course Props Installation](#anchor_8_4_1) in this document.
 
-(2) The traffic sign detection model used in this lesson is a YOLOv8-trained model. For more information on YOLOv8, you can refer to section [8.1 Machine Learning Basics](#anchor_8_1).
+(2) The traffic sign detection model used in this lesson is a YOLOv11-trained model. For more information on YOLOv11, you can refer to section [8.1 Machine Learning Basics](#anchor_8_1).
 
 (3) When performing this feature, make sure the environment is well-lit, but avoid direct light hitting the camera to prevent misrecognition.
 
@@ -2228,7 +2228,7 @@ This feature allows the robot to recognize traffic lights through command execut
 
 First, capture the real-time video from the camera and perform image processing operations such as erosion and dilation.
 
-Next, use YOLOv8 to run the model and compare the processed image with the target objects.
+Next, use YOLOv11 to run the model and compare the processed image with the target objects.
 
 Finally, based on the comparison results, execute the corresponding traffic sign actions.
 
@@ -2253,13 +2253,13 @@ The following steps only enable traffic light detection in the camera feed and w
 (4) Open a terminal and switch to the corresponding directory:
 
 ```
-cd ~/ros2_ws/src/yolov8_detect/yolov8_detect
+cd ~/ros2_ws/src/yolov11_detect/yolov11_detect
 ```
 
 (5) Edit the program file: 
 
 ```
-vim yolov8_detect_demo.py
+vim yolov11_detect_demo.py
 ```
 
 (6) Modify the parameter to `best_traffic`, then save and exit the editor.
@@ -2269,7 +2269,7 @@ vim yolov8_detect_demo.py
 (7) Open a new terminal and enter the command to start the application.
 
 ```
-ros2 launch yolov8_detect yolov8_detect_demo.launch.py model:="traffic\_ signs_640s_7_1"
+ros2 launch yolov11_detect yolov11_detect_demo.launch.py model:="traffic\_ signs_640s_7_1"
 ```
 
 (8) Place the traffic sign in front of the camera. The system will detect the sign and highlight it on the display. To exit this feature, press **Ctrl + C** in the terminal. If the program does not close successfully, try pressing **Ctrl + C** again.
@@ -2308,7 +2308,7 @@ This section demonstrates how to detect and recognize turn signs through command
 
 (1) Before starting, make sure to lay out the map properly, ensuring it is flat without wrinkles and that the road is clear of obstacles. For detailed instructions on map setup, refer to the section [8.4.1 Map Layout and Course Props Installation](#anchor_8_4_1) in this document.
 
-(2) The traffic sign detection model used in this lesson is a YOLOv8-trained model. For more information on YOLOv8, you can refer to [8.1 Machine Learning Basics](#anchor_8_1).
+(2) The traffic sign detection model used in this lesson is a YOLOv11-trained model. For more information on YOLOv11, you can refer to [8.1 Machine Learning Basics](#anchor_8_1).
 
 (3) When performing this feature, make sure the environment is well-lit, but avoid direct light hitting the camera to prevent misrecognition.
 
@@ -2341,13 +2341,13 @@ Finally, based on the comparison results, the robot identifies the turn sign and
 (4) Open a terminal and switch to the corresponding directory: 
 
 ```
-cd ~/ros2_ws/src/yolov8_detect/yolov8_detect
+cd ~/ros2_ws/src/yolov11_detect/yolov11_detect
 ```
 
 (5) Edit the program file:
 
 ```
-vim yolov8_detect_demo.py
+vim yolov11_detect_demo.py
 ```
 
 (6) Modify the parameter to `best_traffic`, then save and exit the editor.
@@ -2357,7 +2357,7 @@ vim yolov8_detect_demo.py
 (7) Open a new terminal and enter the command to start the application.
 
 ```
-ros2 launch yolov8_detect yolov8_detect_demo.launch.py model:="traffic\_ signs_640s_7_1"
+ros2 launch yolov11_detect yolov11_detect_demo.launch.py model:="traffic\_ signs_640s_7_1"
 ```
 
 (8) Place the traffic sign in front of the camera. The system will detect the sign and highlight it on the display. To exit this feature, press **Ctrl + C** in the terminal. If the program does not close successfully, try pressing **Ctrl + C** again.
@@ -2396,7 +2396,7 @@ This section demonstrates how to detect and recognize parking signs through comm
 
 (1) Before starting, make sure to lay out the map properly, ensuring it is flat without wrinkles and that the road is clear of obstacles. For detailed instructions on map setup, refer to the section [8.4.1Map Layout and Course Props Installation](#anchor_8_4_1) in this document.
 
-(2) The traffic sign detection model used in this lesson is a YOLOv8-trained model. For more information on YOLOv8, you can refer to [8.1 Machine Learning Basics](#anchor_8_1).
+(2) The traffic sign detection model used in this lesson is a YOLOv11-trained model. For more information on YOLOv11, you can refer to [8.1 Machine Learning Basics](#anchor_8_1).
 
 (3) When performing this feature, make sure the environment is well-lit, but avoid direct light hitting the camera to prevent misrecognition.
 
@@ -2404,7 +2404,7 @@ This section demonstrates how to detect and recognize parking signs through comm
 
 First, capture the real-time video from the camera and perform image processing operations such as erosion and dilation.
 
-Next, use YOLOv8 to run the model and compare the processed image with the target objects.
+Next, use YOLOv11 to run the model and compare the processed image with the target objects.
 
 Finally, based on the comparison results, the robot recognizes the parking sign and automatically parks in the designated spot.
 
@@ -2429,13 +2429,13 @@ Finally, based on the comparison results, the robot recognizes the parking sign 
 (4) Open a terminal and switch to the corresponding directory: 
 
 ```
-cd ~/ros2_ws/src/yolov8_detect/yolov8_detect
+cd ~/ros2_ws/src/yolov11_detect/yolov11_detect
 ```
 
 (5) Edit the program file:
 
 ```
-vim yolov8_detect_demo.py
+vim yolov11_detect_demo.py
 ```
 
 (6) Modify the parameter to `best_traffic`, then save and exit the editor.
@@ -2445,7 +2445,7 @@ vim yolov8_detect_demo.py
 (7) Open a new terminal and enter the command to start the application.
 
 ```
-ros2 launch yolov8_detect yolov8_detect_demo.launch.py model:="traffic\_ signs_640s_7_1"
+ros2 launch yolov11_detect yolov11_detect_demo.launch.py model:="traffic\_ signs_640s_7_1"
 ```
 
 (8) Place the traffic sign in front of the camera. The system will detect the sign and highlight it on the display. To exit this feature, press **Ctrl + C** in the terminal. If the program does not close successfully, try pressing **Ctrl + C** again.
@@ -2542,9 +2542,9 @@ The robot is currently capable of performing the following actions:
 
 (6) Slowing down when a streetlight is detected.
 
-First, load the YOLOv8-trained model file along with the required libraries, and obtain the real-time video feed from the camera. The input image is pre-processed using erosion, dilation, and other operations.
+First, load the YOLOv11-trained model file along with the required libraries, and obtain the real-time video feed from the camera. The input image is pre-processed using erosion, dilation, and other operations.
 
-Next, detect the target color line in the image, and extract key information such as the size and center point of the detected region. Then, apply the YOLOv8 model to compare the processed image with the target dataset.
+Next, detect the target color line in the image, and extract key information such as the size and center point of the detected region. Then, apply the YOLOv11 model to compare the processed image with the target dataset.
 
 Finally, calculate the offset of the target center point, and adjust the robot's heading accordingly to keep it aligned in the middle of the road. During navigation, the robot also executes specific actions based on the detected traffic signs.
 
@@ -2614,7 +2614,7 @@ Launches the autonomous driving class.
 
 <img src="../_static/media/chapter_8/section_4.2/media/image40.png" style="width:500px" class="common_img"/>
 
-`init`: Initializes required parameters, identifies the current robot type, sets the line-following color to yellow, starts chassis control, servo control, and image acquisition. Also sets up three services including enter, exit, and start, and connects to the `YOLOv8` node.
+`init`: Initializes required parameters, identifies the current robot type, sets the line-following color to yellow, starts chassis control, servo control, and image acquisition. Also sets up three services including enter, exit, and start, and connects to the `YOLOv11` node.
 
 `init_process`:
 
@@ -2644,13 +2644,13 @@ Publishes a service request.
 
 <img src="../_static/media/chapter_8/section_4.2/media/image45.png" style="width:500px" class="common_img"/>
 
-Service callback for entering autonomous driving mode, starts image acquisition, YOLOv8 recognition, and initializes speed.
+Service callback for entering autonomous driving mode, starts image acquisition, YOLOv11 recognition, and initializes speed.
 
 `exit_srv_callback`:
 
 <img src="../_static/media/chapter_8/section_4.2/media/image46.png" style="width:500px" class="common_img"/>
 
-Service callback for exiting autonomous driving mode, stops image acquisition and YOLOv8 recognition, resets speed, and restores parameters.
+Service callback for exiting autonomous driving mode, stops image acquisition and YOLOv11 recognition, resets speed, and restores parameters.
 
 `set_running_srv_callback`:
 
@@ -2680,7 +2680,7 @@ Parking logic, executes different parking strategies depending on the chassis ty
 
 <img src="../_static/media/chapter_8/section_4.2/media/image51.png" style="width:500px" class="common_img"/>
 
-Callback for YOLOv8 results, retrieves the current recognized classes.
+Callback for YOLOv11 results, retrieves the current recognized classes.
 
 `main`:
 
