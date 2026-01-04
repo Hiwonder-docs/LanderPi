@@ -627,7 +627,7 @@ Attempts to Turn Off the Cooling Fan on Raspberry Pi 5
 {lineno-start=13}
 
 ```
-try:  # If a fan is present, it's recommended to turn it off before detection to reduce interference(如果有风扇，检测前推荐关掉减少干扰)
+try:  # If a fan is present, it's recommended to turn it off before detection to reduce interference
     os.system('pinctrl FAN_PWM op dh')
 except:
     pass
@@ -1663,6 +1663,7 @@ As an example, we will flash the **CI1302_English_SingleMic_V00916_UART0_115200_
 
 3. Click the button to select firmware, then locate and choose the firmware file: [CI1302_English_SingleMic_V00916_UART0_115200_2M.bin](https://drive.google.com/drive/folders/1Na86By9er9Jj1_1YXz3sxAwePrIgSUcN?usp=sharing) under the folder **Appendix**.
    
+
 <img src="../_static/media/chapter_12/section_2.3/media/image3.png" style="width:500px" class="common_img"/>
 
 4. Locate and select the appropriate serial port.
@@ -4106,3 +4107,552 @@ This method handles updates on the transport status.
 (3) Call `executor.spin()` to start processing ROS events.
 
 (4) Upon shutdown, the node is properly destroyed using `node.destroy_node()`.
+
+
+
+## 12.5 Comprehensive Application of Large AI Models
+
+<p id ="p12-5-1"></p>
+
+### 12.5.1 Obtain and Configure the Large Model API Key
+
+> [!NOTE]
+>
+> **This section requires registering on the official OpenAI website and obtaining an API key for accessing large language models.**
+
+#### 12.5.1.1 Register and Deploy OpenAI Account 
+
+1)  Copy and open the following URL: https://platform.openai.com/docs/overview to click the **Sign Up** button in the upper-right corner.
+
+<img src="../_static/media/chapter_12\section_5/media/image1.png" class="common_img" />
+
+2)  Register and log in using a Google, Microsoft, or Apple account, as prompted.
+
+<img src="../_static/media/chapter_12\section_5/media/image2.png" class="common_img" />
+
+3)  After logging in, click the Settings button, then go to Billing, and click Payment Methods to add a payment method. Recharge your account to purchase tokens as needed.
+
+<img src="../_static/media/chapter_12\section_5/media/image3.png" class="common_img" />
+
+<img src="../_static/media/chapter_12\section_5/media/image4.png" class="common_img" />
+
+4)  Once your account is set up, go to the **API Keys** section and click **Create new key**. Follow the instructions to generate a new API key and save it securely for later use.
+
+<img src="../_static/media/chapter_12\section_5/media/image5.png" class="common_img" />
+
+<img src="../_static/media/chapter_12\section_5/media/image6.png" class="common_img" />
+
+<img src="../_static/media/chapter_12\section_5/media/image7.png" class="common_img" />
+
+5)  The creation and deployment of the large model have been completed, and this API will be used in the following sections.
+
+#### 12.5.1.2 Register and Deploy OpenRouter Account 
+
+1)  In the website https://openrouter.ai/, click **Log In**, and register or sign in using Google or another available account.
+
+<img src="../_static/media/chapter_12\section_5/media/image8.png" class="common_img" />
+
+<img src="../_static/media/chapter_12\section_5/media/image9.png" class="common_img" />
+
+2)  After logging in, click the icon in the top-right corner, then select **Credits** to add a payment method.
+
+<img src="../_static/media/chapter_12\section_5/media/image10.png" class="common_img" />
+
+<img src="../_static/media/chapter_12\section_5/media/image11.png" class="common_img" />
+
+3)  Create an API key. Go to **API Keys**, then click **Create Key**. Follow the prompts to generate a key. Save the API key securely for later use.
+
+<img src="../_static/media/chapter_12\section_5/media/image12.png" class="common_img" /><img src="../_static/media/chapter_12\section_5/media/image13.png" class="common_img" />
+
+4)  The creation and deployment of the large model have been completed, and this API will be used in the following sections.
+
+#### 12.5.1.3 API Configuration
+
+1)  In the command-line terminal, enter the following command to navigate to the directory where the large model keys are configured.
+
+**cd /home/ubuntu/ros2_ws/src/large_models/large_models/large_models**
+
+<img src="../_static/media/chapter_12\section_5/media/image14.png" class="common_img" />
+
+2. Next, open the configuration file with the following command.
+
+   **vim config.py**
+
+<img src="../_static/media/chapter_12\section_5/media/image15.png" class="common_img" />
+
+3)  Once the file is open, you need to configure the OpenAI and OpenRouter keys by filling them into the parameters llm_api_key and vllm_api_key, respectively.
+
+<img src="../_static/media/chapter_12\section_5/media/image16.png" class="common_img" />
+
+For example, copy the keys you created in this chapter and paste them into the corresponding fields. Place the cursor between the quotation marks, right-click, and select Paste. 
+
+> [!NOTE]
+>
+> **Keys from different large models cannot be mixed, otherwise the functions may fail to work properly.**
+
+4. After pasting, press **Esc**, then enter the command and press **Enter** to save the file.
+
+   ```
+   :wq
+   ```
+
+   
+
+<img src="../_static/media/chapter_12\section_5/media/image17.png" class="common_img" />
+
+### 12.5.2 Vision Applications
+
+#### 12.5.2.1 Overview
+
+When the program starts running, WonderEcho Pro will announce **I’m ready**.
+
+Say the wake word to activate WonderEcho Pro, and it will respond with **I’m here**. By default, the firmware uses the wake word Hello Hiwonder, please confirm the firmware version to use the correct wake word.
+
+Then, the robot can be controlled via voice commands. For example, **follow the black line, avoid obstacles, rotate in place once, and describe the surroundings**. Voice input is converted to text via the Cloud ASR API and provided to the large language model for analysis. Once the model completes its reasoning, the result will be broadcast using the API and the corresponding action will be executed.
+
+#### 12.5.2.2 Preparation
+
+* **Confirm WonderEcho Pro Firmware**
+
+WonderEcho Pro ships with an English firmware, with the default wake word set to **Hello Hiwonder**. To change the wake word to LanderPi, please refer to the file [03 Firmware Flashing](https://drive.google.com/file/d/1ETzWzMl_N2Z1HDhExGgJK2x6erBpauMW/view?usp=sharing).
+
+If a different firmware has been flashed previously, such as one using the wake word **LanderPi**, the corresponding wake word must be used for activation.
+
+The examples in this course will assume the default factory wake word: **Hello Hiwonder**.
+
+* **Configuring the Large Model API-KEY**
+
+By default, the program does not include the configuration of the Large Model-related API keys. Before activating features related to the Large AI Model, please refer to the section [12.5.1 Obtain and Configure the Large Model API Key](#p12-5-1) to configure the necessary keys. This step is mandatory and cannot be skipped, as it is crucial for the proper functioning and experience of the large model features.
+
+* **Network Configuration**
+
+Note: The large model used in this lesson is an online model, so network access is required before getting started. Please prepare an Ethernet cable to connect the robot to the network, or switch the robot to LAN mode.
+
+The robot must be connected to the Internet during this feature, either in STA (LAN) mode or AP (direct connection) mode via Ethernet. There are two methods available for configuring the network:
+
+- Network configuration can be completed through the app using the following path.
+
+[LAN Mode Connection (Optional)](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#anchor_1_3_3_4) in the LanderPi User Manual.
+
+- Connect to the robot via VNC and modify the network configuration files as described in
+
+LAN Mode Connection in the section [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration) of the LanderPi User Manual.
+
+#### 12.5.2.3 Operations
+
+> [!NOTE]
+>
+> **1. Command input is case-sensitive and space-sensitive.**
+>
+> **2. The robot must be connected to the Internet, either in STA (LAN) mode or AP (direct connection) mode via Ethernet.**
+
+1)  Power on the robot and connect it to a remote control tool like VNC. For detailed information, please refer to Section [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration) in the file LanderPi User Manual.
+
+2)  Click the icon <img src="../_static/media/chapter_12\section_5/media/image18.png" class="common_img" style="width:50px" class="inline-icon" /> to open the command-line terminal.
+
+3)  Enter the command to disable the auto-start service.
+
+```
+~/.stop_ros.sh
+```
+
+
+
+<img src="../_static/media/chapter_12\section_5/media/image19.png" class="common_img" />
+
+4)  Entering the following command to start the feature.
+
+```
+ros2 launch large_models_examples llm_control_progress.launch.py
+```
+
+
+
+<img src="../_static/media/chapter_12\section_5/media/image20.png" class="common_img" />
+
+5)  When the command-line output shown below appears, initialization is complete. At this point, speak the wake word **Hello Hiwonder**.
+
+<img src="../_static/media/chapter_12\section_5/media/image21.png" class="common_img" />
+
+6)  When the terminal displays the corresponding output shown in the figure and the device responds with **I’m here**, it indicates successful activation. The system will begin recording voice commands.
+
+<img src="../_static/media/chapter_12\section_5/media/image22.png" class="common_img" />
+
+7. Voice commands can be issued to control the robot's movement, such as **follow the black line, avoid obstacles, rotate in place once, and describe the surroundings**.
+
+8. The cloud-based speech recognition service of the large speech model is invoked to process the command audio. “**publish asr result**” indicates the recognized speech output. When the cloud-based speech synthesis service of the large language model is successfully invoked, WonderEcho Pro will play the audio.
+
+9. When the command-line output shown below appears, the robot will execute the corresponding action.
+
+   <img src="../_static/media/chapter_12\section_5/media/image23.png" class="common_img" />
+
+10. When the terminal shows the output shown in the figure indicating the end of one interaction cycle, the system is ready for the next round. To initiate another interaction, repeat step 5 by speaking the wake words again.
+
+<img src="../_static/media/chapter_12\section_5/media/image24.png" class="common_img" />
+
+11) To exit the feature, press **Ctrl+C** in the terminal. If the feature does not exit immediately, press **Ctrl+C** multiple times.
+
+#### 12.5.2.4 Project Outcome
+
+Once the feature is activated, voice commands can be issued to the robot, enabling it to move, follow lines, and perform real-time detection.
+
+> [!NOTE]
+>
+> **The actions used in this feature is preset in the program library and the quantity is limited. The robot's movement is controlled by calling functions corresponding to the action strings designed by the large model. If the instruction involves unpreset actions, the program will not be able to execute, but the large model will recognize the instruction and give a response.**
+
+#### 12.5.2.5 Program Analysis
+
+* **Launch File Analysis**
+
+The launch file is located at: **/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/function_calling/llm_control_progress.launch.py**
+
+<img src="../_static/media/chapter_12\section_5/media/image25.png" class="common_img" />
+
+<img src="../_static/media/chapter_12\section_5/media/image26.png" class="common_img" />
+
+Launch the nodes for motion control, LiDAR, depth camera, navigation, and large model functions, as well as the nodes for line following and object tracking.
+
+* **Python File Analysis**
+
+The Python file is located at:  
+**/home/ubuntu/ros2_ws/src/large_models_examples/large_models_examples/function_calling/llm_control.py**
+
+**1. Tool List**
+
+<img src="../_static/media/chapter_12\section_5/media/image27.png" class="common_img" />
+
+Defines the metadata for all tool functions accessible by the large model, including name, description, and parameters. This covers object recognition, navigation, line following, tracking, robotic arm manipulation, and more, serving as a mapping between the large model and robot functions.
+
+**2. Initialization**
+
+<img src="../_static/media/chapter_12\section_5/media/image28.png" class="common_img" />
+
+Initializes the node, including variable setup, service client creation, subscriber and publisher configuration, and timer initialization.
+
+**3. Service Client Setup**
+
+<img src="../_static/media/chapter_12\section_5/media/image29.png" class="common_img" />
+
+Creates service clients for the large model with tool settings, model selection, and prompt configuration, for navigation with pose settings, for line following with start, stop, and target configuration, and for voice wake-up. These clients allow calling services from other nodes.
+
+**4. Publisher and Subscriber Initialization**
+
+<img src="../_static/media/chapter_12\section_5/media/image30.png" class="common_img" />
+
+Subscribes to commands for tool invocation, large language model results, AMCL poses to obtain localization information, navigation target arrival, voice wake-up and completion, chassis velocity, and image data.
+
+Publishes tool execution results, text for voice output, chassis control commands, robotic arm commands, and processed vision images.
+
+**5. Pose Processing**
+
+<img src="../_static/media/chapter_12\section_5/media/image31.png" class="common_img" />
+
+Receives AMCL localization results, parses the robot’s current coordinates (x/y) and orientation (yaw), and provides corresponding data.
+
+**6. Synchronized Image Callback**
+
+<img src="../_static/media/chapter_12\section_5/media/image32.png" class="common_img" />
+
+Receives RGB and depth camera data simultaneously, converts them to OpenCV format, and stores them in an image queue to provide a data source for vision-based tools.
+
+**7. Get Pixel Distance**
+
+<img src="../_static/media/chapter_12\section_5/media/image33.png" class="common_img" />
+
+Reads the depth value at a specified pixel in the depth image, converts it to meters, and returns the result.
+
+**8. Get Object Pixel Position**
+
+<img src="../_static/media/chapter_12\section_5/media/image34.png" class="common_img" />
+
+Uses the large model to identify a specified object in the image and returns the pixel coordinates of the object’s center.
+
+**9. Move to Specified Position**
+
+<img src="../_static/media/chapter_12\section_5/media/image35.png" class="common_img" />
+
+Sets a target pose through the navigation service based on a predefined location name, waits for the `reach_goal` signal, and returns the navigation result.
+
+**10. Describe View**
+
+<img src="../_static/media/chapter_12\section_5/media/image36.png" class="common_img" />
+
+Uses VLLM to describe the current scene based on a query and performs voice playback.
+
+**11. Line-Following Function**
+
+<img src="../_static/media/chapter_12\section_5/media/image37.png" class="common_img" />
+
+Calls the line-following service, sets the target color, starts line following, and updates the line-following status flag.
+
+**12. Obstacle Detection**
+
+<img src="../_static/media/chapter_12\section_5/media/image38.png" class="common_img" />
+
+During line following, monitors obstacles by checking chassis velocity. If the velocity remains zero for a prolonged period, line following is stopped, and the detection result is returned.
+
+**13. Color Tracking**
+
+<img src="../_static/media/chapter_12\section_5/media/image39.png" class="common_img" />
+
+Calls the color-tracking service, sets the target color, starts tracking, and updates the tracking status flag.
+
+**14. Motion Control**
+
+<img src="../_static/media/chapter_12\section_5/media/image40.png" class="common_img" />
+
+Controls the chassis to move at specified linear and angular velocities for a given duration. The chassis stops after the motion is completed.
+
+**15. Object Tracking**
+
+<img src="../_static/media/chapter_12\section_5/media/image41.png" class="common_img" />
+
+Sets the bounding box for object tracking and activates the tracking flag.
+
+**16. Color Picking**
+
+<img src="../_static/media/chapter_12\section_5/media/image42.png" class="common_img" />
+
+Main process for color-based picking, integrating `color_detect` and `pick_handle` to complete the workflow from visual localization to motion, and finally robotic arm grasping.
+
+**17. Color Placement**
+
+<img src="../_static/media/chapter_12\section_5/media/image43.png" class="common_img" />
+
+Main process for color-based placement, resets motion parameters, and controls the robotic arm to perform the placement action and return to its initial position.
+
+**18. Picking Process**
+
+<img src="../_static/media/chapter_12\section_5/media/image44.png" class="common_img" />
+
+<img src="../_static/media/chapter_12\section_5/media/image45.png" class="common_img" />
+
+Closed-loop control for color-based picking. The chassis is directed toward the target color object using PID control. When stop conditions are met, the grasping action is triggered.
+
+**19. Color Detection**
+
+<img src="../_static/media/chapter_12\section_5/media/image46.png" class="common_img" />
+
+Detects objects of a specified color in the LAB color space and returns the object’s center point, angle, and bounding box. Provides visual data for color tracking and picking.
+
+**20. Tool Callback**
+
+<img src="../_static/media/chapter_12\section_5/media/image47.png" class="common_img" />
+
+Receives tool invocation commands from the large model, parses tool ID, name, and parameters, and stores them in `self.tools` for execution in the main processing loop.
+
+**21. Main Loop**
+
+<img src="../_static/media/chapter_12\section_5/media/image48.png" class="common_img" />
+
+<img src="../_static/media/chapter_12\section_5/media/image49.png" class="common_img" />
+
+<img src="../_static/media/chapter_12\section_5/media/image50.png" class="common_img" />
+
+Continuously monitors tool invocation commands from the large model, calls the corresponding function based on the tool name, publishes the results after execution, and captures exceptions to return error information.
+
+**22. Display Thread**
+
+<img src="../_static/media/chapter_12\section_5/media/image51.png" class="common_img" />
+
+Continuously reads from the image queue, draws bounding boxes for color detection and object tracking, and displays the results in the window.
+
+**23. Object Tracking**
+
+<img src="../_static/media/chapter_12\section_5/media/image52.png" class="common_img" />
+
+<img src="../_static/media/chapter_12\section_5/media/image53.png" class="common_img" />
+
+Runs independently, reading data from the image queue and executing object tracking based on bounding boxes. PID outputs are used to control chassis speed. In picking mode, the robotic arm is triggered when position conditions are satisfied.
+
+
+
+### 12.5.3 Intelligent Navigation & Transport
+
+#### 12.5.3.1 Overview
+
+> [!NOTE]
+>
+> **The large model used in this lesson is an online model, so network access is required before getting started. Please prepare an Ethernet cable to connect the robot to the network, or switch the robot to LAN mode.**
+
+Say the wake word to activate WonderEcho Pro, and it will respond with **I'm here**. By default, the firmware uses the wake word Hello Hiwonder, please confirm the firmware version to use the correct wake word.
+
+Once activated, the robot can be controlled by voice commands. For example, **Go to the express station and bring back the red package**. Upon receiving a command, the terminal displays the recognized speech content. The voice device then verbally responds with a generated answer and the robot simultaneously executes the corresponding action.
+
+#### 12.5.3.2 Preparation
+
+* **Confirm WonderEcho Pro Firmware**
+
+WonderEcho Pro ships with an English firmware, with the default wake word set to **Hello Hiwonder**. To change the wake word to LanderPi, please refer to the file [03 Firmware Flashing](https://drive.google.com/file/d/1ETzWzMl_N2Z1HDhExGgJK2x6erBpauMW/view?usp=sharing).
+
+If a different firmware has been flashed previously, such as one using the wake word **LanderPi**, the corresponding wake word must be used for activation.
+
+The examples in this course will assume the default factory wake word: **Hello Hiwonder**.
+
+* **Configuring the Large Model API-KEY**
+
+By default, the program does not include the configuration of the Large Model-related API keys. Before activating features related to the Large AI Model, please refer to the section [12.5.1 Obtain and Configure the Large Model API Key](#p12-5-1) to configure the necessary keys. This step is mandatory and cannot be skipped, as it is crucial for the proper functioning and experience of the large model features.
+
+* **Network Configuration**
+
+Note: The large model used in this lesson is an online model, so network access is required before getting started. Please prepare an Ethernet cable to connect the robot to the network, or switch the robot to LAN mode.
+
+The robot must be connected to the Internet during this feature, either in STA (LAN) mode or AP (direct connection) mode via Ethernet. There are two methods available for configuring the network:
+
+1. Network configuration can be completed through the app following the steps in [LAN Mode Connection (Optional)](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#anchor_1_3_3_4) in the LanderPi User Manual.
+
+2. Connect to the robot via VNC and modify the network configuration files as described in LAN Mode Connection in the section [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration) of the LanderPi User Manual.
+
+* **Grasp and Placement Calibration**
+
+Before starting the intelligent handling process, adjust the grasping behavior to ensure accurate performance. If the robotic arm fails to pick up the colored blocks during the demo or operation, you can follow the steps below to perform grasp calibration. This allows you to adjust the pickup area using program commands.
+
+1)  Power on the robot and connect it to a remote control tool like VNC. For detailed information, please refer to Section [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration) in the file LanderPi User Manual.
+
+2)  Click the icon <img src="../_static/media/chapter_12\section_5/media/image18.png" class="common_img" style="width:50px" class="inline-icon"/> to open the command-line terminal.
+
+3)  Enter the command to disable the auto-start service.
+
+```
+~/.stop_ros.sh
+```
+
+
+
+<img src="../_static/media/chapter_12\section_5/media/image19.png" class="common_img" />
+
+4)  To begin grasp calibration, enter the following command:
+
+```
+ros2 launch large_models_examples automatic_pick.launch.py debug:=pick
+```
+
+
+
+<img src="../_static/media/chapter_12\section_5/media/image54.png" class="common_img" />
+
+5)  Wait until the program finishes loading and announces the voice prompt **I'm ready**.
+
+6)  The robotic arm will perform a calibration grasping action and place the object at the gripper’s pickup location. Once the robotic arm returns to its original posture, use the mouse to left-click and drag a bounding box around the target object on the screen. Once the object is correctly identified, the system will automatically calibrate the pickup position for the recognized target.
+
+7)  The calibration process for placing objects is the same as for grasping. To begin placement calibration, run the following command:
+
+```
+ros2 launch large_models_examples automatic_pick.launch.py debug:=place
+```
+
+
+
+<img src="../_static/media/chapter_12\section_5/media/image56.png" class="common_img" />
+
+* **Navigation Map Construction**
+
+Before enabling this feature, a map must be created in advance. Please refer to [6. Mapping & Navigation Course\6.1 Mapping Instruction](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/6_Mapping_Navigation_Course.html#mapping-instruction) for detailed instructions on how to build the map.
+
+#### 12.5.3.3 Operations
+
+> [!NOTE]
+>
+> **1\. Command input is case-sensitive and space-sensitive.**
+>
+> **2. The robot must be connected to the Internet, either in STA (LAN) mode or AP (direct connection) mode via Ethernet.**
+
+1)  Click the icon <img src="../_static/media/chapter_12\section_5/media/image58.png" class="common_img" style="width:50px" class="inline-icon"/> to open a terminal.
+
+2)  Enter the command to disable the auto-start service.
+
+```
+~/.stop_ros.sh
+```
+
+<img src="../_static/media/chapter_12\section_5/media/image19.png" class="common_img" />
+
+3)  Launching the RViz tool allows monitoring of the navigation status.
+
+```
+rviz2 rviz2 -d /home/ubuntu/ros2_ws/src/navigation/rviz/navigation_controller.rviz
+```
+
+<img src="../_static/media/chapter_12\section_5/media/image59.png" class="common_img" />
+
+4)  Enter the following command and press **Enter** to launch the real-time navigation and transport features.
+
+```
+ros2 launch large_models_examples llm_control_progress.launch.py function:=navigation
+```
+
+<img src="../_static/media/chapter_12\section_5/media/image60.png" class="common_img" />
+
+5)  After opening the map in RViz, click the **2D Pose Estimate** icon to set the robot’s initial position.
+
+<img src="../_static/media/chapter_12\section_5/media/image61.png" class="common_img" />
+
+6. When the command line displays the output shown below and announces **I’m ready**, the voice device has completed initialization. At this point, say the wake word **Hello Hiwonder**.
+
+   <img src="../_static/media/chapter_12\section_5/media/image62.png" class="common_img" />
+
+7. When the terminal displays the corresponding output shown in the figure and the device responds with **I’m here**, it indicates successful activation. At this point, the recording of the spoken command begins.
+
+<img src="../_static/media/chapter_12\section_5/media/image22.png" class="common_img" />
+
+Next, speak the command **Go to the express station and bring back the red package**, and wait for the large model to process and recognize it.
+
+8. Upon successful recognition by the speech recognition service of a cloud-based large speech model, the parsed command will be displayed under the **publish_asr_result** output in the terminal.
+
+9. Upon receiving voice input shown in the figure, the terminal will display output indicating that the cloud-based large language model has been successfully invoked. The model will interpret the command, generate a language response, and generate the corresponding action.
+
+   <img src="../_static/media/chapter_12\section_5/media/image63.png" class="common_img" />
+
+10. The robot first navigates to the **express station** to complete the task of picking up the **red package**.
+
+<img src="../_static/media/chapter_12\section_5/media/image64.png" class="common_img" />
+
+11. It then returns to the starting point to place the package down.
+
+12. When the terminal shows the output shown in the figure, indicating the end of one interaction cycle, the system is ready for the next round. To initiate another interaction, repeat step 6 by speaking the wake words again.
+
+    <img src="../_static/media/chapter_12\section_5/media/image65.png" class="common_img" />
+
+13. To exit the feature, press **Ctrl+C** in the terminal. If the feature does not exit immediately, press **Ctrl+C** multiple times.
+
+#### 12.5.3.4 Project Outcome
+
+Once the feature is started, voice commands can be issued to the robot. For example, saying **Go to the express station and bring back the red package** will prompt the robot to first navigate to the **express station**, pick up the **red package**, and then return to the starting point to place it down.
+
+* **Modifying Navigation Locations**
+
+To modify the navigation positions in the program, edit the file located at the following path:
+
+**~/ros2_ws/src/large_models_examples/large_models_examples/function_calling/llm_control.py**
+
+1)  Begin by launching the program and displaying the map in rviz by following step 3 above. Then, click on **2D Goal Pose** in the rviz interface to set the desired navigation target on the map.
+
+<img src="../_static/media/chapter_12\section_5/media/image66.png" class="common_img" />
+
+2. Return to the command terminal and check the published target position parameters.
+
+   <img src="../_static/media/chapter_12\section_5/media/image67.png" class="common_img" /> 
+
+Locate the corresponding section of the code shown below, and fill in the target location parameters after the appropriate location name.
+
+<img src="../_static/media/chapter_12\section_5/media/image68.png" class="common_img" />
+
+In the program, each location is defined as a target navigation point relative to the map’s origin, which corresponds to the robot’s starting position during the mapping process. Each navigation point includes five parameters:
+
+x: position on the x-axis (meters)
+
+y: position on the y-axis (meters)
+
+roll: rotation around the x-axis (degrees)
+
+pitch: rotation around the y-axis (degrees)
+
+yaw: rotation around the z-axis (degrees)
+
+For example, given the quaternion:  
+Quaternion(x=0.0, y=0.0, z=-0.5677173914973032, w=0.8232235197025761). After conversion to Euler angles (roll, pitch, yaw), the result is approximately:  
+roll ≈ 0°, pitch ≈ 0°, yaw ≈ -69.3°
+
+#### 12.5.3.5 Program Analysis
+
+The program analysis section can be referenced in [12.5.2.5 Program Analysis](#p12-5-2-5).
