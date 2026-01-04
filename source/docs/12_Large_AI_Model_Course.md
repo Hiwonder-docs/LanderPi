@@ -4248,7 +4248,7 @@ LAN Mode Connection in the section [1.4 Development Environment Setup and Config
 
 1)  Power on the robot and connect it to a remote control tool like VNC. For detailed information, please refer to Section [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration) in the file LanderPi User Manual.
 
-2)  Click the icon <img src="../_static/media/chapter_12\section_5/media/image18.png" class="common_img" style="width:50px" class="inline-icon" /> to open the command-line terminal.
+2)  Click the icon <img src="../_static/media/chapter_12\section_5/media/image18.png" style="width:50px" class="inline-icon" /> to open the command-line terminal.
 
 3)  Enter the command to disable the auto-start service.
 
@@ -4509,7 +4509,7 @@ Before starting the intelligent handling process, adjust the grasping behavior t
 
 1)  Power on the robot and connect it to a remote control tool like VNC. For detailed information, please refer to Section [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration) in the file LanderPi User Manual.
 
-2)  Click the icon <img src="../_static/media/chapter_12\section_5/media/image18.png" class="common_img" style="width:50px" class="inline-icon"/> to open the command-line terminal.
+2)  Click the icon <img src="../_static/media/chapter_12\section_5/media/image18.png" style="width:50px" class="inline-icon"/> to open the command-line terminal.
 
 3)  Enter the command to disable the auto-start service.
 
@@ -4557,7 +4557,7 @@ Before enabling this feature, a map must be created in advance. Please refer to 
 >
 > **2. The robot must be connected to the Internet, either in STA (LAN) mode or AP (direct connection) mode via Ethernet.**
 
-1)  Click the icon <img src="../_static/media/chapter_12\section_5/media/image58.png" class="common_img" style="width:50px" class="inline-icon"/> to open a terminal.
+1)  Click the icon <img src="../_static/media/chapter_12\section_5/media/image58.png" style="width:50px" class="inline-icon"/> to open a terminal.
 
 2)  Enter the command to disable the auto-start service.
 
