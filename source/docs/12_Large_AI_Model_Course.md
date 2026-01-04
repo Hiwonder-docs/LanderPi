@@ -4170,17 +4170,22 @@ This method handles updates on the transport status.
 
 1)  In the command-line terminal, enter the following command to navigate to the directory where the large model keys are configured.
 
-**cd /home/ubuntu/ros2_ws/src/large_models/large_models/large_models**
+```
+cd /home/ubuntu/ros2_ws/src/large_models/large_models/large_models
+```
 
 <img src="../_static/media/chapter_12\section_5/media/image14.png" class="common_img" />
 
 2. Next, open the configuration file with the following command.
 
-   **vim config.py**
+
+```
+vim config.py
+```
 
 <img src="../_static/media/chapter_12\section_5/media/image15.png" class="common_img" />
 
-3)  Once the file is open, you need to configure the OpenAI and OpenRouter keys by filling them into the parameters llm_api_key and vllm_api_key, respectively.
+3)  Once the file is open, you need to configure the OpenAI and OpenRouter keys by filling them into the parameters `llm_api_key` and `vllm_api_key`, respectively.
 
 <img src="../_static/media/chapter_12\section_5/media/image16.png" class="common_img" />
 
@@ -4226,17 +4231,15 @@ By default, the program does not include the configuration of the Large Model-re
 
 * **Network Configuration**
 
-Note: The large model used in this lesson is an online model, so network access is required before getting started. Please prepare an Ethernet cable to connect the robot to the network, or switch the robot to LAN mode.
+> [!NOTE]
+>
+> **The large model used in this lesson is an online model, so network access is required before getting started. Please prepare an Ethernet cable to connect the robot to the network, or switch the robot to LAN mode.**
 
 The robot must be connected to the Internet during this feature, either in STA (LAN) mode or AP (direct connection) mode via Ethernet. There are two methods available for configuring the network:
 
-- Network configuration can be completed through the app using the following path.
+1. Network configuration can be completed through the app following the steps in [LAN Mode Connection (Optional)](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#anchor_1_3_3_4) in the LanderPi User Manual.
 
-[LAN Mode Connection (Optional)](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#anchor_1_3_3_4) in the LanderPi User Manual.
-
-- Connect to the robot via VNC and modify the network configuration files as described in
-
-LAN Mode Connection in the section [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration) of the LanderPi User Manual.
+2. Connect to the robot via VNC and modify the network configuration files as described in LAN Mode Connection in the section [1.4 Development Environment Setup and Configuration](https://wiki.hiwonder.com/projects/LanderPi/en/latest/docs/1_LanderPi_User_Manual.html#development-environment-setup-and-configuration) of the LanderPi User Manual.
 
 #### 12.5.2.3 Operations
 
@@ -4255,8 +4258,6 @@ LAN Mode Connection in the section [1.4 Development Environment Setup and Config
 ```
 ~/.stop_ros.sh
 ```
-
-
 
 <img src="../_static/media/chapter_12\section_5/media/image19.png" class="common_img" />
 
@@ -4299,6 +4300,8 @@ Once the feature is activated, voice commands can be issued to the robot, enabli
 > [!NOTE]
 >
 > **The actions used in this feature is preset in the program library and the quantity is limited. The robot's movement is controlled by calling functions corresponding to the action strings designed by the large model. If the instruction involves unpreset actions, the program will not be able to execute, but the large model will recognize the instruction and give a response.**
+
+<p id ="p12-5-2-5"></p>
 
 #### 12.5.2.5 Program Analysis
 
@@ -4517,8 +4520,6 @@ Before starting the intelligent handling process, adjust the grasping behavior t
 ~/.stop_ros.sh
 ```
 
-
-
 <img src="../_static/media/chapter_12\section_5/media/image19.png" class="common_img" />
 
 4)  To begin grasp calibration, enter the following command:
@@ -4526,8 +4527,6 @@ Before starting the intelligent handling process, adjust the grasping behavior t
 ```
 ros2 launch large_models_examples automatic_pick.launch.py debug:=pick
 ```
-
-
 
 <img src="../_static/media/chapter_12\section_5/media/image54.png" class="common_img" />
 
@@ -4540,8 +4539,6 @@ ros2 launch large_models_examples automatic_pick.launch.py debug:=pick
 ```
 ros2 launch large_models_examples automatic_pick.launch.py debug:=place
 ```
-
-
 
 <img src="../_static/media/chapter_12\section_5/media/image56.png" class="common_img" />
 
