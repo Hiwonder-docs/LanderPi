@@ -12,6 +12,7 @@ LanderPi
    :caption: LanderPi
 
    docs/1_LanderPi_User_Manual.md
+   docs/2_Basic_Course.md
    docs/3_Chassis_Motion_Control.md
    docs/4_LiDAR_Training_Program.md
    5. Camera Basic Course <https://docs.hiwonder.com/projects/Aurora930-Pro/en/latest/>
