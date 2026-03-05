@@ -876,6 +876,7 @@ If you've configured your own credentials, use those instead. Note: In Linux sys
 <img src="../_static/media/chapter_1/image120.png" style="width:500px" class="common_img"/>
 
 <p id="anchor_1_4_3"></p>
+
 ### 1.4.3 Switching Robot Configurations
 
 The LanderPi series robots support multiple chassis configurations: Mecanum chassis, Ackerman chassis, and Tank chassis. To switch between different robot configurations, follow these steps:
